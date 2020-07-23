@@ -1,0 +1,328 @@
+\begin{thebibliography}{}
+
+\bibitem[Al-Radaideh and Nagi, 2012]{using_data_mining2012}
+Al-Radaideh, Q.~A. and Nagi, E.~A. (2012).
+\newblock Using {Data} {Mining} {Techniques} to {Build} a {Classification}
+  {Model} for {Predicting} {Employees} {Performance}.
+
+\bibitem[Alecrim, 2019]{alecrim2019}
+Alecrim, E. (2019).
+\newblock {\em O que {\'e} {Big} {Data}?}
+\newblock INFOWESTER. Disponível em: https://www.infowester.com/big-data.php.
+  Acesso em 12/12/2019.
+
+\bibitem[Alpaydin, 2014]{alpaydin_introduction_2014}
+Alpaydin, E. (2014).
+\newblock {\em Introduction to Machine Learning, Third Edition}.
+\newblock Adaptive Computation and Machine Learning. The {MIT} Press, 3ª
+  edition.
+
+\bibitem[Amaral, 2016]{aprenda_mineracao_fernando_amaral16}
+Amaral, F. (2016).
+\newblock {\em Aprenda Minera{\c{c}}{\~a}o de Dados: Teoria e pr{\'a}tica}.
+\newblock Autoria Nacional. ALTA BOOKS.
+
+\bibitem[Bui et~al., 2019]{bui_efficient_2019}
+Bui, T., Stoller, S.~D., and Le, H. (2019).
+\newblock Efficient and {Extensible} {Policy} {Mining} for
+  {Relationship}-{Based} {Access} {Control}.
+\newblock In {\em Proceedings of the 24th {ACM} {Symposium} on {Access}
+  {Control} {Models} and {Technologies}}, {SACMAT} '19, pages 161--172, New
+  York, NY, USA. ACM.
+\newblock event-place: Toronto ON, Canada.
+
+\bibitem[Chen, 2011]{chen_flight_2011}
+Chen, M.~Q. (2011).
+\newblock Flight {Conflict} {Detection} and {Resolution} {Based} on {Neural}
+  {Network}.
+\newblock In {\em 2011 {International} {Conference} on {Computational} and
+  {Information} {Sciences}}, pages 860--862.
+\newblock ISSN: null.
+
+\bibitem[Christodoulou and Kontogeorgou, 2008]{christodoulou_collision_2008}
+Christodoulou, M.~A. and Kontogeorgou, C. (2008).
+\newblock Collision avoidance in commercial aircraft {Free} {Flight} via neural
+  networks and non-linear programming.
+\newblock {\em International Journal of Neural Systems}, 18(5):371--387.
+
+\bibitem[Cortes and Vapnik, 1995]{cortes_svm_1995}
+Cortes, C. and Vapnik, V. (1995).
+\newblock Support-vector networks.
+\newblock 20(3):273--297.
+
+\bibitem[De~Capitani~di Vimercati et~al., 2005]{di_vimercati_policies_2005}
+De~Capitani~di Vimercati, S., Samarati, P., and Jajodia, S. (2005).
+\newblock Policies, models, and languages for access control.
+\newblock In Bhalla, S., editor, {\em Databases in Networked Information
+  Systems}, Lecture Notes in Computer Science, pages 225--237. Springer.
+
+\bibitem[Debar et~al., 1992]{debar_neural_1992}
+Debar, H., Becker, M., and Siboni, D. (1992).
+\newblock A neural network component for an intrusion detection system.
+\newblock In {\em Proceedings 1992 {IEEE} {Computer} {Society} {Symposium} on
+  {Research} in {Security} and {Privacy}}, pages 240--250.
+\newblock ISSN: null.
+
+\bibitem[Dunlop et~al., 2002]{dunlop_dynamic_2002}
+Dunlop, N., Indulska, J., and Raymond, K. (2002).
+\newblock Dynamic conflict detection in policy-based management systems.
+\newblock In {\em Proceedings. Sixth International Enterprise Distributed
+  Object Computing}, pages 15--26.
+\newblock {ISSN}: null.
+
+\bibitem[Fayyad et~al., 1996]{fayyad1996}
+Fayyad, U., Piatetsky-Shapiro, G., and Smyth, P. (1996).
+\newblock From data mining to knowledge discovery in databases.
+\newblock 17(3):37--37.
+
+\bibitem[Ferneda, 2006]{ferneda_redes_2006}
+Ferneda, E. (2006).
+\newblock Redes neurais e sua aplicação em sistemas de recuperação de
+  informação.
+\newblock 35(1).
+
+\bibitem[Ferrari and Castro~Silva, 2017]{ferrari2017}
+Ferrari, D.~G. and Castro~Silva, L. N.~d. (2017).
+\newblock {\em Introdu{\c{c}}{\~a}o a minera{\c{c}}{\~a}o de dados}.
+\newblock Editora Saraiva.
+
+\bibitem[Fugini and Bellettini, 2004]{fugini_information_2004}
+Fugini, M. and Bellettini, C. (2004).
+\newblock {\em Information {Security} {Policies} and {Actions} in {Modern}
+  {Integrated} {Systems}}.
+\newblock Idea Group Pub.
+
+\bibitem[{Goldschmidt} and {Passos}, ]{goldschmidt2005}
+{Goldschmidt}, R. and {Passos}, E.
+\newblock {\em Data mining: um guia Prático}.
+\newblock Elsevier Editora.
+
+\bibitem[Grus and Nascimento, 2016]{data_science_do_zero2016}
+Grus, J. and Nascimento, W. (2016).
+\newblock {\em Data Science Do Zero}.
+\newblock ALTA BOOKS.
+
+\bibitem[Gufosowa, 2019]{fold_cross_validation:k-fold_nodate}
+Gufosowa (2019).
+\newblock {\em K-fold cross validation}.
+\newblock Wikipedia. Disponível em:
+  https://en.wikipedia.org/wiki/File:K-fold\_cross\_validation\_EN.svg.
+
+\bibitem[Hagan et~al., ]{hagan_neural_1996}
+Hagan, M.~T., Demuth, H.~B., and Beale, M.~H.
+\newblock {\em Neural Network Design}.
+\newblock Brooks/Cole.
+\newblock Google-Books-{ID}: {cUNJAAAACAAJ}.
+
+\bibitem[Haykin, 2001]{haykin_redes_2001}
+Haykin, S. (2001).
+\newblock {\em Redes Neurais - 2ed.}
+\newblock Bookman.
+
+\bibitem[Jin et~al., 2002]{jin_development_2002}
+Jin, X., Cheu, R.~L., and Srinivasan, D. (2002).
+\newblock Development and adaptation of constructive probabilistic neural
+  network in freeway incident detection.
+\newblock {\em Transportation Research Part C: Emerging Technologies},
+  10(2):121--147.
+
+\bibitem[Kesavaraj and Sukumaran, 2013]{classification2013}
+Kesavaraj, G. and Sukumaran, S. (2013).
+\newblock A study on classification techniques in data mining.
+\newblock In {\em 2013 {Fourth} {International} {Conference} on {Computing},
+  {Communications} and {Networking} {Technologies} ({ICCCNT})}, pages 1--7.
+\newblock ISSN: null.
+
+\bibitem[Koch et~al., 2002]{koch_conflict_2002}
+Koch, M., Mancini, L.~V., and Parisi-Presicce, F. (2002).
+\newblock Conflict {Detection} and {Resolution} in {Access} {Control} {Policy}
+  {Specifications}.
+\newblock In Nielsen, M. and Engberg, U., editors, {\em Foundations of
+  {Software} {Science} and {Computation} {Structures}}, Lecture {Notes} in
+  {Computer} {Science}, pages 223--238, Berlin, Heidelberg. Springer.
+
+\bibitem[Kumar, 2012]{classification_survey2012}
+Kumar, R. (2012).
+\newblock Classification {Algorithms} for {Data} {Mining}: {A} {Survey}.
+\newblock {\em International Journal of Innovations in Engineering and
+  Technology}, 1(2):8.
+
+\bibitem[Li and Tripunitara, 2006]{li_security_2006}
+Li, N. and Tripunitara, M.~V. (2006).
+\newblock Security analysis in role-based access control.
+\newblock page~28.
+
+\bibitem[Lima et~al., 2016]{lima_ia_2016}
+Lima, I., Pinheiro, C., and Santos, F. (2016).
+\newblock {\em Inteligência Artificial}.
+\newblock Elsevier Brasil.
+
+\bibitem[Lima and Pereira, 2012]{lima_fraud_2012}
+Lima, R. A.~F. and Pereira, A. C.~M. (2012).
+\newblock Fraud detection in web transactions.
+\newblock page 273.
+
+\bibitem[Lupu and Sloman, 1999]{lupu_conflicts_1999}
+Lupu, E. and Sloman, M. (1999).
+\newblock Conflicts in policy-based distributed systems management.
+\newblock {\em IEEE Transactions on Software Engineering}, 25(6):852--869.
+
+\bibitem[Machado, 2014]{machado2014}
+Machado, A. (2014).
+\newblock Estudo da {EMC} prevê que volume de dados virtuais armazenados será
+  seis vezes maior em 2020.
+
+\bibitem[Mcculloch and Pitts, 1943]{mcculloch_logical_1943}
+Mcculloch, W.~S. and Pitts, W. (1943).
+\newblock A {LOGICAL} {CALCULUS} {OF} {THE} {IDEAS} {IMMANENT} {IN} {NERVOUS}
+  {ACTIVITY}.
+\newblock 52(1):17.
+
+\bibitem[Minsky and Papert, 1969]{minsky_perceptrons:_1969}
+Minsky, M. and Papert, S. (1969).
+\newblock {\em Perceptrons: An Introduction to Computational Geometry}.
+\newblock {MIT} Press.
+
+\bibitem[Moffett and Sloman, 1994]{moffett_policy_1994}
+Moffett, J.~D. and Sloman, M.~S. (1994).
+\newblock Policy conflict analysis in distributed system management.
+\newblock 4(1):1--22.
+
+\bibitem[Mohri, 2018]{mohri_foundations_2018}
+Mohri, Mehryar e~Rostamizadeh, A. e. T.~A. (2018).
+\newblock {\em Foundations of Machine Learning, Second Edition}.
+\newblock Adaptive Computation and Machine Learning. The {MIT} Press, 2ª
+  edition.
+
+\bibitem[Mukkamala et~al., 2002]{mukkamala_intrusion_2002}
+Mukkamala, S., Janoski, G., and Sung, A. (2002).
+\newblock Intrusion detection using neural networks and support vector
+  machines.
+\newblock In {\em Proceedings of the 2002 {International} {Joint} {Conference}
+  on {Neural} {Networks}. {IJCNN}'02 ({Cat}. {No}.02CH37290)}, volume~2, pages
+  1702--1707 vol.2.
+\newblock ISSN: 1098-7576.
+
+\bibitem[Neri et~al., 2012]{neri_conflict_2012}
+Neri, M.~A., Guarnieri, M., Magri, E., Mutti, S., and Paraboschi, S. (2012).
+\newblock Conflict detection in security policies using {Semantic} {Web}
+  technology.
+\newblock In {\em 2012 {IEEE} {First} {AESS} {European} {Conference} on
+  {Satellite} {Telecommunications} ({ES})}, pages 1--6.
+\newblock ISSN: 2375-8554.
+
+\bibitem[Obaidat and Macchairolo, 1994]{obaidat_multilayer_1994}
+Obaidat, M. and Macchairolo, D. (1994).
+\newblock A multilayer neural network system for computer access security.
+\newblock 24(5):806--813.
+
+\bibitem[Rocha et~al., 2012]{Rocha2012}
+Rocha, T., Peres, S.~M., Bíscaro, H.~H., Madeo, R. C.~B., and Boscarioli, C.
+  (2012).
+\newblock {\em Tutorial sobre Fuzzy-c-Means e Fuzzy Learning Vector
+  Quantization: abordagens híbridas para tarefas de agrupamento e
+  classificação}.
+
+\bibitem[Rosenblatt, 1958]{rosenblatt_perceptron:_1958}
+Rosenblatt, F. (1958).
+\newblock The perceptron: A probabilistic model for information storage and
+  organization in the brain.
+\newblock 65(6):386--408.
+
+\bibitem[Russell and Norvig, 2013]{Norvig2013}
+Russell, S. and Norvig, P. (2013).
+\newblock {\em Inteligêngia Artificial - Tradu{\c{c}}{\~a}o
+  da3{\textordfeminine} Edi{\c{c}}{\~a}o}.
+\newblock Elsevier, Rio de Janeiro, Brasil.
+
+\bibitem[Sandhu and Samarati, 1996]{sandhu:1996}
+Sandhu, R. and Samarati, P. (1996).
+\newblock Authentication, access control, and audit.
+\newblock {\em ACM Comput. Surv.}, 28(1):241--243.
+
+\bibitem[Sarkar et~al., 2017]{sarkar_2017}
+Sarkar, D., Bali, R., and Sharma, T. (2017).
+\newblock {\em Practical Machine Learning with Python: A Problem-Solver's Guide
+  to Building Real-World Intelligent Systems}.
+\newblock Apress.
+
+\bibitem[Sarkis, 2017]{sarkis2017}
+Sarkis, L.~C. (2017).
+\newblock Uma abordagem para detecção de conflitos indiretos entre políticas
+  de controle de acesso.
+
+\bibitem[Sarkis et~al., 2016]{sarkis:artigo:2016}
+Sarkis, L.~C., da~Silva, V.~T., and Braga, C. (2016).
+\newblock Detecting indirect conflicts between access control policies.
+\newblock In {\em Proceedings of the 31st Annual ACM Symposium on Applied
+  Computing}, SAC '16, pages 1570--1572, New York, NY, USA. ACM.
+
+\bibitem[Shazmeen et~al., 2013]{performance_classification2013}
+Shazmeen, S.~F., Mustafa, M.~A., and Baig, A. (2013).
+\newblock Performance {Evaluation} of {Different} {Data} {Mining}
+  {Classification} {Algorithm} and {Predictive} {Analysis}.
+
+\bibitem[Silva et~al., 2017]{Boscarioli2017}
+Silva, L. A.~d., Peres, S.~M., and Boscarioli, C. (2017).
+\newblock {\em Introdu{\c{c}}{\~a}o {\`a} Minera{\c{c}}{\~a}o de Dados: Com
+  Aplica{\c{c}}{\~o}es em R}.
+\newblock Elsevier Brasil.
+
+\bibitem[Silva, 2019]{silva_restaurante_2019}
+Silva, L. C.~e. (2019).
+\newblock Aprendizado de máquina com treinamento continuado aplicado à
+  previsão de demanda de curto prazo: o caso do restaurante universitário da
+  universidade federal de uberlandia.
+
+\bibitem[Simon, 2013]{simon_too_2013}
+Simon, P. (2013).
+\newblock {\em Too Big to Ignore: The Business Case for Big Data}.
+\newblock Wiley and {SAS} Business Series. Wiley.
+
+\bibitem[Swamynathan, 2019]{swamynathan_mastering_2019}
+Swamynathan, M. (2019).
+\newblock {\em Mastering Machine Learning with Python in Six Steps: A Practical
+  Implementation Guide to Predictive Data Analytics Using Python}.
+\newblock Apress, 2ª edition.
+
+\bibitem[Ueda, 2012]{ueda_tese_2012}
+Ueda, E.~T. (2012).
+\newblock Análise de políticas de controle de acesso baseado em papéis com
+  rede de petri colorida.
+
+\bibitem[Wang et~al., 2010]{wang_conflicts_2010}
+Wang, Y., Zhang, H., Dai, X., and Liu, J. (2010).
+\newblock Conflicts analysis and resolution for access control policies.
+\newblock In {\em 2010 {IEEE} International Conference on Information Theory
+  and Information Security}, pages 264--267.
+\newblock {ISSN}: null.
+
+\bibitem[Wiederhold and {McCarthy}, 1992]{wiederhold_arthur_1992}
+Wiederhold, G. and {McCarthy}, J. (1992).
+\newblock Arthur samuel: Pioneer in machine learning.
+\newblock 36(3):329--331.
+
+\bibitem[Witten et~al., 2016]{eibe2016}
+Witten, I., Eibe, F., Hall, M., and Pal, C. (2016).
+\newblock {\em Data Mining: Practical Machine Learning Tools and Techniques}.
+\newblock The Morgan Kaufmann Series in Data Management Systems. Elsevier
+  Science.
+
+\bibitem[Wolpert, 1996]{Wolpert:1996}
+Wolpert, D.~H. (1996).
+\newblock The lack of a priori distinctions between learning algorithms.
+\newblock {\em Neural Comput.}, 8(7):1341--1390.
+
+\bibitem[Wolpert and Macready, 1995]{WolpertMacready}
+Wolpert, D.~H. and Macready, W.~G. (1995).
+\newblock {\em No Free Lunch Theorems for Search}.
+\newblock Santa Fe Institute.
+
+\bibitem[Wu et~al., 2007]{wu2007}
+Wu, X., Kumar, V., Ross~Quinlan, J., Ghosh, J., Yang, Q., Motoda, H.,
+  McLachlan, G.~J., Ng, A., Liu, B., Yu, P.~S., Zhou, Z.-H., Steinbach, M.,
+  Hand, D.~J., and Steinberg, D. (2007).
+\newblock Top 10 algorithms in data mining.
+\newblock {\em Knowl. Inf. Syst.}, 14(1):1--37.
+
+\end{thebibliography}

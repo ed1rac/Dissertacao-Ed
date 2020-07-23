@@ -1,0 +1,113 @@
+% ---------------------------------------------------------------------
+% --- Arquivo principal e os demais serao os dos capitulos.
+% --- EXPRESSÔES ENTRE <> DEVERÂO SER COMPLETADAS COM A INFORMAÇÂO ESPECÌFICA DO TRABALHO 
+% ---------------------------------------------------------------------
+
+\documentclass[ruledheader]{abnt_UFF}
+
+%---pacotes para hiphenizacao e acentuacao em portugues
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+
+%--- pacote para figuras
+\usepackage{epsf}
+\usepackage{epsfig,graphicx}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+
+%--- fluxogramas
+\usepackage{fancybox}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,calc}
+
+%--- equações
+\usepackage{mathtools}
+\usepackage{array}
+\usepackage{calc}
+
+%--- links cruzados
+\usepackage[hidelinks]{hyperref}
+
+%--- pacote de simbolos
+\usepackage{latexsym}
+\usepackage{textcomp}
+
+%--- simbolos matematicos
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%--- pacote para gerar pseudo-codigo
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\userpackage{float}
+\floatname{algorithm}{Algoritmo}
+
+%--- outros pacotes
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{lscape}
+
+
+%Tabela Colorida
+\usepackage{colortbl}
+
+
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{rotating}
+
+
+\hyphenation{
+a-de-qua-da-men-te 
+di-men-sio-na-men-to 
+}
+
+%---------usando tipo de fonte padrao
+\renewcommand{\ABNTchapterfont}{\bfseries\fontfamily{cmr}\fontseries{b}\selectfont}
+\renewcommand{\ABNTsectionfont}{\bfseries\fontfamily{cmr}}
+
+
+% --- -----------------------------------------------------------------
+% --- Documento Principal.
+% --- -----------------------------------------------------------------
+% \usepackage[pdftex]{hyperref}
+% \hypersetup{colorlinks, sitecolor=black, pdftex}
+\begin{document}
+
+% --- -----------------------------------------------------------------
+% --- Titulo, abstract, dedicatorias e agradecimentos.
+% --- Indice geral, lista de figuras e tabelas.
+% --- -----------------------------------------------------------------
+\include{cap0}
+
+% --- -----------------------------------------------------------------
+% --- Insercao dos capitulos.
+% --- -----------------------------------------------------------------
+\pagestyle{ruledheader}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\include{cap1}
+
+\include{cap3}
+
+% --- -----------------------------------------------------------------
+% --- Referencias Bibliograficas. (Obrigatorio)
+% --- -----------------------------------------------------------------
+\cleardoublepage
+%\bibliographystyle{acm-2} % abbrv - abnt-num
+%\bibliographystyle{uff-ic}
+\bibliographystyle{apa}
+\bibliography{bibliografia} % arquivo fonte com a bibilografia
+
+% --- -----------------------------------------------------------------
+% --- Apendice.(Opcional)
+% --- -----------------------------------------------------------------
+\cleardoublepage
+\appendix
+\include{appendixA}
+
+\end{document}
+

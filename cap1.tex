@@ -1,0 +1,83 @@
+\chapter{Introdução} \label{introducao}
+\section{Contextualização} \label{contextualizacao}
+É fato que o volume de dados e informações cresce exponencialmente a cada ano \cite{alecrim2019}, portanto, há uma frequente e ininterrupta demanda por mais infraestrutura de TI nas empresas, nos governos e mesmo nos usuários domésticos \cite{machado2014} e, mais ainda, por um correto tratamento, destino e interpretação à imensidão de dados gerados por pessoas, empresas e governos. 
+
+Em uma ampla variedade de campos, os dados estão sendo coletados e acumulados em um ritmo dramático.\cite{fayyad1996}\cite{lima_fraud_2012}. Há portanto esta crescente demanda por tratamento adequado a estes dados. Neste contexto se insere a mineração de dados com suas técnicas para tratamento e extração de conhecimento desse grande volume de dados.\cite{Boscarioli2017}\cite{ferrari2017}
+
+Este trabalho usa diversas tarefas da mineração de dados para modelar uma hipótese que possibilite detectar conflitos em políticas de controle de acesso. Para isso, algoritmos de classificação serão explorados, descritos e utilizados.
+
+As políticas de controle de acesso, como parte da segurança computacional, são uma das formas de garantir a proteção das informações dos sistemas.\cite{sarkis2017}
+
+O controle de acesso, cf. \cite[p.1]{ueda_tese_2012} ``é um tema de pesquisa importante dentro do contexto de segurança de sistemas, pois é um dos componentes fundamentais em qualquer sistema de computação."
+
+Segundo \cite{li_security_2006}, um aspecto muito relevante e muitas vezes tratado com pouca ênfase na construção de sistemas é a formulação de políticas de controle de acesso. 
+
+Nas palavras de \cite[p.1]{ueda_tese_2012},
+\begin{quotation}
+	A definição dessas políticas é normalmente orientada por modelos que fornecem um conjunto de regras e mecanismos para o funcionamento seguro de uma representação abstrata de sistemas. Porém, a administração de tais políticas frequentemente \textit{se torna um processo complexo}, pois deve garantir que elas sejam eficientes e que não comprometam o desempenho dos sistemas. \textbf{\emph{[Grifo do autor.]}}
+\end{quotation}
+
+Uma política de controle de acesso descreve qual  ação um sujeito pode fazer (permissão), não pode fazer (proibição) ou é obrigado a fazer (obrigação) sobre um objeto em um dado contexto\cite{sarkis2017}
+
+Muitas vezes as políticas de segurança apresentam conflitos. A detecção destes conflitos é o problema de pesquisa deste trabalho.
+
+
+\section{Controle de Acesso} \label{controle_acesso}
+A política de segurança em um sistema computacional garante a proteção de suas informações. Dentre as tecnologias utilizadas para assegurar essas propriedades, temos o controle de acesso. \cite{sarkis:artigo:2016}
+
+O controle de acesso é o mecanismo central para atingir os requisitos de segurança em  sistemas  de  informação. \cite{wang_conflicts_2010}. Dessa forma,  trata-se  de  uma  tecnologia indispensável para quem faz uso de qualquer tipo de sistema, podendo basear-se ou coexistir com outros serviços de segurança. \cite{sandhu:1996}.
+
+Os modelos de controle de acesso fornecem um conjunto de regras e mecanismos para o funcionamento seguro dos sistemas, sendo responsáveis pela definição de políticas de controle de acesso. As políticas são diretrizes de alto nível que determinam como os acessos são controlados e decisões de acessos são estabelecidas. \cite{di_vimercati_policies_2005} \cite{sarkis2017}	
+
+
+\subsection{Políticas de Controle de acesso}
+As políticas de controle de acesso tradicionais, inicialmente foram chamadas de autorizações e tinham a seguinte forma: {sujeito, objeto, operação}. Estas autorizações especificavam as operações que os sujeitos podiam executar sobre os objetos. \cite{di_vimercati_policies_2005}\cite{sarkis2017}
+
+Uma política de controle de acesso tem como objetivo definir ou limitar o comportamento atual ou futuro de objetos para garantir que as suas ações estejam alinhadas com os objetivos da empresa.\cite{dunlop_dynamic_2002}\cite{sarkis2017}
+
+
+\section{Detecção de conflitos} \label{deteccao_conflitos}
+
+Os conflitos podem ocorrer quando diferentes conjuntos de condições resultam em permitir e negar simultaneamente, ao mesmo papel, à mesma solicitação, ou proibir e obrigar o mesmo papel, à mesma solicitação.
+
+Diz-se que duas regras estão em conflito quando o cumprimento de uma das regras viola a outra e vice-versa. 
+
+Ex:
+
+{\scriptsize \texttt{ \{P1= {\textbf{Permitido}, na Universidade, Paulo, acessar processos administrativos\} }}}
+
+{\scriptsize \texttt{ \{P2= {\textbf{Proibido}, na Universidade, Paulo, acessar processos administrativos\} }}}
+
+A capacidade de um sistema reconhecer um estado inconsistente em andamento ou em potencial é denominada \textbf{detecção de conflitos.}
+
+Em um conflito indireto, as políticas conflitantes regulam ações diferentes (mas relacionadas) executadas por diferentes sujeitos (porém, relacionados) sobre objetos diferentes (mas, relacionados) em organizações diferentes (mas, relacionadas). 
+
+Além disso, um conflito indireto pode ainda ocorrer, mesmo quando as políticas em conflito não têm modalidades contraditórias ou contrárias.
+
+Ex:
+
+{\scriptsize \texttt{P3 = {Obrigado, Empresa E, \textbf{Funcionário, receber}, avaliação, mensal}}}
+
+{\scriptsize \texttt{P4= {Permitido, Empresa E, \textbf{Analista, conceder}, avaliação, mensal}}}
+
+Este conflito não seria detectado diretamente, porém há um conflito se considerarmos os relacionamentos.
+
+\section{Problema}\label{problema}
+O problema investigado neste trabalho consiste em \textit{detectar conflitos diretos e indiretos usando técnicas de mineração de dados e aprendizagem de máquina}. É fato que, por exemplo, em \textit{logs} de controle de acesso, a quantidade de informações é grande e cresce exponencialmente conforme o uso. Sistemas grandes com múltiplos objetos e ações tem centenas, às vezes, milhares de políticas.\cite{fugini_information_2004}
+
+Tem-se \textit{como hipótese deste trabalho}, portanto, diante do contexto apresentado por \cite{fugini_information_2004} que, o uso de técnicas de \textit{data mining}(mineração de dados) associada a técnicas de aprendizagem de máquina para detectar os conflitos sejam eles diretos ou indiretos entre diversas políticas de controle de acesso seja uma técnica adequada com acurácias superiores a 95\%.
+
+\subsection{Objetivo geral}\label{objetivo_geral}
+O objetivo deste trabalho é modelar uma forma de detectar, mediante o uso de técnicas de mineração de dados (e aprendizagem de máquina) os conflitos, sejam eles, diretos ou indiretos entre as políticas de controle de acesso de um sistema. 
+
+O objetivo \textit{específico} deste estudo orientado é realizar uma pesquisa inicial que desse suporte teórico e prático à dissertação. Neste primeiro momento buscou-se estabelecer a relação entre machine learning, técnicas de mineração e conflito entre políticas.
+
+\subsection{Solução Proposta/Hipótese}\label{solucao_proposta}
+A solução para o problema apresentado neste trabalho é \textit{converter} (ou \textit{reduzir}) a detecção de conflitos a um \textit{problema de classificação} da mineração de dados/aprendizagem de máquina reestruturando os atributos (colunas) se necessário. 
+
+\textit{A primeira solução/hipótese} (para conflitos diretos) é usar as técnicas e algoritmos de classificação (aprendizado supervisionado) para tentar realizar a classificação automática para resolução de conflitos (comparando-os entre si). 
+
+\textit{A segunda solução/hipótese} é usar uma rede neural (um perceptron de uma camada) como técnica algorítmica para a detecção de conflitos diretos. 
+
+\textit{A terceira solução/hipótese} é usar uma rede neural muticamadas (ou outro classificador como SVM) para a detecção de conflitos indiretos em políticas de controle de acesso.
+ 
