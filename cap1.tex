@@ -22,62 +22,66 @@ Uma política de controle de acesso descreve qual  ação um sujeito pode fazer 
 Muitas vezes as políticas de segurança apresentam conflitos. A detecção destes conflitos é o problema de pesquisa deste trabalho.
 
 
-\section{Controle de Acesso} \label{controle_acesso}
-A política de segurança em um sistema computacional garante a proteção de suas informações. Dentre as tecnologias utilizadas para assegurar essas propriedades, temos o controle de acesso. \cite{sarkis:artigo:2016}
-
-O controle de acesso é o mecanismo central para atingir os requisitos de segurança em  sistemas  de  informação. \cite{wang_conflicts_2010}. Dessa forma,  trata-se  de  uma  tecnologia indispensável para quem faz uso de qualquer tipo de sistema, podendo basear-se ou coexistir com outros serviços de segurança. \cite{sandhu:1996}.
-
-Os modelos de controle de acesso fornecem um conjunto de regras e mecanismos para o funcionamento seguro dos sistemas, sendo responsáveis pela definição de políticas de controle de acesso. As políticas são diretrizes de alto nível que determinam como os acessos são controlados e decisões de acessos são estabelecidas. \cite{di_vimercati_policies_2005} \cite{sarkis2017}	
-
-
-\subsection{Políticas de Controle de acesso}
-As políticas de controle de acesso tradicionais, inicialmente foram chamadas de autorizações e tinham a seguinte forma: {sujeito, objeto, operação}. Estas autorizações especificavam as operações que os sujeitos podiam executar sobre os objetos. \cite{di_vimercati_policies_2005}\cite{sarkis2017}
-
-Uma política de controle de acesso tem como objetivo definir ou limitar o comportamento atual ou futuro de objetos para garantir que as suas ações estejam alinhadas com os objetivos da empresa.\cite{dunlop_dynamic_2002}\cite{sarkis2017}
-
-
-\section{Detecção de conflitos} \label{deteccao_conflitos}
-
-Os conflitos podem ocorrer quando diferentes conjuntos de condições resultam em permitir e negar simultaneamente, ao mesmo papel, à mesma solicitação, ou proibir e obrigar o mesmo papel, à mesma solicitação.
-
-Diz-se que duas regras estão em conflito quando o cumprimento de uma das regras viola a outra e vice-versa. 
-
-Ex:
-
-{\scriptsize \texttt{ \{P1= {\textbf{Permitido}, na Universidade, Paulo, acessar processos administrativos\} }}}
-
-{\scriptsize \texttt{ \{P2= {\textbf{Proibido}, na Universidade, Paulo, acessar processos administrativos\} }}}
-
-A capacidade de um sistema reconhecer um estado inconsistente em andamento ou em potencial é denominada \textbf{detecção de conflitos.}
-
-Em um conflito indireto, as políticas conflitantes regulam ações diferentes (mas relacionadas) executadas por diferentes sujeitos (porém, relacionados) sobre objetos diferentes (mas, relacionados) em organizações diferentes (mas, relacionadas). 
-
-Além disso, um conflito indireto pode ainda ocorrer, mesmo quando as políticas em conflito não têm modalidades contraditórias ou contrárias.
-
-Ex:
-
-{\scriptsize \texttt{P3 = {Obrigado, Empresa E, \textbf{Funcionário, receber}, avaliação, mensal}}}
-
-{\scriptsize \texttt{P4= {Permitido, Empresa E, \textbf{Analista, conceder}, avaliação, mensal}}}
-
-Este conflito não seria detectado diretamente, porém há um conflito se considerarmos os relacionamentos.
 
 \section{Problema}\label{problema}
 O problema investigado neste trabalho consiste em \textit{detectar conflitos diretos e indiretos usando técnicas de mineração de dados e aprendizagem de máquina}. É fato que, por exemplo, em \textit{logs} de controle de acesso, a quantidade de informações é grande e cresce exponencialmente conforme o uso. Sistemas grandes com múltiplos objetos e ações tem centenas, às vezes, milhares de políticas.\cite{fugini_information_2004}
 
-Tem-se \textit{como hipótese deste trabalho}, portanto, diante do contexto apresentado por \cite{fugini_information_2004} que, o uso de técnicas de \textit{data mining}(mineração de dados) associada a técnicas de aprendizagem de máquina para detectar os conflitos sejam eles diretos ou indiretos entre diversas políticas de controle de acesso seja uma técnica adequada com acurácias superiores a 95\%.
+\subsection{Hipótese}\label{hipótese}
+Diante do contexto apresentado por \cite{fugini_information_2004} tem-se \textit{como hipótese deste trabalho}, portanto, que o problema de detectar conflitos em políticas pode ser convertido e transformado em uma tarefa de classificação da mineração de dados e que o uso de algoritmos de aprendizagem de máquina associados a técnicas de \textit{data mining} para detectar estes conflitos configure um método que apresente precisão e acurácia superiores a 95\%.
 
+\subsection{Justificativa}\label{justificativa}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum maximus fermentum. Duis id quam nibh. Aliquam cursus eget mauris at fermentum. Nam iaculis posuere sapien. Praesent facilisis nisl ipsum, at gravida est scelerisque non. In sed luctus sem. Integer odio sem, feugiat eu eros eget, lacinia lobortis mi. Donec dapibus, tellus non consequat aliquet, dui massa suscipit dolor, nec pretium tortor massa vitae lorem. Quisque non faucibus tellus. Quisque dignissim nibh quis sem imperdiet bibendum. Duis nec dictum turpis. Vestibulum auctor leo nulla, sed venenatis purus placerat et. Nam euismod mauris in justo semper laoreet.
+
+Cras rutrum faucibus eros et feugiat. In sit amet viverra lorem. Sed euismod purus eget sodales ultricies. Praesent et blandit lorem. Pellentesque ut tempus velit. Aenean et vulputate arcu. Suspendisse finibus, tellus eu sollicitudin rutrum, augue nisi maximus lacus, ut blandit ante mi ut nulla.
+
+Aenean metus dui, rhoncus sit amet pretium ut, laoreet quis ipsum. Sed non tempus turpis, ac eleifend lacus. Integer vel dui finibus, imperdiet neque porttitor, venenatis nunc. Vivamus egestas, turpis quis porttitor tincidunt, purus risus suscipit felis, nec consequat justo quam at purus. Pellentesque consequat sem ut nibh malesuada pulvinar. Quisque lobortis pulvinar urna, vitae luctus nulla ultricies vestibulum. Sed accumsan tortor tellus, in aliquam tellus sollicitudin eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis justo ipsum, vestibulum at magna id, ultrices lobortis turpis. Vivamus porttitor scelerisque odio sit amet posuere. Morbi fermentum ultricies sem, dictum pulvinar turpis. 
+
+\section{Objetivos}\label{objetivos}
 \subsection{Objetivo geral}\label{objetivo_geral}
-O objetivo deste trabalho é modelar uma forma de detectar, mediante o uso de técnicas de mineração de dados (e aprendizagem de máquina) os conflitos, sejam eles, diretos ou indiretos entre as políticas de controle de acesso de um sistema. 
+O objetivo deste trabalho é provar que o problema da detecção de conflitos em políticas pode ser convertido e resumido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação além de modelar e resumir uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina que consigam acurácias superiores a 95%.
 
-O objetivo \textit{específico} deste estudo orientado é realizar uma pesquisa inicial que desse suporte teórico e prático à dissertação. Neste primeiro momento buscou-se estabelecer a relação entre machine learning, técnicas de mineração e conflito entre políticas.
+\subsection{Objetivos específicos}
+Os objetivos específicos deste trabalho são:
+\begin{itemize}	
+	\item Estabelecer a relação entre machine learning, técnicas de mineração de dados e o problema do conflito entre políticas;
+	\item Determinar e comparar quais algoritmos e técnicas são mais adequados para cada tipo de conflito nas políticas (ou normas) usando as suas acurácias;
+	\item Usar e comparar o desempenho, a precisão e taxa de acertos das principais técnicas usadas no aprendizado de máquina: redes neurais artificiais (RNA), Support Vector Machines (SVM) e redes neurais recorrentes e profundas.
+	\item Reduzir o problema da detecção de conflitos à tarefa de classificação da mineração de dados;
+	\item Usar frameworks de aprendizado de máquina como TensorFlow, Keras, Theano e Torch, na construção, treinamento e teste de redes neurais, comparando-os para o problema específico deste trabalho;
+	\item Estabelecer a detecção de conflitos em políticas (ou normas) como uma  classe de problemas a serem resolvidos de forma eficiente por técnicas de aprendizagem de máquina.
+\end{itemize}
 
-\subsection{Solução Proposta/Hipótese}\label{solucao_proposta}
-A solução para o problema apresentado neste trabalho é \textit{converter} (ou \textit{reduzir}) a detecção de conflitos a um \textit{problema de classificação} da mineração de dados/aprendizagem de máquina reestruturando os atributos (colunas) se necessário. 
 
-\textit{A primeira solução/hipótese} (para conflitos diretos) é usar as técnicas e algoritmos de classificação (aprendizado supervisionado) para tentar realizar a classificação automática para resolução de conflitos (comparando-os entre si). 
+\subsection{Solução Proposta/Hipóteses}\label{solucao_proposta}
+Diante da hipótese apresentada em \ref{hipótese}, a solução para o problema apresentado neste trabalho em \ref{problema} resume-se a provar que \textit{converter} (ou \textit{reduzir}) a detecção de conflitos a um \textit{problema de classificação} da mineração de dados associado a técnicas de aprendizagem de máquina, reestruturando os atributos do \textit{dataset}, se necessário se configura um método com precisão superior a 95\%. 
 
-\textit{A segunda solução/hipótese} é usar uma rede neural (um perceptron de uma camada) como técnica algorítmica para a detecção de conflitos diretos. 
+\textit{A primeira solução/hipótese}, prioritariamente, para conflitos diretos é usar as técnicas e algoritmos de classificação (aprendizado supervisionado) para  realizar a detecção automatizada de conflitos. Para isso, propõem-se:
+\begin{itemize}
+	\item Como \textit{segunda solução/hipótese}: usar uma rede neural (um perceptron de uma camada) como técnica algorítmica para a detecção de conflitos e
+	\item \textit{A terceira solução/hipótese} é usar uma rede neural multicamadas (com camadas ocultas), e retropropagação (backpropagation), comparando-a com outro classificador como o SVM para estabelecer qual técnica de detecção de conflitos em políticas é mais precisa.
+	\item Realizado os experimentos, provar a hipótese mediante os resultados apresentados.
+\end{itemize}
 
-\textit{A terceira solução/hipótese} é usar uma rede neural muticamadas (ou outro classificador como SVM) para a detecção de conflitos indiretos em políticas de controle de acesso.
- 
+\subsection{Método de Pesquisa} 
+O método de pesquisa relatando todos os passos necessários para demonstrar os objetivos descritos na seção \ref{objetivos} e de que forma eles foram atingidos serão pormenorizadamente detalhados na seção \ref{resultados}
+
+\subsection{Resultados Esperados}\label{resultados_esperados}
+Ao fim deste trabalho os seguintes resultados são esperados:
+\begin{itemize}
+	\item Provar que o problema da detecção de conflitos em políticas pode ser convertido e resumido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação;
+	\item Demonstrar e provar que o problema da detecção de conflitos é um prolema linearmente separável;
+	\item Modelar e resumir uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina que consigam acurácias superiores a 95\%;
+	\item Estabelecer a relação entre machine learning, técnicas de mineração de dados e o problema do conflito entre políticas;
+	\item Determinar e comparar quais algoritmos e técnicas são mais adequados para cada tipo de conflito nas políticas (ou normas) usando as suas acurácias;
+	\item Usar e comparar o desempenho, a precisão e taxa de acertos das principais técnicas usadas no aprendizado de máquina: redes neurais artificiais (RNA), Support Vector Machines (SVM); redes neurais recorrentes e profundas;
+	\item Estabelecer a detecção de conflitos em políticas (ou normas) como uma  classe de problemas a serem resolvidos de forma eficiente por técnicas de aprendizagem de máquina.
+\end{itemize} 
+
+\subsection{Limitações do Trabalho}\label{limitacoes}
+Não faz parte do escopo deste trabalho:
+\begin{itemize}
+	\item Delinear um modelo de política com objetivos semânticos diferenciados. Para este trabalho será usado o modelo de políticas descrito em \cite{sarkis2017} e em \cite{sarkis:artigo:2016}
+	\item Analisar comparativamente os modelos de extensão de políticas em um determinado contexto;
+	\item Usar redes neurais convolucionais profundas na detecção dos conflitos;
+	\item Abordar a semântica em políticas;	
+\end{itemize} 

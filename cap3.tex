@@ -1,18 +1,24 @@
 \chapter{Referencial teórico}\label{referencial_teorico}
 Nesta seção, alguns conceitos da pesquisa bibliográfica realizada serão explanados com o intuito de atingir os objetivos e o delimitar o escopo deste trabalho. Serão abordados modelos de políticas de controle de acesso e conflitos entre as mesmas e alguns trabalhos relacionados sobre o tema. Além de uma revisão bibliográfica acerca de mineração de dados, aprendizagem de máquina, algoritmos de classificação(com destaque para as Redes Neurais e \textbf{SVM} --- \textit{Support Vector Machines} que fazem parte da hipótese deste trabalho).
+
+
+\section{Controle de Acesso} \label{controle_acesso}
+A política de segurança em um sistema computacional garante a proteção de suas informações. Dentre as tecnologias utilizadas para assegurar essas propriedades, temos o controle de acesso. \cite{sarkis:artigo:2016}
+
+O controle de acesso é o mecanismo central para atingir os requisitos de segurança em  sistemas  de  informação. \cite{wang_conflicts_2010}. Dessa forma,  trata-se  de  uma  tecnologia indispensável para quem faz uso de qualquer tipo de sistema, podendo basear-se ou coexistir com outros serviços de segurança. \cite{sandhu:1996}.
+
+Os modelos de controle de acesso fornecem um conjunto de regras e mecanismos para o funcionamento seguro dos sistemas, sendo responsáveis pela definição de políticas de controle de acesso. As políticas são diretrizes de alto nível que determinam como os acessos são controlados e decisões de acessos são estabelecidas. \cite{di_vimercati_policies_2005} \cite{sarkis2017}	
+
+
+\subsection{Políticas de Controle de acesso}
+As políticas de controle de acesso tradicionais, inicialmente foram chamadas de autorizações e tinham a seguinte forma: {sujeito, objeto, operação}. Estas autorizações especificavam as operações que os sujeitos podiam executar sobre os objetos. \cite{di_vimercati_policies_2005}\cite{sarkis2017}
+
+Uma política de controle de acesso tem como objetivo definir ou limitar o comportamento atual ou futuro de objetos para garantir que as suas ações estejam alinhadas com os objetivos da empresa.\cite{dunlop_dynamic_2002}\cite{sarkis2017}
+
+
+
 \subsection{Modelos de políticas de controle de acesso}\label{modelo_politicas}
 \cite{moffett_policy_1994} consideram que um modelo de política deve ter pelo menos os seguintes atributos: \textit{modalidade, sujeito, objeto e ação}. A modalidade da política envolve definir uma autorização, uma permissão ou uma proibição. O sujeito da política é a quem ela é direcionada. O objeto define o conjunto de objetos, no qual a política está direcionada. A ação é especificada como operações que podem ser executadas em objetos no sistema \cite{moffett_policy_1994}. Os atributos da política apresentada por estes autores são considerados em outros trabalhos, com a mesma conotação aqui utilizada, para a definição de uma política.\cite{sarkis2017}
-
-\subsection{Trabalhos Relacionados}\label{trabalhos_relacionados}
-\cite{bui_efficient_2019} discorre acerca de mineração de dados em políticas de controle de acesso, especificamente do modelo RBAC (\textit{role-based access control}). \cite{lupu_conflicts_1999} discorre sobre conflitos no gerenciamento de sistemas distribuídos com base em políticas de controle de acesso. \cite{koch_conflict_2002}, estudou a detecção e resolução de conflitos nas especificações das políticas de controle de acesso. \cite{neri_conflict_2012}, abordou a detecção de conflitos em políticas de segurança usando a tecnologia da Web Semântica.
-
-\cite{obaidat_multilayer_1994} aborda um sistema de rede neural multicamada para segurança de acesso a computadores. \cite{christodoulou_collision_2008} aborda a detecção de conflitos sobre a ótica da prevenção de colisões no voo livre de aeronaves comerciais usando redes neurais e programação não linear. \cite{mukkamala_intrusion_2002} estuda a detecção de invasões usando redes neurais e máquinas de vetores de suporte. Neste último trabalho a ideia é descobrir padrões úteis ou características que descrevam o comportamento intrusivo de um usuário em um sistema e os autores usam este conjunto de características para construir classificadores que puderam reconhecer anomalias e intrusões conhecidas. 
-
-\cite{jin_development_2002} aborda o desenvolvimento e adaptação de redes neurais probabilísticas construtivas na detecção de incidentes em rodovias. \cite{debar_neural_1992} estuda um componente de rede neural para um sistema de detecção de intrusão. Ainda em detecção de conflitos \cite{chen_flight_2011} trabalha com a detecção e resolução de conflitos de vôo com base em redes neurais.
-
-Todos estes trabalhos foram base para o estudo, amadurecimento bibliográfico e aprofundamento teórico sobre o problema e as soluções propostas neste trabalho, principalmente aqueles relacionados a intrusões e detecção de conflitos aéreos pois não só serviram de inspiração como provavelmente as técnicas possam ser extrapoladas para o uso na detecção de conflitos, tema deste estudo.
-
-Além de \cite{sarkis2017} e \cite{sarkis:artigo:2016} que são os trabalhos- base do estudo da detecção de conflitos, da determinação do modelo das políticas utilizadas e analisadas e das definições utilizadas neste trabalho. Todas as hipóteses e problemas estudados por este trabalho derivam do estudo inicial de \cite{sarkis2017}. 
 
 \subsection{Modelo de Política utilizado}\label{modelo_politica_utilizada}
 Cf. \cite{sarkis2017}:
@@ -46,6 +52,43 @@ A figura \ref{fig:modelo_politica} exemplifica o modelo de políticas utilizadas
 	{\scriptsize Fonte: compilação do autor}
 	\label{fig:modelo_politica}
 \end{figure}
+
+\section{Detecção de conflitos} \label{deteccao_conflitos}
+
+Os conflitos podem ocorrer quando diferentes conjuntos de condições resultam em permitir e negar simultaneamente, ao mesmo papel, à mesma solicitação, ou proibir e obrigar o mesmo papel, à mesma solicitação.
+
+Diz-se que duas regras estão em conflito quando o cumprimento de uma das regras viola a outra e vice-versa. 
+
+Ex:
+
+{\scriptsize \texttt{ \{P1= {\textbf{Permitido}, na Universidade, Paulo, acessar processos administrativos\} }}}
+
+{\scriptsize \texttt{ \{P2= {\textbf{Proibido}, na Universidade, Paulo, acessar processos administrativos\} }}}
+
+A capacidade de um sistema reconhecer um estado inconsistente em andamento ou em potencial é denominada \textbf{detecção de conflitos.}
+
+Em um conflito indireto, as políticas conflitantes regulam ações diferentes (mas relacionadas) executadas por diferentes sujeitos (porém, relacionados) sobre objetos diferentes (mas, relacionados) em organizações diferentes (mas, relacionadas). 
+
+Além disso, um conflito indireto pode ainda ocorrer, mesmo quando as políticas em conflito não têm modalidades contraditórias ou contrárias.
+
+Ex:
+
+{\scriptsize \texttt{P3 = {Obrigado, Empresa E, \textbf{Funcionário, receber}, avaliação, mensal}}}
+
+{\scriptsize \texttt{P4= {Permitido, Empresa E, \textbf{Analista, conceder}, avaliação, mensal}}}
+
+Este conflito não seria detectado diretamente, porém há um conflito se considerarmos os relacionamentos.
+
+\subsection{Trabalhos Relacionados}\label{trabalhos_relacionados}
+\cite{bui_efficient_2019} discorre acerca de mineração de dados em políticas de controle de acesso, especificamente do modelo RBAC (\textit{role-based access control}). \cite{lupu_conflicts_1999} discorre sobre conflitos no gerenciamento de sistemas distribuídos com base em políticas de controle de acesso. \cite{koch_conflict_2002}, estudou a detecção e resolução de conflitos nas especificações das políticas de controle de acesso. \cite{neri_conflict_2012}, abordou a detecção de conflitos em políticas de segurança usando a tecnologia da Web Semântica.
+
+\cite{obaidat_multilayer_1994} aborda um sistema de rede neural multicamada para segurança de acesso a computadores. \cite{christodoulou_collision_2008} aborda a detecção de conflitos sobre a ótica da prevenção de colisões no voo livre de aeronaves comerciais usando redes neurais e programação não linear. \cite{mukkamala_intrusion_2002} estuda a detecção de invasões usando redes neurais e máquinas de vetores de suporte. Neste último trabalho a ideia é descobrir padrões úteis ou características que descrevam o comportamento intrusivo de um usuário em um sistema e os autores usam este conjunto de características para construir classificadores que puderam reconhecer anomalias e intrusões conhecidas. 
+
+\cite{jin_development_2002} aborda o desenvolvimento e adaptação de redes neurais probabilísticas construtivas na detecção de incidentes em rodovias. \cite{debar_neural_1992} estuda um componente de rede neural para um sistema de detecção de intrusão. Ainda em detecção de conflitos \cite{chen_flight_2011} trabalha com a detecção e resolução de conflitos de vôo com base em redes neurais.
+
+Todos estes trabalhos foram base para o estudo, amadurecimento bibliográfico e aprofundamento teórico sobre o problema e as soluções propostas neste trabalho, principalmente aqueles relacionados a intrusões e detecção de conflitos aéreos pois não só serviram de inspiração como provavelmente as técnicas possam ser extrapoladas para o uso na detecção de conflitos, tema deste estudo.
+
+Além de \cite{sarkis2017} e \cite{sarkis:artigo:2016} que são os trabalhos- base do estudo da detecção de conflitos, da determinação do modelo das políticas utilizadas e analisadas e das definições utilizadas neste trabalho. Todas as hipóteses e problemas estudados por este trabalho derivam do estudo inicial de \cite{sarkis2017}.
 
 \subsection{Aprendizagem de máquina} \label{aprendizagem_maquina}
 Aprendizado de máquina ou \textit{machine learning} é um braço da Inteligência Artificial que emprega técnicas e algoritmos na criação de modelos computacionais dos quais a característica princial é a capacidade de descobrir padrões em um grande volume de dados ou de melhorar o desempenho de uma determinada tarefa através da experiência (do \textit{reforço}).\cite{mohri_foundations_2018} \cite{alpaydin_introduction_2014} \cite{swamynathan_mastering_2019}

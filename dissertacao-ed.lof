@@ -1,10 +1,10 @@
 \babel@toc {brazil}{}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Modelo das políticas utilizadas no estudo}}{9}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Funcionamento da técnica holdout.}}{15}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Funcionamento da técnica \textit {cross validation}}}{15}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Modelo matemático de um neurônio}}{18}{figure.2.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Representação simplificada de uma RNA}}{19}{figure.2.5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Vetores de Suporte}}{20}{figure.2.6}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Aspecto do arquivo das políticas geradas para os experimentos}}{22}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Saída do software WEKA. Classificador: SVM}}{23}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Saída do software WEKA. Classificador: \textit {MultiLayer Perceptron}}}{23}{figure.3.3}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Funcionamento da técnica holdout.}}{17}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Funcionamento da técnica \textit {cross validation}}}{18}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Modelo matemático de um neurônio}}{20}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Representação simplificada de uma RNA}}{21}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Vetores de Suporte}}{23}{figure.2.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Aspecto do arquivo das políticas geradas para os experimentos}}{25}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Saída do software WEKA. Classificador: SVM}}{26}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Saída do software WEKA. Classificador: \textit {MultiLayer Perceptron}}}{26}{figure.3.3}%
