@@ -262,6 +262,11 @@ Shazmeen, S.~F., Mustafa, M.~A., and Baig, A. (2013).
 \newblock Performance {Evaluation} of {Different} {Data} {Mining}
   {Classification} {Algorithm} and {Predictive} {Analysis}.
 
+\bibitem[Shoham and Tennenholtz, 1995]{shoham_tennenholtz_1995}
+Shoham, Y. and Tennenholtz, M. (1995).
+\newblock On social laws for artificial agent societies: off-line design.
+\newblock 73(1):231--252.
+
 \bibitem[Silva et~al., 2017]{Boscarioli2017}
 Silva, L. A.~d., Peres, S.~M., and Boscarioli, C. (2017).
 \newblock {\em Introdu{\c{c}}{\~a}o {\`a} Minera{\c{c}}{\~a}o de Dados: Com
@@ -274,6 +279,11 @@ Silva, L. C.~e. (2019).
   previsão de demanda de curto prazo: o caso do restaurante universitário da
   universidade federal de uberlandia.
 
+\bibitem[Silvestre, 2017]{eduardo2017}
+Silvestre, E.~A. (2017).
+\newblock Verificação de conflitos entre múltiplas normas em sistemas
+  multiagentes.
+
 \bibitem[Simon, 2013]{simon_too_2013}
 Simon, P. (2013).
 \newblock {\em Too Big to Ignore: The Business Case for Big Data}.
@@ -284,6 +294,12 @@ Swamynathan, M. (2019).
 \newblock {\em Mastering Machine Learning with Python in Six Steps: A Practical
   Implementation Guide to Predictive Data Analytics Using Python}.
 \newblock Apress, 2ª edition.
+
+\bibitem[Thenmozhi et~al., 2018]{thenmozhi_multi-lingual_2018}
+Thenmozhi, D., Kalaivani, A., and Aravindan, C. (2018).
+\newblock Multi-lingual author proﬁling on {SMS} messages using machine
+  learning approach with statistical feature selection.
+\newblock page~9.
 
 \bibitem[Ueda, 2012]{ueda_tese_2012}
 Ueda, E.~T. (2012).

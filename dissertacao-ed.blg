@@ -10,8 +10,6 @@ A level-1 auxiliary file: cap3.aux
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
-Reallocating 'name_of_file' (item size: 1) to 14 items.
-A level-1 auxiliary file: appendixA.aux
 Database file #1: bibliografia.bib
 Warning--I'm ignoring fold_cross_validation:k-fold_nodate's extra "title" field
 --line 77 of file bibliografia.bib
@@ -26,9 +24,11 @@ Warning--entry type for "ueda_tese_2012" isn't style-file defined
 --line 452 of file bibliografia.bib
 Warning--I'm ignoring sarkis:artigo:2016's extra "year" field
 --line 498 of file bibliografia.bib
+Warning--entry type for "eduardo2017" isn't style-file defined
+--line 641 of file bibliografia.bib
 Warning--entry type for "sarkis2017" isn't style-file defined
---line 610 of file bibliografia.bib
-Repeated entry---line 687 of file bibliografia.bib
+--line 674 of file bibliografia.bib
+Repeated entry---line 751 of file bibliografia.bib
  : @article{obaidat_multilayer_1994
  :                                 ,
 I'm skipping whatever remains of this entry
@@ -52,46 +52,48 @@ Warning--empty journal in obaidat_multilayer_1994
 Warning--empty publisher in Rocha2012
 Warning--empty journal in rosenblatt_perceptron:_1958
 Warning--empty booktitle in performance_classification2013
+Warning--empty journal in shoham_tennenholtz_1995
+Warning--empty journal in thenmozhi_multi-lingual_2018
 Warning--empty journal in wiederhold_arthur_1992
-You've used 55 entries,
+You've used 58 entries,
             1935 wiz_defined-function locations,
-            782 strings with 13540 characters,
-and the built_in function-call counts, 21293 in all, are:
-= -- 2096
-> -- 805
-< -- 50
-+ -- 273
-- -- 261
-* -- 1653
-:= -- 3639
-add.period$ -- 176
-call.type$ -- 55
-change.case$ -- 386
-chr.to.int$ -- 55
-cite$ -- 70
-duplicate$ -- 908
-empty$ -- 1534
-format.name$ -- 354
-if$ -- 4269
+            793 strings with 13970 characters,
+and the built_in function-call counts, 22312 in all, are:
+= -- 2195
+> -- 843
+< -- 53
++ -- 285
+- -- 273
+* -- 1735
+:= -- 3820
+add.period$ -- 184
+call.type$ -- 58
+change.case$ -- 407
+chr.to.int$ -- 58
+cite$ -- 75
+duplicate$ -- 949
+empty$ -- 1603
+format.name$ -- 371
+if$ -- 4465
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 72
-newline$ -- 280
-num.names$ -- 169
-pop$ -- 441
+missing$ -- 74
+newline$ -- 294
+num.names$ -- 178
+pop$ -- 462
 preamble$ -- 1
-purify$ -- 404
+purify$ -- 425
 quote$ -- 0
-skip$ -- 684
+skip$ -- 716
 stack$ -- 0
-substring$ -- 1319
-swap$ -- 145
-text.length$ -- 14
+substring$ -- 1382
+swap$ -- 148
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 288
-warning$ -- 15
-while$ -- 173
+type$ -- 306
+warning$ -- 17
+while$ -- 182
 width$ -- 0
-write$ -- 703
+write$ -- 737
 (There were 5 error messages)

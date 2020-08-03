@@ -1,8 +1,8 @@
 \chapter{Referencial teórico}\label{referencial_teorico}
-Nesta seção, alguns conceitos da pesquisa bibliográfica realizada serão explanados com o intuito de atingir os objetivos e o delimitar o escopo deste trabalho. Serão abordados modelos de políticas de controle de acesso e conflitos entre as mesmas e alguns trabalhos relacionados sobre o tema. Além de uma revisão bibliográfica acerca de mineração de dados, aprendizagem de máquina, algoritmos de classificação(com destaque para as Redes Neurais e \textbf{SVM} --- \textit{Support Vector Machines} que fazem parte da hipótese deste trabalho).
+Nesta seção, alguns conceitos fundamentais da pesquisa bibliográfica realizada serão explanados com o intuito de atingir os objetivos descritos na seção \ref{objetivos} e o entendimento da solução proposta neste trabalho. Serão abordados modelos de políticas, como as de controle de acesso e conflitos entre as mesmas além de trabalhos relacionados sobre o tema. Serão abordados também temas como mineração de dados, aprendizagem de máquina, algoritmos de classificação com destaque para as \textit{Redes Neurais Artificiais} e \textbf{SVM} --- \textit{Support Vector Machines} que são a base da hipótese deste trabalho.
 
 
-\section{Controle de Acesso} \label{controle_acesso}
+\section{Políticas em sistemas de segurança} \label{controle_acesso}
 A política de segurança em um sistema computacional garante a proteção de suas informações. Dentre as tecnologias utilizadas para assegurar essas propriedades, temos o controle de acesso. \cite{sarkis:artigo:2016}
 
 O controle de acesso é o mecanismo central para atingir os requisitos de segurança em  sistemas  de  informação. \cite{wang_conflicts_2010}. Dessa forma,  trata-se  de  uma  tecnologia indispensável para quem faz uso de qualquer tipo de sistema, podendo basear-se ou coexistir com outros serviços de segurança. \cite{sandhu:1996}.
@@ -17,7 +17,7 @@ Uma política de controle de acesso tem como objetivo definir ou limitar o compo
 
 
 
-\subsection{Modelos de políticas de controle de acesso}\label{modelo_politicas}
+\subsection{Modelos de políticas}\label{modelo_politicas}
 \cite{moffett_policy_1994} consideram que um modelo de política deve ter pelo menos os seguintes atributos: \textit{modalidade, sujeito, objeto e ação}. A modalidade da política envolve definir uma autorização, uma permissão ou uma proibição. O sujeito da política é a quem ela é direcionada. O objeto define o conjunto de objetos, no qual a política está direcionada. A ação é especificada como operações que podem ser executadas em objetos no sistema \cite{moffett_policy_1994}. Os atributos da política apresentada por estes autores são considerados em outros trabalhos, com a mesma conotação aqui utilizada, para a definição de uma política.\cite{sarkis2017}
 
 \subsection{Modelo de Política utilizado}\label{modelo_politica_utilizada}
@@ -84,31 +84,13 @@ Este conflito não seria detectado diretamente, porém há um conflito se consid
 
 \cite{obaidat_multilayer_1994} aborda um sistema de rede neural multicamada para segurança de acesso a computadores. \cite{christodoulou_collision_2008} aborda a detecção de conflitos sobre a ótica da prevenção de colisões no voo livre de aeronaves comerciais usando redes neurais e programação não linear. \cite{mukkamala_intrusion_2002} estuda a detecção de invasões usando redes neurais e máquinas de vetores de suporte. Neste último trabalho a ideia é descobrir padrões úteis ou características que descrevam o comportamento intrusivo de um usuário em um sistema e os autores usam este conjunto de características para construir classificadores que puderam reconhecer anomalias e intrusões conhecidas. 
 
+\cite{thenmozhi_multi-lingual_2018} apresenta uma discussão sobre a criação criação de perfis de autores multilíngues em mensagens SMS usando a abordagem de aprendizado de máquina com seleção estatística de recursos que mostra formas de tratar os hiperparâmetros de uma rede neural usando uma abordagem estatística.
+
 \cite{jin_development_2002} aborda o desenvolvimento e adaptação de redes neurais probabilísticas construtivas na detecção de incidentes em rodovias. \cite{debar_neural_1992} estuda um componente de rede neural para um sistema de detecção de intrusão. Ainda em detecção de conflitos \cite{chen_flight_2011} trabalha com a detecção e resolução de conflitos de vôo com base em redes neurais.
 
 Todos estes trabalhos foram base para o estudo, amadurecimento bibliográfico e aprofundamento teórico sobre o problema e as soluções propostas neste trabalho, principalmente aqueles relacionados a intrusões e detecção de conflitos aéreos pois não só serviram de inspiração como provavelmente as técnicas possam ser extrapoladas para o uso na detecção de conflitos, tema deste estudo.
 
-Além de \cite{sarkis2017} e \cite{sarkis:artigo:2016} que são os trabalhos- base do estudo da detecção de conflitos, da determinação do modelo das políticas utilizadas e analisadas e das definições utilizadas neste trabalho. Todas as hipóteses e problemas estudados por este trabalho derivam do estudo inicial de \cite{sarkis2017}.
-
-\subsection{Aprendizagem de máquina} \label{aprendizagem_maquina}
-Aprendizado de máquina ou \textit{machine learning} é um braço da Inteligência Artificial que emprega técnicas e algoritmos na criação de modelos computacionais dos quais a característica princial é a capacidade de descobrir padrões em um grande volume de dados ou de melhorar o desempenho de uma determinada tarefa através da experiência (do \textit{reforço}).\cite{mohri_foundations_2018} \cite{alpaydin_introduction_2014} \cite{swamynathan_mastering_2019}
-
-Nas palavras de Arthur Lee Samuel, considerado um dos pioneiros na área de inteligência artificial \cite{wiederhold_arthur_1992}, aprendizado de máquina é ``o campo de estudo que dá aos computadores a capacidade de aprender sem serem explicitamente programados". \cite[p. 89]{simon_too_2013}.
-
-Aprendizado de máquina tem sido aplicado na automatização de funções que para os humanos são executadas intuitivamente, mas que são difíceis de definir formalmente. \cite{sarkar_2017}
-
-Assim, de forma geral, a aprendizagem de máquina tem por objetivo estudar e desenvolver métodos computacionais para obter sistemas capazes de adquirir conhecimento de forma automatizada. \cite{lima_ia_2016}
-
-A capacidade de determinados algoritmos tem de aprender a partir de exemplos é chamado de \textbf{aprendizado indutivo}. Estes algoritmos aprendem relacionamentos eventualmente existentes entre os dados, mostrando o resultado nos modelos de conhecimento gerado. \cite{goldschmidt2005}\cite{alpaydin_introduction_2014}
-
-As principais abordagens de aprendizado que determinam os 3 principais tipos de aprendizagem são: a aprendizagem supervisionada, a aprendizagem não-supervisionada e a aprendizagem por reforço. \cite{Norvig2013}. 
-
-Na \textbf{aprendizagem não-supervisionada} o modelo/hipótese busca padrões na entrada, embora não seja fornecido nenhum feedback explícito. Portanto, na abordagem não-supervisionada não há, nos dados, uma classe, não há um rótulo prévio, ou seja, não existe a informação da saída desejada. O processo de aprendizado busca identificar regularidades entre os dados e não é necessária a divisão prévia dos dados em dados de treinamento, validação e teste.  A tarefa mais comum de aprendizagem não supervisionada é o agrupamento. \cite{Norvig2013} \cite{Boscarioli2017} \cite{goldschmidt2005} \cite{aprenda_mineracao_fernando_amaral16}
-
-Na \textbf{aprendizagem supervisionada} o modelo/hipótese observa alguns exemplos de pares de entrada e saída, e aprende uma função que faz o mapeamento entre a entrada e a saída. Portanto, ela compreende a abstração de um modelo a partir dos dados apresentados na forma de pares ordenados (\textit{entrada, saída, saída desejada}). Há, assim, uma \textit{classe}, ou um atributo especial com o qual se pode comparar e validar o resultado.
-
-Na \textbf{aprendizagem por reforço}, aprende-se a partir de uma série de reforços --- recompensas ou punições. Não está disponível, geralmente, na aprendizagem por reforço, para o algoritmo de aprendizado de máquina, um conjunto de dados para treinamento. O aprendizado se dá, então, pela interação com o ambiente que se deseja atuar por um determinado período com o objetivo de melhorar o desempenho de uma determinada tarefa. \cite{Norvig2013} \cite{aprenda_mineracao_fernando_amaral16} \cite{silva_restaurante_2019}	
-
+\cite{sarkis2017}, \cite{eduardo2017} e \cite{sarkis:artigo:2016} são os trabalhos-base no estudo da detecção de conflitos, da determinação do modelo das políticas utilizadas e analisadas além de algumas das definições empregadas neste trabalho. As hipóteses, soluções e problemas estudados por este projeto derivam do estudo inicial de \cite{sarkis2017} e são uma complementação do mesmo.
 
 \subsection{Mineração de Dados}\label{mineracao_dados}
 Uma das características de nossa era é produção de dados em grande volume, velocidade e variedade de todas as formas, por dispositivos espalhados em toda parte. Entretanto, dados, mesmo em grande quantidade, são apenas dados. É preciso produzir informação e conhecimento para explorar as vantagens que essa massa pode trazer. O dado necessita ser, de alguma forma, analisado, tratado para que informações e conhecimento possa ser extraído. \cite{aprenda_mineracao_fernando_amaral16} \cite{ferrari2017}
@@ -140,6 +122,24 @@ O termo \textbf{modelo de conhecimento}(ou hipótese) é utilizado na literatura
 
 Neste contexto, este trabalho tem como objetivo modelar uma forma de detectar, mediante o uso de técnicas da mineração de dados (e aprendizagem de máquina) os conflitos entre as políticas de controle de acesso de um sistema. Vários algoritmos e técnicas serão utilizados sendo que eles serão devidamente analisados usando-se métricas específicas para cada algoritmo.
 
+\subsection{Aprendizagem de máquina} \label{aprendizagem_maquina}
+Aprendizado de máquina ou \textit{machine learning} é um braço da Inteligência Artificial que emprega técnicas e algoritmos na criação de modelos computacionais dos quais a característica princial é a capacidade de descobrir padrões em um grande volume de dados ou de melhorar o desempenho de uma determinada tarefa através da experiência (do \textit{reforço}).\cite{mohri_foundations_2018} \cite{alpaydin_introduction_2014} \cite{swamynathan_mastering_2019}
+
+Nas palavras de Arthur Lee Samuel, considerado um dos pioneiros na área de inteligência artificial \cite{wiederhold_arthur_1992}, aprendizado de máquina é ``o campo de estudo que dá aos computadores a capacidade de aprender sem serem explicitamente programados". \cite[p. 89]{simon_too_2013}.
+
+Aprendizado de máquina tem sido aplicado na automatização de funções que para os humanos são executadas intuitivamente, mas que são difíceis de definir formalmente. \cite{sarkar_2017}
+
+Assim, de forma geral, a aprendizagem de máquina tem por objetivo estudar e desenvolver métodos computacionais para obter sistemas capazes de adquirir conhecimento de forma automatizada. \cite{lima_ia_2016}
+
+A capacidade de determinados algoritmos tem de aprender a partir de exemplos é chamado de \textbf{aprendizado indutivo}. Estes algoritmos aprendem relacionamentos eventualmente existentes entre os dados, mostrando o resultado nos modelos de conhecimento gerado. \cite{goldschmidt2005}\cite{alpaydin_introduction_2014}
+
+As principais abordagens de aprendizado que determinam os 3 principais tipos de aprendizagem são: a aprendizagem supervisionada, a aprendizagem não-supervisionada e a aprendizagem por reforço. \cite{Norvig2013}. 
+
+Na \textbf{aprendizagem não-supervisionada} o modelo/hipótese busca padrões na entrada, embora não seja fornecido nenhum feedback explícito. Portanto, na abordagem não-supervisionada não há, nos dados, uma classe, não há um rótulo prévio, ou seja, não existe a informação da saída desejada. O processo de aprendizado busca identificar regularidades entre os dados e não é necessária a divisão prévia dos dados em dados de treinamento, validação e teste.  A tarefa mais comum de aprendizagem não supervisionada é o agrupamento. \cite{Norvig2013} \cite{Boscarioli2017} \cite{goldschmidt2005} \cite{aprenda_mineracao_fernando_amaral16}
+
+Na \textbf{aprendizagem supervisionada} o modelo/hipótese observa alguns exemplos de pares de entrada e saída, e aprende uma função que faz o mapeamento entre a entrada e a saída. Portanto, ela compreende a abstração de um modelo a partir dos dados apresentados na forma de pares ordenados (\textit{entrada, saída, saída desejada}). Há, assim, uma \textit{classe}, ou um atributo especial com o qual se pode comparar e validar o resultado.
+
+Na \textbf{aprendizagem por reforço}, aprende-se a partir de uma série de reforços --- recompensas ou punições. Não está disponível, geralmente, na aprendizagem por reforço, para o algoritmo de aprendizado de máquina, um conjunto de dados para treinamento. O aprendizado se dá, então, pela interação com o ambiente que se deseja atuar por um determinado período com o objetivo de melhorar o desempenho de uma determinada tarefa. \cite{Norvig2013} \cite{aprenda_mineracao_fernando_amaral16} \cite{silva_restaurante_2019}	
 
 \subsection{Algoritmos de classificação}
 Conforme \cite{Rocha2012}, ``o termo \textit{classe} deve ser usado quando existe informação sobre quantas e quais são as partições presentes em um conjunto de dados, bem como qual exemplar pertence a qual partição".

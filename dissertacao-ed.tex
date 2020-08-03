@@ -4,13 +4,16 @@
 % ---------------------------------------------------------------------
 
 \documentclass[ruledheader]{abnt_UFF}
+%\documentclass[12pt,a4paper,header]{abnt_UFF}
+%\documentclass[ruledheader]{abnt}
 
 %---pacotes para hiphenizacao e acentuacao em portugues
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
-
+%\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+%\usepackage[alf]{abntcite}	% Citações padrão ABNT
 
 %--- pacote para figuras
 \usepackage{epsf}
@@ -99,15 +102,15 @@ di-men-sio-na-men-to
 \cleardoublepage
 %\bibliographystyle{acm-2} % abbrv - abnt-num
 %\bibliographystyle{uff-ic}
-\bibliographystyle{apa}
+\bibliographystyle{apalike}
 \bibliography{bibliografia} % arquivo fonte com a bibilografia
 
 % --- -----------------------------------------------------------------
 % --- Apendice.(Opcional)
 % --- -----------------------------------------------------------------
-\cleardoublepage
-\appendix
-\include{appendixA}
+%\cleardoublepage
+%\appendix
+%\include{appendixA}
 
 \end{document}
 
