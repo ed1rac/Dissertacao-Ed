@@ -56,14 +56,14 @@
 \begin{flushright}
 \begin{minipage}[t]{8cm}
 
-Dissertação de Mestrado apresentada ao Programa de Pós-Gradua\c{c}\~{a}o em Computa\c{c}\~{a}o da Universidade Federal do Acre como requisito parcial para a obten\c{c}\~{a}o do \mbox{Grau} de Mestre em Ciência da Computação. \'{A}rea de concentra\c{c}\~{a}o: \mbox{Engenharia de Sistemas de Informação} 
+Dissertação de Mestrado apresentada ao Programa de Pós-Gradua\c{c}\~{a}o em Ciência da Computação da Universidade Federal do Acre como requisito parcial para a obtenção do Grau de Mestre em Ciência da Computação. \'{A}rea de concentra\c{c}\~{a}o: \mbox{Engenharia de Sistemas de Informação} 
 %preencha com a sua area de concentracao
 
 \end{minipage}
 \end{flushright}
 \vspace{1.0 cm}
 \noindent
-Aprovada em <MES> de 2020. \\
+{Aprovada em <MES> de 2020.} \\
 \begin{flushright}
   \parbox{11cm}
   {
@@ -142,7 +142,8 @@ Aenean metus dui, rhoncus sit amet pretium ut, laoreet quis ipsum. Sed non tempu
 % --- -----------------------------------------------------------------
 \begin{resumo}
 
-  Um dos principais componentes de segurança em sistemas computacionais é o controle de acesso, que é um mecanismo que verifica todas as solicitações de dados e recursos gerenciados pelos sistemas, determinando quando as solicitações são permitidas ou negadas. Uma política de controle de acesso descreve qual  ação um sujeito pode fazer (permissão), não pode fazer (proibição) ou é obrigado a fazer (obrigação) sobre um objeto em um dado contexto. Muitas vezes as políticas de segurança apresentam conflitos. Esses conflitos podem gerar problemas, como acessos não autorizados ou negações a acessos legítimos. Diante disto, a detecção de conflitos entre políticas de controle de acesso torna-se uma atividade sensível e crítica dentro de sistemas. Este trabalho estuda se é pertinente e válido o uso de mineração de dados associada a técnicas de aprendizagem de máquina para detectar os conflitos entre estas diversas políticas. Seu objetivo é modelar uma forma de detecção automática, mediante o uso de técnicas de mineração de dados (e \textit{aprendizagem de máquina}) dos conflitos, sejam eles, diretos ou indiretos entre as políticas de controle de acesso de um sistema.
+
+A quantidade de informações cresce de forma exponencial a cada ano e com isso cresce a demanda por infraestrutura de TI nas empresas, nos governos e nos usuários domésticos. Aumenta, junto com o volume de dados e informações, o interesse em tratar, analisar e descobrir conhecimento a partir desta avalanche de dados. A mineração de dados juntamente com o aprendizado de máquina são duas ferramentas-chave dentro deste processo de descoberta de conhecimento e utilização de todos esses dados e informações para propósitos úteis. Entretanto, antes que os dados possam ser analisados, eles precisam ser armazenados e os sistemas computacionais sofrem, também de forma crescente, permanentes ameaças à sua segurança. Neste contexto se inserem as políticas de controle de acesso como uma forma de garantir proteção, confidencialidade e confiabilidade dos acessos dos usuários aos objetos dentro dos sistemas de uma organização. Em sistemas com múltiplos sujeitos, muitas ações e diversos objetos, eventualmente, ocorrerão conflitos entre políticas. Um conflito ocorre quando os objetivos de duas ou mais políticas não podem ser atendidos simultaneamente em determinado contexto. Este trabalho tem como objetivo propor que o problema da detecção de conflitos em políticas pode ser convertido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação além de modelar e sintetizar uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina que consigam acurácias elevadas e forneçam modelos genéricos o suficiente para serem usados em outros contextos.
 
 {\hspace{-8mm} \bf{Palavras-chave}}: Controle de Acesso. Mineração de dados. Aprendizagem de máquina. Conflitos diretos. Conflitos indiretos. Detecção de conflitos.
 
@@ -153,7 +154,8 @@ Aenean metus dui, rhoncus sit amet pretium ut, laoreet quis ipsum. Sed non tempu
 % --- -----------------------------------------------------------------
 \begin{abstract}
 
-  One of the main security components in computer systems is access control, which is a mechanism that checks all requests for data and resources managed by the systems, determining when requests are allowed or denied. An access control policy describes what action a subject can do (permission), cannot do (prohibition) or is obliged to do (obligation) on an object in a given context. Security policies often have conflicts. These conflicts can lead to problems, such as unauthorized access or denial of legitimate access. Given this, the detection of conflicts between access control policies becomes a sensitive and critical activity within systems. This paper studies whether the use of data mining associated with machine learning techniques to detect conflicts between these different policies is relevant and valid. Its objective is to model a form of automatic detection, using data mining techniques (and machine learning) of conflicts, whether direct or indirect between a system's access control policies.
+The amount of information increase exponentially every year and as a result, the demand for IT infrastructure in companies, governments and home users grows. It increases, along with the volume of data and information, the interest in treating, analyzing and discovering knowledge from this avalanche of data. Data mining associated with machine learning are two key tools within this process of discovering knowledge and using all that data and information for useful purposes. However, before data can be analyzed, it needs to be stored and computer systems are also increasingly threatened with permanent security threats. In this context, access control policies are inserted as a way to guarantee protection, confidentiality and reliability of users' access to objects within an organization's systems. In systems with multiple subjects, many actions and different objects, eventually, conflicts between policies will occur. A conflict occurs when the objectives of two or more policies cannot be met simultaneously in a given context. This work aims to propose that the problem of detecting conflicts in policies can be converted into a problem of data mining (data mining) solved by the task of classification, in addition to modeling and synthesizing a way of detecting these conflicts through the use of different machine learning algorithms and techniques that achieve high accuracy and provide generic models to be used in other contexts.
+
 
 {\hspace{-8mm} \bf{Keywords}}: Access control. Data mining. Machine learning. Direct conflicts. Indirect conflicts. Conflict detection.
 
@@ -180,10 +182,28 @@ Aenean metus dui, rhoncus sit amet pretium ut, laoreet quis ipsum. Sed non tempu
 % --- ----------------------------------------------------------------
 \cleardoublepage
 \pretextualchapter{Lista de Abreviaturas e Siglas}
-\begin{tabular}{lcl}
-<ABREVIATURA> & : & <SIGNIFICADO>;\\
-<ABREVIATURA> & : & <SIGNIFICADO>;\\
-<ABREVIATURA> & : & <SIGNIFICADO>;\\
+\begin{tabular}{lcl}	
+AM & : & \textit{Aprendizado de Máquina};\\
+ATM & : & \textit{Air-Traffic Management};\\
+BPNN & : & \textit{Basic Probabilistic Neural Network};\\
+CPNN & : & \textit{Constructive Probabilistic Neural Network};\\
+DAC & : & \textit{Discretionary Access Control};\\
+DARPA & : & \textit{Defense Advanced Research Projects Agency};\\
+DoS & : & \textit{Denial of Service};\\
+GPGU & : & \textit{General Purpose Graphic Processor Unit};\\
+GPU & : & \textit{Graphic Processor Unit};\\
+KDD & : & \textit{Knowledege Discovery in Data Bases};\\
+MAC & : & \textit{Mandatory Access Control};\\
+ML & : & \textit{Machine Learning};\\
+MLP & : & \textit{MultiLayer Perceptron};\\
+NFL & : & \textit{No-Free Lucnch};\\
+PMC & : & \textit{Perceptron MultiCamadas};\\
+RBAC & : & \textit{Role-Based Access Control};\\
+ReBAC & : & \textit{Relationship-Based Access Control};\\
+RNA & : & \textit{Rede Neural Artificial};\\
+RTLS & : & \textit{Real Time Location Systems};\\
+SMA & : & \textit{Sistema Multi Agentes};\\
+SVM & : & \textit{Support Vector Machiner};\\
 \end{tabular}
 % --- -----------------------------------------------------------------
 % --- Sumario.(Obrigatorio)

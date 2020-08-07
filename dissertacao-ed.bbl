@@ -1,15 +1,129 @@
 \begin{thebibliography}{}
 
+\bibitem[ale, ]{alecrim2019}
+
+
+\bibitem[mac, ]{machado2014}
+
+
+\bibitem[fay, ]{fayyad1996}
+
+
+\bibitem[sar, ]{sarkis2017}
+
+
+\bibitem[ued, ]{ueda_tese_2012}
+
+
+\bibitem[edu, ]{eduardo2017}
+
+
+\bibitem[fon, ]{fontes_politicas}
+
+
+\bibitem[mar, ]{marciano_segurancda_nodate}
+
+
+\bibitem[cas, a]{casaca_porque_2013}
+
+
+\bibitem[ben, ]{benz_universidade_nodate}
+
+
+\bibitem[nis, ]{nist_guttman_introduction_1995}
+
+
+\bibitem[gon, ]{goncalves_nbr_2013}
+
+
+\bibitem[doh, ]{doherty_information_2005}
+
+
+\bibitem[kna, ]{knapp_information_2009}
+
+
+\bibitem[sim, ]{simon_administrative_1997}
+
+
+\bibitem[hon, ]{hone_information_2002}
+
+
+\bibitem[whi, ]{whitman_information_2001}
+
+
+\bibitem[str, ]{straub_effective_1990}
+
+
+\bibitem[slo, ]{sloman_security_2002}
+
+
+\bibitem[dav, ]{davis_management_1984}
+
+
+\bibitem[von, ]{von_solms_policies_2004}
+
+
+\bibitem[mon, ]{monteiro_adocao_2017}
+
+
+\bibitem[kro, ]{kropiwiec_policy_nodate}
+
+
+\bibitem[fer, ]{ferraiolo_proposed_2001}
+
+
+\bibitem[lop, ]{lopes_adopcao_2012}
+
+
+\bibitem[vas, ]{vasconcelos_aplicacao_2018}
+
+
+\bibitem[gol, ]{goldschmidt2005}
+
+
+\bibitem[min, ]{minewiskan_modelos_nodate}
+
+
+\bibitem[dee, ]{deep_learning_book_2019}
+
+
+\bibitem[bae, ]{baeza-yates_recuperacao_2013}
+
+
+\bibitem[sil, ]{silva_restaurante_2019}
+
+
+\bibitem[ama, ]{amaral_introducao_2018}
+
+
+\bibitem[ove, ]{over_and_underfitting_2019}
+
+
+\bibitem[cas, b]{castro_supervised_2011}
+
+
+\bibitem[nn_, ]{nn_smithing_1999}
+
+
+\bibitem[den, ]{deng_improved_2016}
+
+
+\bibitem[ruu, ]{ruuska_evaluation_2018}
+
+
+\bibitem[san, ]{santos_um_2013}
+
+
+\bibitem[gue, ]{guerrero-higueras_detection_2018}
+
+
+\bibitem[ahu, ]{ahuja_54_nodate}
+
+
 \bibitem[Al-Radaideh and Nagi, 2012]{using_data_mining2012}
 Al-Radaideh, Q.~A. and Nagi, E.~A. (2012).
 \newblock Using {Data} {Mining} {Techniques} to {Build} a {Classification}
   {Model} for {Predicting} {Employees} {Performance}.
-
-\bibitem[Alecrim, 2019]{alecrim2019}
-Alecrim, E. (2019).
-\newblock {\em O que {\'e} {Big} {Data}?}
-\newblock INFOWESTER. Disponível em: https://www.infowester.com/big-data.php.
-  Acesso em 12/12/2019.
 
 \bibitem[Alpaydin, 2014]{alpaydin_introduction_2014}
 Alpaydin, E. (2014).
@@ -21,6 +135,10 @@ Alpaydin, E. (2014).
 Amaral, F. (2016).
 \newblock {\em Aprenda Minera{\c{c}}{\~a}o de Dados: Teoria e pr{\'a}tica}.
 \newblock Autoria Nacional. ALTA BOOKS.
+
+\bibitem[Autrel et~al., 2008]{autrel_motorbac_nodate}
+Autrel, F., Coma, C., and al, e. (2008).
+\newblock {MotOrBAC} 2: a security policy tool.
 
 \bibitem[Bui et~al., 2019]{bui_efficient_2019}
 Bui, T., Stoller, S.~D., and Le, H. (2019).
@@ -50,6 +168,20 @@ Cortes, C. and Vapnik, V. (1995).
 \newblock Support-vector networks.
 \newblock 20(3):273--297.
 
+\bibitem[Cuppens et~al., 2007]{cuppens_high_2007}
+Cuppens, F., Cuppens-Boulahia, N., and Ghorbel, M.~B. (2007).
+\newblock High level conflict management strategies in advanced access control
+  models.
+\newblock 186:3--26.
+
+\bibitem[Davy et~al., 2008]{davy_application_2008}
+Davy, S., Jennings, B., and Strassner, J. (2008).
+\newblock Application domain independent policy conflict analysis using
+  information models.
+\newblock In {\em {NOMS} 2008 - 2008 {IEEE} Network Operations and Management
+  Symposium}, pages 17--24.
+\newblock {ISSN}: 2374-9709.
+
 \bibitem[De~Capitani~di Vimercati et~al., 2005]{di_vimercati_policies_2005}
 De~Capitani~di Vimercati, S., Samarati, P., and Jajodia, S. (2005).
 \newblock Policies, models, and languages for access control.
@@ -70,10 +202,10 @@ Dunlop, N., Indulska, J., and Raymond, K. (2002).
   Object Computing}, pages 15--26.
 \newblock {ISSN}: null.
 
-\bibitem[Fayyad et~al., 1996]{fayyad1996}
-Fayyad, U., Piatetsky-Shapiro, G., and Smyth, P. (1996).
-\newblock From data mining to knowledge discovery in databases.
-\newblock 17(3):37--37.
+\bibitem[Elrakaiby et~al., 2012]{elrakaiby_formal_2012}
+Elrakaiby, Y., Cuppens, F., and Cuppens-Boulahia, N. (2012).
+\newblock Formal enforcement and management of obligation policies.
+\newblock 71(1):127--147.
 
 \bibitem[Ferneda, 2006]{ferneda_redes_2006}
 Ferneda, E. (2006).
@@ -86,16 +218,25 @@ Ferrari, D.~G. and Castro~Silva, L. N.~d. (2017).
 \newblock {\em Introdu{\c{c}}{\~a}o a minera{\c{c}}{\~a}o de dados}.
 \newblock Editora Saraiva.
 
+\bibitem[Fong, 2011]{fong_relationship-based_2011}
+Fong, P.~W. (2011).
+\newblock Relationship-based access control: protection model and policy
+  language.
+\newblock In {\em Proceedings of the first {ACM} conference on Data and
+  application security and privacy}, {CODASPY} '11, pages 191--202. Association
+  for Computing Machinery.
+
 \bibitem[Fugini and Bellettini, 2004]{fugini_information_2004}
 Fugini, M. and Bellettini, C. (2004).
 \newblock {\em Information {Security} {Policies} and {Actions} in {Modern}
   {Integrated} {Systems}}.
 \newblock Idea Group Pub.
 
-\bibitem[{Goldschmidt} and {Passos}, ]{goldschmidt2005}
-{Goldschmidt}, R. and {Passos}, E.
-\newblock {\em Data mining: um guia Prático}.
-\newblock Elsevier Editora.
+\bibitem[Géron, 2019]{geron_maos_2020}
+Géron, A. (2019).
+\newblock {\em Mãos à Obra: Aprendizado de Máquina com Scikit-Learn \&
+  {TensorFlow}}.
+\newblock Alta Books.
 
 \bibitem[Grus and Nascimento, 2016]{data_science_do_zero2016}
 Grus, J. and Nascimento, W. (2016).
@@ -126,12 +267,31 @@ Jin, X., Cheu, R.~L., and Srinivasan, D. (2002).
 \newblock {\em Transportation Research Part C: Emerging Technologies},
   10(2):121--147.
 
+\bibitem[Kadimisetty, 2018]{kadimisetty_tensorflow_2018}
+Kadimisetty, A. (2018).
+\newblock {\em {TensorFlow} — A hands-on approach}.
+\newblock Disponível em:
+  https://towardsdatascience.com/tensorflow-a-hands-on-approach-8614372f021f.
+  Acesso em 07 de julho de 2020.
+\newblock Library Catalog: towardsdatascience.com.
+
+\bibitem[Kalam et~al., 2003]{kalam_organization_2003}
+Kalam, A., Baida, R., Balbiani, P., Benferhat, S., Cuppens, F., Deswarte, Y.,
+  Miege, A., Saurel, C., and Trouessin, G. (2003).
+\newblock Organization based access control.
+\newblock In {\em Proceedings {POLICY} 2003. {IEEE} 4th International Workshop
+  on Policies for Distributed Systems and Networks}, pages 120--131.
+
 \bibitem[Kesavaraj and Sukumaran, 2013]{classification2013}
 Kesavaraj, G. and Sukumaran, S. (2013).
 \newblock A study on classification techniques in data mining.
 \newblock In {\em 2013 {Fourth} {International} {Conference} on {Computing},
   {Communications} and {Networking} {Technologies} ({ICCCNT})}, pages 1--7.
 \newblock ISSN: null.
+
+\bibitem[Kingma and Ba, 2017]{adam_2017}
+Kingma, D.~P. and Ba, J. (2017).
+\newblock Adam: A method for stochastic optimization.
 
 \bibitem[Koch et~al., 2002]{koch_conflict_2002}
 Koch, M., Mancini, L.~V., and Parisi-Presicce, F. (2002).
@@ -162,15 +322,15 @@ Lima, R. A.~F. and Pereira, A. C.~M. (2012).
 \newblock Fraud detection in web transactions.
 \newblock page 273.
 
+\bibitem[Luger, 2015]{luger_inteligencia_2015}
+Luger, G.~F. (2015).
+\newblock {\em Inteligência Artificial}.
+\newblock ARTMED Editora S.A., edição: 4 edition.
+
 \bibitem[Lupu and Sloman, 1999]{lupu_conflicts_1999}
 Lupu, E. and Sloman, M. (1999).
 \newblock Conflicts in policy-based distributed systems management.
 \newblock {\em IEEE Transactions on Software Engineering}, 25(6):852--869.
-
-\bibitem[Machado, 2014]{machado2014}
-Machado, A. (2014).
-\newblock Estudo da {EMC} prevê que volume de dados virtuais armazenados será
-  seis vezes maior em 2020.
 
 \bibitem[Mcculloch and Pitts, 1943]{mcculloch_logical_1943}
 Mcculloch, W.~S. and Pitts, W. (1943).
@@ -214,7 +374,8 @@ Neri, M.~A., Guarnieri, M., Magri, E., Mutti, S., and Paraboschi, S. (2012).
 \bibitem[Obaidat and Macchairolo, 1994]{obaidat_multilayer_1994}
 Obaidat, M. and Macchairolo, D. (1994).
 \newblock A multilayer neural network system for computer access security.
-\newblock 24(5):806--813.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics},
+  24(5):806--813.
 
 \bibitem[Rocha et~al., 2012]{Rocha2012}
 Rocha, T., Peres, S.~M., Bíscaro, H.~H., Madeo, R. C.~B., and Boscarioli, C.
@@ -240,16 +401,20 @@ Sandhu, R. and Samarati, P. (1996).
 \newblock Authentication, access control, and audit.
 \newblock {\em ACM Comput. Surv.}, 28(1):241--243.
 
+\bibitem[Santos, 2020]{collab_2020}
+Santos, T. G.~S. (2020).
+\newblock {\em Google Colab: o que é e como usar? {\textbar} Alura Cursos
+  Online}.
+\newblock Disponível em:
+  https://www.alura.com.br/artigos/google-colab-o-que-e-e-como-usar. Acesso em
+  07 de junho de 2020.
+\newblock Library Catalog: www.alura.com.br.
+
 \bibitem[Sarkar et~al., 2017]{sarkar_2017}
 Sarkar, D., Bali, R., and Sharma, T. (2017).
 \newblock {\em Practical Machine Learning with Python: A Problem-Solver's Guide
   to Building Real-World Intelligent Systems}.
 \newblock Apress.
-
-\bibitem[Sarkis, 2017]{sarkis2017}
-Sarkis, L.~C. (2017).
-\newblock Uma abordagem para detecção de conflitos indiretos entre políticas
-  de controle de acesso.
 
 \bibitem[Sarkis et~al., 2016]{sarkis:artigo:2016}
 Sarkis, L.~C., da~Silva, V.~T., and Braga, C. (2016).
@@ -267,22 +432,17 @@ Shoham, Y. and Tennenholtz, M. (1995).
 \newblock On social laws for artificial agent societies: off-line design.
 \newblock 73(1):231--252.
 
+\bibitem[Silva, 2016]{silva_redes_2016}
+Silva, I. N.~d. (2016).
+\newblock {\em Redes Neurais Artificiais Para Engenharia e Ciências Aplicadas.
+  Fundamentos Teóricos e Aspectos Práticos}.
+\newblock Artliber, edição: 2ª edition.
+
 \bibitem[Silva et~al., 2017]{Boscarioli2017}
 Silva, L. A.~d., Peres, S.~M., and Boscarioli, C. (2017).
 \newblock {\em Introdu{\c{c}}{\~a}o {\`a} Minera{\c{c}}{\~a}o de Dados: Com
   Aplica{\c{c}}{\~o}es em R}.
 \newblock Elsevier Brasil.
-
-\bibitem[Silva, 2019]{silva_restaurante_2019}
-Silva, L. C.~e. (2019).
-\newblock Aprendizado de máquina com treinamento continuado aplicado à
-  previsão de demanda de curto prazo: o caso do restaurante universitário da
-  universidade federal de uberlandia.
-
-\bibitem[Silvestre, 2017]{eduardo2017}
-Silvestre, E.~A. (2017).
-\newblock Verificação de conflitos entre múltiplas normas em sistemas
-  multiagentes.
 
 \bibitem[Simon, 2013]{simon_too_2013}
 Simon, P. (2013).
@@ -300,11 +460,6 @@ Thenmozhi, D., Kalaivani, A., and Aravindan, C. (2018).
 \newblock Multi-lingual author proﬁling on {SMS} messages using machine
   learning approach with statistical feature selection.
 \newblock page~9.
-
-\bibitem[Ueda, 2012]{ueda_tese_2012}
-Ueda, E.~T. (2012).
-\newblock Análise de políticas de controle de acesso baseado em papéis com
-  rede de petri colorida.
 
 \bibitem[Wang et~al., 2010]{wang_conflicts_2010}
 Wang, Y., Zhang, H., Dai, X., and Liu, J. (2010).
@@ -340,5 +495,11 @@ Wu, X., Kumar, V., Ross~Quinlan, J., Ghosh, J., Yang, Q., Motoda, H.,
   Hand, D.~J., and Steinberg, D. (2007).
 \newblock Top 10 algorithms in data mining.
 \newblock {\em Knowl. Inf. Syst.}, 14(1):1--37.
+
+\bibitem[Yeung et~al., 2004]{yeung_neural_2004}
+Yeung, N., Botvinick, M.~M., and Cohen, J.~D. (2004).
+\newblock The neural basis of error detection: conflict monitoring and the
+  error-related negativity.
+\newblock {\em Psychological Review}, 111(4):931--959.
 
 \end{thebibliography}

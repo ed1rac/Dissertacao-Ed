@@ -12,18 +12,46 @@
 \BOOKMARK [1][-]{section.1.6}{Limita\347\365es do Trabalho}{chapter.1}% 12
 \BOOKMARK [1][-]{section.1.7}{Organiza\347\343o do trabalho}{chapter.1}% 13
 \BOOKMARK [0][-]{chapter.2}{Referencial te\363rico}{}% 14
-\BOOKMARK [1][-]{section.2.1}{Pol\355ticas em sistemas de seguran\347a}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.1.1}{Pol\355ticas de Controle de acesso}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.2}{Modelos de pol\355ticas}{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.2.1.3}{Modelo de Pol\355tica utilizado}{section.2.1}% 18
-\BOOKMARK [1][-]{section.2.2}{Detec\347\343o de conflitos}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.1}{Trabalhos Relacionados}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.2}{Minera\347\343o de Dados}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.3}{Aprendizagem de m\341quina}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.4}{Algoritmos de classifica\347\343o}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.5}{Redes Neurais artificiais}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.6}{SVM - Support Vector Machines}{section.2.2}% 25
-\BOOKMARK [0][-]{chapter.3}{Experimentos/Resultados}{}% 26
-\BOOKMARK [0][-]{chapter.4}{Propostas para a disserta\347\343o}{}% 27
-\BOOKMARK [0][-]{chapter.5}{Conclus\365es}{}% 28
-\BOOKMARK [0][-]{chapter.5}{Refer\352ncias}{}% 29
+\BOOKMARK [1][-]{section.2.1}{Seguran\347a da Informa\347\343o}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{Pol\355ticas em sistemas de seguran\347a}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Controle de acesso}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{Pol\355ticas de Controle de acesso}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{Modelos de pol\355ticas}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.3}{Modelo de Pol\355tica utilizado}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.4}{Detec\347\343o de conflitos}{section.2.3}% 21
+\BOOKMARK [3][-]{subsubsection.2.3.4.1}{Classifica\347\343o dos conflitos}{subsection.2.3.4}% 22
+\BOOKMARK [3][-]{subsubsection.2.3.4.2}{Conflitos Diretos e Indiretos}{subsection.2.3.4}% 23
+\BOOKMARK [1][-]{section.2.4}{Minera\347\343o de Dados}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.4.1}{KDD - Knowledge Discovery in Databases}{section.2.4}% 25
+\BOOKMARK [2][-]{subsection.2.4.2}{Modelo de conhecimento}{section.2.4}% 26
+\BOOKMARK [3][-]{subsubsection.2.4.2.1}{Arquitetura do modelo}{subsection.2.4.2}% 27
+\BOOKMARK [1][-]{section.2.5}{Aprendizagem de m\341quina}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.5.1}{Defini\347\343o}{section.2.5}% 29
+\BOOKMARK [1][-]{section.2.6}{Algoritmos de classifica\347\343o}{chapter.2}% 30
+\BOOKMARK [2][-]{subsubsection.2.6.0.1}{Taxa de erro}{section.2.6}% 31
+\BOOKMARK [3][-]{subsubsection.2.6.0.2}{Estrat\351gias de valida\347\343o}{subsubsection.2.6.0.1}% 32
+\BOOKMARK [3][-]{subsubsection.2.6.0.3}{Medidas de avalia\347\343o}{subsubsection.2.6.0.1}% 33
+\BOOKMARK [1][-]{section.2.7}{Redes Neurais Artificiais - RNA}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.7.1}{Defini\347\343o}{section.2.7}% 35
+\BOOKMARK [2][-]{subsection.2.7.2}{Modelo de neur\364nio artificial}{section.2.7}% 36
+\BOOKMARK [2][-]{subsection.2.7.3}{Redes do tipo Perceptron de m\372ltiplas camadas}{section.2.7}% 37
+\BOOKMARK [2][-]{subsection.2.7.4}{Fun\347\365es de ativa\347\343o}{section.2.7}% 38
+\BOOKMARK [3][-]{subsubsection.2.7.4.1}{Fun\347\343o de ativa\347\343o limiar}{subsection.2.7.4}% 39
+\BOOKMARK [3][-]{subsubsection.2.7.4.2}{Fun\347\343o de ativa\347\343o linear}{subsection.2.7.4}% 40
+\BOOKMARK [3][-]{subsubsection.2.7.4.3}{Fun\347\365es de ativa\347\343o semilineares}{subsection.2.7.4}% 41
+\BOOKMARK [3][-]{subsubsection.2.7.4.4}{Fun\347\343o de ativa\347\343o ReLu}{subsection.2.7.4}% 42
+\BOOKMARK [1][-]{section.2.8}{Otimiza\347\343o}{chapter.2}% 43
+\BOOKMARK [1][-]{section.2.9}{SVM - Support Vector Machines}{chapter.2}% 44
+\BOOKMARK [1][-]{section.2.10}{Trabalhos Relacionados}{chapter.2}% 45
+\BOOKMARK [0][-]{chapter.3}{Experimentos/Resultados}{}% 46
+\BOOKMARK [1][-]{subsection.3.0.1}{Experimentos iniciais - arquivo com 68 pol\355ticas}{chapter.3}% 47
+\BOOKMARK [2][-]{subsubsection.3.0.1.1}{Recursos computacionais}{subsection.3.0.1}% 48
+\BOOKMARK [3][-]{subsubsection.3.0.1.2}{Pr\351-processamento}{subsubsection.3.0.1.1}% 49
+\BOOKMARK [3][-]{subsubsection.3.0.1.3}{Resultados - Arquivo com 68 pol\355ticas}{subsubsection.3.0.1.1}% 50
+\BOOKMARK [2][-]{subsection.3.0.2}{Outros experimentos - arquivos com 139 e 281 pol\355ticas}{subsection.3.0.1}% 51
+\BOOKMARK [2][-]{subsection.3.0.3}{Experimentos com Pandas, NumPy e sklearn}{subsection.3.0.1}% 52
+\BOOKMARK [2][-]{subsection.3.0.4}{Experimentos com TensorFlow e Pytorch}{subsection.3.0.1}% 53
+\BOOKMARK [2][-]{subsection.3.0.5}{An\341lise dos resultados}{subsection.3.0.1}% 54
+\BOOKMARK [0][-]{chapter.4}{Cronograma e propostas para o texto final}{}% 55
+\BOOKMARK [0][-]{chapter.5}{Conclus\365es}{}% 56
+\BOOKMARK [0][-]{chapter.5}{Refer\352ncias}{}% 57
