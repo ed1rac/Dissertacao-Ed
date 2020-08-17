@@ -895,7 +895,7 @@ MACRO {jan} {"janeiro de"}
      
 MACRO {feb} {"fevereiro de"}
      
-MACRO {mar} {"mar� de"}
+MACRO {mar} {"março de"}
      
 MACRO {apr} {"abril de"}
      

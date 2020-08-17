@@ -1,15 +1,15 @@
-\chapter{Referencial teórico}\label{referencial_teorico}
-Nesta seção, alguns conceitos fundamentais da pesquisa bibliográfica realizada serão explanados com o intuito de atingir os objetivos descritos na seção \ref{objetivos} e o entendimento da solução proposta neste trabalho. Serão abordados modelos de políticas, como as de controle de acesso e conflitos entre as mesmas. Temas como mineração de dados, aprendizagem de máquina, algoritmos de classificação, com destaque para as \textit{Redes Neurais Artificiais} e \textbf{SVM} --- \textit{Support Vector Machines}, que são a base da hipótese deste trabalho também serão descritos e suas definições teóricas serão discutidas. Ao final, serão descritos alguns trabalhos relacionados ao tema desta dissertação.
+\chapter{Revisão Bibliográfica}\label{referencial_teorico}
+Neste capítulo, alguns conceitos fundamentais da pesquisa bibliográfica realizada serão explanados com o intuito de atingir os objetivos descritos na seção \ref{objetivos} e o entendimento da solução proposta neste trabalho. Serão abordados modelos de políticas, como as de controle de acesso e conflitos entre as mesmas. Temas como mineração de dados, aprendizagem de máquina, algoritmos de classificação, com destaque para as \textbf{RNA's} --\textit{Redes Neurais Artificiais} e \textbf{SVM} --- \textit{Support Vector Machines}, que são a base da hipótese deste trabalho também serão descritos e suas definições teóricas serão discutidas. Ao final, serão descritos alguns trabalhos relacionados ao tema desta proposta de dissertação.
 
 \section{Segurança da Informação} \label{seguranca_informacao}
-Vivemos a era da informação onde o volume de dados e informações disponíveis cresce vertiginosamente a cada ano \cite{alecrim2019}. Este fato leva a uma acelerada e incessante procura por infraestrutura de TI nas organizações, nos governos e usuários domésticos \cite{machado2014}. Em praticamente todos os campos e áreas da humanidade, os dados estão sendo coletados e acumulados em ritmo crescente. \cite{lima_fraud_2012} \cite{fayyad1996}. 
+As informações e os dados disponíveis sofreram um aumento frenético nas últimas décadas, fato que gerou uma crescente preocupação com o correto tratamento destes dados e, principalmente com questões de segurança relacionadas à proteção destas informações que seguem, a cada ano sendo coletadas e acumuladas em ritmo vertiginoso. \cite{alecrim2019, machado2014, lima_fraud_2012, fayyad1996, santos_segurancnos_2007} 
 
-Considerando, por exemplo, o ambiente corporativo, segundo \cite[p.1]{fontes_politicas}, a ``informação é um recurso essencial para toda organização, independentemente do seu porte e do seu segmento de atuação no mercado''. 
+Considerando, por exemplo, o ambiente corporativo, cf. \citeonline[p.1]{fontes_politicas}, a ``informação é um recurso essencial para toda organização, independentemente do seu porte e do seu segmento de atuação no mercado''. 
 
-E prossegue afirmando que: 
-\begin{quotation}
+E o mesmo autor afirma que: 
+\begin{citacao}
 	É utilizando a informação que processos organizacionais funcionam, as pessoas podem realizar suas atividades profissionais, a geração de conhecimento acontece e o compartilhamento desse conhecimento é realizado. \cite[p.1]{fontes_politicas}
-\end{quotation}
+\end{citacao}
 
 Neste contexto, tanto a obtenção da informação é um processo importante quanto o são as formas de armazenamento e proteção, além, claro, o fato de que a análise e interpretação destes dados e informações tornam-se atividades essenciais para a manutenção de negócios e o próprio desenvolvimento da sociedade. \cite{Boscarioli2017} \cite{marciano_segurancda_nodate}.
 
@@ -34,13 +34,13 @@ Assim, segundo \cite{mukkamala_intrusion_2002}, "a segurança da informação é
 
 Na mesma linha, \cite{casaca_porque_2013} discorre que:
 
-\begin{quote}
+\begin{citacao}
 	as organizações possuem diversos activos de informação que devem ser 
 protegidos de ameaças de variados tipos, através de estratégias e políticas de 
 segurança  da  informação,  implementadas  com  base  em  modelos  e  métricas 
 bem  definidas,  permitindo  às  organizações  melhorar  o  seu  processo  de 
 responsabilização da segurança da informação.
-\end{quote}
+\end{citacao}
 
 De acordo com \cite{benz_universidade_nodate}, as maiores ameaças à segurança da informação são, portanto:
 \begin{quote}
@@ -161,7 +161,7 @@ Neste trabalho, para o modelo de política proposto, não abordam-se os conflito
 Assim como em \cite[p. 24]{sarkis2017}, neste trabalho, os conflitos em potencial são denominados \textbf{conflitos diretos} e os conflitos de aplicação são abarcados pelos chamados \textbf{conflitos indiretos}.
 
 \subsubsection{Conflitos Diretos e Indiretos}
-\cite{dunlop_dynamic_2002} usa uma abordagem para os conflitos diretos e simples que será replicada neste trabalho. Diz-se que duas regras estão em conflito quando o cumprimento de uma das regras viola a outra e vice-versa. Ou seja, a verificação se há o conflito é feita entre duas políticas que possuem modalidades contraditórias ou antagônicas, definidas na mesma organização, executadas pelos mesmos sujeitos, efetuando a mesma ação em relação a um objeto específico.
+\citeonline{dunlop_dynamic_2002} usa uma abordagem para os conflitos diretos e simples que será replicada neste trabalho. Diz-se que duas regras estão em conflito quando o cumprimento de uma das regras viola a outra e vice-versa. Ou seja, a verificação se há o conflito é feita entre duas políticas que possuem modalidades contraditórias ou antagônicas, definidas na mesma organização, executadas pelos mesmos sujeitos, efetuando a mesma ação em relação a um objeto específico.
 
 Exemplo de um \textit{\textbf{conflito direto}}:
 
@@ -169,7 +169,7 @@ Exemplo de um \textit{\textbf{conflito direto}}:
 
 {\scriptsize \texttt{ \{P2= {\underline{Proibido}, na Universidade X, Ana Ester, acessar processos administrativos\} }}}
 
-Os exemplos acima mostram que quando uma política proíbe e a outra permite um sujeito de realizar uma ação estabelecida sobre um objeto específico em uma organização particular ocorre um \underline{conflito direto}. O conflito, segundo \cite{autrel_motorbac_nodate}, pode ser identificado diretamente utilizando a sobreposição dos atributos das políticas.
+Os exemplos acima mostram que quando uma política proíbe e a outra permite um sujeito de realizar uma ação estabelecida sobre um objeto específico em uma organização particular ocorre um \underline{conflito direto}. O conflito, segundo \citeonline{autrel_motorbac_nodate}, pode ser identificado diretamente utilizando a sobreposição dos atributos das políticas.
 
 Já em um \underline{conflito indireto,} as políticas conflitantes regulam ações diferentes (mas relacionadas) executadas por distintos sujeitos (porém, relacionados) sobre objetos desiguais (mas, relacionados) em organizações diferentes (mas, relacionadas). \cite[p.24]{sarkis2017}
 
@@ -185,31 +185,31 @@ Este conflito não seria detectado diretamente, porém há um conflito se consid
 
 A capacidade de um sistema reconhecer um estado inconsistente em andamento ou em potencial é denominada \textbf{detecção de conflitos.}
 
-Para \cite{sarkis2017},
-\begin{quote}
+Para \citeonline{sarkis2017},
+\begin{citacao}
 	detectar conflitos entre políticas de controle de acesso é o primeiro passo para buscar inibir o surgimento de erros no sistema relativo às políticas aplicadas, tendo em vista que as políticas sem conflitos refletem corretamente o plano de segurança do sistema.
-\end{quote}
+\end{citacao}
 
-Segundo \cite[p.25]{sarkis2017}, ``Para um sistema baseado em políticas trabalhar de forma eficaz é importante ter um meio de detectar e resolver os conflitos que possam surgir''. Torna-se, assim, indispensável a utilização de abordagens que analisem previamente a existência de conflitos como o proposto nesta dissertação.
+Ainda segundo \citeonline[p.25]{sarkis2017}, ``Para um sistema baseado em políticas trabalhar de forma eficaz é importante ter um meio de detectar e resolver os conflitos que possam surgir''. Torna-se, assim, indispensável a utilização de abordagens que analisem previamente a existência de conflitos como o proposto nesta dissertação.
 
 
 \section{Mineração de Dados}\label{mineracao_dados}
 Uma das características de nossa era é produção de dados em grande volume, velocidade e variedade de todas as formas, por dispositivos espalhados em toda parte. Entretanto, dados, mesmo em grande quantidade, são apenas dados. É preciso produzir informação e conhecimento para explorar as vantagens que essa massa pode trazer. O dado necessita ser, de alguma forma, analisado, tratado para que informações e conhecimento possam ser, deles, extraídos. \cite{aprenda_mineracao_fernando_amaral16} \cite{ferrari2017}
 
-Conforme \cite{fayyad1996}:
-\begin{quotation}
-	[...] Os computadores permitiram que os humanos coletassem mais dados do que podemos digerir, é natural [,portanto,] recorrer a técnicas computacionais para nos ajudar a desenterrar padrões e estruturas significativas a partir dos numerosos volumes de dados. Por isso, [a mineração de dados] é uma tentativa de resolver um problema que a era da informação digital transformou em realidade para todos nós: sobrecarga de dados.
-\end{quotation}
+Conforme \citeonline{fayyad1996}:
+\begin{citacao}
+	\[ \dots \] Os computadores permitiram que os humanos coletassem mais dados do que podemos digerir, é natural [,portanto,] recorrer a técnicas computacionais para nos ajudar a desenterrar padrões e estruturas significativas a partir dos numerosos volumes de dados. Por isso, [a mineração de dados] é uma tentativa de resolver um problema que a era da informação digital transformou em realidade para todos nós: sobrecarga de dados.
+\end{citacao}
 
-Para \cite{Boscarioli2017},
-\begin{quotation}
+Para \citeonline{Boscarioli2017},
+\begin{citacao}
 	De forma simplificada, a \textit{mineração de dados }pode ser definida como um processo automático ou semiautomático de explorar analiticamente grandes bases de dados, com a finalidade de descobrir padrões relevantes que ocorrem nos dados e que sejam importantes para embasar a assimilação de informação importante, suportando a geração de conhecimento. 
-\end{quotation}
+\end{citacao}
 
-Ainda, segundo \cite{fayyad1996}, 
-\begin{quotation}
+Ainda, segundo \citeonline{fayyad1996}, 
+\begin{citacao}
 	O termo mineração de dados tem sido usado principalmente por estatísticos, analistas de dados e comunidades de sistemas de informações gerenciais (MIS). Ele também ganhou popularidade no campo do banco de dados. O termo descoberta de conhecimento em bancos de dados [(KDD, da sigla em Inglês)] foi cunhada no primeiro workshop do KDD em 1989 para enfatizar que o conhecimento é o produto final de uma descoberta baseada em dados. Foi popularizado nos campos de IA e aprendizado de máquina.
-\end{quotation}
+\end{citacao}
 
 \subsection{KDD - Knowledge Discovery in Databases}
 Assim, a mineração de dados é parte integrante de um processo mais amplo, conhecido como descoberta de conhecimento em bases de dados (\textit{Knowledge Discovery in Databases}, ou \textit{KDD})\cite{fayyad1996}. Embora se use \textit{mineração de dados} como sinônimo de KDD, a terminologia é empregada para a etapa de \textit{descoberta}  do processo de KDD, que inclui a \textit{seleção} e \textit{integração} das bases de dados, a \textit{limpeza} da base, a \textit{seleção e transformação} dos dados, a \textit{mineração}(propriamente) e a \textit{avaliação} dos dados. \cite{ferrari2017}\cite{Boscarioli2017}.
@@ -234,26 +234,26 @@ Neste trabalho as tarefas de seleção e transformação dos dados farão parte 
 \subsection{Modelo de conhecimento}\label{modelo_conhecimento}
 O termo \textbf{modelo de conhecimento} (ou hipótese) é utilizado na literatura (e neste trabalho) para fazer referência a um padrão ou conjunto de padrões descobertos (que é, enfim, o \textit{propósito} do processo de KDD). Estes padrões são conhecimentos representados segundo as normas sintáticas de alguma linguagem formal. Estes padrões podem ser classificados em dois tipos: preditivos e descritivos. O intuito dos preditivos é resolver um problema específico de prever os resultados ou valores de um ou mais atributos, em função dos valores de outros atributos. Os descritivos (ou informativos) tem o intuito de apresentar informações interessantes e importantes sobre os dados que um especialista de domínio possa não conhecer. Modelos de conhecimento compostos exclusivamente por padrões preditivos são chamados de modelos preditivos, enquanto que modelos descritivos são modelos de conhecimento compostos por padrões descritivos. \cite{goldschmidt2005}\cite{ferrari2017}\cite{Boscarioli2017}
 
-Para \cite{minewiskan_modelos_nodate}, \begin{quote}
+Para \citeonline{minewiskan_modelos_nodate}, \begin{citacao}
 	Um modelo de mineração é criado aplicando-se um algoritmo a dados, mas é mais que um algoritmo ou um contêiner de metadados: é um conjunto de dados, estatísticas e padrões que podem ser aplicados a novos dados para gerar previsões e fazer inferências sobre relações.
-\end{quote}
+\end{citacao}
 
 Neste contexto, este trabalho se concentra, portanto, em criar modelos de forma a detectar, mediante o uso de técnicas da mineração de dados (e aprendizagem de máquina) os conflitos entre as políticas de controle de acesso de um sistema. Diversos modelos serão desenvolvidos e confrontados usando-se vários algoritmos e técnicas analisados com métricas específicas.
 
 \subsubsection{Arquitetura do modelo}\label{arquitetura_modelo}
 
-Segundo \cite{minewiskan_modelos_nodate}, ``Um modelo de mineração obtém dados de uma estrutura de mineração e analisa esses dados usando um algoritmo de mineração de dados''. Entretanto, é importante diferenciar a estrutura e o modelo de mineração. Ainda de acordo com \cite{minewiskan_modelos_nodate}, \begin{quote}
+Segundo \citeonline{minewiskan_modelos_nodate}, ``Um modelo de mineração obtém dados de uma estrutura de mineração e analisa esses dados usando um algoritmo de mineração de dados''. Entretanto, é importante diferenciar a estrutura e o modelo de mineração. Ainda de acordo com \citeonline{minewiskan_modelos_nodate}, \begin{citacao}
 	A estrutura de mineração armazena informações que definem a fonte de dados. Um modelo de mineração armazena informações derivadas do processamento estatístico de dados, como os padrões encontrados em decorrência da análise.
-\end{quote}
+\end{citacao}
 
 Assim, o modelo fica ``limpo'' até que os dados que foram guarnecidos pela estrutura de mineração sejam processados e avaliados. Depois de produzido o modelo contém \textit{metadados}, resultados e associações e pode, então, ser utilizado para a obtenção de conhecimento.
 
 A arquitetura pode conter também, variáveis, hiperparâmetros, definições do modelo, filtros utilizados e, claro, o algoritmo utilizado na tarefa de análise dos dados. \cite{deep_learning_book_2019}.
 
 \section{Aprendizagem de máquina} \label{aprendizagem_maquina}
-Segundo \cite[p. 10]{goldschmidt2005}, \begin{quote}
+Segundo \citeonline[p. 10]{goldschmidt2005}, \begin{citacao}
 	um dos passos do processo de KDD, o de extração de padrões (ou Mineração de Dados) utiliza métodos de Aprendizado de Máquina (AM) [ou \textit{Machine Learning} - ML] para encontrar regularidades, padrões ou conceitos em conjuntos de dados.
-\end{quote}
+\end{citacao}
 
 A principal diferença, segundo os autores, \cite{goldschmidt2005} entre Aprendizagem de Máquina e KDD reside no fato de ``grande parte da literatura em AM se concentra apenas no mecanismo de descoberta de padrões e/ou conceitos, sem se preocupar com o grau de utilidade''. Já em KDD, ainda segundo \cite{goldschmidt2005}, ``os padrões extraídos são avaliados para aferir sua utilidade para o usuário em relação à tomada de decisão''. Ou seja, o aprendizado na Aprendizagem de Máquina é um atividade-fim enquanto o aprendizado no KDD é uma atividade-meio para a obtenção do conhecimento.
 
@@ -299,7 +299,7 @@ Sobre \textit{teoria da aprendizagem} e \textit{algoritmos de classificação} h
 
 Assim:
 \begin{equation}
-P(E_j|E_{j-1},E_{j-2}, ... ) = P(E_j)\text{,} 
+	P (E_j|E_{j-1},E_{j-2}, ... ) = P(E_j) \textrm{,} 
 \end{equation}
 
 e cada exemplo tem uma distribuição de probabilidade anterior idêntica:
@@ -389,7 +389,7 @@ A que será usada neste trabalho (com o objetivo de minimizar a probabilidade do
 A métrica acurácia é dada, portanto, por:
 
 \begin{equation}\label{acuracia}
-\text{Acurácia} = |y-f(\aleph)=0|\text{,}
+	\textrm{Acurácia} = |y-f(\aleph)=0|\textrm{,}
 \end{equation}
 
 em que $|\cdot|$ representa a contagem de vezes em que $\cdot$ é verdadeiro, $f$ é o modelo preditivo, $\aleph$ é o subconjunto de dados sob o qual o modelo está sendo avaliado, $f(\cdot)$ é a classificação fornecida pelo modelo preditivo para cada um dos exemplares (dos dados), e $y$ é a classe esperada como resposta. \cite[p. 129]{Boscarioli2017}
@@ -397,7 +397,7 @@ em que $|\cdot|$ representa a contagem de vezes em que $\cdot$ é verdadeiro, $f
 A acurácia de um classificador também pode ser descrita em termos do \textbf{erro de generalização} $\xi_g$, e uma função de perda binária e, portanto, ser interpretada como a probabilidade de ocorrer uma classificação correta. Dessa forma:
 
 \begin{equation}
-\text{Acurácia}_g=1 - \xi_g
+\textrm{Acurácia}_g=1 - \xi_g
 \end{equation}
 
 Ou seja, a acurácia é, basicamente o número de acertos (positivos) divido pelo número total de exemplos. Será a métrica mais usada para avaliar os classificadores neste trabalho.
@@ -412,19 +412,19 @@ Para \cite{nn_smithing_1999}
 Algumas funções de perda (\textit{loss functions}), comuns, neste contexto são: \cite{Boscarioli2017}
 
 \begin{equation}\label{erro_absoluto}
-	\text{\textit{Erro absoluto}}=\sum_{<\vec{x}_i, y_i> \in \aleph} |y_i - f(\vec{x}_i)|
+	\textrm{\textit{Erro absoluto}}=\sum_{<\vec{x}_i, y_i> \in \aleph} |y_i - f(\vec{x}_i)|
 \end{equation}
 
 \begin{equation}\label{erro_quadratico}
-\text{\textit{Erro quadrático}}=\sum_{<\vec{x}_i, y_i> \in \aleph} (y_i - f(\vec{x}_i))^2
+\textrm{\textit{Erro quadrático}}=\sum_{<\vec{x}_i, y_i> \in \aleph} (y_i - f(\vec{x}_i))^2
 \end{equation}
 
 \begin{equation}\label{erro_absoluto_medio}
-\text{\textit{Erro absoluto médio}}=\sum_{<\vec{x}_i, y_i> \in \aleph} |y_i - f(\vec{x}_i)|/m
+\textrm{\textit{Erro absoluto médio}}=\sum_{<\vec{x}_i, y_i> \in \aleph} |y_i - f(\vec{x}_i)|/m
 \end{equation}
 
 \begin{equation}\label{erro_quadratico_medio}
-\text{\textit{Erro médio quadrático}}=\sum_{<\vec{x}_i, y_i> \in \aleph} (y_i - f(\vec{x}_i))^2/m
+\textrm{\textit{Erro médio quadrático}}=\sum_{<\vec{x}_i, y_i> \in \aleph} (y_i - f(\vec{x}_i))^2/m
 \end{equation}
 
 Onde $m$ é a quantidade de instâncias existentes em $\aleph$. \cite{Boscarioli2017}, \cite{amaral_introducao_2018} além de \cite{deng_improved_2016} e \cite{ruuska_evaluation_2018} afirmam que é importante analisar o tipo de erro que o modelo está cometendo e, principalmente, no caso de classificadores binários, é possível observar que, mesmo com uma acurácia alta o classificador pode não estar respondendo de forma adequada. Para realizar esse tipo de análise, os autores citados no princípio deste parágrafo, citam que uma ferramenta adequada é a \textit{\textbf{matriz de confusão}}. 
@@ -509,13 +509,17 @@ Então é efetuada a soma dos valores $x_i \times p_i$ de todas as conexões e o
 
 Matematicamente, a saída $y_k$ do neurônio mostrado na figura \ref{fig:neuronio} é dada pela expressão abaixo:
 \begin{equation}
-	Y_k = \varphi(u_k) \qquad \text{onde} \qquad u_k = \sum_{i=1}^{n} P_{ki}X_i 
+	Y_k = \varphi(u_k) \qquad \textrm{onde} \qquad u_k = \sum_{i=1}^{n} P_{ki}X_i 
 \end{equation}
 
 A função de ativação proposta inicialmente por McCullock e Pitts em seu trabalho seminal, \cite{mcculloch_logical_1943} é uma função de limiar:
 
 \begin{equation}\label{funcao_limiar}
-	y_k = \varphi(u_k) =  \left \{ \begin{matrix} 1, & \text{se }u_k > 0 \\ 0, & \text{se }u_k < 0 \end{matrix} \right
+y_k = \varphi (u_k) = \left \{ \begin{matrix}
+									1, & \mbox{se }u_k > 0 \\ 
+									0, & \mbox{se }u_k < 0 
+								\end{matrix} 
+							\right.
 \end{equation}
 
 Uma alteração importante neste modelo foi a introdução de um parâmetro polarizador (\textit{bias} ou \textit{offset}) $b_k$, conforme a figura \ref{fig:bias_neuronio} cujo objetivo é deslocar o valor da informação referente à entrada líquida $u_k$, de forma a verter a função de ativação no eixo correspondente ao valor de $u_k$. Assim a saída $y_k = \varphi(u_k)$.
@@ -610,9 +614,9 @@ Proposta na primeira definição de rede com neurônios artificiais \cite{rosenb
 Matematicamente:
 \begin{equation}\label{eq:limiar}
 	y_k = y = f_i(a_i(t)) = \left \{ 
-	\begin{matrix} 1\text{,} & \text{se }a_i(t) >= 0 \\
-	0\text{,} & \text{se }a_i(t) < 0 \end{matrix} 
-	\right
+	\begin{matrix} 1\textrm{,} & \mbox{\textrm{se }}a_i(t) >= 0 \\
+	0\mbox{\textrm{,}} & \mbox{\textrm{se }}a_i(t) < 0 \end{matrix} 
+	\right.
 \end{equation}
 
 A imagem \ref{fig:binary_step} mostra o 'funcionamento' da função de ativação limiar. Eventualmente podem ser utilizados os valores -1 e 1. Uma rede de camada simples que utiliza este tipo de ativação é o perceptron simples.
@@ -677,7 +681,7 @@ A função ReLU é a unidade linear retificada. É definida como: \cite{deep_lea
 Sua derivada é dada por:
 \begin{equation}\label{derivada_relu}
 	ReLU'(x) = \left \{ \begin{matrix} 1, & \mbox{se }x > 0 \\ 
-	0, & \mbox{caso contrário} \end{matrix} \right
+	0, & \mbox{\textrm{caso contrário}} \end{matrix} \right.
 \end{equation}
 
 Segundo, \cite{deep_learning_book_2019},\begin{quote}
@@ -737,8 +741,8 @@ Cf. \cite{goldschmidt2005},
 	
 		\begin{equation}
 			\begin{matrix}
-				Se & f(x_i) \ge 0, & \text{então} &  y_i = 1   \\
-				Se & f(x_i) < 0,   & \text{então} &  y_i = -1   
+				Se & f(x_i) \ge 0, & \textrm{então} &  y_i = 1   \\
+				Se & f(x_i) < 0,   & \textrm{então} &  y_i = -1   
 			\end{matrix}
 		\end{equation}
 
@@ -998,12 +1002,12 @@ Em seguida os atributos foram transformados usando padronização para manter as
 \end{equation}
 onde $\mu$ é a média aritmética e $\sigma$ é o desvio-padrão dos dados. Como todos os dados estão agora em formato numérico, é um passo importante.
 
-O código para a padronização foi o abaixo:\\
-\noident
-\texttt{from sklearn.preprocessing import StandardScaler \\
-scaler = StandardScaler() \\
-previsores\textunderscore transformados = scaler.fit\textunderscore transform(previsores)}
-
+O código para a padronização foi o abaixo:
+\begin{verbatim} 
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+previsores_transformados = scaler.fit_transform(previsores)
+\end{verbatim}
 Assim os dados foram padronizados e ficaram na mesma escala. Foi gerado um novo conjunto de dados de treinamento com 75\% do \textit{dataset} (sendo escolhidos randomicamente). Deixando, assim, 25\% da base para validação.
 
 Logo em seguida, um modelo de Multi-Layer Perceptron foi criado usando o classificador \texttt{\textbf{MLPClassifier}} da biblioteca \texttt{\textbf{sklearn}} com os seguintes hiperparâmetros: 
