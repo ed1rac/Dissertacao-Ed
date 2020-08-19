@@ -528,13 +528,15 @@ A quantidade de informações disponíveis cresce a cada ano. Aumenta, junto com
 \textual
 
 \chapter{Introdução} \label{introducao}
-\chapterprecis{Colocar alguma coisa aqui - a professora pediu}\index{sinopse de capítulo}
+Neste capítulo introdutório serão descritos o problema da pesquisa, a justificativa, a hipótese do trabalho, os objetivos, as soluções propostas, os resultados esperados, as limitações da pesquisa e como este trabalho está organizado.\index{sinopse de capítulo}
 \section{Contextualização} \label{contextualizacao}
 De acordo com \citeonline{alecrim2019}, o volume de dados e informações cresce exponencialmente a cada ano, portanto, há uma frequente e ininterrupta demanda por mais infraestrutura de TI nas empresas, nos governos e mesmo nos usuários domésticos e, mais ainda, por um correto tratamento, destino e interpretação à imensidão de dados gerados por pessoas, empresas e governos.\cite{machado2014} 
 
 Em uma ampla variedade de campos, os dados estão sendo coletados e acumulados em um ritmo acelerado e há, assim, uma crescente demanda por análise adequada destes.\cite{fayyad1996, lima_fraud_2012}. Neste contexto se insere a mineração de dados com suas técnicas para tratamento e extração de conhecimento desse volume crescente de dados.\cite{Boscarioli2017, ferrari2017}
 
-Este trabalho usa diversas tarefas da mineração de dados para modelar uma hipótese que possibilite detectar conflitos em políticas de controle de acesso. Para isso, diversos algoritmos de classificação serão explorados, descritos e utilizados com ênfase nas redes neurais e outras técnicas lineares de classificação. As políticas de proteção, confidencialidade e confiabilidade da informação, como as de controle de acesso, sendo parte da área de segurança computacional, são uma das formas de garantir, mediante o estabelecimento de regras, padrões e normas a salvaguarda e a disponibilidade das informações dos sistemas.\cite{sarkis2017}\cite{bui_efficient_2019}. 
+Este trabalho usa diversas tarefas da mineração de dados para modelar uma hipótese que possibilite detectar conflitos em políticas de controle de acesso. Para isso, diversos algoritmos de classificação serão explorados, descritos e utilizados com ênfase nas redes neurais e outras técnicas lineares de classificação. 
+
+As políticas de proteção, confidencialidade e confiabilidade da informação, como as de controle de acesso, sendo parte da área de segurança computacional, são uma das formas de garantir, mediante o estabelecimento de regras, padrões e normas a salvaguarda e a disponibilidade das informações dos sistemas.\cite{sarkis2017}\cite{bui_efficient_2019}. 
 
 Este tema, cf. \citeonline[p.1]{ueda_tese_2012} ``é um tema de pesquisa importante dentro do contexto de segurança de sistemas, pois é um dos componentes fundamentais em qualquer sistema de computação''.
 
@@ -547,7 +549,7 @@ Nas palavras de \citeonline[p.1]{ueda_tese_2012},
 
 Uma política, como as de controle de acesso, descrevem qual ação um sujeito (em um sistema) pode fazer (\textit{permissão}), não pode fazer (\textit{proibição}) ou é obrigado a fazer (\textit{obrigação}) sobre um objeto em um dado contexto \cite{sarkis2017}. 
 
-De maneira semelhante são conceituadas as \textit{normas} e os conjuntos de normas usados para lidar com a autonomia e a diversidade de interesses entre os diferentes agentes em um sistema multiagentes como o descrito e estudado em \citeonline{eduardo2017}. Essas normas que regulam as ações dos agentes são análogas às definições das políticas citadas na epígrafe deste parágrafo e são, cf. \citeonline{eduardo2017} e \citeonline{sarkis:artigo:2016} fatores importantes para garantir a eficácia dos sistemas.
+De maneira semelhante são conceituadas as \textit{normas} e os conjuntos de normas usados para lidar com a autonomia e a diversidade de interesses entre os diferentes agentes em um sistema multiagentes como o descrito e estudado em \citeonline{eduardo2017}. Essas normas que regulam as ações dos agentes são análogas às definições das políticas citadas anteriormente nesta \autoref{contextualizacao} e são, cf. \citeonline{eduardo2017} e \citeonline{sarkis:artigo:2016} fatores importantes para garantir a eficácia da segurança dos sistemas.
 
 Em contextos reais, porém, muitas vezes as políticas de segurança (e \textit{normas}) apresentam conflitos entre si. Estes surgem quando, por exemplo, duas políticas regulando o mesmo comportamento de determinado objeto em um sistema estão ativas, mas uma delas obriga (ou permite) a realização de determinado comportamento ou ação enquanto a outra proíbe o mesmo. \cite{sarkis2017}\cite{eduardo2017}. 
 
@@ -555,13 +557,15 @@ A detecção automatizada destes conflitos, com alta acurácia e custo computaci
 \subsection{Problema}\label{problema}
 O problema investigado neste trabalho consiste na \textit{detecção de conflitos de forma automatizada usando técnicas de mineração de dados e aprendizagem de máquina} que apresentem acurácias superiores a 95\% e que, ao analisar simultaneamente várias políticas ao se inserir uma nova instância não leve a um custo computacional exponencial.
 \subsection{Justificativa}\label{justificativa}
-Na detecção de conflitos em políticas, geralmente, cf. revisão da literatura,  usam-se abordagens semelhantes as de \citeonline{sarkis2017} baseadas em análise de ontologias entre os atributos que compõem uma política e em regras de propagação das mesmas ou procedimentos como os descritos em \citeonline{eduardo2017} que utilizam lógica deôntica\footnote{A lógica \textit{deôntica} é um tipo de lógica usada para analisar de modo formal as normas e as proposições que tratam dessas normas \cite{eduardo2017} } para encontrar os conflitos. 
+Na detecção de conflitos em políticas, geralmente, cf. revisão da literatura ( no capítulo \ref{referencial_teorico}),  usam-se abordagens semelhantes as de \citeonline{sarkis2017} baseadas em análise de ontologias entre os atributos que compõem uma política e em regras de propagação das mesmas ou procedimentos como os descritos em \citeonline{eduardo2017} que utilizam lógica deôntica\footnote{A lógica \textit{deôntica} é um tipo de lógica usada para analisar de modo formal as normas e as proposições que tratam dessas normas \cite{eduardo2017} } para encontrar os conflitos. 
 
-Entretanto, para que os conflitos sejam detectados nessas abordagens as políticas são analisadas em pares (e sem filtros para agrupamentos) e mesmo quando são verificadas múltiplas \textit{normas} ou políticas, como em \citeonline{eduardo2017}, todas elas devem ser novamente ``onsultadas'' ou ``varridas'' a cada nova instância de uma política inserida no sistema (para que o conflito seja ou não detectado). O trabalho de \citeonline{shoham_tennenholtz_1995} provou que esta forma de analisar políticas é um \textbf{problema NP-completo}, ou seja, ainda não foi provado que esta classe de problemas pode ser resolvida em tempo \textit{polinomial}, sendo assim, são computacionalmente onerosos a cada vez que uma instância nova de política é analisada (em tempo d execução sendo, normalmente exponencial). Com o crescimento orgânico, natural e temporal da quantidade de políticas em um sistema computacional este fato tende a tornar a manutenção e gerenciamento das políticas algo \textit{computacionalmente custoso e dispendioso}.   
+Entretanto, para que os conflitos sejam detectados nessas abordagens as políticas são analisadas em pares (e sem filtros para agrupamentos) e mesmo quando são verificadas múltiplas \textit{normas} ou políticas, como em \citeonline{eduardo2017}, todas elas devem ser novamente ``onsultadas'' ou ``varridas'' a cada nova instância de uma política inserida no sistema (para que o conflito seja ou não detectado). 
+
+O trabalho de \citeonline{shoham_tennenholtz_1995} provou que esta forma de analisar políticas é um \textbf{problema NP-completo}, ou seja, ainda não foi provado que esta classe de problemas pode ser resolvida em tempo \textit{polinomial}, sendo assim, são computacionalmente onerosos a cada vez que uma instância nova de política é analisada (em tempo d execução sendo, normalmente exponencial). Com o crescimento orgânico, natural e temporal da quantidade de políticas em um sistema computacional este fato tende a tornar a manutenção e gerenciamento das políticas algo \textit{computacionalmente custoso e dispendioso}.   
 
 Conforme se visualiza na seção \ref{trabalhos_relacionados}, as técnicas e algoritmos de aprendizagem de máquina juntamente com as de mineração de dados foram utilizadas com resultados promissores na detecção de conflitos, principalmente em \citeonline{obaidat_multilayer_1994, chen_flight_2011} bem como em \citeonline{christodoulou_collision_2008} e \citeonline{jin_development_2002} que abordam problemas variados como detecção de colisões em voos, segurança de acesso computacional, incidentes em rodovias e intrusão de sistemas --- todos de alguma forma relacionados à conflitos entre normas, regras, políticas ou direção.  
 
-Em grandes organizações as \textit{políticas de segurança}, como as de controle de acesso, pela quantidade de objetos, modalidades, sujeitos e ações inerentes a essas instituições tendem a ter grande quantidade de informações e elas crescem conforme o uso diário e constante dos sistemas computacionais. organizações grandes, com múltiplos objetos e ações possuem centenas, às vezes, milhares de políticas (entre elas \textit{políticas de controle de acesso}, por exemplo).\cite{fugini_information_2004}.
+Em grandes organizações as \textit{políticas de segurança}, como as de controle de acesso, pela quantidade de objetos, modalidades, sujeitos e ações inerentes a essas instituições tendem a ter grande quantidade de informações e elas crescem conforme o uso diário e constante dos sistemas computacionais. Organizações grandes, com múltiplos objetos e ações possuem centenas, às vezes, milhares de políticas (entre elas \textit{políticas de controle de acesso}, por exemplo).\cite{fugini_information_2004}.
 
 Neste ambiente e considerando que as políticas analisadas em pares, como em \citeonline{sarkis2017}, tem alto custo computacional por este, como visto em \citeonline{shoham_tennenholtz_1995}, \underline{ser um problema NP-completo} e com a estratégia de minimizar a complexidade deste problema otimizando-o baseando suas soluções no conhecimento adquirido e já existente nas organizações (os \textit{datasets} de políticas), a mineração de dados com técnicas de aprendizagem de máquina surgem como possibilidades de solução na detecção de conflitos tanto em tempo de design quanto em tempo de execução, pois, minimiza este custo computacional ao se aproveitar da ``história'' temporal das políticas da organização, mediante o conhecimento adquirido e ``treinado'' e otimizado pelos algoritmos de aprendizagem de máquina.
 
@@ -569,6 +573,7 @@ Neste ambiente e considerando que as políticas analisadas em pares, como em \ci
 Diante do contexto apresentado na seção anterior e também por \citeonline{fugini_information_2004} tem-se \textit{como hipótese deste trabalho}, que o problema de detectar conflitos entre políticas\textit{ pode ser convertido e transformado} em uma tarefa de classificação da mineração de dados e que o uso de algoritmos de aprendizagem de máquina associados a técnicas de \textit{data mining} para detectar estes conflitos configure um método que apresente precisão e acurácia superiores a 95\%.
 
 \section{Objetivos}\label{objetivos}
+Nesta seção serão descritos o objetivo geral e os específicos deste trabalho.
 \subsection{Objetivo geral}\label{objetivo_geral}
 O objetivo deste trabalho é propor que o problema da detecção de conflitos em políticas pode ser convertido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação além de modelar e sumariar uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina que consigam acurácias elevadas.
 \subsection{Objetivos específicos}
@@ -594,7 +599,7 @@ Diante da hipótese apresentada na seção \ref{hipótese}, a solução para o p
 Realizado os múltiplos experimentos, atestar a hipótese mediante os resultados apresentados.
 
 \section{Método de Pesquisa} 
-O método de pesquisa relatando todos os passos necessários para demonstrar os objetivos descritos na seção \ref{objetivos} e de que forma eles foram atingidos serão pormenorizadamente detalhados na seção \ref{resultados} deste trabalho.
+O método de pesquisa relatando todos os passos necessários para demonstrar os objetivos descritos na seção \ref{objetivos} e de que forma eles foram atingidos serão pormenorizadamente detalhados no capítulo \ref{resultados} deste trabalho.
 
 \section{Resultados Esperados}\label{resultados_esperados}
 Ao fim deste trabalho os seguintes resultados são esperados:
@@ -620,12 +625,11 @@ Não faz parte do escopo deste trabalho:
 
 \section{Organização do trabalho}
 Este trabalho está organizado da seguinte forma:
-\begin{itemize}
-	\item Neste capítulo 1 estão dispostas a contextualização, o problema da pesquisa, a justificativa, a hipótese de pesquisa, os objetivos, as soluções que foram propostas, os resultados esperados e as limitações do trabalho
-	\item No Capítulo 2 apresenta-se todo o referencial teórico compreendendo uma revisão bibliográfica sobre os principais temas desta dissertação, como políticas, detecção de conflitos, mineração de dados e aprendizagem de máquina (e seus algoritmos principais)
-	\item No Capítulo 3 são mostrados o método e os experimentos e resultados obtidos.
-	\item No Capítulo 4 mostra-se o cronograma para a finalização da dissertação
-	\item No Capítulo 5 apresenta-se as conclusões e propostas para trabalhos futuros relacionados a esta pesquisa.
+\begin{itemize}	
+	\item No \autoref{referencial_teorico} apresenta-se todo o referencial teórico compreendendo uma revisão bibliográfica sobre os principais temas desta dissertação, como políticas, detecção de conflitos, mineração de dados e aprendizagem de máquina (e seus algoritmos principais)
+	\item No \autoref{resultados} são mostrados o método e os experimentos e resultados obtidos.
+	\item No \autoref{propostas} mostra-se o cronograma para a finalização da dissertação
+	\item No \autoref{conclusoes} apresenta-se as conclusões atingidas e esperadas desta pesquisa.
 \end{itemize}
 \clearpage
 % ----------------------------------------------------------
