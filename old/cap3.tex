@@ -102,31 +102,31 @@ Com o desenvolvimento dos sistemas e das políticas, estas últimas passaram a s
 \subsection{Modelos de políticas}\label{modelo_politicas}
 Os autores \citeonline{moffett_policy_1994} afirmam que um modelo de política deve ter os seguintes atributos fundamentais: \verb|{modalidade, sujeito, objeto e ação}|. A particularidade da política compreende estabelecer uma \textit{autorização}, uma \textit{permissão} ou \textit{proibição}. 
 
-Para \citeonline{moffett_policy_1994}, o \textit{sujeito }da política é a quem ela é orientada. O \textit{objeto} define o conjunto de objetos no qual a política está focada. A \textit{ação} é estabelecida como procedimentos que podem ser efetuados em \textit{objetos} no sistema. Outros trabalhos da literatura também consideram estes atributos apresentados aqui, com as mesmas conotações, para a definição de uma política. \cite{sarkis2017}
+Para \citeonline{moffett_policy_1994}, o \textit{sujeito }da política é a quem ela é orientada. O \textit{objeto} define o conjunto de objetos no qual a política está focada. A \textit{ação} é estabelecida como procedimentos que podem ser efetuados em \textit{objetos} no sistema. Outros trabalhos da literatura também consideram estes atributos apresentados aqui, com as mesmas conotações, para a definição de uma política, como o trabalho de  \citeonline{sarkis2017}
 
-Outros modelos de políticas são descritos em \citeonline{lupu_conflicts_1999}, também em \citeonline{sloman_security_2002} e \citeonline{koch_conflict_2002} além de \citeonline{bui_efficient_2019} e \citeonline{dunlop_dynamic_2002}
+Outros modelos de políticas, cada um com as suas particularidades, são descritos em \citeonline{lupu_conflicts_1999}, também em \citeonline{sloman_security_2002} e \citeonline{koch_conflict_2002} além de \citeonline{bui_efficient_2019} e \citeonline{dunlop_dynamic_2002}, mas não serão utilizados neste trabalho.
 
 \subsection{Modelo de Política utilizado}\label{modelo_politica_utilizada}
 De acordo com \citeonline[p. 36]{sarkis2017}:
 \begin{citacao}
 	Definir uma política de controle de acesso não é uma tarefa simples, principalmente porque algumas vezes é necessário representar formalmente políticas complexas, tais como as que tem origem em práticas de leis e regulamentos organizacionais.
 \end{citacao} 
-Desta forma, a definição da política deve combinar todos os diferentes regulamentos para ser executada e considerar todas as possíveis ameaças adicionais relativas ao uso de sistemas. \cite{di_vimercati_policies_2005}
+Desta forma, a definição da política deve combinar todos os diferentes regulamentos para ser executada e considerar todas as possíveis ameaças adicionais relativas ao uso de sistemas \cite{di_vimercati_policies_2005}.
 
-O modelo de política utilizado neste trabalho baseia-se inteiramente no modelo proposto por \cite{sarkis2017} e \cite{sarkis:artigo:2016} baseado nos modelos propostos pelos autores \cite{cuppens_high_2007}, e também o trabalho de \cite{elrakaiby_formal_2012}, bem como o artigo de \cite{kalam_organization_2003}.
+O modelo de política utilizado neste trabalho baseia-se inteiramente no modelo proposto por \citeonline{sarkis2017} e \cite{sarkis:artigo:2016} baseado nos modelos, ele próprio, nos propostos pelos autores \citeonline{cuppens_high_2007}, e também o trabalho de \citeonline{elrakaiby_formal_2012}, bem como o artigo de \citeonline{kalam_organization_2003}.
 
-Portanto, de acordo com \cite[p.36]{sarkis2017} e \cite{sarkis:artigo:2016}:
+Portanto, de acordo com \citeonline[p.36]{sarkis2017} e \citeonline{sarkis:artigo:2016}:
 \begin{quotation}
 	Uma política é uma tupla da forma:
 	\begin{equation}\label{politica}
 	Policy = KP \times Org \times SR \times AA \times OV \times Ac \times Dc
 	\end{equation}
-	Onde $ KP $ descreve o tipo de política (uma proibição (F), da palavra em inglês Forbidden; uma permissão (P); ou uma obrigação (O)). $ Org $. relata o local (ambiente) onde a política deve ser cumprida, isto é, a organização na qual os sujeitos devem cumprir a política. $ SR $ descreve a quem (entidades) se destina a política (pode ser um sujeito $ s \in S $ ou um papel $ r \in R $, ou seja, $ SR = S \cup R $. Um sujeito pode ser um usuário $ u \in U $ ou uma organização $ org \in Org $ representando o grupo de sujeitos que devem cumprir com a política, isto é, $ S = U \cup Org $). $ AA $ identifica uma ação $ a \in A  $ ou uma atividade $ act \in Act  $ (uma atividade é a união de várias ações relacionadas). $ OV $ relata um objeto $ o \in O $ ou uma visão $ v \in V $ que está sendo manipulada pela ação/atividade (uma visão é a união de vários objetos). $ Ac $ é a condição de ativação da política e $ Dc $ é a condição de desativação da política. Uma condição constitui a configuração para um evento, em termos de que a política deva seguir. 
+	Onde $ \textbf{KP} $ descreve o tipo de política (uma proibição (F), da palavra em inglês Forbidden; uma permissão (P); ou uma obrigação (O)). $ \textbf{Org} $. relata o local (ambiente) onde a política deve ser cumprida, isto é, a organização na qual os sujeitos devem cumprir a política. $ \textbf{SR} $ descreve a quem (entidades) se destina a política (pode ser um sujeito $ s \in S $ ou um papel $ r \in R $, ou seja, $ SR = S \cup R $. Um sujeito pode ser um usuário $ u \in U $ ou uma organização $ org \in Org $ representando o grupo de sujeitos que devem cumprir com a política, isto é, $ S = U \cup Org $). $ \textbf{AA} $ identifica uma ação $ a \in A  $ ou uma atividade $ act \in Act  $ (uma atividade é a união de várias ações relacionadas). $ \textbf{OV} $ relata um objeto $ o \in O $ ou uma visão $ v \in V $ que está sendo manipulada pela ação/atividade (uma visão é a união de vários objetos). $ \textbf{Ac} $ é a condição de ativação da política e $ \textbf{Dc} $ é a condição de desativação da política. Uma condição constitui a configuração para um evento, em termos de que a política deva seguir. 
 \end{quotation}
 
-Em \cite{sarkis2017} definiu-se $ Ac $ e $ Dc $ como datas, desta forma $ Ac $ é a data de ativação da política e $ Dc $ é a data de desativação.
+Em \citeonline{sarkis2017} foi definido $ Ac $ e $ Dc $ como datas, desta forma $ Ac $ é a data de ativação da política e $ Dc $ é a data de desativação.
 
-A figura \ref{fig:modelo_politica} exemplifica o modelo de políticas utilizadas neste estudo para a mineração de dados e aprendizagem de máquina.
+A \autoref{fig:modelo_politica} exemplifica o modelo de políticas utilizadas neste estudo para a mineração de dados e aprendizagem de máquina.
 
 \begin{figure}[h!]
 	\centering
@@ -139,13 +139,13 @@ A figura \ref{fig:modelo_politica} exemplifica o modelo de políticas utilizadas
 
 \subsection{Detecção de conflitos} \label{deteccao_conflitos}
 
-Segundo \cite{kalam_organization_2003}, quando um modelo de controle de acesso inclui a possibilidade de especificar permissões, proibições e obrigações podem ocorrer alguns conflitos entre políticas. 
+Segundo \citeonline{kalam_organization_2003}, quando um modelo de controle de acesso inclui a possibilidade de especificar \textit{permissões}, \textit{proibições} e \textit{obrigações} podem ocorrer alguns conflitos entre políticas. 
 
-Os conflitos podem ocorrer quando diferentes conjuntos de condições resultam em permitir e negar simultaneamente, ao mesmo papel, à mesma solicitação, ou proibir e obrigar o mesmo papel, à mesma solicitação, ou seja, quando os objetivos de duas ou mais políticas não podem ser atendidos simultaneamente. \cite{cuppens_high_2007}
+Os conflitos podem acontecer quando diferentes conjuntos de condições resultam em \textit{permitir} e \textit{negar} simultaneamente, ao mesmo papel, à mesma solicitação, ou \textit{proibir} e \textit{obrigar} o mesmo papel, à mesma solicitação, isto é, quando os \textit{objetivos} de duas ou mais políticas \textit{não podem ser atendidos simultaneamente} \cite{cuppens_high_2007}.
 
 \subsubsection{Classificação dos conflitos}
 
-De acordo com \cite{cuppens_high_2007}, \cite{sloman_security_2002} e \cite{lupu_conflicts_1999}, os conflitos classificam-se, principalmente em: \begin{itemize}
+De acordo com \citeonline{cuppens_high_2007}, \citeonline{sloman_security_2002} e \citeonline{lupu_conflicts_1999}, os conflitos classificam-se, principalmente em: \begin{itemize}
 	\item \textit{conflito de modalidade} que decorre de políticas de propriedades contrárias; 
 	\item \textit{conflito em potencial} surge da tripla sobreposição de sujeitos, ações e objetos de políticas de predicados opostos;
 	\item \textit{conflito de redundância} que surge da precedência de execução dadas a certas políticas e
@@ -154,10 +154,10 @@ De acordo com \cite{cuppens_high_2007}, \cite{sloman_security_2002} e \cite{lupu
 
 Neste trabalho, para o modelo de política proposto, não abordam-se os conflitos de redundância já que ordens de precedência não são tratadas. Todas as outras modalidades de conflitos são examinadas e utilizadas.
 
-Assim como em \cite[p. 24]{sarkis2017}, neste trabalho, os conflitos em potencial são denominados \textbf{conflitos diretos} e os conflitos de aplicação são abarcados pelos chamados \textbf{conflitos indiretos}.
+Assim como em \citeonline[p. 24]{sarkis2017}, neste trabalho, os conflitos em potencial são denominados \textbf{conflitos diretos} e os conflitos de aplicação são abarcados pelos chamados \textbf{conflitos indiretos}.
 
 \subsubsection{Conflitos Diretos e Indiretos}
-\citeonline{dunlop_dynamic_2002} usa uma abordagem para os conflitos diretos e simples que será replicada neste trabalho. Diz-se que duas regras estão em conflito quando o cumprimento de uma das regras viola a outra e vice-versa. Ou seja, a verificação se há o conflito é feita entre duas políticas que possuem modalidades contraditórias ou antagônicas, definidas na mesma organização, executadas pelos mesmos sujeitos, efetuando a mesma ação em relação a um objeto específico.
+\citeonline{dunlop_dynamic_2002} usam uma abordagem para os conflitos diretos e simples que será replicada neste trabalho. Diz-se que duas regras estão em conflito \textit{quando o cumprimento de uma das regras viola a outra e vice-versa}. Ou seja, a verificação se há o conflito é feita entre duas políticas que possuem modalidades contraditórias ou antagônicas, definidas na mesma organização, executadas pelos mesmos sujeitos, efetuando a mesma ação em relação a um objeto específico.
 
 Exemplo de um \textit{\textbf{conflito direto}}:
 
@@ -167,7 +167,7 @@ Exemplo de um \textit{\textbf{conflito direto}}:
 
 Os exemplos acima mostram que quando uma política proíbe e a outra permite um sujeito de realizar uma ação estabelecida sobre um objeto específico em uma organização particular ocorre um \underline{conflito direto}. O conflito, segundo \citeonline{autrel_motorbac_nodate}, pode ser identificado diretamente utilizando a sobreposição dos atributos das políticas.
 
-Já em um \underline{conflito indireto,} as políticas conflitantes regulam ações diferentes (mas relacionadas) executadas por distintos sujeitos (porém, relacionados) sobre objetos desiguais (mas, relacionados) em organizações diferentes (mas, relacionadas). \cite[p.24]{sarkis2017}
+Já em um \underline{conflito indireto,} as políticas conflitantes regulam ações diferentes (mas relacionadas) executadas por distintos sujeitos (porém, relacionados) sobre objetos desiguais (mas, relacionados) em organizações diferentes (mas, relacionadas) \cite[p.24]{sarkis2017}.
 
 Além disso, um conflito indireto pode ainda ocorrer, mesmo quando as políticas em conflito não têm modalidades contraditórias ou contrárias.
 
@@ -188,47 +188,50 @@ Para \citeonline{sarkis2017},
 
 Ainda segundo \citeonline[p.25]{sarkis2017}, ``Para um sistema baseado em políticas trabalhar de forma eficaz é importante ter um meio de detectar e resolver os conflitos que possam surgir''. Torna-se, assim, indispensável a utilização de abordagens que analisem previamente a existência de conflitos como o proposto nesta dissertação.
 
+Na próxima seção os conceitos de mineração de dados utilizado neste trabalho serão descritos.
+
 
 \section{Mineração de Dados}\label{mineracao_dados}
-Uma das características de nossa era é produção de dados em grande volume, velocidade e variedade de todas as formas, por dispositivos espalhados em toda parte. Entretanto, dados, mesmo em grande quantidade, são apenas dados. É preciso produzir informação e conhecimento para explorar as vantagens que essa massa pode trazer. O dado necessita ser, de alguma forma, analisado, tratado para que informações e conhecimento possam ser, deles, extraídos. \cite{aprenda_mineracao_fernando_amaral16} \cite{ferrari2017}
+Uma das características de nossa era é produção de dados em grande volume, velocidade e variedade de todas as formas, por dispositivos espalhados em toda parte. Entretanto, dados, mesmo em grande quantidade, são apenas dados. É preciso produzir informação e conhecimento para explorar as vantagens que essa massa pode trazer. O dado necessita ser, de alguma forma, analisado, tratado para que informações e conhecimento possam ser, deles, extraídos \cite{aprenda_mineracao_fernando_amaral16} \cite{ferrari2017}.
 
 Conforme \citeonline{fayyad1996}:
 \begin{citacao}
-	\[ \dots \] Os computadores permitiram que os humanos coletassem mais dados do que podemos digerir, é natural [,portanto,] recorrer a técnicas computacionais para nos ajudar a desenterrar padrões e estruturas significativas a partir dos numerosos volumes de dados. Por isso, [a mineração de dados] é uma tentativa de resolver um problema que a era da informação digital transformou em realidade para todos nós: sobrecarga de dados.
+	 Os computadores permitiram que os humanos coletassem mais dados do que podemos digerir, é natural [,portanto,] recorrer a técnicas computacionais para nos ajudar a desenterrar padrões e estruturas significativas a partir dos numerosos volumes de dados. Por isso, [a mineração de dados] é uma tentativa de resolver um problema que a era da informação digital transformou em realidade para todos nós: sobrecarga de dados.
 \end{citacao}
 
-Para \citeonline{Boscarioli2017},
-\begin{citacao}
-	De forma simplificada, a \textit{mineração de dados }pode ser definida como um processo automático ou semiautomático de explorar analiticamente grandes bases de dados, com a finalidade de descobrir padrões relevantes que ocorrem nos dados e que sejam importantes para embasar a assimilação de informação importante, suportando a geração de conhecimento. 
-\end{citacao}
+Para \citeonline{Boscarioli2017}, a \textit{mineração de dados} pode ser definida como um processo automatizado ou semiautomatizado de explorar grandes bases de dados de forma extensiva, com o objetivo de encontrar padrões relevantes que ocorrem nos dados e que sejam significativos para embasar a absorção de informação importante, contribuindo para a geração de conhecimento. 
 
-Ainda, segundo \citeonline{fayyad1996}, 
-\begin{citacao}
-	O termo mineração de dados tem sido usado principalmente por estatísticos, analistas de dados e comunidades de sistemas de informações gerenciais (MIS). Ele também ganhou popularidade no campo do banco de dados. O termo descoberta de conhecimento em bancos de dados [(KDD, da sigla em Inglês)] foi cunhada no primeiro workshop do KDD em 1989 para enfatizar que o conhecimento é o produto final de uma descoberta baseada em dados. Foi popularizado nos campos de IA e aprendizado de máquina.
-\end{citacao}
+Para \citeonline{fayyad1996}, o termo ``mineração de dados'' tem sido usado  por estatísticos, analistas de dados e comunidades de sistemas de informações ganhando popularidade no campo do banco de dados. Já o termo \textit{descoberta de conhecimento em bancos de dados [}(KDD, da sigla em Inglês)] foi cunhada para enfatizar que o conhecimento é o produto final de uma descoberta baseada em dados. Está sendo utilizado nos campos de IA e aprendizado de máquina.
+
 
 \subsection{KDD - Knowledge Discovery in Databases}
-Assim, a mineração de dados é parte integrante de um processo mais amplo, conhecido como descoberta de conhecimento em bases de dados (\textit{Knowledge Discovery in Databases}, ou \textit{KDD})\cite{fayyad1996}. Embora se use \textit{mineração de dados} como sinônimo de KDD, a terminologia é empregada para a etapa de \textit{descoberta}  do processo de KDD, que inclui a \textit{seleção} e \textit{integração} das bases de dados, a \textit{limpeza} da base, a \textit{seleção e transformação} dos dados, a \textit{mineração}(propriamente) e a \textit{avaliação} dos dados. \cite{ferrari2017}\cite{Boscarioli2017}.
+Assim, a mineração de dados é parte integrante de um processo mais amplo, conhecido como descoberta de conhecimento em bases de dados (\textit{Knowledge Discovery in Databases}, ou \textit{KDD})\cite{fayyad1996}. 
+
+Embora se use \textit{mineração de dados} como sinônimo de KDD, a terminologia é empregada para a etapa de \textit{descoberta}  do processo de KDD, que inclui a \textit{seleção} e \textit{integração} das bases de dados, a \textit{limpeza} da base, a \textit{seleção e transformação} dos dados, a \textit{mineração}(propriamente) e a \textit{avaliação} dos dados. \cite{ferrari2017}\cite{Boscarioli2017}.
 
 Assim, a mineração de dados  é definida em termos de esforços para a descoberta de padrões em bases de dados. A partir destes padrões descobertos, há condições de se gerar conhecimento útil para um processo de tomada de decisão (ou a geração de conhecimento para esta tomada).
 
-Mais especificamente, KDD (\textit{Knowledge Discovery in Database}) é um processo de busca de conhecimento em bancos de dados e, de modo geral, consiste de uma sequência iterativa de passos (ou \textbf{etapas})\footnote{O processo de KDD, segundo \cite{fayyad1996} é composto por: \textit{Seleção de dados; Pré-processamento; Transformação; Mineração; Análise e assimilação de resultados}}: limpeza de dados; integração dos dados; seleção, transformação e mineração dos dados; avaliação dos padrões e apresentação e assimilação do conhecimento. Este processo é iterativo e, em alguma etapa, pode-se voltar para uma anterior. \cite{Boscarioli2017}
+Mais especificamente, KDD (\textit{Knowledge Discovery in Database}) é um processo de busca de conhecimento em bancos de dados e, de modo geral, consiste de uma sequência iterativa de passos (ou \textbf{etapas})\footnote{O processo de KDD, segundo \cite{fayyad1996} é composto por: \textit{Seleção de dados; Pré-processamento; Transformação; Mineração; Análise e assimilação de resultados}}: limpeza de dados; integração dos dados; seleção, transformação e mineração dos dados; avaliação dos padrões e apresentação e assimilação do conhecimento. Este processo é iterativo e, em alguma etapa, pode-se voltar para uma anterior \cite{Boscarioli2017}.
 
-A figura \ref{fig:processo-KDD} mostra o funcionamento iterativo do processo de KDD (\textit{Knowledge Discovery in Database}) -  Descoberta de Conhecimento em Bases de Dados.
+A \autoref{fig:processo-KDD} mostra o funcionamento iterativo do processo de KDD (\textit{Knowledge Discovery in Database}) -  Descoberta de Conhecimento em Bases de Dados.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.6\textwidth]{imagens/processo-KDD.png}
 	\caption{Etapas do processo de descoberta do conhecimento em bases de dados - KDD}
+	\fbox{\includegraphics[width=.6\textwidth]{imagens/processo-KDD.png}}
+	
 	{\scriptsize Fonte: \cite[p. 7]{vasconcelos_aplicacao_2018}}
 	\label{fig:processo-KDD}
 \end{figure}
 
-
-Neste trabalho as tarefas de seleção e transformação dos dados farão parte da etapa chamada de pré-processamento de acordo com, \cite{Boscarioli2017} e serão descritas com maior riqueza de detalhes no capítulo \ref{resultados}.
+Neste trabalho as tarefas de seleção e transformação dos dados farão parte da etapa chamada de pré-processamento de acordo com, \citeonline{Boscarioli2017} e serão descritas com maior riqueza de detalhes no \autoref{resultados}.
 
 \subsection{Modelo de conhecimento}\label{modelo_conhecimento}
-O termo \textbf{modelo de conhecimento} (ou hipótese) é utilizado na literatura (e neste trabalho) para fazer referência a um padrão ou conjunto de padrões descobertos (que é, enfim, o \textit{propósito} do processo de KDD). Estes padrões são conhecimentos representados segundo as normas sintáticas de alguma linguagem formal. Estes padrões podem ser classificados em dois tipos: preditivos e descritivos. O intuito dos preditivos é resolver um problema específico de prever os resultados ou valores de um ou mais atributos, em função dos valores de outros atributos. Os descritivos (ou informativos) tem o intuito de apresentar informações interessantes e importantes sobre os dados que um especialista de domínio possa não conhecer. Modelos de conhecimento compostos exclusivamente por padrões preditivos são chamados de modelos preditivos, enquanto que modelos descritivos são modelos de conhecimento compostos por padrões descritivos. \cite{goldschmidt2005}\cite{ferrari2017}\cite{Boscarioli2017}
+O termo \textbf{modelo de conhecimento} (ou hipótese) é utilizado na literatura (e neste trabalho) para fazer referência a um padrão ou conjunto de padrões descobertos (que é, enfim, o \textit{propósito} do processo de KDD). Estes padrões são conhecimentos representados segundo as normas sintáticas de alguma linguagem formal. Estes padrões podem ser classificados em dois tipos: \textit{preditivos} e \textit{descritivos} \cite{ferrari2017}.
+
+O intuito dos preditivos é resolver um problema específico de prever os resultados ou valores de um ou mais atributos, em função dos valores de outros atributos. Os descritivos (ou informativos) tem o intuito de apresentar informações interessantes e importantes sobre os dados que um especialista de domínio possa não conhecer\cite{goldschmidt2005}. 
+
+Modelos de conhecimento compostos exclusivamente por padrões preditivos são chamados de modelos preditivos, enquanto que modelos descritivos são modelos de conhecimento compostos por padrões descritivos \cite{Boscarioli2017}.
 
 Para \citeonline{minewiskan_modelos_nodate}, \begin{citacao}
 	Um modelo de mineração é criado aplicando-se um algoritmo a dados, mas é mais que um algoritmo ou um contêiner de metadados: é um conjunto de dados, estatísticas e padrões que podem ser aplicados a novos dados para gerar previsões e fazer inferências sobre relações.
@@ -238,33 +241,33 @@ Neste contexto, este trabalho se concentra, portanto, em criar modelos de forma 
 
 \subsubsection{Arquitetura do modelo}\label{arquitetura_modelo}
 
-Segundo \citeonline{minewiskan_modelos_nodate}, ``Um modelo de mineração obtém dados de uma estrutura de mineração e analisa esses dados usando um algoritmo de mineração de dados''. Entretanto, é importante diferenciar a estrutura e o modelo de mineração. Ainda de acordo com \citeonline{minewiskan_modelos_nodate}, \begin{citacao}
-	A estrutura de mineração armazena informações que definem a fonte de dados. Um modelo de mineração armazena informações derivadas do processamento estatístico de dados, como os padrões encontrados em decorrência da análise.
-\end{citacao}
+Segundo \citeonline{minewiskan_modelos_nodate}, ``Um modelo de mineração obtém dados de uma estrutura de mineração e analisa esses dados usando um algoritmo de mineração de dados''. Entretanto, é importante diferenciar a estrutura e o modelo de mineração. Ainda de acordo com \citeonline{minewiskan_modelos_nodate}, a \textit{estrutura} armazena informações que definem a fonte de dados, já um \textit{modelo} de mineração armazena informações derivadas do processamento estatístico dos dados, como padrões encontrados em decorrência da investigação.
 
 Assim, o modelo fica ``limpo'' até que os dados que foram guarnecidos pela estrutura de mineração sejam processados e avaliados. Depois de produzido o modelo contém \textit{metadados}, resultados e associações e pode, então, ser utilizado para a obtenção de conhecimento.
 
-A arquitetura pode conter também, variáveis, hiperparâmetros, definições do modelo, filtros utilizados e, claro, o algoritmo utilizado na tarefa de análise dos dados. \cite{deep_learning_book_2019}.
+A arquitetura pode conter também, variáveis, \textit{hiperparâmetros}, definições do modelo, filtros utilizados e, claro, o algoritmo utilizado na tarefa de análise dos dados. \cite{deep_learning_book_2019}.
 
 \section{Aprendizagem de máquina} \label{aprendizagem_maquina}
 Segundo \citeonline[p. 10]{goldschmidt2005}, \begin{citacao}
 	um dos passos do processo de KDD, o de extração de padrões (ou Mineração de Dados) utiliza métodos de Aprendizado de Máquina (AM) [ou \textit{Machine Learning} - ML] para encontrar regularidades, padrões ou conceitos em conjuntos de dados.
 \end{citacao}
 
-A principal diferença, segundo os autores, \cite{goldschmidt2005} entre Aprendizagem de Máquina e KDD reside no fato de ``grande parte da literatura em AM se concentra apenas no mecanismo de descoberta de padrões e/ou conceitos, sem se preocupar com o grau de utilidade''. Já em KDD, ainda segundo \cite{goldschmidt2005}, ``os padrões extraídos são avaliados para aferir sua utilidade para o usuário em relação à tomada de decisão''. Ou seja, o aprendizado na Aprendizagem de Máquina é um atividade-fim enquanto o aprendizado no KDD é uma atividade-meio para a obtenção do conhecimento.
+A principal diferença, segundo os autores, \citeonline{goldschmidt2005} entre Aprendizagem de Máquina e KDD reside no fato de ``grande parte da literatura em AM se concentra apenas no mecanismo de descoberta de padrões e/ou conceitos, sem se preocupar com o grau de utilidade''. Já em KDD, ainda segundo \cite{goldschmidt2005}, ``os padrões extraídos são avaliados para aferir sua utilidade para o usuário em relação à tomada de decisão''. Ou seja, o aprendizado na Aprendizagem de Máquina é um atividade-fim enquanto o aprendizado no KDD é uma atividade-meio para a obtenção do conhecimento.
 
 \subsection{Definição}
 Aprendizado de máquina ou \textit{machine learning} é um braço da Inteligência Artificial que emprega técnicas e algoritmos na criação de modelos computacionais dos quais a característica principal é a capacidade de descobrir padrões em um grande volume de dados ou de melhorar o desempenho de uma determinada tarefa através da experiência (do \textit{reforço}).\cite{mohri_foundations_2018} \cite{alpaydin_introduction_2014} \cite{swamynathan_mastering_2019}
 
-Então, de acordo com \cite[p. 278]{baeza-yates_recuperacao_2013}, ``os padrões aprendidos, que podem ser bem complexos, são então usados para fazer predições relativas a dados ainda não vistos e novos''.
+Então, de acordo com \citeonline[p. 278]{baeza-yates_recuperacao_2013}, ``os padrões aprendidos, que podem ser bem complexos, são então usados para fazer predições relativas a dados ainda não vistos e novos''.
 
-Nas palavras de Arthur Lee Samuel, considerado um dos pioneiros na área de inteligência artificial \cite{wiederhold_arthur_1992}, aprendizado de máquina é ``o campo de estudo que dá aos computadores a capacidade de aprender sem serem explicitamente programado''. \cite[p. 89]{simon_too_2013}. Aprendizado de máquina tem sido aplicado na automatização de funções que para os humanos são executadas intuitivamente, mas que são difíceis de definir formalmente. \cite{sarkar_2017}
+Nas palavras de Arthur Lee Samuel \citeonline{wiederhold_arthur_1992}, considerado um dos pioneiros na área de inteligência artificial, aprendizado de máquina é ``o campo de estudo que dá aos computadores a capacidade de aprender sem serem explicitamente programado''. \cite[p. 89]{simon_too_2013}. 
+
+Aprendizado de máquina tem sido aplicado na automatização de funções que para os humanos são executadas intuitivamente, mas que são difíceis de definir formalmente. \cite{sarkar_2017}
 
 Assim, de forma geral, a aprendizagem de máquina tem por objetivo estudar e desenvolver métodos computacionais para obter sistemas capazes de adquirir conhecimento de forma automatizada. \cite{lima_ia_2016}.
 
 A capacidade de determinados algoritmos tem de aprender a partir de exemplos é chamado de \textbf{aprendizado indutivo}. Estes algoritmos aprendem relacionamentos eventualmente existentes entre os dados, mostrando o resultado nos modelos de conhecimento gerado. \cite{goldschmidt2005}\cite{alpaydin_introduction_2014}
 
-Conforme \cite[p. 279]{baeza-yates_recuperacao_2013}, os algoritmos de aprendizado de máquina ``são fundamentalmente dependentes de uma fase de aprendizado, a qual é usada para produzir um modelo ou uma função que codifica padrões presentes nos dados de entrada''.
+Conforme \citeonline[p. 279]{baeza-yates_recuperacao_2013}, os algoritmos de aprendizado de máquina ``são fundamentalmente dependentes de uma fase de aprendizado, a qual é usada para produzir um modelo ou uma função que codifica padrões presentes nos dados de entrada''.
 
 Então, dependendo de qual é a abordagem de aprendizado usada, os algoritmos de aprendizado de máquina podem ser, basicamente de 3 principais tipos, que são: a aprendizagem supervisionada, a aprendizagem não-supervisionada e a aprendizagem por reforço \footnote{Há ainda os tipos de aprendizado \textit{semissupervisionado} e a \textit{transdução} (ou inferência transdutiva) que não serão discutidos neste trabalho}. \cite{Norvig2013} \cite{baeza-yates_recuperacao_2013}. 
 
@@ -277,21 +280,21 @@ Na \textbf{aprendizagem por reforço}, aprende-se a partir de uma série de refo
 \section{Algoritmos de classificação}
 A classificação é considerada uma das tarefas principais do processo de aprendizagem de máquina, sendo, inclusive, a tarefa mais comum. \cite{amaral_introducao_2018} \cite{fayyad1996}.
 
-Segundo, \cite[p. 86]{amaral_introducao_2018}, ``Na classificação, os dados devem possuir uma \textit{classe} a qual queremos prever''. Conforme \cite{Rocha2012}, ``o termo \textit{classe} deve ser usado quando existe informação sobre quantas e quais são as partições presentes em um conjunto de dados, bem como qual exemplar pertence a qual partição''
+Segundo, \citeonline[p. 86]{amaral_introducao_2018}, ``Na classificação, os dados devem possuir uma \textit{classe} a qual queremos prever''. Conforme \citeonline{Rocha2012}, ``o termo \textit{classe} deve ser usado quando existe informação sobre quantas e quais são as partições presentes em um conjunto de dados, bem como qual exemplar pertence a qual partição''
 
 Comumente denomina-se \textit{classificação} o processo pelo qual se determina uma função de mapeamento capaz de indicar a qual classe pertence algum exemplar de um domínio sob análise, baseando-se em um conjunto já classificado. \cite{Boscarioli2017}.
 
-Assim, de acordo com \cite{classification2013}, classificação é uma técnica de mineração de dados (aprendizado de máquina) usada para prever a associação ao grupo para instâncias de dados. É, segundo \cite{aprenda_mineracao_fernando_amaral16} e \cite{performance_classification2013}, como citado anteriormente, a tarefa mais utilizada em mineração de dados. Além de ser a mais complexa e a que possui a maior quantidade de algoritmos disponíveis, conforme descrito em \cite{classification2013}.
+Assim, de acordo com \citeonline{classification2013}, classificação é uma técnica de mineração de dados (aprendizado de máquina) usada para prever a associação ao grupo para instâncias de dados. É, segundo \citeonline{aprenda_mineracao_fernando_amaral16} e \citeonline{performance_classification2013}, como citado anteriormente, a tarefa mais utilizada em mineração de dados. Além de ser a mais complexa e a que possui a maior quantidade de algoritmos disponíveis, conforme descrito em \citeonline{classification2013}.
 
-A classificação é uma das tarefas \textit{preditivas} de Mineração de Dados e aprendizado de máquina. Tarefas de predição consistem na análise de um \textit{dataset} (conjunto de dados), descritos por atributos e rótulos associados com o objetivo de descobrir um \textbf{modelo} capaz de mapear corretamente cada um dos dados a seus rótulos apropriadamente. Esse objetivo é alcançado por meio de técnicas, normmalmente, chamadas de supervisionadas. Este tipo de análise preditiva pode ser dividida em \textit{categórica}, também chamada de \textit{classificação} ou em \textit{numérica}, também chamada de regressão. Cf. \cite{Boscarioli2017}  e \cite{classification2013}, também exposto em \cite{ferrari2017} e \cite{goldschmidt2005}
+A classificação é uma das tarefas \textit{preditivas} de Mineração de Dados e aprendizado de máquina. Tarefas de predição consistem na análise de um \textit{dataset} (conjunto de dados), descritos por atributos e rótulos associados com o objetivo de descobrir um \textbf{modelo} capaz de mapear corretamente cada um dos dados a seus rótulos apropriadamente. Esse objetivo é alcançado por meio de técnicas, normmalmente, chamadas de supervisionadas. Este tipo de análise preditiva pode ser dividida em \textit{categórica}, também chamada de \textit{classificação} ou em \textit{numérica}, também chamada de regressão. Cf. \citeonline{Boscarioli2017}  e \citeonline{classification2013}, também exposto em \citeonline{ferrari2017} e \citeonline{goldschmidt2005}
 
 \underline{Formalmente}, a tarefa de classificação pode ser descrita como a busca por uma função de mapeamento para um conjunto $X$ de vetores de entrada (ou, exemplares --- os dados) $\vec{x_i} \in E^d$ para um conjunto finito de rótulos $C$ de cardinalidade $c$. A função $F$ é, então, definida como $F: E^d \times W \rightarrow C$, em que $d$ é a dimensão do espaço $E$, ou seja, a quantidade de coordenadas do vetor $\vec{x_i}$, e $W$ é um espaço de parâmetros ajustáveis por meio do algoritmo de indução supervisionada. \cite{Boscarioli2017}
 
 Pode ser dividida em, ao menos, duas categorias: \textit{classificação binária} e \textit{classificação multiclasse}. Na binária, a cardinalidade $c$ é 2. Para o caso em que $c > 2$, o problema é considerado de múltiplas classes. \cite{Boscarioli2017} \cite{classification2013}
 
-Os textos de \cite{classification2013}, \cite{performance_classification2013},  além dos de \cite{Wolpert:1996}, \cite{classification_survey2012} e \cite{using_data_mining2012}  trazem reflexões, técnicas, comparações e explicações detalhadas de muitos algoritmos de classificação, entre eles, árvores de decisão, k-vizinhos mais próximos, Naive Bayes e Redes Bayesianas, Redes Neurais Artificiais, Máquinas de Vetores de Suporte (SVM) entre outros.   
+Os textos de \citeonline{classification2013}, \citeonline{performance_classification2013}, além dos de \citeonline{Wolpert:1996}, \citeonline{classification_survey2012} e \citeonline{using_data_mining2012}  trazem reflexões, técnicas, comparações e explicações detalhadas de muitos algoritmos de classificação, entre eles, árvores de decisão, k-vizinhos mais próximos, Naive Bayes e Redes Bayesianas, Redes Neurais Artificiais, Máquinas de Vetores de Suporte (SVM) entre outros.   
 
-Sobre \textit{teoria da aprendizagem} e \textit{algoritmos de classificação} há uma discussão em \cite{Norvig2013} sobre qual seria, em relação às hipóteses de modelos de aprendizagem, aquela (ou aquelas) que melhor se ajuste aos dados futuros. Os autores citam a \textbf{\textit{suposição de estacionaridade}}, ou seja, que há uma distribuição de probabilidade sobre os dados que permanece estacionária ao longo do tempo. Supõe-se, portanto que cada exemplo de ponto de dados (antes de conhecê-lo) é uma variável aleatória $E_j$ cujo valor observado $e_j = (x_j, y_j)$ é amostrado da distribuição e é independente dos exemplos anteriores. 
+Sobre \textit{teoria da aprendizagem} e \textit{algoritmos de classificação} há uma discussão em \citeonline{Norvig2013} sobre qual seria, em relação às hipóteses de modelos de aprendizagem, aquela (ou aquelas) que melhor se ajuste aos dados futuros. Os autores citam a \textbf{\textit{suposição de estacionaridade}}, ou seja, que há uma distribuição de probabilidade sobre os dados que permanece estacionária ao longo do tempo. Supõe-se, portanto que cada exemplo de ponto de dados (antes de conhecê-lo) é uma variável aleatória $E_j$ cujo valor observado $e_j = (x_j, y_j)$ é amostrado da distribuição e é independente dos exemplos anteriores. 
 
 Assim:
 \begin{equation}
@@ -304,33 +307,37 @@ e cada exemplo tem uma distribuição de probabilidade anterior idêntica:
 P(E_j) = P(E_{j-1}) = P(E_{j-2}) = \dots 
 \end{equation}
 
-Estes exemplos são chamados de \textit{independentes e identicamente distribuídos} ou \textbf{i.i.d}. Esta suposição é, segundo os autores, \underline{necessária} para \textit{tentar a previsão sobre o futuro dos dados}. Há claro, ainda em \cite{Norvig2013}, um alerta sobre o fato de ser possível a aprendizagem ocorrer caso haja pequenas alterações (lentas) na distribuição.
+Estes exemplos são chamados de \textit{independentes e identicamente distribuídos} ou \textbf{i.i.d}. Esta suposição é, segundo os autores, \underline{necessária} para \textit{tentar a previsão sobre o futuro dos dados}. Há claro, ainda em \citeonline{Norvig2013}, um alerta sobre o fato de ser possível a aprendizagem ocorrer caso haja pequenas alterações (lentas) na distribuição.
 
-Outro fato importante para a definição e avaliação da escolha da melhor hipótese (modelo) de um algoritmo de classificação é definir o ``melhor ajuste''. Em seu conhecido livro de Inteligência Artificial, os autores \cite{Norvig2013} definem a \textbf{taxa de erro} de uma hipótese como uma métrica importante para definir o ``melhor ajuste'' de um modelo/hipótese.
+Outro fato importante para a definição e avaliação da escolha da melhor hipótese (modelo) de um algoritmo de classificação é definir o ``melhor ajuste''. Em seu conhecido livro de Inteligência Artificial, os autores \citeonline{Norvig2013} definem a \textbf{taxa de erro} de uma hipótese como uma métrica importante para definir o ``melhor ajuste'' de um modelo/hipótese.
 
 \subsubsection{Taxa de erro}\label{taxa_erro}
 
-A taxa de erro é, assim, a proporção de erros que o algoritmo classificador comete --- a proporção de vezes que $h(x)\neq y$ para o exemplo $(x,y)$ --- sendo $h(x)$ a função que mapeia uma \textit{hipótese/model}o $h$ com a \textit{previsão/valor} conhecido $y$. Nem sempre, como alerta, \cite{Norvig2013}, uma hipótese/modelo $h$ que tenha uma taxa de erro baixa no conjunto de treinamento generaliza bem e se comporta eficientemente para dados não conhecidos. A forma de testar o algoritmo é importante. Para isso há, na literatura, algumas técnicas que são utilizadas como estratégia de treinamento, validação e teste.
+A taxa de erro é, assim, a proporção de erros que o algoritmo classificador comete --- a proporção de vezes que $h(x)\neq y$ para o exemplo $(x,y)$ --- sendo $h(x)$ a função que mapeia uma \textit{hipótese/model}o $h$ com a \textit{previsão/valor} conhecido $y$. Nem sempre, como alerta, \citeonline{Norvig2013}, uma hipótese/modelo $h$ que tenha uma taxa de erro baixa no conjunto de treinamento generaliza bem e se comporta eficientemente para dados não conhecidos. A forma de testar o algoritmo é importante. Para isso há, na literatura, algumas técnicas que são utilizadas como estratégia de treinamento, validação e teste.
 
 \subsubsection{Estratégias de validação}\label{estrategias_validacao}
 
-Como citado por \cite{Norvig2013}, \cite{luger_inteligencia_2015} entre outros autores e, de acordo com \cite[p. 125]{Boscarioli2017}, \begin{quote}
+Como citado por \citeonline{Norvig2013} e \citeonline{luger_inteligencia_2015} entre diversos autores e, cf. \citeonline[p. 125]{Boscarioli2017}, 
+\begin{quote}
 	independentemente da medida de avaliação a ser usada para atestar a qualidade de um modelo, não é adequado avaliá-lo [apenas] por seu desempenho em relação aos exemplares apresentados no processo de treinamento (indução). É sempre necessário saber como o modelo se comporta quando aplicado a exemplares que ainda não conhece, ou seja, não usados no processo de sintonização de seus parâmetros.
 \end{quote}
 
-Essa observação, claro, é porque modelos preditivos, dependendo de como são criados, podem levar ao \textit{\textbf{overfitting}} (sobreajuste). O fenômeno do sobreajuste ocorre, cf. \cite{Boscarioli2017} ``quando o modelo preditivo é gerado de forma a representar os exemplares usados para sua geração com uma fidelidade mais alta que o necessário''. 
+Essa observação, claro, é porque modelos preditivos, dependendo de como são criados, podem levar ao \textit{\textbf{overfitting}} (sobreajuste). O fenômeno do sobreajuste ocorre, cf. \citeonline{Boscarioli2017} ``quando o modelo preditivo é gerado de forma a representar os exemplares usados para sua geração com uma fidelidade mais alta que o necessário''. 
 
-Assim, modelos sobreajustados (ou superajustados) não são capazes de realizar predições adequadas para dados novos. Busca-se, na construção de modelos preditivos, uma maior \textit{generalização} e no caso do sobreajuste o fenômeno contrário ocorre. A maior causa de sobreajuste é quando os dados de treinamento não representam fielmente os dados novos (ou de produção) ou por serem diferentes (caso de dados antigos, por exemplo) ou por não serem significativos (poucos dados)\footnote{ é possível também o sobreajuste devido a \textit{ruídos} nos dados, pelo uso de um modelo de forma inapropriada ou de uma \textit{classe rara} \cite[p.35]{aprenda_mineracao_fernando_amaral16}}. A figura \ref{fig:overfitting} mostra um modelo preditivo em que o lado direito representa um modelo sobreajustado e o lado esquerdo um modelo regularizado para o mesmo \textit{dataset}.
+Assim, modelos sobreajustados (ou superajustados) não são capazes de realizar predições adequadas para dados novos. Busca-se, na construção de modelos preditivos, uma maior \textit{generalização} e no caso do sobreajuste o fenômeno contrário ocorre. 
+
+A maior causa de sobreajuste é quando os dados de treinamento não representam fielmente os dados novos (ou de produção) ou por serem diferentes (caso de dados antigos, por exemplo) ou por não serem significativos (poucos dados)\footnote{ é possível também o sobreajuste devido a \textit{ruídos} nos dados, pelo uso de um modelo de forma inapropriada ou de uma \textit{classe rara} \cite[p.35]{aprenda_mineracao_fernando_amaral16}}. A \autoref{fig:overfitting} mostra um modelo preditivo em que o lado direito representa um modelo sobreajustado e o lado esquerdo um modelo regularizado para o mesmo \textit{dataset}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.6\textwidth]{imagens/overfitting.png}
-	\caption{O lado direito representa um modelo sobreajustado e o lado esquerdo um regularizado para o mesmo \textit{dataset}.}
+	\caption{Modelo sobreajustado e regularizado para o mesmo \textit{dataset}.}
+	\fbox{\includegraphics[width=.6\textwidth]{imagens/overfitting.png}}
+	
 	{\scriptsize Fonte: baseado no encontrado em \cite{over_and_underfitting_2019}}
 	\label{fig:overfitting}
 \end{figure}
 
-Nas palavras de \cite[p. 95]{amaral_introducao_2018}, ``o processo de construção de um modelo de aprendizado de máquina busca, obviamente, maximizar a precisão e minimizar a taxa de erros''. Para tanto, a literatura cita diversas técnicas e estratégias para a avaliação de modelos preditivos. Autores diversos, como \cite{Boscarioli2017}, \cite{aprenda_mineracao_fernando_amaral16}, além de  \cite{data_science_do_zero2016} e \cite{ferrari2017} citam, geralmente, como estratégia de treinamento, validação e teste as seguintes técnicas:
+Nas palavras de \citeonline[p. 95]{amaral_introducao_2018}, ``o processo de construção de um modelo de aprendizado de máquina busca, obviamente, maximizar a precisão e minimizar a taxa de erros''. Para tanto, a literatura cita diversas técnicas e estratégias para a avaliação de modelos preditivos. Autores diversos, como \citeonline{Boscarioli2017}, \citeonline{aprenda_mineracao_fernando_amaral16}, além de  \citeonline{data_science_do_zero2016} e \citeonline{ferrari2017} citam, geralmente, como estratégia de treinamento, validação e teste as seguintes técnicas:
 
 \begin{itemize}
 	\item Resubstituição;
@@ -339,15 +346,16 @@ Nas palavras de \cite[p. 95]{amaral_introducao_2018}, ``o processo de construç�
 	\item Bootstrap;
 \end{itemize}
 
-Na \textbf{\underline{resubstituição}}, segundo \cite{Boscarioli2017}, as medidas de avaliação dos classificadores são aplicadas no próprio conjunto de dados usados para indução do modelo. Essa técnica, embora tenha alguns vantagens discutidas em \cite{ferrari2017} e \cite{Boscarioli2017}, pode levar ao, já citado, sobreajuste (\textit{overfitting}) e é fartamente discutido em \cite{data_science_do_zero2016}, também em \cite{aprenda_mineracao_fernando_amaral16} e \cite{Norvig2013}. Como já afirmado anteriormente, o sobreajuste é quando se produz um modelo de bom desempenho com os dados de treinamento, mas que não lida bem com novos dados.
+Na \textbf{\underline{resubstituição}}, segundo \citeonline{Boscarioli2017}, as medidas de avaliação dos classificadores são aplicadas no próprio conjunto de dados usados para indução do modelo. Essa técnica, embora tenha alguns vantagens discutidas em \citeonline{ferrari2017} e \citeonline{Boscarioli2017}, pode levar ao, já citado, sobreajuste (\textit{overfitting}) e é discutido em \citeonline{data_science_do_zero2016}, também em \citeonline{aprenda_mineracao_fernando_amaral16} e \citeonline{Norvig2013}. Como já afirmado anteriormente, o sobreajuste é quando se produz um modelo de bom desempenho com os dados de treinamento, mas que não lida bem com novos dados.
 
 Na técnica de \textbf{\underline{Holdout}}, pressupõem-se uma divisão, ou criação de dois subconjuntos de dados distintos, a partir do conjunto de dados disponível pra uso na indução do modelo/hipótese. Um desses subconjuntos será usado para treinamento (indução) do modelo de previsão e o segundo, para teste após o término do treinamento e, consequentemente, na aplicação das medidas de avaliação do modelo/hipótese. \cite{Boscarioli2017}
 
-A imagem \ref{fig:img_holdout} mostra o funcionamento da técnica de holdout de forma mais detalhada
+A \autoref{fig:img_holdout} mostra o funcionamento da técnica de holdout de forma mais detalhada
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.6\textwidth]{imagens/hold_out.png}
 	\caption{Funcionamento da técnica holdout.}
+	\fbox{\includegraphics[width=.6\textwidth]{imagens/hold_out.png}}
+	
 	{\scriptsize Fonte:\cite{aprenda_mineracao_fernando_amaral16}}
 	\label{fig:img_holdout}
 \end{figure}
@@ -356,12 +364,13 @@ Na estratégia de \textbf{\underline{validação cruzada}}, todos os dados farã
 
 Valores populares de $k$ são 5 e 10 --- o suficiente para uma estimativa estatisticamente provável que seja precisa a um custo 5-10 vezes maior no tempo de computação. Há também o extremo do $k = n$, também conhecido como \textbf{validação cruzada com omissão de um}. O método de validação cruzada permite que o modelo/hipótese seja avaliado uma série de vezes, cada série sendo conhecida como partição (ou \textit{fold}). Ao final, a avaliação pode ser realizada aplicando medidas estatísticas como média, desvio-padrão e intervalo de confiança ao conjunto de $k$ avaliações obtidas ou somando-se os desempenhos obtidos pelos $k$ modelos gerados e dividindo essa soma pelo número de exemplares original. \cite{Norvig2013}\cite{Boscarioli2017}\cite{ferrari2017} \cite{aprenda_mineracao_fernando_amaral16}
 
-A imagem \ref{fig:img_cross_validation} mostra um exemplo didático de como funciona a validação cruzada. Os dados que não fazem parte do conjunto de teste em cada rodada são utilizados no treinamento.
+A \autoref{fig:img_cross_validation} mostra um exemplo didático de como funciona a validação cruzada. Os dados que não fazem parte do conjunto de teste em cada rodada são utilizados no treinamento.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.6\textwidth]{imagens/cross_validation.png}
 	\caption{Funcionamento da técnica \textit{cross validation}}
+	\fbox{\includegraphics[width=.6\textwidth]{imagens/cross_validation.png}}
+	
 	{\scriptsize Fonte:\cite{fold_cross_validation:k-fold_nodate}}
 	\label{fig:img_cross_validation}
 \end{figure}
@@ -370,17 +379,18 @@ Já a técnica de \textit{\textbf{\underline{Bootstrap}}} funciona de forma  par
 
 Neste trabalho, todos os algoritmos de classificação usados foram testados usando as técnicas de resubstituição, \textit{holdout} (com taxas de 70-30, 75-25 e 60-40), além de \textit{cross-validation} com 3, 5 e 10 folds. 
 
-Como explicado em \cite{WolpertMacready} e \cite{Wolpert:1996} não existe um algoritmo de aprendizado superior a todos os demais quando considerados todos os problemas de classificação possíveis (teorema \textbf{NFL}, ou \textit{No Free Lunch}), portanto, variações foram executadas nos experimentos em todas técnicas avaliadas, alterando-se os padrões para chegar a métricas e medidas de avaliação mais eficientes.
+Como explicado em \citeonline{WolpertMacready} e \citeonline{Wolpert:1996} não existe um algoritmo de aprendizado superior a todos os demais quando considerados todos os problemas de classificação possíveis (teorema \textbf{NFL}, ou \textit{No Free Lunch}), portanto, variações foram executadas nos experimentos em todas técnicas avaliadas, alterando-se os padrões para chegar a métricas e medidas de avaliação mais eficientes.
 
 \subsubsection{Medidas de avaliação}\label{medidas_avaliacao}
 
-Para \cite{castro_supervised_2011}, \begin{quote}
+Para \citeonline{castro_supervised_2011}, 
+\begin{quote}
 	Tradicionalmente, a métrica usada na avaliação e seleção de modelos de classificação é a acurácia (ou taxa de erro) estimada em relação a um dado conjunto de teste. Essa metodologia é justificada pela formulação padrão do problema do aprendizado supervisionado que visa a minimização da probabilidade do erro global. 
 \end{quote}
 
-Há, porém, conforme \cite{Boscarioli2017}, \cite{aprenda_mineracao_fernando_amaral16}, \cite{classification2013} e \cite{classification_survey2012} diversas medidas usadas na avaliação de classificadores. 
+Há, porém, conforme \citeonline{Boscarioli2017}, \citeonline{aprenda_mineracao_fernando_amaral16}, \citeonline{classification2013} e \cite{classification_survey2012} diversas medidas usadas na avaliação de classificadores. 
 
-A que será usada neste trabalho (com o objetivo de minimizar a probabilidade do erro globla) é a, já citada, acurácia ou taxa de classificações corretas. 
+A que será usada neste trabalho (com o objetivo de minimizar a probabilidade do erro global) é a, já citada, acurácia ou taxa de classificações corretas. 
 
 A métrica acurácia é dada, portanto, por:
 
@@ -400,10 +410,10 @@ Ou seja, a acurácia é, basicamente o número de acertos (positivos) divido pel
 
 Há, entretanto, em modelos preditivos que trabalham com dados numéricos (como as redes neurais e o SVM), pode-se utilizar uma função de perda contínua, capaz de medir o erro entre a resposta obtida pelo modelo preditivo e a resposta aguardada. \cite{Boscarioli2017} \cite{deep_learning_book_2019}.
 
-Para \cite{nn_smithing_1999}
-\begin{quote}
+Para \citeonline{nn_smithing_1999}
+\begin{citacao}
 	A função de custo reduz todos os aspectos bons e ruins de um sistema complexo a um único número, um valor escalar, o que permite ranquear e comparar as soluções candidatas.
-\end{quote}
+\end{citacao}
 
 Algumas funções de perda (\textit{loss functions}), comuns, neste contexto são: \cite{Boscarioli2017}
 
@@ -423,26 +433,34 @@ Algumas funções de perda (\textit{loss functions}), comuns, neste contexto sã
 \textrm{\textit{Erro médio quadrático}}=\sum_{<\vec{x}_i, y_i> \in \aleph} (y_i - f(\vec{x}_i))^2/m
 \end{equation}
 
-Onde $m$ é a quantidade de instâncias existentes em $\aleph$. \cite{Boscarioli2017}, \cite{amaral_introducao_2018} além de \cite{deng_improved_2016} e \cite{ruuska_evaluation_2018} afirmam que é importante analisar o tipo de erro que o modelo está cometendo e, principalmente, no caso de classificadores binários, é possível observar que, mesmo com uma acurácia alta o classificador pode não estar respondendo de forma adequada. Para realizar esse tipo de análise, os autores citados no princípio deste parágrafo, citam que uma ferramenta adequada é a \textit{\textbf{matriz de confusão}}. 
+Onde $m$ é a quantidade de instâncias existentes em $\aleph$. 
 
-Geralmente, uma matriz de confusão tem dimensões $C \times C$, em que $C$ é o número de classes presentes no problema de classificação que está sendo avaliado. As linhas dessa matriz são indexadas seguindo as ´´classes esperadas'' $(y)$, e as colunas seguindo as ``classes preditas'' $(f(x) ou \hat{y})$. Cada célula é um contador que é incrementado a depender do resultado da comparação de $f(x)$ e $y$. As respostas corretas do modelo geram os valores que entram na diagonal principal da matriz. \cite[p. 130]{Boscarioli2017}
+\citeonline{Boscarioli2017}, \citeonline{amaral_introducao_2018} além de \citeonline{deng_improved_2016} e \citeonline{ruuska_evaluation_2018} afirmam que é importante analisar o tipo de erro que o modelo está cometendo e, principalmente, no caso de classificadores binários, é possível observar que, mesmo com uma acurácia alta o classificador pode não estar respondendo de forma adequada. 
 
-A figura \ref{fig:matriz_confusao} demonstra o procedimento de preenchimento de uma matriz de confusão conforme a resolução de um problema hipotético de classificação.
+Para realizar esse tipo de análise, os autores citados no princípio deste parágrafo, citam que uma ferramenta adequada é a \textit{\textbf{matriz de confusão}}. 
+
+Geralmente, uma matriz de confusão tem dimensões $C \times C$, em que $C$ é o número de classes presentes no problema de classificação que está sendo avaliado. As linhas dessa matriz são indexadas seguindo as ``classes esperadas'' $(y)$, e as colunas seguindo as ``classes preditas'' $(f(x) ou \hat{y})$. 
+
+Cada célula é um contador que é incrementado a depender do resultado da comparação de $f(x)$ e $y$. As respostas corretas do modelo geram os valores que entram na diagonal principal da matriz. \cite[p. 130]{Boscarioli2017}
+
+A \autoref{fig:matriz_confusao} demonstra o procedimento de preenchimento de uma matriz de confusão conforme a resolução de um problema hipotético de classificação.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.8\textwidth]{imagens/confusion_matrix.png}
 	\caption{Preenchimento de uma matriz de confusão}
+	\fbox{\includegraphics[width=.8\textwidth]{imagens/confusion_matrix.png}}
+	
 	{\scriptsize Fonte: \cite[p. 130]{Boscarioli2017}}
 	\label{fig:matriz_confusao}
 \end{figure}
 
-Matrizes de confusão são, cf. \cite{ruuska_evaluation_2018}e \cite{Boscarioli2017}, particularmente úteis para avaliação de classificadores binários. Neste caso, os valores são atribuídos conforme ilustrado na figura (neste caso, as duas classes estão definidas como ´´classe positiva'' e ``classe negativa''). 
+Matrizes de confusão são, cf. \citeonline{ruuska_evaluation_2018} e \citeonline{Boscarioli2017}, particularmente úteis para avaliação de classificadores binários. Neste caso, os valores são atribuídos conforme ilustrado na figura (neste caso, as duas classes estão definidas como ``classe positiva'' e ``classe negativa''). 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.6\textwidth]{imagens/matriz_confusao_binario.png}
 	\caption{Matriz de confusão para o caso de um classificador binário}
+	\fbox{\includegraphics[width=.6\textwidth]{imagens/matriz_confusao_binario.png}}
+	
 	{\scriptsize Fonte: \cite[p. 131]{Boscarioli2017}}
 	\label{fig:binario_matriz_confusao}
 \end{figure}
@@ -462,53 +480,54 @@ As redes neurais instituem um campo da ciência da computação, parte da área 
 
 \subsection{Definição}
 
-Para \cite[p. 41]{santos_um_2013} \begin{quote}
+Para \citeonline[p. 41]{santos_um_2013} 
+\begin{citacao}
 	Uma rede neural artificial consiste de um sistema composto por neurônios dispostos em camadas, interligados através de pesos sinápticos construindo um sistema que simula o cérebro humano, inclusive seu comportamento. E uma técnica computacional que apresenta um modelo inspirado na estrutura neural de organismos inteligentes e que adquire conhecimento através da experiência.
-\end{quote}
+\end{citacao}
 
-De acordo com \cite[p. 47]{lima_ia_2016}, ``redes neurais podem ser caracterizadas como modelos computacionais com capacidades de adaptar, aprender, generalizar, agrupar ou organizar dados".
+De acordo com \citeonline[p. 47]{lima_ia_2016}, ``redes neurais podem ser caracterizadas como modelos computacionais com capacidades de adaptar, aprender, generalizar, agrupar ou organizar dados''.
 
 Inicialmente, portanto, se desenvolveram como uma estratégia de simular os processos mentais humanos, como reconhecimento de imagens e sons, e após, como instrumento tecnológico e eficiente para muitas tarefas. \cite{jin_development_2002}	
 
-Para \cite{obaidat_multilayer_1994}, as redes neurais artificiais podem ser usadas efetivamente para prover soluções para um amplo espectro de aplicações, incluindo mapeamento de padrões e classificação, análise e codificação de imagens, processamento de sinais, otimização, manipulação de grafos, reconhecimento de caracteres, reconhecimento automático de alvo,  	fusão de dados, processamento de conhecimento, controle de qualidade, mercado de ações, processamento de hipotecas, triagem de créditos para empréstimos entre muitos outros problemas. 
+Para \citeonline{obaidat_multilayer_1994}, as redes neurais artificiais podem ser usadas efetivamente para prover soluções para um amplo espectro de aplicações, incluindo mapeamento de padrões e classificação, análise e codificação de imagens, processamento de sinais, otimização, manipulação de grafos, reconhecimento de caracteres, reconhecimento automático de alvo,  	fusão de dados, processamento de conhecimento, controle de qualidade, mercado de ações, processamento de hipotecas, triagem de créditos para empréstimos entre muitos outros problemas. 
 
 \subsection{Modelo de neurônio artificial}\label{perceptron}
-Desde a década de 1940 com o trabalho de \cite{mcculloch_logical_1943} que se busca um modelo computacional que simule o cérebro humano e suas conexões. O interesse pela pesquisa nesta área cresceu e se desenvolveu durante os anos 50 e 60. É dessa época que \cite{rosenblatt_perceptron:_1958} sugeriu um método de aprendizagem para as redes neurais artificiais chamado \textit{perceptron}. 
+Desde a década de 1940 com o trabalho de \citeonline{mcculloch_logical_1943} que se busca um modelo computacional que simule o cérebro humano e suas conexões. O interesse pela pesquisa nesta área cresceu e se desenvolveu durante os anos 50 e 60. É dessa época que \citeonline{rosenblatt_perceptron:_1958} sugeriu um método de aprendizagem para as redes neurais artificiais chamado \textit{perceptron}. 
 
-Até o final da década de 1960 muitos trabalhos foram feitos usando o percepton como modelo, mas ao final desta década, \cite{minsky_perceptrons:_1969} apresentaram significativas limitações do perceptron. 
+Até o final da década de 1960 muitos trabalhos foram feitos usando o percepton como modelo, mas ao final desta década, \citeonline{minsky_perceptrons:_1969} apresentaram significativas limitações do perceptron. 
 
-A pesquisa diminui consideravelmente nos anos seguintes (o chamado inverno da IA), porém durante  os  anos  80,  a excitação	ressurge mediante os avanços metodológicos importantes e, também, ao aumento dos recursos computacionais disponíveis. O  modelo  de  neurônio  artificial  da figura \ref{fig:neuronio} é uma
-simplificação do apresentado por \cite[p. 36]{haykin_redes_2001}
+A pesquisa diminui consideravelmente nos anos seguintes (o chamado inverno da IA), porém durante  os  anos  80,  a excitação	ressurge mediante os avanços metodológicos importantes e, também, ao aumento dos recursos computacionais disponíveis. O  modelo  de  neurônio  artificial  da \autoref{fig:neuronio} é uma
+simplificação do apresentado por \citeonline[p. 36]{haykin_redes_2001}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.7\textwidth]{imagens/modelo_matematico_neuronio.png}
-	
-	{\scriptsize 	Fonte: \cite[p. 36]{haykin_redes_2001}}
 	\caption{Modelo matemático de um neurônio}
+	\fbox{\includegraphics[width=.7\textwidth]{imagens/modelo_matematico_neuronio.png}}
+	
+	{\scriptsize 	Fonte: \cite[p. 36]{haykin_redes_2001}}	
 	\label{fig:neuronio}
 \end{figure}
 
-Este modelo acima (da figura \ref{fig:neuronio}) é composto por três elementos:
+O modelo da \autoref{fig:neuronio} é composto por três elementos:
 
 \begin{itemize}
 	\item  um conjunto de $ n $ conexões de entrada ($ x_1, x_2, \dots , x_n $), caracterizadas por pesos ($ p_1, p_2, \dots, p_n $);
 	\item um somador ($ \sum $) para acumular os sinais de entrada;
-	\item uma função de ativação ($\varphi$) que, no caso específico do neurônio apresentado por McCullock-Pitts \cite{mcculloch_logical_1943} é uma função de limiar. \cite{ferneda_redes_2006} \cite{lima_ia_2016}
+	\item uma função de ativação ($\varphi$) que, no caso específico do neurônio apresentado por McCullock-Pitts em \citeonline{mcculloch_logical_1943} é uma função de limiar. \cite{ferneda_redes_2006} \cite{lima_ia_2016}
 \end{itemize}
 
 O comportamento das conexões entre os neurônios é simulado através de seus pesos  ($ p_1, p_2, ..., p_n $). Os valores podem ser positivos ou negativos (dependendo se a conexão é inibitiva ou excitativa. 
 
 O efeito de um sinal proveniente de um neurônio é determinado pela multiplicação do valor do sinal recebido pelo peso da conexão correspondente ($x_i \times p_i$).
 
-Então é efetuada a soma dos valores $x_i \times p_i$ de todas as conexões e o valor resultante é enviado para a função de ativação que define a saída ($y$) do neurônio. cf. \cite{Norvig2013} \cite{mcculloch_logical_1943}, além de \cite{minsky_perceptrons:_1969}, \cite{ferneda_redes_2006} e \cite{haykin_redes_2001}
+Então é efetuada a soma dos valores $x_i \times p_i$ de todas as conexões e o valor resultante é enviado para a função de ativação que define a saída ($y$) do neurônio. cf. \citeonline{Norvig2013} e \citeonline{mcculloch_logical_1943}, além de \citeonline{minsky_perceptrons:_1969}, \citeonline{ferneda_redes_2006} e \citeonline{haykin_redes_2001}
 
-Matematicamente, a saída $y_k$ do neurônio mostrado na figura \ref{fig:neuronio} é dada pela expressão abaixo:
+Matematicamente, a saída $y_k$ do neurônio mostrado na \autoref{fig:neuronio} é dada pela expressão abaixo:
 \begin{equation}
 	Y_k = \varphi(u_k) \qquad \textrm{onde} \qquad u_k = \sum_{i=1}^{n} P_{ki}X_i 
 \end{equation}
 
-A função de ativação proposta inicialmente por McCullock e Pitts em seu trabalho seminal, \cite{mcculloch_logical_1943} é uma função de limiar:
+A função de ativação proposta inicialmente por McCullock e Pitts em seu trabalho seminal, \citeonline{mcculloch_logical_1943} é uma função de limiar:
 
 \begin{equation}\label{funcao_limiar}
 y_k = \varphi (u_k) = \left \{ \begin{matrix}
@@ -518,23 +537,24 @@ y_k = \varphi (u_k) = \left \{ \begin{matrix}
 							\right.
 \end{equation}
 
-Uma alteração importante neste modelo foi a introdução de um parâmetro polarizador (\textit{bias} ou \textit{offset}) $b_k$, conforme a figura \ref{fig:bias_neuronio} cujo objetivo é deslocar o valor da informação referente à entrada líquida $u_k$, de forma a verter a função de ativação no eixo correspondente ao valor de $u_k$. Assim a saída $y_k = \varphi(u_k)$.
+Uma alteração importante neste modelo foi a introdução de um parâmetro polarizador (\textit{bias} ou \textit{offset}) $b_k$, conforme a \autoref{fig:bias_neuronio} cujo objetivo é deslocar o valor da informação referente à entrada líquida $u_k$, de forma a verter a função de ativação no eixo correspondente ao valor de $u_k$. Assim a saída $y_k = \varphi(u_k)$.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.5\textwidth]{imagens/bias_neuronio.png}	
 	\caption{Adição de um \textit{offset} (\textit{bias}) no modelo do neurônio}
+	\fbox{\includegraphics[width=.5\textwidth]{imagens/bias_neuronio.png}}	
+	
 	{\scriptsize 	Fonte: \cite[p. 58]{lima_ia_2016}}
 	\label{fig:bias_neuronio}
 \end{figure}
 
-Dessa forma, o polarizador pode ser tratado como mais um peso da rede. Basta considerar um nova entrada do tipo $x_0 = 1$, com um peso associado $w_0 = b_k$, assim a representação fica sendo, considerando os pesos como $w$, de acordo com a figura \ref{fig:bias_neuronio}:
+Dessa forma, o polarizador(bias) pode ser tratado como mais um peso da rede. Basta considerar um nova entrada do tipo $x_0 = 1$, com um peso associado $w_0 = b_k$, assim a representação fica sendo, considerando os pesos como $w$, de acordo com a \autoref{fig:bias_neuronio}:
 
 \begin{equation}
 	u_k = w_0 + w_1x_1 + w_2x_2; \qquad y_k = \varphi(u_k)
 \end{equation}
 
-Assim, esse neurônio pode ser empregado, segundo, \cite[p. 58]{lima_ia_2016}, para ``separar classes distintas de padrões de entradas para aplicações de classificações de padrões''. E prossegue: ``se a entrada líquida for maior que o limiar, o padrão dessa entrada pertence à classe 1, caso contrário, pertence à classe 0''. Analisando matematicamente o modelo \textit{perceptron}, se percebe que ele pode ser considerado um típico caso de discriminador linear. 
+Assim, esse neurônio pode ser empregado, segundo, \citeonline[p. 58]{lima_ia_2016}, para ``separar classes distintas de padrões de entradas para aplicações de classificações de padrões''. E prossegue: ``se a entrada líquida for maior que o limiar, o padrão dessa entrada pertence à classe 1, caso contrário, pertence à classe 0''. Analisando matematicamente o modelo \textit{perceptron}, se percebe que ele pode ser considerado um típico caso de discriminador linear. 
 
 A fronteira de decisão para um \textit{perceptron} como o da figura \ref{fig:bias_neuronio}, dada duas entradas e a função de ativação mostrada na equação \ref{funcao_limiar} será, então, uma reta cuja equação é definida por: 
 
@@ -542,24 +562,26 @@ A fronteira de decisão para um \textit{perceptron} como o da figura \ref{fig:bi
 	w_1x_1 + w_2x_2 - b = 0
 \end{equation}
 
-Portanto, cf. \cite{silva_redes_2016}, ``pode-se concluir que o Perceptron se comporta como um classificador de padrões cuja função é dividir classes que sejam linearmente separáveis''.
+Portanto, cf. \citeonline{silva_redes_2016}, ``pode-se concluir que o Perceptron se comporta como um classificador de padrões cuja função é dividir classes que sejam linearmente separáveis''.
 
-A figura \ref{fig:linearmente_separavel} mostra uma reta posicionada na fronteira de separação entre as classes. Para este tipo de problema o perceptron é um classificador adequado.
+A \autoref{fig:linearmente_separavel} mostra uma reta posicionada na fronteira de separação entre as classes. Para este tipo de problema o perceptron é um classificador adequado.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.7\textwidth]{imagens/linearmente_separavel.png}	
 	\caption{Fronteira de separação (perceptron com duas entradas)}
+	\fbox{\includegraphics[width=.7\textwidth]{imagens/linearmente_separavel.png}}	
+
 	{\scriptsize 	Fonte: \cite[p. 62]{silva_redes_2016}}
 	\label{fig:linearmente_separavel}
 \end{figure}
 
-As redes neurais artificiais (\textbf{RNA}) se formam quando diversos neurônios se combinam. De forma resumida, ``uma rede neural artificial (RNA) pode ser vista como um grafo onde os nós são os neurônios e as ligações fazem a função das sinapses". Isto está demonstrado na figura \ref{fig:rna}
+As redes neurais artificiais (\textbf{RNA}) se formam quando diversos neurônios se combinam. De forma resumida, ``uma rede neural artificial (RNA) pode ser vista como um grafo onde os nós são os neurônios e as ligações fazem a função das sinapses''. Isto está demonstrado na \autoref{fig:rna}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.7\textwidth]{imagens/RNA.png}	
-	\caption{Representação simplificada de uma RNA}
+	\caption{Representação simplificada de uma RNA}	
+	\fbox{\includegraphics[width=.7\textwidth]{imagens/RNA.png}	}
+
 	{\scriptsize 	Fonte: \cite[p.26]{ferneda_redes_2006}}
 	\label{fig:rna}
 \end{figure}
@@ -568,20 +590,23 @@ As  redes  neurais  artificiais  se  diferem  pelas  suas arquiteturas e pela fo
 
 O desenvolvimento de uma rede neural artificial consiste em determinar sua arquitetura, ou seja, os números de camadas e de neurônios em cada camada, bem como o ajuste dos pesos na fase conhecida como treinamento.\cite{hagan_neural_1996} \cite{haykin_redes_2001}
 
-Uma das características mais importantes de uma rede neural artificial é a habilidade de aprender através de exemplos e fazer inferências sobre o que aprendeu, melhorando, assim, o seu desempenho. As RNA's utilizam um algoritmo de aprendizagem que serve, basicamente, para ajustar os pesos de suas conexões. \cite{haykin_redes_2001} \cite{ferneda_redes_2006} \cite{lima_ia_2016} \cite{Norvig2013}. Aqui também há, cf. explicitado na seção \ref{aprendizagem_maquina}, duas formas básicas de aprendizado, o supervisionado e o não-supervisionado.
+Uma das características mais importantes de uma rede neural artificial é a habilidade de aprender através de exemplos e fazer inferências sobre o que aprendeu, melhorando, assim, o seu desempenho. As RNA's utilizam um algoritmo de aprendizagem que serve, basicamente, para ajustar os pesos de suas conexões. \cite{haykin_redes_2001} \cite{ferneda_redes_2006} \cite{lima_ia_2016} \cite{Norvig2013}. 
+
+Aqui também há, cf. explicitado na seção \ref{aprendizagem_maquina}, duas formas básicas de aprendizado, o supervisionado e o não-supervisionado.
 
 \subsection{Redes do tipo Perceptron de múltiplas camadas}
 As arquiteturas do tipo perceptron de múltiplas camadas (MLP) são os modelos de redes neurais mais utilizados e conhecidos. Elas, basicamente, consistem de uma camada de entrada e uma ou mais camadas intermediárias (ou ocultas) além, claro da camada de saída (uma ou mais unidades sensoriais - neurônios). \cite{haykin_redes_2001}.
 
-Os sinais de entrada são propagados camada a camada pela rede em uma direção, ou seja, da entrada para a saída (\textit{feedfoward}). Esta arquitetura retrata uma generalização do perceptron. Portanto, segundo \cite[p. 26]{silva_redes_2016}, \begin{quote}
+Os sinais de entrada são propagados camada a camada pela rede em uma direção, ou seja, da entrada para a saída (\textit{feedfoward}). Esta arquitetura retrata uma generalização do perceptron. Portanto, segundo \citeonline[p. 26]{silva_redes_2016}, 
+\begin{citacao}
 	As redes Perceptron de múltiplas camadas (PMC) são caracterizadas pela presença de pelo menos uma camada intermediária (escondida) de neurônios, situada entre a camada de entrada e a respectiva camada neural de saída.
-\end{quote}
+\end{citacao}
 
 Desta forma, elas possibilitam elevadas possibilidades de aplicações em muitas áreas do conhecimento, entre as principais: aproximação universal de funções, reconhecimento de padrões, identificação e controle de processos, previsões de séries temporais, otimização de sistemas entre muitos outros. \cite{haykin_redes_2001}.
 
-A figura \ref{fig:pmc} ilustra uma rede do tipo perceptron de multicamadas. O treinamento deste tipo de rede é do tipo supervisionado e, geralmente, se utiliza um algoritmo muito popular chamado \textit{retropropagação} do erro (\textit{error backpropagation}). Este algoritmo é baseado numa regra de aprendizagem que “corrige” o erro durante o treinamento. \cite{haykin_redes_2001}
+A \autoref{fig:pmc} ilustra uma rede do tipo perceptron de multicamadas. O treinamento deste tipo de rede é do tipo supervisionado e, geralmente, se utiliza um algoritmo muito popular chamado \textit{retropropagação} do erro (\textit{error backpropagation}). Este algoritmo é baseado numa regra de aprendizagem que “corrige” o erro durante o treinamento. \cite{haykin_redes_2001}
 
-Substancialmente, o método de \textit{retropropagação} é constituído de duas etapas: uma fase de propagação do sinal no sentido tradicional (\textit{feedforward}) e uma de retropropagação do erro (\textit{backpropagation}) de todas as camadas e seus respectivos pesos. Na fase de ida, os vetores de dados e pesos são aplicados às unidades de entrada, e seu efeito se propaga pela rede, camada por camada. \cite{hagan_neural_1996} \cite{haykin_redes_2001}
+Substancialmente, o método de \textit{retropropagação} é constituído de duas etapas: uma fase de propagação do sinal no sentido tradicional (\textit{feedforward}) e uma de retropropagação do erro (\textit{backpropagation}) de todas as camadas e seus respectivos pesos. Na fase de ida, os vetores de dados e pesos são aplicados às unidades de entrada, e seu efeito se propaga pela rede, camada por camada \cite{hagan_neural_1996} \cite{haykin_redes_2001}.
 
 Após isso, um conjunto de saídas é produzido como resposta da rede. Na retropropagação os pesos são ajustados de acordo com uma regra de correção de erro (normalmente uma função matemática com \ref{erro_absoluto}, \ref{erro_absoluto_medio}, \ref{erro_quadratico} e \ref{erro_quadratico_medio}, sendo esta última uma das mais utilizadas em muitas arquiteturas, na prática). \cite{haykin_redes_2001} \cite{hagan_neural_1996} \cite{yeung_neural_2004}
 
@@ -591,21 +616,26 @@ Uma arquitetura de um MLP (\textit{Multi-Layer Perceptron} - Perceptron Multicam
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.7\textwidth]{imagens/pmc.png}	
 	\caption{Rede Perceptron de multicamadas}
-	{\scriptsize 	Fonte: \cite[p. 92]{silva_redes_2016}}
+	\fbox{\includegraphics[width=.7\textwidth]{imagens/pmc.png}	}
+
+	{\scriptsize 	Fonte: \citeonline[p. 92]{silva_redes_2016}}
 	\label{fig:pmc}
 \end{figure}
 
 \subsection{Funções de ativação}\label{funcoes_ativacao}
-Como visto na seção \ref{perceptron}, o modelo perceptron, lida bem com problemas linearmente separáveis, mas tem problemas ao lidar com problemas  não-lineares. \cite{haykin_redes_2001}. Para dar capacidade representativa às redes neurais artificiais, são essenciais as diferentes funções de ativação, pois só assim elas conseguirão lidar um componente de não-linearidade, como o são a maioria dos problemas práticos. \cite{hagan_neural_1996}.
+Como visto na seção \ref{perceptron}, o modelo perceptron, lida bem com problemas linearmente separáveis, mas tem problemas ao lidar com problemas  não-lineares. \cite{haykin_redes_2001}. 
+
+Para dar capacidade representativa às redes neurais artificiais, são essenciais as diferentes funções de ativação, pois só assim elas conseguirão lidar um componente de não-linearidade, como o são a maioria dos problemas práticos. \cite{hagan_neural_1996}.
 
 Ao se introduzir ativações não-lineares, a superfície de custo da rede neural deixa de ser convexa fazendo com que a otimização se torne mais difícil. \cite{minsky_perceptrons:_1969} \cite{haykin_redes_2001}.
 
 As principais funções de ativação, utilizadas na literatura ena prática, são, portanto:
 
 \subsubsection{Função de ativação limiar}\label{ativacao:limiar}
-Proposta na primeira definição de rede com neurônios artificiais \cite{rosenblatt_perceptron:_1958}. O modelo de neurônio usado por RosenBlatt foi o mesmo sugerido por \cite{mcculloch_logical_1943}. Neste modelo as saídas são binárias, ou seja, assumem, normalmente o valor 0 ou 1. A saída é 1 se o valor da entrada líquida for superior a um determinado valor chamado \textit{thereshold}. na maioria das vezes, esse valor é zero.
+Foi proposta na primeira definição de rede com neurônios artificiais \cite{rosenblatt_perceptron:_1958}. O modelo de neurônio usado por RosenBlatt foi o mesmo sugerido por \citeonline{mcculloch_logical_1943}. 
+
+Neste modelo as saídas são binárias, ou seja, assumem, normalmente o valor 0 ou 1. A saída é 1 se o valor da entrada líquida for superior a um determinado valor chamado \textit{thereshold}. na maioria das vezes, esse valor é zero.
 
 Matematicamente:
 \begin{equation}\label{eq:limiar}
@@ -615,24 +645,26 @@ Matematicamente:
 	\right.
 \end{equation}
 
-A imagem \ref{fig:binary_step} mostra o 'funcionamento' da função de ativação limiar. Eventualmente podem ser utilizados os valores -1 e 1. Uma rede de camada simples que utiliza este tipo de ativação é o perceptron simples.
+A \autoref{fig:binary_step} mostra o `funcionamento' da função de ativação limiar. Eventualmente podem ser utilizados os valores -1 e 1. Uma rede de camada simples que utiliza este tipo de ativação é o perceptron simples.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.5\textwidth]{imagens/binary_step.png}	
 	\caption{Função de ativação Limiar}
-	{\scriptsize 	Fonte: Adaptado de \cite{haykin_redes_2001}}
+	\fbox{\includegraphics[width=.5\textwidth]{imagens/binary_step.png}	}
+
+	{\scriptsize 	Fonte: Adaptado de \citeonline{haykin_redes_2001}}
 	\label{fig:binary_step}
 \end{figure}
 
 \subsubsection{Função de ativação linear}\label{ativacao:linear}
-A saída do neurônio, neste caso, é representada por uma função linear da forma descrita na figura 	\ref{fig:ativacao_linear}. Redes que usam este tipo de função de ativação apresentam apenas uma camada de entrada e uma de saída. Possuem, portanto, uma série de representações quanto ao que são capazes de representar. \cite{lima_ia_2016}
+A saída do neurônio, neste caso, é representada por uma função linear da forma descrita na \autoref{fig:ativacao_linear}. Redes que usam este tipo de função de ativação apresentam apenas uma camada de entrada e uma de saída. Possuem, portanto, uma série de representações quanto ao que são capazes de representar. \cite{lima_ia_2016}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.5\textwidth]{imagens/ativacao_linear.png}	
 	\caption{Função de ativação Linear}
-	{\scriptsize 	Fonte: Adaptado de \cite{haykin_redes_2001}}
+	\fbox{\includegraphics[width=.5\textwidth]{imagens/ativacao_linear.png}	}
+
+	{\scriptsize 	Fonte: Adaptado de \citeonline{haykin_redes_2001}}
 	\label{fig:ativacao_linear}
 \end{figure}
 
@@ -651,26 +683,28 @@ E as respectivas derivadas das funções \ref{eq:sigmoide_tanh} acima são dadas
 	f'(a) = 2 \beta f(1-f) \qquad g'(a) = \beta (1-g^2)
 \end{equation}
 
-A figura \ref{fig:ativacao_sigmoide} mostra o comportamento da função sigmoide e a figura \ref{fig:tanh} mostra o da função tangente hiperbólica.
+A \autoref{fig:ativacao_sigmoide} mostra o comportamento da função sigmoide e a \autoref{fig:tanh} mostra o da função tangente hiperbólica.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.5\textwidth]{imagens/logistic.png}	
 	\caption{Função de ativação Logística (sigmoide)}
-	{\scriptsize 	Fonte: Adaptado de \cite{haykin_redes_2001}}
+	\fbox{\includegraphics[width=.5\textwidth]{imagens/logistic.png}	}
+	
+	{\scriptsize 	Fonte: Adaptado de \citeonline{haykin_redes_2001}}
 	\label{fig:ativacao_sigmoide}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.5\textwidth]{imagens/tanh.png}	
 	\caption{Função de ativação Tangente Hiperbólica}
-	{\scriptsize 	Fonte: Adaptado de \cite{haykin_redes_2001}}
+	\fbox{\includegraphics[width=.5\textwidth]{imagens/tanh.png}	}
+	
+	{\scriptsize 	Fonte: Adaptado de \citeonline{haykin_redes_2001}}
 	\label{fig:tanh}
 \end{figure}
 
 \subsubsection{Função de ativação ReLu}
-A função ReLU é a unidade linear retificada. É definida como: \cite{deep_learning_book_2019}
+A função ReLU é a unidade linear retificada. É definida como, \citeonline{deep_learning_book_2019}:
 \begin{equation}\label{relu}
 	ReLU(x) = max(0,x)
 \end{equation}
@@ -679,22 +713,23 @@ Sua derivada é dada por:
 	ReLU'(x) = \left \{ \begin{matrix} 1, & \mbox{se }x > 0 \\ 
 	0, & \mbox{\textrm{caso contrário}} \end{matrix} \right.
 \end{equation}
-
-Segundo, \cite{deep_learning_book_2019},\begin{quote}
+Conforme, \citeonline{deep_learning_book_2019},
+\begin{citacao}
 	 ReLU é a função de ativação mais amplamente utilizada ao projetar redes neurais atualmente. Primeiramente, a função ReLU é não linear, o que significa que podemos facilmente copiar os erros para trás e ter várias camadas de neurônios ativados pela função ReLU.
-\end{quote}
-
-Ainda, conforme \cite{deep_learning_book_2019} \begin{quote}
+\end{citacao}
+Ainda, de acordo com \citeonline{deep_learning_book_2019}: 
+\begin{citacao}
 	A principal vantagem de usar a função ReLU sobre outras funções de ativação é que ela não ativa todos os neurônios ao mesmo tempo. [...] Se [...] a entrada for negativa, ela será convertida em zero e o neurônio não será ativado. Isso significa que, ao mesmo tempo, apenas alguns neurônios são ativados, tornando a rede esparsa e eficiente e fácil para a computação.
-\end{quote}
+\end{citacao}
 
-A figura\ref{fig:relu} demonstra o comportamento da função de ativação ReLu em função da entrada
+A \autoref{fig:relu} demonstra o comportamento da função de ativação ReLu em função da entrada
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.5\textwidth]{imagens/relu.png}	
 	\caption{Função de ativação ReLu (sigmoide)}
-	{\scriptsize 	Fonte: Adaptado de \cite{haykin_redes_2001}}
+	\fbox{\includegraphics[width=.5\textwidth]{imagens/relu.png}	}
+	
+	{\scriptsize 	Fonte: Adaptado de \citeonline{haykin_redes_2001}}
 	\label{fig:relu}
 \end{figure}
 
@@ -716,9 +751,10 @@ Este processo é repetido até que um hiperparâmetro de tolerância seja alcan�
 
 O cálculo do gradiente descrito anteriormente diz respeito, cf. \cite{deep_learning_book_2019} a um dos mais usados algoritmos para otimizar a tarefa de aprendizagem dos pesos de uma rede neural.
 
-De acordo com \cite{deep_learning_book_2019}: \begin{quote}
+De acordo com \citeonline{deep_learning_book_2019}: 
+\begin{citacao}
 	A Descida do Gradiente é uma ferramenta padrão para otimizar funções complexas iterativamente dentro de um programa de computador. Seu objetivo é: dada alguma função arbitrária, encontrar um mínimo. Para alguns pequenos subconjuntos de funções – aqueles que são convexos – há apenas um único \textit{minimum} que também acontece de ser global. Para as funções mais realistas, pode haver muitos mínimos, então a maioria dos mínimos são locais.[... É preciso] que a otimização encontre o “melhor” \textit{minimum} e não fique preso em mínimos sub-otimistas (um problema comum durante o treinamento do algoritmo).
-\end{quote}
+\end{citacao}
 
 O algoritmo consiste basicamente de subtrair o valor do gradiente $\nabla f$ dos pesos $w$ da rede, assim:
 \begin{equation}\label{gradiente}
@@ -729,9 +765,9 @@ Sendo $\alpha$ o multiplicador que nos permite controlar o tamanho do passo de o
 Uma iteração consiste em um passo de otimização como o descrito em \ref{fluxo_treinamento} e corresponde a uma ligação sináptica de \textit{forward} na rede e uma de \textit{backpropagation}. Isto constitui uma \textbf{\underline{época}}. Normalmente, muitas épocas são necessárias, visto que o aprendizado em uma rede neural é, geralmente, lento para que a otimização evite os mínimos locais.
 
 \section{SVM - Support Vector Machines}\label{SVM}
-Segundo \cite{cortes_svm_1995}, o algoritmo SVM (\textit{Support Vector Machines}) é um dos mais efetivos para a tarefa de classificação.
+Segundo \citeonline{cortes_svm_1995}, o algoritmo SVM (\textit{Support Vector Machines}) é um dos mais efetivos para a tarefa de classificação.
 
-Cf. \cite{goldschmidt2005},
+Cf. \citeonline{goldschmidt2005},
 \begin{quotation}
 	No algoritmo SVM, o conjunto de dados de entrada é utilizado para construir uma \textit{função de decisão} $f(x)$, tal que:
 	
@@ -745,19 +781,20 @@ Cf. \cite{goldschmidt2005},
 	O algoritmo SVM constrói os denominados classificadores lineares, que separam o conjunto de dados por meio de um \textit{hiperplano} que é a generalização do conceito de \textit{plano} para dimensões maiores que três.	
 \end{quotation}
 
-Assim, SVM, cf. \cite[p. 45]{aprenda_mineracao_fernando_amaral16} ``são um algoritmo de classificação que maximizam as margens entre instâncias mais próximas, dessa forma, é criado um vetor otimizado que é então utilizado para classificar novas instâncias''.
+Assim, SVM, cf. \citeonline[p. 45]{aprenda_mineracao_fernando_amaral16} ``são um algoritmo de classificação que maximizam as margens entre instâncias mais próximas, dessa forma, é criado um vetor otimizado que é então utilizado para classificar novas instâncias''.
 
-Conforme se vê na figura \ref{fig:svm}, os dois vetores \textit{não pontilhados} são as margens otimizadas. As instâncias por onde as margens otimizadas passam são os vetores de suporte. O vetor pontilhado é a referência para classificar novas instâncias. Assim, a nova instância, na figura \ref{fig:svm} é classificada como triângulo.
+Conforme se vê na \autoref{fig:svm}, os dois vetores \textit{não pontilhados} são as margens otimizadas. As instâncias por onde as margens otimizadas passam são os vetores de suporte. O vetor pontilhado é a referência para classificar novas instâncias. Assim, a nova instância, na figura \ref{fig:svm} é classificada como triângulo.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.7\textwidth]{imagens/vetores_de_suporte.png}	
 	\caption{Vetores de Suporte}
+	\fbox{\includegraphics[width=.7\textwidth]{imagens/vetores_de_suporte.png}	}
+	
 	\label{fig:svm}
 	{\scriptsize 	Fonte: \cite[p. 45]{aprenda_mineracao_fernando_amaral16}}
 \end{figure}
 
-Seguindo o estudo de \cite{mukkamala_intrusion_2002} há duas razões principais que levaram os autores do artigo citado de usarem SVMs para detecção de intrusão:o primeiro é a velocidade já que a performance é prioritariamente uma das características mais importantes para sistemas de detecção de intrusos. 
+Seguindo o estudo de \citeonline{mukkamala_intrusion_2002} há duas razões principais que levaram os autores do artigo citado de usarem SVMs para detecção de intrusão:o primeiro é a velocidade já que a performance é prioritariamente uma das características mais importantes para sistemas de detecção de intrusos. 
 
 A segunda razão é a escalabilidade, pois, cf. os autores, SVMs são relativamente indiferentes ao número de \textit{data points} e a complexidade da classificação não depende da dimensionalidade do espaço de características. Dependendo da aplicação, ainda conforme os autores, uma vez que os dados estão classificados em duas classes, um algoritmo de otimização adequado pode ser usado, se necessário,  para identificação de mais características.
 
@@ -766,7 +803,7 @@ Neste trabalho, também foi usado, com boa eficácia (cf. se vê na seção \ref
 \section{Trabalhos Relacionados}\label{trabalhos_relacionados}
 Esta seção expõe alguns dos principais trabalhos encontrados na literatura que estão, de alguma forma, relacionados a esta dissertação. Foram estudadas e analisadas obras acerca das políticas de segurança da informação, abordando a detecção de conflitos em diversos contextos como identificação e resolução de conflitos aéreos, rodoviários e de \textit{normas} além de trabalhos sobre mineração de dados e técnicas de aprendizagem de máquina tanto em conjunturas distintas como regressão e classificação quanto para localização e solução de conflitos, no caso específico das políticas de segurança, principalmente sendo usadas em registros de patentes americanas fechadas --- o que, de certa forma, evidencia o quanto este tema está na vanguarda.
 
-Por exemplo, \cite{guerrero-higueras_detection_2018} aborda um método para construir modelos de \textit{aprendizagem de máquina} com o objetivo de detectar ataques cibernéticos em RTLSs (\textit{Real Time Location Systems} - sistemas de localização em tempo real ) em um ambiente de cibersegurança para sistemas robóticos usando técnicas de \textit{Machine Learning}.  O artigo mostra que os ciberataques nos sistemas de localização em tempo real para sistemas robóticos podem ser detectados por um sistema criado usando o aprendizado supervisionado. Além disso, mostra que alguns tipos de ciberataques em sistemas de localização em tempo real, especificamente negação de serviço e falsificação(\textit{DoS} e \textit{Spoofing}), podem ser detectados por um sistema construído usando técnicas de aprendizado de máquina. Oito classificadores e algoritmos preditores conhecidos foram avaliados neste artigo e a análise de validação cruzada mostrou que os classificadores MLP (\textit{Multi Layer Perceptron}) funcionam melhor que os outros obtendo maior acurácia e menor erro, sendo também o modelo com menor \textit{overfitting} e maior \textit{sensibilidade}\footnote{Sensibilidade é a proporção de verdadeiros positivos: a capacidade do sistema em predizer corretamente a condição para casos que realmente a têm - É também conhecida como \textit{\textbf{Recall}}.}. Este artigo inspirou a hipótese desta dissertação.
+Por exemplo, \citeonline{guerrero-higueras_detection_2018} aborda um método para construir modelos de \textit{aprendizagem de máquina} com o objetivo de detectar ataques cibernéticos em RTLSs (\textit{Real Time Location Systems} - sistemas de localização em tempo real ) em um ambiente de cibersegurança para sistemas robóticos usando técnicas de \textit{Machine Learning}.  O artigo mostra que os ciberataques nos sistemas de localização em tempo real para sistemas robóticos podem ser detectados por um sistema criado usando o aprendizado supervisionado. Além disso, mostra que alguns tipos de ciberataques em sistemas de localização em tempo real, especificamente negação de serviço e falsificação(\textit{DoS} e \textit{Spoofing}), podem ser detectados por um sistema construído usando técnicas de aprendizado de máquina. Oito classificadores e algoritmos preditores conhecidos foram avaliados neste artigo e a análise de validação cruzada mostrou que os classificadores MLP (\textit{Multi Layer Perceptron}) funcionam melhor que os outros obtendo maior acurácia e menor erro, sendo também o modelo com menor \textit{overfitting} e maior \textit{sensibilidade}\footnote{Sensibilidade é a proporção de verdadeiros positivos: a capacidade do sistema em predizer corretamente a condição para casos que realmente a têm - É também conhecida como \textit{\textbf{Recall}}.}. Este artigo inspirou a hipótese desta dissertação.
 
 Já \cite{bui_efficient_2019} versa acerca de mineração de dados em políticas de controle de acesso, especificamente do modelo ReBAC (\textit{Relationship-Based Access Control} - controle de acesso baseado em \textit{relacionamento}), mas não foca na detecção de conflitos entre as políticas, e sim, na propagação de seus relacionamentos na criação de novas políticas. No artigo, os algoritmos de mineração de política do ReBAC propostos puderam reduzir significativamente o custo da migração dos sistemas de controle de acesso legados para o ReBAC, automatizando parcialmente o desenvolvimento de uma nova política do ReBAC.
 
@@ -798,7 +835,7 @@ Todos estes trabalhos foram base para o estudo, amadurecimento bibliográfico e 
 
 \cite{eduardo2017} estuda a verificação de conflitos entre múltiplas normas em sistemas multiagentes (SMA). As normas, nesta tese, são semelhantes às políticas, inclusive em suas definições, mas restritas a um contexto de agentes autônomos. Para a resolução de conflitos, o autor usa uma estratégia de aplicação de filtros para suavizar o custo computacional e utiliza transformação deôntica para análise de diversas normas ao mesmo tempo.
 
-As hipóteses e problemas estudados por esta dissertação derivam do estudo seminal de \cite{sarkis2017} e são, em parte, uma complementação do mesmo usando algoritmos de mineração de dados e aprendizagem de máquina.
+As hipóteses e problemas estudados por esta proposta de dissertação complementam o estudo  de \citeonline{sarkis2017} e são, em parte, uma adição do mesmo usando algoritmos de mineração de dados e aprendizagem de máquina.
 
 \chapter{Experimentos/Resultados}\label{resultados}
 Neste capítulo serão descritas as 3 abordagens diferentes que foram utilizadas e em cada uma delas, os principais algoritmos de classificação que foram utilizados. A primeira parte dos experimentos focaram em determinar quais os classificadores apresentaram melhor acurácia para a resolução do problema descrito em \ref{problema}. Em seguida, os dois que apresentaram melhor acurácia foram utilizados nos experimentos subsequentes.

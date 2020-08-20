@@ -93,7 +93,7 @@
 \backcite {bui_efficient_2019}{{33}{2.3.2}{subsection.2.3.2}}
 \backcite {dunlop_dynamic_2002}{{33}{2.3.2}{subsection.2.3.2}}
 \backcite {sarkis2017}{{33}{2.3.3}{subsection.2.3.3}}
-\backcite {di_vimercati_policies_2005}{{33}{2.3.3}{subsection.2.3.3}}
+\backcite {di_vimercati_policies_2005}{{34}{2.3.3}{subsection.2.3.3}}
 \backcite {sarkis2017}{{34}{2.3.3}{subsection.2.3.3}}
 \backcite {sarkis:artigo:2016}{{34}{2.3.3}{subsection.2.3.3}}
 \backcite {cuppens_high_2007}{{34}{2.3.3}{subsection.2.3.3}}
@@ -124,8 +124,8 @@
 \backcite {Boscarioli2017}{{38}{2.4.1}{subsection.2.4.1}}
 \backcite {vasconcelos_aplicacao_2018}{{38}{2}{figure.2.2}}
 \backcite {Boscarioli2017}{{38}{2.4.1}{figure.2.2}}
-\backcite {goldschmidt2005}{{38}{2.4.2}{subsection.2.4.2}}
 \backcite {ferrari2017}{{38}{2.4.2}{subsection.2.4.2}}
+\backcite {goldschmidt2005}{{38}{2.4.2}{subsection.2.4.2}}
 \backcite {Boscarioli2017}{{38}{2.4.2}{subsection.2.4.2}}
 \backcite {fayyad1996}{{38}{1}{Hfootnote.2}}
 \backcite {minewiskan_modelos_nodate}{{39}{2.4.2}{subsection.2.4.2}}
@@ -179,7 +179,7 @@
 \backcite {Wolpert:1996}{{42}{2.6}{section.2.6}}
 \backcite {classification_survey2012}{{42}{2.6}{section.2.6}}
 \backcite {using_data_mining2012}{{42}{2.6}{section.2.6}}
-\backcite {Norvig2013}{{43}{2.6}{section.2.6}}
+\backcite {Norvig2013}{{42}{2.6}{section.2.6}}
 \backcite {Norvig2013}{{43}{2.6}{equation.2.6.3}}
 \backcite {Norvig2013}{{43}{2.6}{equation.2.6.3}}
 \backcite {Norvig2013}{{43}{2.6.0.1}{subsubsection.2.6.0.1}}
@@ -209,7 +209,7 @@
 \backcite {fold_cross_validation:k-fold_nodate}{{46}{5}{figure.2.5}}
 \backcite {WolpertMacready}{{46}{2.6.0.2}{figure.2.5}}
 \backcite {Wolpert:1996}{{46}{2.6.0.2}{figure.2.5}}
-\backcite {castro_supervised_2011}{{47}{2.6.0.3}{subsubsection.2.6.0.3}}
+\backcite {castro_supervised_2011}{{46}{2.6.0.3}{subsubsection.2.6.0.3}}
 \backcite {Boscarioli2017}{{47}{2.6.0.3}{subsubsection.2.6.0.3}}
 \backcite {aprenda_mineracao_fernando_amaral16}{{47}{2.6.0.3}{subsubsection.2.6.0.3}}
 \backcite {classification2013}{{47}{2.6.0.3}{subsubsection.2.6.0.3}}
@@ -228,8 +228,8 @@
 \backcite {Boscarioli2017}{{48}{2.6.0.3}{figure.2.6}}
 \backcite {Boscarioli2017}{{49}{6}{figure.2.6}}
 \backcite {Boscarioli2017}{{49}{7}{figure.2.7}}
-\backcite {ferneda_redes_2006}{{50}{2.7}{section.2.7}}
-\backcite {Norvig2013}{{50}{2.7}{section.2.7}}
+\backcite {ferneda_redes_2006}{{49}{2.7}{section.2.7}}
+\backcite {Norvig2013}{{49}{2.7}{section.2.7}}
 \backcite {santos_um_2013}{{50}{2.7.1}{subsection.2.7.1}}
 \backcite {lima_ia_2016}{{50}{2.7.1}{subsection.2.7.1}}
 \backcite {jin_development_2002}{{50}{2.7.1}{subsection.2.7.1}}
@@ -237,8 +237,8 @@
 \backcite {mcculloch_logical_1943}{{50}{2.7.2}{subsection.2.7.2}}
 \backcite {rosenblatt_perceptron:_1958}{{50}{2.7.2}{subsection.2.7.2}}
 \backcite {minsky_perceptrons:_1969}{{50}{2.7.2}{subsection.2.7.2}}
-\backcite {haykin_redes_2001}{{51}{2.7.2}{subsection.2.7.2}}
-\backcite {haykin_redes_2001}{{51}{2.7.2}{subsection.2.7.2}}
+\backcite {haykin_redes_2001}{{50}{2.7.2}{subsection.2.7.2}}
+\backcite {haykin_redes_2001}{{51}{8}{figure.2.8}}
 \backcite {mcculloch_logical_1943}{{51}{2.7.2}{figure.2.8}}
 \backcite {ferneda_redes_2006}{{51}{2.7.2}{figure.2.8}}
 \backcite {lima_ia_2016}{{51}{2.7.2}{figure.2.8}}
@@ -247,13 +247,13 @@
 \backcite {minsky_perceptrons:_1969}{{51}{2.7.2}{figure.2.8}}
 \backcite {ferneda_redes_2006}{{51}{2.7.2}{figure.2.8}}
 \backcite {haykin_redes_2001}{{51}{2.7.2}{figure.2.8}}
-\backcite {mcculloch_logical_1943}{{52}{2.7.2}{equation.2.7.10}}
+\backcite {mcculloch_logical_1943}{{51}{2.7.2}{equation.2.7.10}}
 \backcite {lima_ia_2016}{{52}{9}{figure.2.9}}
 \backcite {lima_ia_2016}{{52}{2.7.2}{equation.2.7.12}}
-\backcite {silva_redes_2016}{{53}{2.7.2}{equation.2.7.13}}
+\backcite {silva_redes_2016}{{52}{2.7.2}{equation.2.7.13}}
 \backcite {silva_redes_2016}{{53}{10}{figure.2.10}}
 \backcite {ferneda_redes_2006}{{53}{11}{figure.2.11}}
-\backcite {haykin_redes_2001}{{54}{2.7.2}{figure.2.11}}
+\backcite {haykin_redes_2001}{{53}{2.7.2}{figure.2.11}}
 \backcite {hagan_neural_1996}{{54}{2.7.2}{figure.2.11}}
 \backcite {haykin_redes_2001}{{54}{2.7.2}{figure.2.11}}
 \backcite {haykin_redes_2001}{{54}{2.7.2}{figure.2.11}}
@@ -264,8 +264,8 @@
 \backcite {silva_redes_2016}{{54}{2.7.3}{subsection.2.7.3}}
 \backcite {haykin_redes_2001}{{54}{2.7.3}{subsection.2.7.3}}
 \backcite {haykin_redes_2001}{{54}{2.7.3}{subsection.2.7.3}}
-\backcite {hagan_neural_1996}{{55}{2.7.3}{subsection.2.7.3}}
-\backcite {haykin_redes_2001}{{55}{2.7.3}{subsection.2.7.3}}
+\backcite {hagan_neural_1996}{{54}{2.7.3}{subsection.2.7.3}}
+\backcite {haykin_redes_2001}{{54}{2.7.3}{subsection.2.7.3}}
 \backcite {haykin_redes_2001}{{55}{2.7.3}{subsection.2.7.3}}
 \backcite {hagan_neural_1996}{{55}{2.7.3}{subsection.2.7.3}}
 \backcite {yeung_neural_2004}{{55}{2.7.3}{subsection.2.7.3}}
@@ -273,8 +273,8 @@
 \backcite {hagan_neural_1996}{{55}{2.7.3}{subsection.2.7.3}}
 \backcite {minsky_perceptrons:_1969}{{55}{2.7.3}{subsection.2.7.3}}
 \backcite {silva_redes_2016}{{55}{12}{figure.2.12}}
-\backcite {haykin_redes_2001}{{56}{2.7.4}{subsection.2.7.4}}
-\backcite {hagan_neural_1996}{{56}{2.7.4}{subsection.2.7.4}}
+\backcite {haykin_redes_2001}{{55}{2.7.4}{subsection.2.7.4}}
+\backcite {hagan_neural_1996}{{55}{2.7.4}{subsection.2.7.4}}
 \backcite {minsky_perceptrons:_1969}{{56}{2.7.4}{subsection.2.7.4}}
 \backcite {haykin_redes_2001}{{56}{2.7.4}{subsection.2.7.4}}
 \backcite {rosenblatt_perceptron:_1958}{{56}{2.7.4.1}{subsubsection.2.7.4.1}}
@@ -290,8 +290,8 @@
 \backcite {deep_learning_book_2019}{{58}{2.7.4.4}{equation.2.7.18}}
 \backcite {deep_learning_book_2019}{{58}{2.7.4.4}{equation.2.7.18}}
 \backcite {hagan_neural_1996}{{58}{2.7.4.4}{figure.2.17}}
+\backcite {haykin_redes_2001}{{58}{2.8}{section.2.8}}
 \backcite {haykin_redes_2001}{{59}{17}{figure.2.17}}
-\backcite {haykin_redes_2001}{{59}{2.8}{section.2.8}}
 \backcite {deep_learning_book_2019}{{59}{2.8}{Item.5}}
 \backcite {deep_learning_book_2019}{{59}{2.8}{Item.5}}
 \backcite {haykin_redes_2001}{{60}{2.8}{equation.2.8.19}}
