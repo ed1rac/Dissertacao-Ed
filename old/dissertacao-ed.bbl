@@ -59,13 +59,6 @@ ISBN 9788576089889. Dispon{\'\i}vel em:
   Conceitos e Tecnologia das Máquinas de Busca}. Edição: 2. [S.l.]: Bookman,
   2013.}
 
-\bibitem[Benz 2008]{benz_universidade_nodate}
-\abntrefinfo{Benz}{BENZ}{2008}
-{BENZ, K.~H. {UNIVERSIDADE} {FEDERAL} {DO} {RIO} {GRANDE} {DO} {SUL} {ESCOLA}
-  {DE} {ADMINISTRAÇÃO} {PROGRAMA} {DE} {PÓS}-{GRADUAÇÃO} {EM}
-  {ADMINISTRAÇÃO}.
-p.~200, 2008.}
-
 \bibitem[Bui, Stoller e Le 2019]{bui_efficient_2019}
 \abntrefinfo{Bui, Stoller e Le}{BUI; STOLLER; LE}{2019}
 {BUI, T.; STOLLER, S.~D.; LE, H. Efficient and {Extensible} {Policy} {Mining}
@@ -243,15 +236,6 @@ ISBN 978-1-59140-186-5. Dispon{\'\i}vel em:
 ISBN 978-85-352-1877-0. Dispon{\'\i}vel em:
   \url{https://books.google.com.br/books?id=JJYHNrREwyEC}.}
 
-\bibitem[Gonçalves 2013]{goncalves_nbr_2013}
-\abntrefinfo{Gonçalves}{GONçALVES}{2013}
-{GONçALVES, L. R. d.~O. {NBR} {ISO}/{IEC}-17799: O surgimento da norma
-  nacional de segurança de informação.
-2013.
-Library Catalog: lrodrigo.sgs.lncc.br.
-Dispon{\'\i}vel em:
-  \url{https://lrodrigo.sgs.lncc.br/wp/dicas/seguranca/nbr-isoiec-17799-o-surgimento-da-norma-nacional-de-seguranca-de-informacao/}.}
-
 \bibitem[Géron 2019]{geron_maos_2020}
 \abntrefinfo{Géron}{GéRON}{2019}
 {GéRON, A. \emph{Mãos à Obra: Aprendizado de Máquina com Scikit-Learn \&
@@ -263,13 +247,13 @@ Dispon{\'\i}vel em:
 ISBN 9788576089988. Dispon{\'\i}vel em:
   \url{https://books.google.com.br/books?id=EWJCvgAACAAJ}.}
 
-\bibitem[Guerrero-Higueras, {DeCastro}-García e
-  Matellán]{guerrero-higueras_detection_2018}
-\abntrefinfo{Guerrero-Higueras, {DeCastro}-García e
-  Matellán}{GUERRERO-HIGUERAS; {DeCastro}-GARCíA; MATELLáN}{}
-{GUERRERO-HIGUERAS, n.~M.; {DeCastro}-GARCíA, N.; MATELLáN, V. Detection of
+\bibitem[Guerrero-Higueras, {DeCastro}-Garcia e Matellan
+  2018]{guerrero-higueras_detection_2018}
+\abntrefinfo{Guerrero-Higueras, {DeCastro}-Garcia e
+  Matellan}{GUERRERO-HIGUERAS; {DeCastro}-GARCIA; MATELLAN}{2018}
+{GUERRERO-HIGUERAS, A.~M.; {DeCastro}-GARCIA, N.; MATELLAN, V. Detection of
   cyber-attacks to indoor real time localization systems for autonomous robots.
-v.~99, p. 75--83.
+v.~99, p. 75--83, 2018.
 ISSN 0921-8890.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S092188901730283X}.}
@@ -280,14 +264,6 @@ Dispon{\'\i}vel em:
   https://en.wikipedia.org/wiki/File:K-fold\_cross\_validation\_EN.svg, 2019.
   Dispon{\'\i}vel em:
   \url{https://en.wikipedia.org/wiki/File:K-fold\_cross\_validation\_EN.svg}.}
-
-\bibitem[Guttman e Roback 1995]{nist_guttman_introduction_1995}
-\abntrefinfo{Guttman e Roback}{GUTTMAN; ROBACK}{1995}
-{GUTTMAN, B.; ROBACK, E. An introduction to computer security: the {NIST}
-  handbook.
-n. {NIST} Special Publication ({SP}) 800-12 (Withdrawn), 1995.
-Dispon{\'\i}vel em:
-  \url{https://csrc.nist.gov/publications/detail/sp/800-12/archive/1995-10-02}.}
 
 \bibitem[Hagan, Demuth e Beale 1996]{hagan_neural_1996}
 \abntrefinfo{Hagan, Demuth e Beale}{HAGAN; DEMUTH; BEALE}{1996}
