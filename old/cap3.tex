@@ -1040,7 +1040,7 @@ Já os trabalhos de \citeonline{bui_greedy_2019}, \citeonline{hachana_mining_201
 Neste trabalho, propõem aplicar a mineração de dados com técnicas de aprendizagem de máquina, como possibilidade de solução na detecção de conflitos entre o crescente número de políticas computacionais de uma organização, tanto em tempo de design, quanto em tempo de execução (com prioridade para este último), buscando evitar o custo computacional elevado, se aproveitando, pois, da ``história'' temporal das políticas da organização, mediante o conhecimento adquirido, ``treinado'' e otimizado pelos algoritmos de aprendizagem de máquina. \textit{Estes, pois, são os diferenciais deste trabalho e no que ele pode contribuir dentro do escopo deste problema}.
 
 \chapter{Experimentos/Resultados}\label{resultados}
-Neste capítulo serão descritas as 3 abordagens diferentes que foram utilizadas e em cada uma delas, os principais algoritmos de classificação que foram utilizados. A primeira parte dos experimentos focaram em determinar quais os classificadores apresentaram melhor acurácia para a resolução do problema descrito na \autoref{problema}.
+Neste capítulo serão descritas as 3 abordagens diferentes que foram utilizadas e em cada uma delas, os principais algoritmos de classificação que foram utilizados. A primeira parte dos experimentos focaram em determinar quais os classificadores apresentaram melhor acurácia para a resolução do problema descrito na \autoref{problema}. A base para experimentos foi pequena, de apenas 68 políticas. Em seguida, dois outros datasets foram utilizados, um com 281 e outro com 430 políticas, o definitivo, em que a maioria dos experimentos foi realizada.
 
 \section{Forma geral dos experimentos}\label{forma_geral_experimentos}
 A forma geral de como a estrutura dos experimentos foram realizados para o problema proposto na \autoref{problema} é a seguinte:
@@ -1059,11 +1059,11 @@ A forma geral de como a estrutura dos experimentos foram realizados para o probl
 Este modelo de método experimental foi adaptado daqueles propostos em \citeonline{lima_ia_2016}, \citeonline{silva_redes_2016} e \citeonline{haykin_redes_2001}. O item 1 já foi descrito na \autoref{problema}. As próximas seções trazem os passos 2 a 9.
 
 \section{Base de dados, pré-processamento e recursos computacionais}\label{base_dados-pre-recursos}
-\subsection{Datasets}
+\subsection{Datasets}\label{datasets}
 Esta seção detalha os pormenores dos conjunto de dados (\textit{datasets}) utilizados nos experimentos do \autoref{resultados}.
 Arquivos de dados com políticas de controle de acesso reais são difíceis de conseguir, até mesmo para fins acadêmicos, pois, como explicitado na \autoref{seguranca_informacao}, essas informações são valiosas e por questões estritas de segurança esses dados não são compartilhados.
 
-Trabalhos relacionados, como os de \cite{sarkis2017} e \cite{eduardo2017}, da mesma maneira, usaram formas de geração automática de políticas ou normas. Esta dissertação usou a mesma abordagem. Todos os \textit{datasets} utilizados neste trabalho foram gerados com o mesmo programa, escrito em Python e disponibilizado em \hyperlink{https://bit.ly/3qkJKKs}{https://bit.ly/3qkJKKs}.
+Trabalhos relacionados, como os de \cite{sarkis2017} e \cite{eduardo2017}, da mesma maneira, usaram formas de geração automática de políticas ou normas. Esta dissertação usou a mesma abordagem. Todos os \textit{datasets} utilizados neste trabalho foram gerados com o mesmo programa, escrito em Python, chamado \texttt{\textbf{geracao\_politicas.py}}  e disponibilizado em \hyperlink{https://bit.ly/3qkJKKs}{https://bit.ly/3qkJKKs}.
 
 
 A \autoref{fig:geracao-politicas-parte1} mostra o início do programa de geração automática de políticas.
@@ -1111,7 +1111,7 @@ A figura \ref{fig:aspecto_arquivo} demonstra o aspecto do arquivo das políticas
 	{\scriptsize Fonte: compilação do autor}
 \end{figure}
 
-Ainda na fase de \textit{pré-processamento}, a coluna 9 (Conflito) foi transformada do tipo de dado \textit{Numérico para Nominal}. Para isso foi usado o softwate WEKA (descrito em \citeonline{eibe2016}) aplicado o filtro \textit{NumericToNominal} do software. Além disso, tanto o primeiro atributo quanto a data foram removidos, pois, dentro do escopo estudado neste trabalho, eles não influenciariam nos resultados finais.
+Ainda na fase de \textit{pré-processamento}, a coluna 9 (Conflito) foi transformada do tipo de dado \textit{Numérico para Nominal}. Para isso foi usado o softwate WEKA (descrito em \citeonline{eibe2016}) aplicado o filtro \textit{NumericToNominal} do software. Além disso, tanto o primeiro atributo quanto as datas de ativação e desativação da política foram removidos, pois, dentro do escopo estudado neste trabalho, eles não influenciariam nos resultados finais. O primeiro atributo é o ``nome'' da política, na forma ``PolicyXY'', onde XY é um número inteiro sequencial, iniciando em 1. O dataset, ao final, ficou com seis atributos, 5 previsores (Acesso, Organizacao, Sujeito, Acao e Objeto) e uma classe (o atributo `Conflito').
 
 \subsection{Recursos computacionais}
 Dois \textbf{ambientes computacionais} foram utilizados para as tarefas de mineração: um \textbf{notebook}  Intel Core i5 vPro-8350U (8ª Geração de 64 bits com 1.70GHz e 8 GB de RAM, com SSD de 256 GB rodando Windows 10 Pro.
@@ -1119,12 +1119,22 @@ Dois \textbf{ambientes computacionais} foram utilizados para as tarefas de miner
 O outro ambiente foi uma \textbf{Estação de Trabalho} Intel Core i7 vPro-6700 de 8ª geração de 64 bits com 3.40 Ghz e 20 GB de RAM, com HD de 1 TB rodando o Windows 10 Pro.
 
 \subsection{Experimentos iniciais - arquivo com 68 políticas}\label{exp:iniciais}
-
+O arquivo de 68 políticas criado com o programa descrito em \ref{fig:geracao-politicas-parte1} está disponível no endereço: \hyperlink{https://bit.ly/3io2PJf}{https://bit.ly/3io2PJf}.
+%dataset-68 
+A \autoref{fig:dataset-68 } mostra como ficou o arquivo com 68 políticas após a execução do pré-processamento.
+\begin{figure}[h!]
+	\centering
+	\caption{Aspecto do arquivo com 68 políticas após o pré-processamento}
+	\fbox{\includegraphics[width=1\textwidth]{imagens/dataset-68.png}	}
+	
+	\label{fig:dataset-68 }
+	{\scriptsize Fonte: compilação do autor}
+\end{figure}
 
 
 
 \subsection{Resultados - Arquivo com 68 políticas}
-Logo após, mais de 30 experimentos foram realizados de forma preliminar no \textit{dataset} envolvendo os diversos algoritmos e muitos parâmetros alterados (a maioria com pequena ou nenhuma variação) para se chegar às técnicas finais que foram utilizadas nos posteriores experimentos e que serão explicitadas a seguir.
+Logo após, experimentos foram realizados de forma preliminar no \textit{dataset} envolvendo os diversos algoritmos com alguns parâmetros sendo alterados (a maioria com pequena ou nenhuma variação) para se chegar às técnicas finais que foram utilizadas nos posteriores experimentos e que serão explicitadas a seguir.
 
 Utilizando-se a ferramenta WEKA descrita em \cite{eibe2016} para as últimas fases da Mineração de Dados, foram utilizados alguns algoritmos de classificação que segundo \citeonline{wu2007} são alguns dos mais utilizados na Mineração de Dados. Para avaliar o desempenho definiu-se o método \textit{cross-validatio}n com 10 folds. Em seguida suas acurácias foram comparadas.
 
@@ -1153,7 +1163,7 @@ A tabela \ref{tab:acuracias} mostra o resultado destes experimentos:
 	\\[6pt]	\centering {\footnotesize Fonte: Elaborada pelo autor mediante experimentos}	
 \end{table}
 
-As figuras \ref{fig:saida_svm} e \ref{fig:saida_multilayerperceptron} mostram os resultados das classificações do arquivo de políticas usando, respectivamente, os classificadores/algoritmos: \textit{SVM} e o \textit{MultiLayer Perceptron} (que foram os principais citados nos trabalhos relacionados, cf. descrito na \autoref{trabalhos_relacionados}). Cf. mostrado na \autoref{tab:acuracias}, os classificadores SVM e MultiLayerPerceptron ficaram empatados em relação à acurácia. Nos experimentos posteriores, \textit{apenas os dois foram considerado}s.
+As figuras \ref{fig:saida_svm} e \ref{fig:saida_multilayerperceptron} mostram os resultados das classificações do arquivo de políticas usando, respectivamente, os classificadores/algoritmos: \textit{SVM} e o \textit{MultiLayer Perceptron} (que foram os principais citados nos trabalhos relacionados, cf. descrito na \autoref{trabalhos_relacionados}). Cf. mostrado na \autoref{tab:acuracias}, os classificadores SVM e MultiLayerPerceptron ficaram empatados em relação à acurácia. Provavelmente, a base pequena possa ter, de alguma forma, influenciado no resultado.
 \begin{figure}[h!]
 	\centering
 	\caption{Saída do software WEKA. Classificador: SVM}
@@ -1173,12 +1183,28 @@ As figuras \ref{fig:saida_svm} e \ref{fig:saida_multilayerperceptron} mostram os
 
 Assim, com uma acurácia de 97,05\% na classificação dos conflitos diretos, tanto o algoritmo Multilayer Perceptron (que implementa uma rede neural sigmoide multicamadas) quanto o SVM tiveram a maior acurácia, com 95,7\% de \textit{TP rate}(taxa de \textit{True Positives} ou verdadeiros positivos) para a classe 0 (não há conflito) e, somente, 4,3\% de \textit{FP rate}(taxa de Falsos Positivos) para a classe 1 (quando há conflito direto). Nos experimentos realizados (assim como se esperava inicialmente na hipótese deste trabalho --- baseado em evidências da literatura), estes modelos algorítmicos foram os mais eficientes para a detecção de conflitos diretos.
 
-A interface visual do WEKA é interessante para observar o comportamento inicial dos algoritmos, mas para as arquiteturas de redes neurais e seus diversos parâmetros, configurações e quantidade de camadas ocultas, entre outras configurações levaram a outros experimentos com outras abordagens. Para isso e com o objetivo de evitar o \textit{overfitting} (como explicado na \autoref{medidas_avaliacao} novos procedimentos e ferramentas foram adotados).
+A interface visual do WEKA é interessante para observar o comportamento inicial dos algoritmos, mas para as arquiteturas de redes neurais e seus diversos parâmetros, configurações e quantidade de camadas ocultas, entre outras configurações levaram a outros experimentos com outras abordagens. Para isso e com o objetivo de evitar o \textit{overfitting}, como explicado na \autoref{medidas_avaliacao} novos procedimentos e ferramentas foram adotados, incluindo, alterando a estratégia de validação.
 
 \section{Outros experimentos - arquivos com 281 e 430 políticas}\label{exp:139-281}
-Foi gerado, então, dois novos arquivos de políticas, também randomicamente, e, ainda, a partir do proposto em \citeonline{sarkis2017} e, cf. o exposto na \autoref{modelo_politica_utilizada}. Os arquivos gerados agora, possui, 139  e 281 políticas nomeadas.
+Foi gerado, então, dois novos arquivos de políticas, também randomicamente, e, ainda, a partir do proposto em \citeonline{sarkis2017} e, cf. o exposto na \autoref{modelo_politica_utilizada} usando o software demonstrado em \ref{fig:geracao-politicas-parte1}. Os arquivos gerados agora, possui, 281 e 430 políticas nomeadas. O arquivo de 281 políticas está disponível em \hyperlink{https://bit.ly/2MW1GwA}{https://bit.ly/2MW1GwA}.
 
-Os mesmos filtros anteriores foram aplicados e os resultados para os algoritmos (ainda usando a ferramenta Weka) foram os seguintes:
+\begin{figure}[h!]
+	\centering
+	\caption{Parte do arquivo com 281 políticas após o pré-processamento}
+	\fbox{\includegraphics[width=.8\textwidth]{imagens/dataset-281.png}}
+	
+	\label{fig:dataset-281}
+	{\scriptsize Fonte: compilação do autor}
+\end{figure}
+
+Os mesmos filtros anteriores foram aplicados:\begin{itemize} \label{filtros}
+	\item a coluna 9 (Conflito) foi transformada do tipo de dado \textit{Numérico para Nominal}. Este atributo é a classe;
+	\item O primeiro atributo, o ``nome'' da política, na forma ``PolicyXY'', onde XY é um número inteiro sequencial, iniciando em 1 foi removido;
+	\item Tanto as datas de ativação quanto de desativação da política foram removidas;
+	\item O dataset, ao final, ficou com seis atributos, 5 previsores (Acesso, Organizacao, Sujeito, Acao e Objeto) e uma classe (o atributo `Conflito').
+\end{itemize}
+
+Os resultados para os algoritmos (ainda usando a ferramenta Weka) foram os seguintes:
 
 Para o MultiLayer Perceptron, a \autoref{tab:MLP_acuracia} mostra como as acurácias ficaram com os arquivos com quantidades diferentes de políticas.
 
@@ -1192,8 +1218,8 @@ Para o MultiLayer Perceptron, a \autoref{tab:MLP_acuracia} mostra como as acurá
 		Qtd. de Políticas	& Acurácia  \\[10pt] 
 		\hline
 		68 					& 97.05    	\\
-		139			     	& 98.73     \\
-		281					& 99.28		\\
+		281			     	& 98.73     \\
+		430					& 99.28		\\
 		\hline
 	\end{tabular}
 	\\[6pt]	\centering {\footnotesize Fonte: Elaborada pelo autor mediante experimentos}	
@@ -1211,16 +1237,16 @@ Para o classificador SVM, a \autoref{tab:SVM_acuracia} mostra como as acurácias
 		Qtd. de Políticas	& Acurácia  \\[10pt] 
 		\hline
 		68 					& 97.05    	\\
-		139			     	& 96.40     \\
-		281					& 99.28		\\
+		281		     	& 96.40     \\
+		430					& 99.28		\\
 		\hline
 	\end{tabular}
 	\\[6pt]	\centering {\footnotesize Fonte: Elaborada pelo autor mediante experimentos}	
 \end{table}
 
-Mesmo com uma leve queda na acurácia do SVM no arquivo de 139 políticas, percebe-se que, quanto maior o número de políticas, maior é a acurácia do classificador e, portanto, melhor é a classificação.
+Mesmo com uma leve queda na acurácia do SVM no arquivo de 281 políticas, percebe-se que, quanto maior o número de políticas, é crescente a acurácia do classificador e, portanto, melhor é a classificação.
 
-\subsection{Experimentos com Pandas, NumPy e sklearn}\label{exp:pandas-numpy-sklearn}
+\subsection{Experimentos com Pandas, NumPy e sklearn - arquivo de 430 políticas}\label{exp:pandas-numpy-sklearn}
 Outros experimentos foram realizados utilizando as bibliotecas Pandas, descrita em \citeonline{pandas-mckinney2010}, NumPy, pormenorizada em \citeonline{numpy-oliphant2006guide} e sklearn, detalhado em \citeonline{scikit-learn} além do Notebook Jupyter, caracterizado em \citeonline{jupyter-Kluyver:2016aa}. 
 
 O notebook criado demonstra o treinamento de uma rede neural Rede Neural Multicamadas usando o classificador \texttt{\textbf{MLPClassifier}} da biblioteca \texttt{\textbf{sklearn}}.
@@ -1229,7 +1255,7 @@ No arquivo, é demonstrado os experimentos na construção de uma arquitetura de
 
 Há também um pré-processamento importante focado em um tratamento dos dados categóricos do \textit{dataset} e sua conversão para dados numéricos e divisão da base original em dois conjuntos de dados (previsores e classe).
 
-Todos os atributos categóricos do dataset de políticas (o maior, com 281 instâncias) foram transformados para numéricos sendo um dicionário de dados construído.
+Todos os atributos categóricos do dataset de políticas (o maior, com 430 instâncias) foram transformados para numéricos sendo um dicionário de dados construído para isso utilizando uma técnica chamada codificação, semelhante à da classe LabelEncoder da biblioteca \texttt{sklearn}. Basicamente, o processo codifica rótulos de destino com valores entre $0$ e $n$-classes $- 1$. Isto é importante, pois alguns algoritmos só trabalham com valores numéricos (como o MultiLayerPerceptron, o SVM entre outros).
 
 Os passos foram os seguintes:
 
@@ -1246,11 +1272,11 @@ Primeiramente a base foi importada da seguinte forma, como demonstrado na \autor
 
 A partir daí, foram selecionados da base todas as linhas dos atributos do \textit{dataset} que estavam com os tipos \textit{object}. Foram procurados valores nulos e não foram encontrados. 
 
-Foi utilizada uma técnica que transforma um atributo categórico com $k$ valores em uma representação numérica com valores inteiros para cada $k$ valor. Há vantagens e desvantagens nessa abordagem. Elas estão discutidas em detalhes em \citeonline{sarkar_2017}.
+Foi utilizada uma técnica que transforma um atributo categórico com $k$ valores em uma representação numérica com valores inteiros para cada $k$ valor chamada \textit{label encoder}, ou seja, ela codifica os rótulos de destino com valores entre $1$ e $n$-classes$-1$. Há vantagens e desvantagens nessa abordagem. Elas estão discutidas em detalhes em \citeonline{sarkar_2017}.
 
 A \autoref{fig:dic-coluna1} demonstra como este procedimento foi realizado para o atributo que representa o acesso (Permitido, Proibido e Obrigatório).
 
-\begin{figure}[h!]
+\begin{figure}[h]
 	\centering
 	\caption{Engenharia de atributos - dados categóricos textuais}
 	\fbox{\includegraphics[width=.6\textwidth]{imagens/notebook-base2.png}}
@@ -1258,6 +1284,8 @@ A \autoref{fig:dic-coluna1} demonstra como este procedimento foi realizado para 
 	\label{fig:dic-coluna1}
 	{\scriptsize Fonte: compilação do autor}
 \end{figure}
+
+Uma função para realizar o encode automático foi criada. Ela está disponível em \hyperlink{https://bit.ly/3qoILsX}{https://bit.ly/3qoILsX}.
 
 Em seguida a base foi dividida em atributos previsores e a classe. Os previsores são as colunas que representam a política em si e a classe é a representação binária do conflito.
 
@@ -1287,12 +1315,12 @@ O código para a padronização foi o \autoref{padronizacao}, abaixo:
 	previsores_transformados = scaler.fit_transform(previsores)
 \end{lstlisting}
 
-Assim os dados foram padronizados e ficaram na mesma escala. Foi gerado um novo conjunto de dados de treinamento com 75\% do \textit{dataset} (sendo escolhidos randomicamente). Deixando, assim, 25\% da base para validação.
+Assim os dados foram padronizados e ficaram na mesma escala. Todos os algoritmos que foram padronizados utilizaram este mesmo algoritmo. Foi gerado, então um novo conjunto de dados de treinamento com 75\% do \textit{dataset} (sendo escolhidos randomicamente). Deixando, assim, 25\% da base para validação.
 
 \begin{figure}[H]
 	\centering
 	\caption{Aspecto do atributo classe}
-	\fbox{\includegraphics[width=.6\textwidth]{imagens/classe.png}}
+	\fbox{\includegraphics[width=.8\textwidth]{imagens/classe2.png}}
 	
 	\label{fig:classe}
 	{\scriptsize Fonte: compilação do autor}
@@ -1301,12 +1329,14 @@ Assim os dados foram padronizados e ficaram na mesma escala. Foi gerado um novo 
 Logo em seguida, um modelo de Multi-Layer Perceptron foi criado usando o classificador \texttt{\textbf{MLPClassifier}} da biblioteca \texttt{\textbf{sklearn}} com os seguintes hiperparâmetros, mostrados no \autoref{hiperMLP}: 
 %[caption={Hiperparâmetros do modelo MLPClassifier}, label=hiperMLP][frame=single]
 \begin{lstlisting}[caption={Hiperparâmetros do MLPClassifier},label=hiperMLP][frame=single][language=Python]
+	verbose = True,
 	max_iter=10000,
-	tol = 0.0000010,
+	tol = 0.000010,
 	solver = 'adam',
-	hidden_layer_sizes=(100),
+	hidden_layer_sizes=(32),
 	shuffle=False,
-	activation='relu'
+	activation='relu' ,
+	batch_size=40
 \end{lstlisting}
 
 %\begin{itemize}
@@ -1318,14 +1348,14 @@ Logo em seguida, um modelo de Multi-Layer Perceptron foi criado usando o classif
 	%\item \texttt{$activation='relu'$}
 %\end{itemize}
 
-Onde, respectivamente estão configuradas, o número máximo de épocas de treinamento (10000), a tolerância (0.0000010), a função de otimização de peso (`adam' refere-se a um otimizador estocástico baseado em gradiente descendente), a quantidade de neurônios na única camada oculta, se as amostras devem ser embaralhadas em cada iteração (marcado como falso) e a função de ativação da camada oculta (função de ativação ReLU).
+Onde, respectivamente estão configuradas, o número máximo de épocas de treinamento (10000), a tolerância (0.000010), a função de otimização de peso (`adam' refere-se a um otimizador estocástico baseado em gradiente descendente), a quantidade de neurônios na única camada oculta, se as amostras devem ser embaralhadas em cada iteração (marcado como falso) e a função de ativação da camada oculta (função de ativação ReLU).
 
-A \autoref{fig:mlp_classifier} mostra o código no notebook e as iterações finais onde o classificador indica que a função de perda no treinamento não melhorou mais do que a tolerância, $tol = 0,000001$ por 10 épocas consecutivas e, portanto, ele encerrou as iterações.
+A \autoref{fig:mlp_classifier} mostra o código no notebook e as iterações finais onde o classificador indica que a função de perda no treinamento não melhorou mais do que a tolerância, $tol = 0.000010$ por 10 épocas consecutivas e, portanto, ele encerrou as iterações.
 
-\begin{figure}[h!]
+\begin{figure}[h]
 	\centering
-	\caption{Código do \textbf{MLPClassifier} com as últimas iterações}
-	\fbox{\includegraphics[width=.7\textwidth]{imagens/mlp_classifier.png}}
+	\caption{Código do \textbf{MLPClassifier} com as primeiras iterações}
+	\fbox{\includegraphics[width=.8\textwidth]{imagens/mlp_classifier2.png}}
 	
 	\label{fig:mlp_classifier}
 	{\scriptsize Fonte: compilação do autor}
@@ -1333,18 +1363,31 @@ A \autoref{fig:mlp_classifier} mostra o código no notebook e as iterações fin
 
 A \autoref{fig:validacao_notebook} mostra algumas métricas de validação após o modelo criado realizar as predições na base de teste (25\% do dataset ou 71 políticas). Nela, pode-se perceber a acurácia do classificador em 95.77\%, classificando, conforme a matriz de confusão mostrada na mesma figura, somente 3 previsões incorretas. Estes resultados apresentam uma sensibilidade (\textit{recall}) de 97.7\%. Levando-se em conta que o modelo se aprimora conforme a quantidade de instâncias aumenta, de acordo com o pressuposto no\textit{ teorema da aproximação universal} \citeonline{hagan_neural_1996}, pode se considerar este como um modelo satisfatório.
 
-\begin{figure}[h!]
+\begin{figure}[h]
 	\centering
 	\caption{Validações para o modelo \textbf{MLPClassifier}}
-	\fbox{\includegraphics[width=.6\textwidth]{imagens/validacao_notebook.png}}
+	\fbox{\includegraphics[width=.7\textwidth]{imagens/validacao_notebook2.png}}
 	
 	\label{fig:validacao_notebook}
 	{\scriptsize Fonte: compilação do autor}
 \end{figure}
 
+%mlp-convergencia-perda
+
+Já a figura \autoref{fig:mlp-convergencia-perda} mostra a convergência da função de perda.
+
+\begin{figure}[h]
+	\centering
+	\caption{Convergência da Loss Function - \textbf{MLPClassifier}}
+	\fbox{\includegraphics[width=.6\textwidth]{imagens/mlp-convergencia-perda.png}}
+	
+	\label{fig:mlp-convergencia-perda}
+	{\scriptsize Fonte: compilação do autor}
+\end{figure}
+
 A \autoref{fig:dimensionalidade} mostra a dimensionalidade dos dados após transformados pelo processo de padronização e dá uma visão geral de 3 atributos, \textit{\textbf{sujeito, ação e objeto}} e o impacto na difusão dos conflitos no espaço após os atributos categóricos terem sido, todos, transformados para uma representação numérica.
 
-\begin{figure}[h!]
+\begin{figure}[h]
 	\centering
 	\caption{Dimensionalidade dos dados: atributos sujeito, ação e objeto}
 	\fbox{\includegraphics[width=.6\textwidth]{imagens/dimensionalidade.png}}
@@ -1353,8 +1396,45 @@ A \autoref{fig:dimensionalidade} mostra a dimensionalidade dos dados após trans
 	{\scriptsize Fonte: compilação do autor}
 \end{figure}
 
+
+Foi criado um script que, com parâmetros padrão dos classificadores, roda um experimento sobre a base. O script esá disponível em \hyperlink{https://bit.ly/3bFJaTM}{https://bit.ly/3bFJaTM}. O resultado pode ser visualizado na \autoref{fig:comparacao-visual}.
+
+%comparacao-visual
+\begin{figure}[h]
+	\centering
+	\caption{Comparação visual entre alguns classificadores}
+	\fbox{\includegraphics[width=1\textwidth]{imagens/comparacao-visual.png}}
+	
+	\label{fig:comparacao-visual}
+	{\scriptsize Fonte: compilação do autor}
+\end{figure}
+
+O notebook com todos os experimentos restantes (Naïve Bayes, Keras, K-NN, SVM, Random Forest e Árvores de Decisão) pode ser visualizado em \hyperlink{https://bit.ly/3nJHYky}{https://bit.ly/3nJHYky}. Na \autoref{tab:acuracias2} com as acurácias destes classificadores conforme ficou demonstrada nos experimentos.
+
+\begin{table}[h]
+	\centering
+	\caption{Acurácia dos classificadores - dataset 430 políticas}
+	\label{tab:acuracias2}
+	\vspace{0.3cm}
+	\begin{tabular}{p{6cm}c}
+		\hline\\
+		Classificador/Algoritmo& Acurácia  \\[10pt] 
+		\hline
+		Random Forest~		   & 0.9900    \\
+		Árvore de Decisão      & 0.9900    \\
+		MLPCLassifier~		   & 0.9814   \\
+		SVM RBF                & 0.9814    \\
+		Keras (MLP)            & 0.9629    \\
+		k-NN (com k=5          & 0.8796    \\
+		SVM kernel linear~	   & 0.8055    \\
+		Naïve Bayes~		   & 0.7314    \\		
+		\hline
+	\end{tabular}
+	\\[6pt]	\centering {\footnotesize Fonte: Elaborada pelo autor mediante experimentos}	
+\end{table}
+
 \subsection{Experimentos com TensorFlow e Pytorch}\label{exp:tensorflow-pytorch}
-De acordo com \citeonline[p. 233]{geron_maos_2020}, o \textit{TensorFlow} é uma biblioteca de software para cálculo numérico de código aberto especialmente adequada e ajustada para o Aprendizado de Máquina em larga escala. Foi desenvolvido pela \textit{Google Brain Team} para uso intensivo de redes neurais profundas. O código fonte foi disponibilizado em 2015 e está à disposição no link: \underline{\texttt{https://github.com/tensorflow/tensorflow}}.
+De acordo com \citeonline[p. 233]{geron_maos_2020}, o \textit{TensorFlow} é uma biblioteca de software para cálculo numérico de código aberto especialmente adequada e ajustada para o Aprendizado de Máquina em larga escala. Foi desenvolvido pela \textit{Google Brain Team} para uso intensivo de redes neurais profundas. O código fonte foi liberado em 2015 e está à disposição no link: \hyperlink{https://github.com/tensorflow/tensorflow}{https://github.com/tensorflow/tensorflow}.
 
 É possível usar computação paralela em várias CPU's ou GPU's além de suportar computação distribuída para que seja possível o treinamento e o uso de redes neurais em grandes conjuntos de treinamento dividindo os cálculos por centenas de servidores em um período de tempo razoável \cite{geron_maos_2020}. 
 
@@ -1375,7 +1455,7 @@ Neste modelo os hiperparâmetros principais, cf. \citeonline{thenmozhi_multi-lin
 	{\scriptsize Fonte: compilação do autor}
 \end{figure}
 
-Para o processo de validação, usou-se o \textit{holdout} com a separação em 70\% das instâncias para o treinamento da rede neural e 25\% para teste, predição e validação. Na figura \ref{fig:separacao-teste-treino} pode-se visualizar como o processo foi realizado,inclusive com a quantidade de instâncias em cada conjunto de dados (na linha 2 é feita a randomização do \textit{dataset} original para evitar o overfitting e balancear a probabilidade da distribuição).
+Para o processo de validação, usou-se o \textit{holdout} com a separação em 75\% das instâncias para o treinamento da rede neural e 25\% para teste, predição e validação. Na figura \ref{fig:separacao-teste-treino} pode-se visualizar como o processo foi realizado,inclusive com a quantidade de instâncias em cada conjunto de dados (na linha 2 é feita a randomização do \textit{dataset} original para evitar o overfitting e balancear a probabilidade da distribuição).
 
 O pacote \texttt{torch.util.data} do PyTorch possui a classe abstrata \texttt{Dataset}. Ela permite que seja implementado o próprio dataset reescrevendo os métodos: 
 
@@ -1459,7 +1539,7 @@ As figuras \ref{fig:train}, \ref{fig:test} e \ref{fig:forward} mostram as três 
 \begin{figure}[H]
 	\centering
 	\caption{Implementação da função que mescla o treino e o teste em uma só}
-	\fbox{\includegraphics[width=.6\textwidth]{imagens/forward.png}}
+	\fbox{\includegraphics[width=.8\textwidth]{imagens/forward.png}}
 	
 	\label{fig:forward}
 	{\scriptsize Fonte: compilação do autor}
@@ -1470,7 +1550,7 @@ Como esclarecimento e interpretação visual foi construída, pois, a \autoref{f
 \begin{figure}
 	\centering
 	\caption{Convergência das épocas entre o treino e o teste da MLP}
-	\fbox{\includegraphics[width=.6\textwidth]{imagens/convergencia.png}}
+	\fbox{\includegraphics[width=.8\textwidth]{imagens/convergencia.png}}
 	
 	\label{fig:convergencia}
 	{\scriptsize Fonte: compilação do autor}
@@ -1482,11 +1562,97 @@ A arquitetura da rede neural construída e mostrada na \autoref{fig:mlp-pytorch}
 \begin{figure}[H]
 	\centering
 	\caption{Arquitetura da rede neural}
-	\fbox{\includegraphics[width=.7\textwidth]{imagens/arquitetura-RNN-vertical.png}}
+	\fbox{\includegraphics[width=1\textwidth]{imagens/arquitetura-RNN-vertical.png}}
 	
 	\label{fig:arquitetura-rede-pytorch}
 	{\scriptsize Fonte: compilação do autor}
 \end{figure}
+
+\section{Teste da detecção de conflitos em tempo de execução}\label{teste}
+Para fins de avaliação, foi realizado um teste com um dos modelos dos experimentos (o Random Forest que obteve a maior acurácia) para demonstrar a detecção de conflito em tempo de execução.
+
+Foi gerado um conjunto pequeno de 3 instâncias com o programa \texttt{\textbf{geracao\_politicas.py}} resultando no seguinte \autoref{lst-politicas}:
+
+\begin{lstlisting}[caption={Instâncias geradas aleatoriamente},label=lst-politicas][frame=single][language=Python]
+politicas_teste = 
+[
+  `Obliged',`UFAC',`Secretario_de_Curso_Academico',`Acessar',`Produtos',
+  `Permitted',`UFAC',`Secretario_de_Curso_Academico',`Acessar',`Documentos',
+  `Obliged',`CCSJA',`Outro_Usuario','Abertura',`Almoxarifado'
+]
+\end{lstlisting}
+
+Então a lista foi convertida para um DataFrame, tipo de dados do Pandas, no seguinte \autoref{lst-conversao}:
+\begin{lstlisting}[caption={Conversão para DataFrame},label=lst-conversao][frame=single][language=Python]
+policies_test = pd.DataFrame(np.array(politicas_teste).reshape(3,5), columns = list("ABCDE"))
+policies_test.columns = ['Acesso', 'Organizacao', 'Sujeito', 'Acao', 'Objeto']
+\end{lstlisting}
+
+O dataframe \texttt{\textbf{policies\_test}} passou pelo processo de encodificação com a função \texttt{\textbf{ManualEncoder.py}} que resultou no dataFrame mostrado na \autoref{fig:policies_test}.
+
+\begin{figure}[H]
+	\centering
+	\caption{Data Frame com instâncias de teste aleatórias}
+	\fbox{\includegraphics[width=1\textwidth]{imagens/policies_test.png}}
+	
+	\label{fig:policies_test}
+	{\scriptsize Fonte: compilação do autor}
+\end{figure}
+
+Foram realizadas as queries (consultas) no dataset mostradas na\autoref{fig:buscas-conflitos}
+
+\begin{figure}[H]
+	\centering
+	\caption{Data Frame com instâncias de teste aleatórias}
+	\fbox{\includegraphics[width=.9\textwidth]{imagens/buscas-conflitos.png}}
+	
+	\label{fig:buscas-conflitos}
+	{\scriptsize Fonte: compilação do autor}
+\end{figure} 
+
+Com o \autoref{lst-classifica-certo} criou-se uma lista com as classificações corretas para as instâncias geradas (todas com rótulo `0' significando que não houve conflitos).
+
+\begin{lstlisting}[caption={Listas classificações corretas},label=lst-classifica-certo][frame=single][language=Python]
+classificao_teste_correta = [0,0,0] #Sem conflito para nenhuma instancia
+\end{lstlisting}
+
+Já com a \autoref{fig:predicao-teste} verificou-se, em tempo de execução e de forma praticamente imediata, baseado no modelo de aprendizagem de máquina criado, que não houve conflito gerando uma nova lista com as predições. A primeira célula do código da imagem mostra os hiperparâmetros do classificador.
+
+%predicao-teste
+\begin{figure}[H]
+	\centering
+	\caption{Resultado da predição em tempo de execução}
+	\fbox{\includegraphics[width=.9\textwidth]{imagens/predicao-teste.png}}
+	
+	\label{fig:predicao-teste}
+	{\scriptsize Fonte: compilação do autor}
+\end{figure}
+
+Para finalizar foi criada uma função \texttt{\textbf{compara\_predicoes}} para fazer a comparação das previsões. A \autoref{fig:comparacao-previsao} demonstra isso e a \autoref{fig:resultado-compara} mostra a saída do código.
+
+%comparacao-previsao
+\begin{figure}[H]
+	\centering
+	\caption{Resultado da predição em tempo de execução}
+	\fbox{\includegraphics[width=.9\textwidth]{imagens/comparacao-previsao.png}}
+	
+	\label{fig:comparacao-previsao}
+	{\scriptsize Fonte: compilação do autor}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Resultado da predição em tempo de execução}
+	\fbox{\includegraphics[width=.9\textwidth]{imagens/resultado-compara.png}}
+	
+	\label{fig:resultado-compara}
+	{\scriptsize Fonte: compilação do autor}
+\end{figure}
+
+
+
+
 
 \subsection{Análise dos resultados}\label{analise_resultados}
 Os experimentos realizados na \autoref{resultados} corroboram a hipótese de que a detecção de conflitos pode ser transformada em um problema da tarefa de classificação da mineração de dados e do aprendizado de máquina. As vantagens sobre as outras abordagens relatadas na literatura são:
@@ -1504,38 +1670,35 @@ Todas os modelos e algoritmos demonstrados nos experimentos tiveram acurácia ac
 \chapter{Cronograma e propostas para o texto final}\label{propostas}
 Para a pesquisa que resultará na dissertação de mestrado os seguintes pontos serão levantados, estudados e melhor definidos em termos dos objetivos do trabalho:
 \begin{enumerate}
-\item Finalização da pesquisa teórica sobre o relacionamento de entidades;
-\item Finalização da pesquisa teórica sobre funções de custo, SVM, descida do gradiente, topologias de redes neurais, suporte matemático aprofundado para o SVM;
-\item estudo de outras redes, como Adaline, Madaline, redes de Kohonen, redes RBF e compará-las com as MLP e o SVM ;
-\item Análise matemática profunda das outas função de ativação no classificador;
-\item Análise teórica e implementação de outros otimizadores;
-\item Realizar mais experimentos redes neurais e SVM;
-\item Comparação final com outros classificadores (preferencialmente, geométricos, como o KNN e o SVM, avaliando suas acurácias e eficiência (para os conflitos indiretos).
+\item Finalização da pesquisa teórica sobre funções de custo, SVM, descida do gradiente, suporte matemático aprofundado para o SVM;
+\item Revisão Bibliográfica dos classificadores: SVM, Random Forest, Árvore de Decisão e RBF;
+\item Finalizar a função de detecção de conflitos indiretos;
+\item Comparação final com outros classificadores (preferencialmente, geométricos, como o KNN e o SVM, avaliando suas acurácias e eficiência para os conflitos indiretos.
 \item Explorar a detecção dos conflitos indiretos usando Machine Learning e Aprendizagem de Máquina;
 \end{enumerate}
-Para isso, propõem-se o seguinte cronograma descrito na tabela \ref{tab:cronograma}
-
+Para isso, propõem-se o seguinte cronograma descrito na \autoref{tab:cronograma}
 % Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{center}
-	\begin{table}[]
-	\caption{Cronograma de finalização da dissertação}
+% \usepackage{graphicx}
+\begin{table}[h!]
+	\centering
+	\caption{Cronograma de Finalização do Mestrado}
 	\label{tab:cronograma}
-	\begin{tabular}{@{}lccccccccc@{}}
-		\toprule
-		\textbf{Atividades} & \textbf{\begin{tabular}[c]{@{}c@{}}1ª \\ qui\\ ago\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}2ª \\ qui\\ ago\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}1ª \\ qui\\ set\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}2ª \\ qui\\ set\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}1ª \\ qui\\ out\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}2ª \\ qui\\ out\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}1ª\\ qui\\ nov\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}2ª\\ qui\\ nov\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}1ª\\ qui\\ dez\end{tabular}} \\ \midrule
-		\begin{tabular}[c]{@{}l@{}}Finalização da pesquisa \\ teórica sobre o relacionamento\\ de entidades\end{tabular} & X & X &  &  &  &  &  &  &  \\
-		\begin{tabular}[c]{@{}l@{}}Finalização da pesquisa teórica\\ sobre funções de custo, SVM, \\ descida do gradiente, topologias\\ de redes neurais, suporte \\ matemático aprofundado para \\ o SVM;\end{tabular} & X & X &  &  &  &  &  &  &  \\
-		\begin{tabular}[c]{@{}l@{}}Estudo de outras redes, como \\ Adaline, Madaline, redes de \\ Kohonen, redes RBF e \\ compará-las com as MLP \\ e o SVM\end{tabular} &  & X & X & X &  &  &  &  &  \\
-		\begin{tabular}[c]{@{}l@{}}Análise matemática profunda\\ das outras função de\\ ativação no classificador\end{tabular} &  &  & X & X &  &  &  &  &  \\
-		\begin{tabular}[c]{@{}l@{}}Análise teórica e implementação\\ de outros otimizadores\end{tabular} &  &  & X & X & X &  &  &  &  \\
-		\begin{tabular}[c]{@{}l@{}}Realizar mais experimentos redes \\ neurais e SVM\end{tabular} &  &  & X & X & X &  &  &  &  \\
-		\begin{tabular}[c]{@{}l@{}}Comparação final com outros \\ classificadores (preferencialmente,\\ geométricos, como o KNN e o \\ SVM,avaliando suas acurácias \\ e eficiência (para os conflitos \\ indiretos)\end{tabular} &  &  &  & X & X & X &  &  &  \\
-		\begin{tabular}[c]{@{}l@{}}Escrita, revisão e entrega de \\ resultados iniciais\end{tabular} &  &  &  &  & X & X & X & X &  \\
-		Texto final com resultados &  &  &  &  &  &  & X & X & X \\ \bottomrule
-	\end{tabular}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{lccl}
+			\hline
+			\multicolumn{1}{l|}{Atividades Realizadas} & \multicolumn{1}{l|}{jan} & \multicolumn{1}{l|}{fev} & \multicolumn{1}{l|}{mar} \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Finalização da pesquisa teórica sobre funções de custo,\\ SVM, descida do gradiente, suporte matemático \\ aprofundado para o SVM\end{tabular} & X &  &  \\
+			\begin{tabular}[c]{@{}l@{}}Revisão Bibliográfica dos classificadores: \\ SVM, Random Forest, Árvore de Decisão e RBF\end{tabular} & X & \multicolumn{1}{l}{} &  \\
+			Finalizar a função de detecção de conflitos indiretos & X & X &  \\
+			\begin{tabular}[c]{@{}l@{}}Comparação final com outros classificadores \\ (preferencialmente, geométricos, como o KNN e o SVM, \\ avaliando suas acurácias e eficiência para os conflitos indiretos)\end{tabular} & X & \multicolumn{1}{l}{} &  \\
+			\begin{tabular}[c]{@{}l@{}}Explorar a detecção dos conflitos indiretos usando \\ Machine Learning e Aprendizagem de Máquina\end{tabular} & X & X &  \\
+			Escrita, revisão e entrega da versão preliminar & \multicolumn{1}{l}{} & X &  \\
+			Conclusão do artigo para envio para periódico & \multicolumn{1}{l}{} & X & \multicolumn{1}{c}{X} \\
+			Entrega do Texto final e defesa & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{c}{X} \\ \hline
+		\end{tabular}%
+	}
+\\[6pt]	\centering {\footnotesize Fonte: Elaborada pelo autor}
 \end{table}
-\end{center}
 
 \chapter{Conclusões}\label{conclusoes}
 \begin{itemize}
