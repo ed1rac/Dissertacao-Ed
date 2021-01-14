@@ -14,17 +14,13 @@ A orientação é da Dra. Laura Costa Sarkis. Ela faz parte (e é ex-coordenador
 Os arquivos estao organizados da seguinte forma:
 
 * [Dissertação](https://github.com/ed1rac/Dissertacao-Ed/blob/master/old/dissertacao-ed.pdf) ---> Texto final da dissertação. Versão em PDF.
-* [old]() --> Versão atual. Apesar do nome é a versão atual. Compila normalmente.
-* [arquivos-politicas]() --> Arquivos com as políticas (os datasets) utilizados no trabalho.
-* [Programas]() --> Os programas, notebooks e outros scripts desenvolvidos e utilizados na dissertação.
+* [old](https://github.com/ed1rac/Dissertacao-Ed/tree/master/old) --> Versão atual. Apesar do nome é a versão atual. Compila normalmente.
+* [arquivos-politicas](https://github.com/ed1rac/Dissertacao-Ed/tree/master/arquivos-politicas) --> Arquivos com as políticas (os datasets) utilizados no trabalho.
+* [Programas](https://github.com/ed1rac/Dissertacao-Ed/tree/master/Programas) --> Os programas, notebooks e outros scripts desenvolvidos e utilizados na dissertação.
 * [imagens](https://github.com/ed1rac/Dissertacao-Ed/tree/master/old/imagens) --> Todas as imagens do texto. Estão em formato PNG
-* [bibliografias-temp]() --> Arquivos .bib temporários
-* [antiga]() --> A versão antiga. Não sei se compila. E se compilar, deve ser com erros
+* [bibliografias-temp](https://github.com/ed1rac/Dissertacao-Ed/tree/master/bibliografias-temp) --> Arquivos .bib temporários
 
 ---
-## Pré-requisitos
-> Não há pré-requisitos
-
 ### Softwares utilizados
 Para produzir o texto e conduzir os experimentos os seguintes softwares/serviços foram utilizados:
 * TexStudio
@@ -67,6 +63,9 @@ Eu uso o Git para fazer o vesionamento. Para outras versões, [clique aqui](http
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT
+
+## Pré-requisitos
+> Não há pré-requisitos
 
 ## Agradecimentos
 * A minha orientadora, querida, professora Laura
