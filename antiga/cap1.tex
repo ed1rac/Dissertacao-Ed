@@ -1,0 +1,97 @@
+\chapter{Introdução} \label{introducao}
+\section{Contextualização} \label{contextualizacao}
+O volume de dados e informações cresce exponencialmente a cada ano \cite{alecrim2019}, portanto, há uma frequente e ininterrupta demanda por mais infraestrutura de TI nas empresas, nos governos e mesmo nos usuários domésticos \cite{machado2014} e, mais ainda, por um correto tratamento, destino e interpretação à imensidão de dados gerados por pessoas, empresas e governos. 
+
+Em uma ampla variedade de campos, os dados estão sendo coletados e acumulados em um ritmo acelerado.\cite{fayyad1996}\cite{lima_fraud_2012} e há, assim, uma crescente demanda por análise adequada destes. Neste contexto se insere a mineração de dados com suas técnicas para tratamento e extração de conhecimento desse volume crescente de dados.\cite{Boscarioli2017}\cite{ferrari2017}
+
+Este trabalho usa diversas tarefas da mineração de dados para modelar uma hipótese que possibilite detectar conflitos em políticas de controle de acesso. Para isso, diversos algoritmos de classificação serão explorados, descritos e utilizados com ênfase nas redes neurais e outras técnicas lineares de classificação.
+
+As políticas de proteção, confidencialidade e confiabilidade da informação, como as de controle de acesso, sendo parte da área de segurança computacional, são uma das formas de garantir, mediante o estabelecimento de regras, padrões e normas a salvaguarda e a disponibilidade das informações dos sistemas.\cite{sarkis2017}\cite{bui_efficient_2019}. Este tema, cf. \cite[p.1]{ueda_tese_2012} ``é um tema de pesquisa importante dentro do contexto de segurança de sistemas, pois é um dos componentes fundamentais em qualquer sistema de computação."
+
+Segundo \cite{li_security_2006}, um aspecto muito relevante e muitas vezes tratado com pouca ênfase na construção de sistemas é a formulação, gerenciamento e manutenção de políticas de segurança da informação, principalmente as de controle de acesso. 
+
+Nas palavras de \cite[p.1]{ueda_tese_2012},
+\begin{quotation}
+	A definição dessas políticas é normalmente orientada por modelos que fornecem um conjunto de regras e mecanismos para o funcionamento seguro de uma representação abstrata de sistemas. Porém, a administração de tais políticas frequentemente \textit{se torna um processo complexo}, pois deve garantir que elas sejam eficientes e que não comprometam o \textit{desempenho} dos sistemas. \emph{[Grifo do autor.]}
+\end{quotation}
+
+Uma política, como as de controle de acesso, descrevem qual ação um sujeito (em um sistema) pode fazer (\textit{permissão}), não pode fazer (\textit{proibição}) ou é obrigado a fazer (\textit{obrigação}) sobre um objeto em um dado contexto \cite{sarkis2017}. 
+
+De maneira semelhante são conceituadas as \textit{normas} e os conjuntos de normas usados para lidar com a autonomia e a diversidade de interesses entre os diferentes agentes em um sistema multiagentes como o descrito e estudado em \cite{eduardo2017}. Essas normas que regulam as ações dos agentes são análogas às definições das políticas citadas na epígrafe deste parágrafo e são, cf. \cite{eduardo2017} e \cite{sarkis:artigo:2016} fatores importantes para garantir a eficácia dos sistemas.
+
+Em contextos reais, porém, muitas vezes as políticas de segurança (e \textit{normas}) apresentam conflitos entre si. Estes surgem quando, por exemplo, duas políticas regulando o mesmo comportamento de determinado objeto em um sistema estão ativas, mas uma delas obriga (ou permite) a realização de determinado comportamento ou ação enquanto a outra proíbe o mesmo. \cite{sarkis2017}\cite{eduardo2017}. A detecção automatizada destes conflitos, com alta acurácia e custo computacional conveniente, é o problema de pesquisa deste trabalho. A descrição pormenorizada dos conflitos entre políticas encontra-se na seção \ref{deteccao_conflitos} deste trabalho.
+\subsection{Problema}\label{problema}
+O problema investigado neste trabalho consiste na \textit{detecção de conflitos de forma automatizada usando técnicas de mineração de dados e aprendizagem de máquina} que apresentem acurácias superiores a 95\% e que, ao analisar simultaneamente várias políticas ao se inserir uma nova instância não leve a um custo computacional exponencial.
+\subsection{Justificativa}\label{justificativa}
+Na detecção de conflitos em políticas, geralmente, cf. revisão da literatura,  usam-se abordagens semelhantes as de \cite{sarkis2017} baseadas em análise de ontologias entre os atributos que compõem uma política e em regras de propagação das mesmas ou procedimentos como os descritos em \cite{eduardo2017} que utilizam lógica deôntica\footnote{A lógica \textit{deôntica} é um tipo de lógica usada para analisar de modo formal as normas e as proposições que tratam dessas normas \cite{eduardo2017} } para encontrar os conflitos. 
+
+Entretanto, para que os conflitos sejam detectados nessas abordagens as políticas são analisadas em pares (e sem filtros para agrupamentos) e mesmo quando são verificadas múltiplas \textit{normas} ou políticas, como em \cite{eduardo2017}, todas elas devem ser novamente "consultadas" ou "varridas" a cada nova instância de uma política inserida no sistema (para que o conflito seja ou não detectado). O trabalho de \cite{shoham_tennenholtz_1995} provou que esta forma de analisar políticas é um problema NP-completo, ou seja, ainda não foi provado que esta classe de problemas pode ser resolvida em tempo \textit{polinomial}, sendo assim, são computacionalmente onerosos a cada vez que uma instância nova de política é analisada (em tempo d execução sendo, normalmente exponencial). Com o crescimento orgânico, natural e temporal da quantidade de políticas em um sistema computacional este fato tende a tornar a manutenção e gerenciamento das políticas algo \textit{computacionalmente custoso e dispendioso}.   
+
+Conforme se visualiza na seção \ref{trabalhos_relacionados}, as técnicas e algoritmos de aprendizagem de máquina juntamente com as de mineração de dados foram utilizadas com resultados promissores na detecção de conflitos, principalmente em \cite{obaidat_multilayer_1994}, \cite{chen_flight_2011} bem como em \cite{christodoulou_collision_2008} e \cite{jin_development_2002} que abordam problemas variados como detecção de colisões em voos, segurança de acesso computacional, incidentes em rodovias e intrusão de sistemas --- todos de alguma forma relacionados à conflitos entre normas, regras, políticas ou direção.  
+
+Em grandes organizações as \textit{políticas de segurança}, como as de controle de acesso, pela quantidade de objetos, modalidades, sujeitos e ações inerentes a essas instituições tendem a ter grande quantidade de informações e elas crescem conforme o uso diário e constante dos sistemas computacionais. organizações grandes, com múltiplos objetos e ações possuem centenas, às vezes, milhares de políticas (entre elas \textit{políticas de controle de acesso}, por exemplo).\cite{fugini_information_2004}.
+
+Neste ambiente e considerando que as políticas analisadas em pares, como em \cite{sarkis2017}, tem alto custo computacional por este, como visto em \cite{shoham_tennenholtz_1995}, ser um problema NP-completo e com a estratégia de minimizar a complexidade deste problema otimizando-o baseando suas soluções no conhecimento adquirido e já existente nas organizações (os \textit{datasets} de políticas), a mineração de dados com técnicas de aprendizagem de máquina surgem como possibilidades de solução na detecção de conflitos tanto em tempo de design quanto em tempo de execução, pois, minimiza este custo computacional ao se aproveitar da "história" temporal das políticas da organização, mediante o conhecimento adquirido e "treinado" pelos algoritmos de aprendizagem de máquina.
+
+\subsection{Hipótese}\label{hipótese}
+Diante do contexto apresentado na seção anterior e também por \cite{fugini_information_2004} tem-se \textit{como hipótese deste trabalho}, que o problema de detectar conflitos entre políticas\textit{ pode ser convertido e transformado} em uma tarefa de classificação da mineração de dados e que o uso de algoritmos de aprendizagem de máquina associados a técnicas de \textit{data mining} para detectar estes conflitos configure um método que apresente precisão e acurácia superiores a 95\%.
+
+\section{Objetivos}\label{objetivos}
+\subsection{Objetivo geral}\label{objetivo_geral}
+O objetivo deste trabalho é propor que o problema da detecção de conflitos em políticas pode ser convertido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação além de modelar e sumariar uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina que consigam acurácias elevadas.
+\subsection{Objetivos específicos}
+Os objetivos específicos deste trabalho são:
+\begin{itemize}	
+	\item Estabelecer a relação entre machine learning, técnicas de mineração de dados e o problema do conflito entre políticas;
+	\item Determinar e comparar quais algoritmos e técnicas são mais adequados para cada tipo de conflito nas políticas (ou normas) usando as suas acurácias;
+	\item Usar e comparar o desempenho, a precisão e taxa de acertos das principais técnicas usadas no aprendizado de máquina: redes neurais artificiais (RNA), Support Vector Machines (SVM) e redes neurais recorrentes e profundas.
+	\item Transformar o problema da detecção de conflitos em uma tarefa de classificação da mineração de dados mantendo acurácias elevadas;
+	\item Usar \textit{frameworks} de aprendizado de máquina como TensorFlow, Keras, ou Torch, na construção, treinamento e teste de redes neurais, comparando-os, quando adequado, para o problema específico deste trabalho;
+	\item Estabelecer a detecção de conflitos em políticas (ou normas) como uma  classe de problemas a serem resolvidos de forma eficiente por técnicas de aprendizagem de máquina.
+\end{itemize}
+
+
+\section{Solução Propostas}\label{solucao_proposta}
+Diante da hipótese apresentada na seção \ref{hipótese}, a solução para o problema apresentado neste trabalho na seção \ref{problema} concentra-se, prioritariamente, em mostrar que \textit{converter} (ou \textit{transformar}) a detecção de conflitos a um \textit{problema de classificação} da mineração de dados associado a técnicas de aprendizagem de máquina, reestruturando os atributos do \textit{dataset}, se necessário, se configura um método com acurácia superior a 95\%.
+
+\textit{A primeira solução} proposta para conflitos diretos entre políticas é usar as técnicas e algoritmos de classificação (aprendizado supervisionado) para  realizar a detecção automatizada de conflitos. Para isso, propõem-se:
+\begin{itemize}
+	\item Usar, inicialmente, uma rede neural (um perceptron de uma camada ou com somente uma camada oculta e apenas com \textit{forward}) como técnica algorítmica para a detecção de conflitos e
+	\item Construir a arquitetura de uma rede neural multicamadas (com camadas ocultas), e retropropagação (\textit{backpropagation}), comparando-a com outro classificador linear, como, por exemplo, o SVM, para estabelecer qual técnica de mineração de dados na detecção de conflitos em políticas é mais precisa.	
+\end{itemize}
+Realizado os múltiplos experimentos, atestar a hipótese mediante os resultados apresentados.
+
+\section{Método de Pesquisa} 
+O método de pesquisa relatando todos os passos necessários para demonstrar os objetivos descritos na seção \ref{objetivos} e de que forma eles foram atingidos serão pormenorizadamente detalhados na seção \ref{resultados} deste trabalho.
+
+\section{Resultados Esperados}\label{resultados_esperados}
+Ao fim deste trabalho os seguintes resultados são esperados:
+\begin{itemize}
+	\item Mostrar que o problema da detecção de conflitos em políticas pode ser convertido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação;
+	\item Demonstrar que o problema da detecção de conflitos é um prolema linearmente separável;
+	\item Mostrar que a política nova (\textit{instância inédita})  é ou não conflitante imediatamente após a criação da mesma usando como base o treinamento da rede neural no \textit{dataset} de políticas existente;
+	\item Modelar e resumir uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina que consigam acurácias superiores a 95\%;
+	\item Estabelecer a relação entre machine learning, técnicas de mineração de dados e o problema do conflito entre políticas;
+	\item Determinar e comparar quais algoritmos e técnicas são mais adequados para cada tipo de conflito nas políticas (ou normas) usando as suas acurácias;
+	\item Usar e comparar o desempenho, a precisão e taxa de acertos das principais técnicas usadas no aprendizado de máquina: redes neurais artificiais (RNA), Support Vector Machines (SVM); redes neurais recorrentes e profundas;
+	\item Estabelecer a detecção de conflitos em políticas (ou normas) como uma  classe de problemas a serem resolvidos de forma eficiente por técnicas de aprendizagem de máquina.
+\end{itemize} 
+
+\section{Limitações do Trabalho}\label{limitacoes}
+Não faz parte do escopo deste trabalho:
+\begin{itemize}
+	\item Delinear um modelo de política com objetivos semânticos diferenciados. Para os experimentos deste trabalho será usado o modelo de políticas descrito em \cite{sarkis2017} e em \cite{sarkis:artigo:2016}
+	\item Analisar comparativamente os modelos de extensão de políticas em um determinado contexto;
+	\item Usar redes neurais convolucionais profundas na detecção dos conflitos;
+	\item Abordar a semântica em políticas;	
+\end{itemize} 
+
+\section{Organização do trabalho}
+Este trabalho está organizado da seguinte forma:
+\begin{itemize}
+	\item Neste capítulo 1 estão dispostas a contextualização, o problema da pesquisa, a justificativa, a hipótese de pesquisa, os objetivos, as soluções que foram propostas, os resultados esperados e as limitações do trabalho
+	\item No Capítulo 2 apresenta-se todo o referencial teórico compreendendo uma revisão bibliográfica sobre os principais temas desta dissertação, como políticas, detecção de conflitos, mineração de dados e aprendizagem de máquina (e seus algoritmos principais)
+	\item No Capítulo 3 são mostrados o método e os experimentos e resultados obtidos.
+	\item No Capítulo 4 mostra-se o cronograma para a finalização da dissertação
+	\item No Capítulo 5 apresenta-se as conclusões e propostas para trabalhos futuros relacionados a esta pesquisa.
+\end{itemize}
