@@ -1,10 +1,16 @@
 # Dissertacao-Ed
+
 ---
+
 Arquivos-fonte da dissertação de mestrado do prof. Edkallenn Lima.
+
 O título da dissertação é: "Aplicação de Mineração de dados e Aprendizagem de Máquina na detecção de conflitos entre políticas".
+
 A orientação é da Dra. Laura Costa Sarkis. Ela faz parte (e é ex-coordenadora) do Programa de Pós-Graduação em Ciência da Computação -- PPgCC da UFAC (Universidade Federal do Acre).
+
 ---
 ## Organização dos arquivos
+
 Os arquivos estao organizados da seguinte forma:
 
 * [Dissertação](https://github.com/ed1rac/Dissertacao-Ed/blob/master/old/dissertacao-ed.pdf) ---> Texto final da dissertação. Versão em PDF.
