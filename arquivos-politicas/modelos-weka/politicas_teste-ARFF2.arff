@@ -1,0 +1,22 @@
+@relation politicas_teste
+
+@attribute Acesso {Permitted,Forbidden,Obliged}
+@attribute Organizacao {IFAC,UFAC,Uninorte,CPA,Administrative_Unit,FAMETA,CCSJA,Unidade_Administrativa,CCET,Comite_Etica_Em_Pesquisa,CFET}
+@attribute Sujeito {Secretario_de_Unidade_Administrativa,Outro_Usuario,Usuario_Terceirizado,Bilbo_Bolseiro,Aline_Moreira,Usuario_Qualquer,Elrond,Vanessa_Lima,Grupo_Almoxarifado,Secretarios,Coordenador,Estagiario3,Professor,Oberyn_Martell,Secretario_de_Curso_Academico,Secretario_de_Centros_Academicos,Cersei_Lannister,Eddard_Stark,Tyrion_Lannister,Francisco_Mendes,Vanessa_Souza,Raimunda_Souza,Grupo_IPTU,Usuario_Terceirizado1,Daenerys_Targaryen,Estagiario1,Robb_Stark,Jorge_Jesus,Setor_Administrativo,Outro_Usuario2,Italo_Calvino,Marcos_Ponts,Carl_Sagan,Janaina_Souza,Ada_Lovelace,Cersei_Lannisters,Pro_Reitora_Academica,Francisco_Carlos,Raimundo_Nonato,Ana_Ester,PROTOCOLIZADOR3,Eliana_Maria_de_Souza,FranciscoJose_Souza,PROTOCOLIZADOR1,Arwen_Undomiel,Secretario_e_Unidade_Administrativa}
+@attribute Acao {SolicitacaoAbertura,Acess,Acessar,Solicitacao,Requisitar,Open,Matricular,Alterar,Inserir,Record,Analise,Cadastrar,LancarMedia,Abertura,Solicitar,Create,Nova,Access,Calcular,Generate,Criar,VoltarLancamento,Gerar,Cancelamento,Efetivar,Excluir,Close,Incluir,Preencher}
+@attribute Objeto {Documentos,Process,Almoxarifado,Central_de_Copias,Portal_do_Aluno,Aluno,Convencao,Guia_de_Requisicao,BuildDispatch,Biblioteca,Notas,Produtos,Materiais,entral_de_Copias,ProcNURCADesp,IPTU,Material,Central_de_Copias_Analise,Planilhas_de_Calculo,MatriculaAluno,ProcessDispatch,FGTS}
+@attribute Conflito {0,1}
+
+@data
+Obliged,UFAC,Secretario_de_Curso_Academico,Acessar,Produtos,0
+Permitted,UFAC,Secretario_de_Curso_Academico,Acessar,Documentos,0
+Obliged,CCSJA,Outro_Usuario,Abertura,Almoxarifado,0
+Permitted,Uninorte,Coordenador,Solicitacao,Central_de_Copias,0
+Forbidden,IFAC,Grupo_Almoxarifado,Inserir,Guia_de_Requisicao,0
+Forbidden,UFAC,Grupo_Almoxarifado,Inserir,Guia_de_Requisicao,0
+Permitted,IFAC,Estagiario3,Acess,Process,1
+Permitted,Administrative_Unit,Secretarios,Create,ProcessDispatch,1
+Permitted,Unidade_Administrativa,Professor,Solicitacao,Central_de_Copias,0
+Permitted,Unidade_Administrativa,Professor,Acess,Central_de_Copias,0
+Permitted,UFAC,Outro_Usuario,Acess,Process,1
+Permitted,IFAC,Usuario_Qualquer,Alterar,Convencao,1

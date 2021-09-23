@@ -49,7 +49,7 @@
 %--- pacote para gerar pseudo-codigo
 \usepackage{algorithm}
 \usepackage{algorithmic}
-%\userpackage{float}
+\usepackage{float}
 \floatname{algorithm}{Algoritmo}
 \usepackage{listings}
 %Tabela Colorida
@@ -60,6 +60,8 @@
 \usepackage{rotating}
 \usepackage{booktabs}
 \usepackage{hyperref}
+%\usepackage{subfig}
+
 
 
 \usepackage{iftex}
@@ -106,6 +108,7 @@
 % Formatação de código-fonte
 % ---
 \usepackage{listings}
+\usepackage{courier}
 
 \usepackage{color}
 
@@ -115,7 +118,8 @@
 
 \lstset{ 
 	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
-	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+	%basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+	basicstyle=\tiny\ttfamily,        % the size of the fonts that are used for the code
 	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
 	breaklines=true,                 % sets automatic line breaking
 	captionpos=t,                    % sets the caption-position to bottom
@@ -173,10 +177,10 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Aplicação de Mineração de dados e Aprendizagem de Máquina na detecção de conflitos entre políticas}
+\titulo{Aplicação de Mineração de dados e Aprendizagem de Máquina na detecção de conflitos diretos entre políticas}
 \autor{EDKALLENN SILVA DE LIMA} % deve ser escrito em maiusculo
 \local{RIO BRANCO - ACRE}
-\data{2020, v-2.1.2}
+\data{2021, v-4.1.0}
 \orientador{PROFª DRª. LAURA COSTA SARKIS}
 
 \instituicao{%
@@ -188,7 +192,7 @@
 % o nome da instituição e a área de concentração 
 %\preambulo{Proposta de Dissertação de Mestrado apresentada ao Programa de P\'{o}s-Gradua\c{c}\~{a}o em Computa\c{c}\~{a}o da Universidade Federal do Acre como requisito parcial para a obten\c{c}\~{a}o do Grau de \mbox{Mestre em Ciência da Computação}. \'{A}rea de concentra\c{c}\~{a}o: \mbox{Engenharia de Sistemas de Informação}} %preencha com a sua area de concentracao}
 % ---
-\preambulo{Dissertação de Mestrado apresentada ao Programa de P\'{o}s-Gradua\c{c}\~{a}o em Computa\c{c}\~{a}o da Universidade Federal do Acre como Exame de Qualificação à obten\c{c}\~{a}o do Grau de Mestre em Ciência da Computação. \'{A}rea de concentra\c{c}\~{a}o: Engenharia de Sistemas e Informação} %preencha com a sua area de concentracao}
+\preambulo{Dissertação de Mestrado apresentada ao Programa de P\'{o}s-Gradua\c{c}\~{a}o em Computa\c{c}\~{a}o da Universidade Federal do Acre para a obten\c{c}\~{a}o do Grau de Mestre em Ciência da Computação. \'{A}rea de concentra\c{c}\~{a}o: Engenharia de Sistemas e Informação} %preencha com a sua area de concentracao}
 
 % ---
 % Configurações de aparência do PDF final
@@ -206,8 +210,8 @@
 	    pdfcreator={LaTeX with abnTeX2},
 		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
 		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
-    	citecolor=blue,        		% color of links to bibliography
+    	linkcolor=black,          	% color of internal links  %%blue
+    	citecolor=black,        		% color of links to bibliography   %%blue
     	filecolor=magenta,      	% color of file links
 		urlcolor=blue,
 		bookmarksdepth=4
@@ -440,7 +444,7 @@
 	{\large EDKALLENN SILVA DE LIMA}\\
 	\vspace{7mm}
 	
-	Aplicação de Mineração de dados e Aprendizagem de Máquina na detecção de conflitos entre políticas\\
+	Aplicação de Mineração de dados e Aprendizagem de Máquina na detecção de conflitos diretos entre políticas\\
 	\vspace{10mm}
 \end{center}
 
@@ -449,13 +453,13 @@
 	\begin{minipage}[t]{8cm}		
 		%Proposta de Dissertação de Mestrado apresentada ao Programa de Pós-Gradua\c{c}\~{a}o em Ciência da Computação da Universidade Federal do Acre como requisito parcial para a obtenção do Grau de Mestre em Ciência da Computação. \'{A}rea de concentra\c{c}\~{a}o: \mbox{Engenharia de Sistemas de Informação} 
 		%preencha com a sua area de concentracao
-		Dissertação de Mestrado apresentada ao Programa de P\'{o}s-Gradua\c{c}\~{a}o em Computa\c{c}\~{a}o da Universidade Federal do Acre como Exame de Qualificação à obten\c{c}\~{a}o do Grau de Mestre em Ciência da Computação. \'{A}rea de concentra\c{c}\~{a}o: Engenharia de Sistemas e Informação
+		Dissertação de Mestrado apresentada ao Programa de P\'{o}s-Gradua\c{c}\~{a}o em Computa\c{c}\~{a}o da Universidade Federal do Acre para a obten\c{c}\~{a}o do Grau de Mestre em Ciência da Computação. \'{A}rea de concentra\c{c}\~{a}o: Engenharia de Sistemas e Informação
 		
 	\end{minipage}
 \end{flushright}
 \vspace{1.0 cm}
 \noindent
-{Aprovada em <MES> de 2020.} \\
+{Aprovada em <MES> de 2021.} \\
 \begin{flushright}
 	\parbox{11cm}
 	{
@@ -466,15 +470,16 @@
 			PROFª. DRª. LAURA COSTA SARKIS - Orientador, UFAC \\
 			\vspace{6mm}
 			\rule{11cm}{.1mm} \\
-			PROFº DR. MANOEL LIMEIRA DE LIMA JUNIOR ALMEIDA, UFAC\\
+			PROFª. DRª. ANA BEATRIZ ALVAREZ MAMANI, UFAC\\
 			\vspace{6mm}
 			\rule{11cm}{.1mm} \\
-			PROFª. DRª. CATARINA DE SOUZA COSTA, UFAC\\
+			PROFº. DR. DARICÉLIO MOREIRA SOARES, UFAC\\
 			\vspace{4mm}
 			\rule{11cm}{.1mm} \\
-			PROFª. DRª. ANA BEATRIZ ALVAREZ MAMANI - Suplente, UFAC\\
+			PROFº. DR.LUIZ AUGUSTO MATOS DA SILVA, UFAC\\
 			\vspace{6mm}
-			
+			\rule{11cm}{.1mm} \\
+			PROFª. DR.RAONI SIMÕES FERREIRA - Suplente, UFAC\\
 		\end{center}
 	}
 \end{flushright}
@@ -482,7 +487,7 @@
 	\vspace{4mm}
 	RIO BRANCO - ACRE \\
 	%\vspace{6mm}
-	2020
+	2021
 	
 \end{center}
 \clearpage
@@ -503,9 +508,13 @@
 \begin{agradecimentos}
 À Deus pela saúde e pelas condições de viver uma vida plena de significados, sentimentos, emoções e sentido.
 
-À família maravilhosa, em todos os sentidos, que tenho. Pai, mães (sim, mais de uma), irmãos, irmãs, avós e avôs que se foram (e deixaram saudades eternas), tios, tias, primos e primas, agregados, enfim, todos que fazem a loucura que é qualquer festa ``só com os parentes mais próximos''. Eu amo todos vocês. 
+À CAPES, à UFAC e a todos os profissionais que fizeram a história dessas instituições que bravamente lutam contra a crescente idiotização do mundo.
 
-Às mulheres da minha vida, minha filha, Ana Ester e minha esposa, Vanessa Lima, por me suportarem, claro, mas, principalmente por me amarem incondicionalmente.
+À família maravilhosa, em todos os sentidos, que tenho. Pai, mães (sim, mais de uma!), irmãos, irmãs, avós e avôs que se foram (e deixaram saudades eternas), tios, tias, primos e primas, agregados, enfim, todos que fazem a loucura que é qualquer festa ``só com os parentes mais próximos''. Eu amo todos vocês. 
+
+Às mulheres da minha vida, minha filha, Ana Ester e minha esposa, Vanessa Lima, por me suportarem --- em todos os sentidos, claro, mas, principalmente por me amarem incondicionalmente.
+
+À todos os professores do PPgCC, os que lecionaram disciplinas, os que lutaram para que o programa existisse, os que participam da banca e, claro, para a minha orientadora pela paciência (muita, muita!) e, sobretudo, carinho.
 
 Mais uma vez, à você, Lucimar, nossa querida Lúcia, por sua sabedoria e ensinamentos. Pelo seu sorriso que sempre vinha cheio de significados. Pela sua vida ter sido a nossa vida. Por ter se doado tanto. Por ter trabalhado tanto para construir esta família linda (que, claro, nunca será a mesma sem você, jamais). Pelas inúmeras vezes em que você me chamava de ``meu filho'' (se eu soubesse que a contagem era regressiva tinha aproveitado mais). Por tudo o que você representou nas nossas vidas, obrigado. Nenhuma palavra que existe ou que será inventada em qualquer língua tem significado suficiente para descrever o que você era em nossas vidas. Na minha vida. Mais uma vez, obrigado... 
 
@@ -531,20 +540,22 @@ Nunca te esquecerei...
 % resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
-A quantidade de informações disponíveis cresce a cada ano. Aumenta, junto com o volume de dados e informações, o interesse em tratar, analisar e descobrir conhecimento a partir desta avalanche de dados. A mineração de dados juntamente com o aprendizado de máquina são duas ferramentas-chave dentro deste processo de descoberta de conhecimento e utilização de todos esses dados e informações para propósitos úteis. Entretanto, antes que os dados possam ser analisados, eles precisam ser armazenados e os sistemas computacionais sofrem, também de forma crescente, permanentes ameaças à sua segurança. Neste contexto se inserem as políticas para sistemas computacionais que buscam garantir meios para proteção, confidencialidade e confiabilidade dos acessos dos usuários aos objetos dentro dos sistemas de uma organização. Em sistemas com múltiplos sujeitos, muitas ações e diversos objetos, eventualmente, ocorrerão conflitos entre políticas. Um conflito ocorre quando os objetivos de duas ou mais políticas não podem ser atendidos simultaneamente em determinado contexto. Este trabalho propôs que o problema da detecção de conflitos em políticas pode ser convertido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação além de modelar e sintetizar uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina com acurácias elevadas e forneceu modelos genéricos o suficiente para serem usados em outros contextos.
+%A quantidade de informações disponíveis cresce a cada ano. Aumenta, junto com o volume de dados e informações, o interesse em tratar, analisar e descobrir conhecimento a partir desta avalanche de dados. A mineração de dados juntamente com o aprendizado de máquina são duas ferramentas-chave dentro deste processo de descoberta de conhecimento e utilização de todos esses dados e informações para propósitos úteis. Entretanto, antes que os dados possam ser analisados, eles precisam ser armazenados e os sistemas computacionais sofrem, também de forma crescente, permanentes ameaças à sua segurança.
+Um dos principais componentes de segurança em sistemas computacionais é o controle de acesso que busca garantir meios para proteção, confidencialidade e confiabilidade dos acessos dos usuários aos objetos dentro dos sistemas de uma organização. As políticas de controle de acesso descrevem, assim, as regras de acesso aplicadas aos usuários de um sistema. Em sistemas com múltiplos sujeitos, muitas ações e diversos objetos, eventualmente, ocorrerão conflitos entre políticas. Um conflito ocorre quando os objetivos de duas ou mais políticas não podem ser atendidos simultaneamente em um determinado contexto. Políticas conflitantes podem levar o sistema a estados inconsistentes, tais como, acessos não autorizados ou negações a acessos legítimos. Geralmente, a literatura especializada em detecção de conflitos se baseia em técnicas que analisam as políticas em pares e este tipo de análise pode gerar um problema NP-completo, considerado computacionalmente custoso. Já as abordagens que usam mineração de dados e aprendizagem de máquina, geralmente, não têm a detecção de conflitos entre políticas como foco principal. Este trabalho propõe que o problema da detecção de conflitos em políticas pode ser convertido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação além de modelar e sintetizar uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina e fornecer modelos genéricos o suficiente para serem usados em outros contextos. O trabalho apresenta, portanto: (i) A mineração de dados associada a técnicas de aprendizagem de máquina para detectar os conflitos de modalidade entre políticas; (ii) A análise da inserção de novas regras no sistema utilizando o modelo de aprendizagem de máquina gerado; (iii) O comparativo entre algoritmos de mineração apresentando quais deles possibilitam modelar a melhor forma de detecção automática de conflitos entre políticas (com seus hiperparâmetros) e, finalmente, que (iv) o problema de detectar conflitos  entre políticas de controle de acesso pode ser resolvido como um problema de classificação utilizando os algoritmos de mineração de dados e aprendizagem de máquina com boa acurácia e precisão. Para alcançar os objetivos propostos foram realizados diversos e múltiplos experimentos onde foram utilizados os principais algoritmos de classificação com diferentes datasets. Para as avaliações quantitativas e outras análises estatísticas diversas métricas foram empregadas e após os experimentos concluiu-se que as Redes Neurais, o SVM e o Random Forest são os melhores algoritmos para este fim sendo as redes neurais o modelo que apresentou as maiores acurácias médias.
 
- \textbf{Palavras-chave}: Controle de Acesso. Mineração de dados. Aprendizagem de máquina. Conflitos diretos. Conflitos indiretos. Detecção de conflitos.
+ \textbf{Palavras-chave}: Controle de Acesso. Mineração de dados. Aprendizagem de máquina. Conflitos diretos. Detecção de conflitos.
 \end{resumo}
 
 % resumo em inglês
 \begin{resumo}[Abstract]
  \begin{otherlanguage*}{english}
-   The amount of information available grows every year. It increases, along with the volume of data and information, the interest in treating, analyzing and discovering knowledge from this avalanche of data. Data mining associated with machine learning are two key tools within this process of discovering knowledge and using all that data and information for useful purposes. However, before data can be analyzed, it needs to be stored and computer systems are also increasingly threatened with permanent security threats. In this context, policies for computer systems are inserted as a way to guarantee protection, confidentiality and reliability of users' access to objects within an organization's systems. In systems with multiple subjects, many actions and different objects, eventually, conflicts between policies will occur. A conflict occurs when the objectives of two or more policies cannot be met simultaneously in a given context. This work proposed that the problem of detecting conflicts in policies can be converted into a problem of data mining (data mining) solved by the task of classification, in addition to modeling and synthesizing a way of detecting these conflicts through the use of different machine learning algorithms and techniques with high accuracy and provide generic models enough to be used in other contexts.
-
+   %The amount of information available grows every year. It increases, along with the volume of data and information, the interest in treating, analyzing and discovering knowledge from this avalanche of data. Data mining associated with machine learning are two key tools within this process of discovering knowledge and using all that data and information for useful purposes. However, before data can be analyzed, it needs to be stored and computer systems are also increasingly threatened with permanent security threats. In this context, policies for computer systems are inserted as a way to guarantee protection, confidentiality and reliability of users' access to objects within an organization's systems. In systems with multiple subjects, many actions and different objects, eventually, conflicts between policies will occur. A conflict occurs when the objectives of two or more policies cannot be met simultaneously in a given context. This work proposes that the problem of detecting conflicts in policies can be converted into a problem of \textit{data mining} solved by the task of classification, in addition to modeling and synthesizing a way of detecting these conflicts through the use of different machine learning algorithms and techniques and their hyperparameters and provided enough generic models to be used in other contexts.
+%The amount of information available grows every year. It increases, along with the volume of data and information, the interest in treating, analyzing and discovering knowledge from this avalanche of data. Data mining associated with machine learning are two key tools within this process of discovering knowledge and using all that data and information for useful purposes. However, before data can be analyzed, they need to be stored and computer systems suffer, also increasingly, permanent threats to their security. 
+One of the main security components in computer systems is access control, which seeks to guarantee means to protection, confidentiality and reliability of user access to objects within an organization's systems. Access control policies thus describe the access rules applied to users of a system. In systems with multiple subjects, many actions and diverse objects will eventually conflict between policies. A conflict occurs when the objectives of two or more policies cannot be met simultaneously in a given context. Conflicting policies can lead the system to inconsistent states, such as unauthorized access or denial of legitimate access. Generally, the specialized literature on conflict detection is based on techniques that analyze policies in pairs and this type of analysis can generate an NP-complete problem, considered computationally expensive. Approaches that use data mining and machine learning, on the other hand, generally do not have the detection of conflicts between policies as their main focus. This work proposes that the problem of detecting conflicts in policies can be converted into a \textit{data mining} problem solved by the classification task, in addition to modeling and synthesizing a way to detect these conflicts through the use of different algorithms and techniques of machine learning and provide models that are generic enough to be used in other contexts. Therefore, the work presents: (i) Data mining associated with machine learning techniques to detect modality conflicts between policies; (ii) Analysis of the insertion of new rules in the system using the generated machine learning model; (iii) The comparison between mining algorithms showing which of them make it possible to model the best way to automatically detect conflicts between policies (with their hyperparameters) and, finally, that (iv) the problem of detecting conflicts between access control policies can be solved as a classification problem using data mining and machine learning algorithms with good accuracy and precision. In order to achieve the proposed objectives, several and multiple experiments were carried out using the main classification algorithms with different datasets. For quantitative evaluations and other statistical analyzes several metrics were used and after the experiments it was concluded that Neural Networks, SVM and Random Forest are the best algorithms for this purpose, with neural networks being the model with the highest accuracy averages.
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{Keywords}: Access control. Data mining. Machine learning. Direct conflicts. Indirect conflicts. Conflict detection.
+   \textbf{Keywords}: Access control. Data mining. Machine learning. Direct conflicts. Conflict detection.
  \end{otherlanguage*}
 \end{resumo}
 
@@ -598,6 +609,10 @@ A quantidade de informações disponíveis cresce a cada ano. Aumenta, junto com
   \item[DAC] \textit{Discretionary Access Control}
   \item[DARPA] \textit{Defense Advanced Research Projects Agency}
   \item[DoS] \textit{Denial of Service}
+  \item[FN] \textit{False Negative}
+  \item[FP] \textit{False Positive}
+  \item[FNR] \textit{False Negative Rate}
+  \item[FPR] \textit{False Positive Rate}
   \item[GPGU] \textit{General Purpose Graphic Processor Unit}
   \item[GPU] \textit{Graphic Processor Unit}
   \item[KDD] \textit{Knowledege Discovery in Data Bases}
@@ -614,6 +629,12 @@ A quantidade de informações disponíveis cresce a cada ano. Aumenta, junto com
   \item[SMA] \textit{Sistema Multi Agentes}
   \item[SVM] \textit{Support Vector Machiner}
   \item[TI] \textit{Tecnologia da Informação}
+  \item[TN] \textit{True Negative}
+  \item[TP] \textit{True Positive}
+  \item[TNR] \textit{True Negative Rate}
+  \item[TPR] \textit{True Positive Rate}
+  \item[XACML] \textit{eXtensible Access Control Markup Language}
+  \item[XML] \textit{eXtensible Markup Language} 
 \end{siglas}
 % ---
 
@@ -645,48 +666,35 @@ A quantidade de informações disponíveis cresce a cada ano. Aumenta, junto com
 \chapter{Introdução} \label{introducao}
 Neste capítulo introdutório serão descritos uma contextualização para apresentação do problema da pesquisa, além da justificativa, a hipótese do trabalho, os objetivos, as soluções propostas, os resultados esperados, as limitações da pesquisa e como este trabalho está organizado.\index{sinopse de capítulo}
 \section{Contextualização} \label{contextualizacao}
-De acordo com \citeonline{alecrim2019}, o volume de dados e informações cresce exponencialmente a cada ano, portanto, há uma frequente e ininterrupta demanda por mais infraestrutura de TI nas empresas, nos governos e mesmo nos usuários domésticos e, mais ainda, por um correto tratamento, destino e interpretação à imensidão de dados gerados por pessoas, empresas e governos\cite{machado2014}. 
+De acordo com \citeonline{alecrim2019}, o volume de dados e informações cresce exponencialmente a cada ano, portanto, há uma frequente e ininterrupta demanda por mais infraestrutura de TI nas empresas, nos governos e mesmo nos usuários domésticos e, mais ainda, por um correto tratamento, destino e interpretação à imensidão de dados gerados por pessoas, empresas e governos \cite{machado2014}. Em uma ampla variedade de campos, os dados estão sendo coletados e acumulados em um ritmo acelerado e há, assim, uma crescente demanda por análise adequada destes \cite{fayyad1996, lima_fraud_2012}. Neste contexto se insere a mineração de dados com suas técnicas para tratamento e extração de conhecimento desse volume crescente de dados \cite{Boscarioli2017, ferrari2017}.
 
-Em uma ampla variedade de campos, os dados estão sendo coletados e acumulados em um ritmo acelerado e há, assim, uma crescente demanda por análise adequada destes.\cite{fayyad1996, lima_fraud_2012}. Neste contexto se insere a mineração de dados com suas técnicas para tratamento e extração de conhecimento desse volume crescente de dados\cite{Boscarioli2017, ferrari2017}.
+As \textit{políticas} de proteção, confidencialidade e confiabilidade da informação, como as de \textit{controle de acesso}, sendo parte da área de \textit{segurança computacional}, são uma das formas de garantir, mediante o estabelecimento de regras, padrões e normas a salvaguarda e a disponibilidade das informações dos sistemas \cite{bui_efficient_2019}. O controle de acesso, cf. \citeonline[p.1]{ueda_tese_2012} é um objeto de estudo importante no contexto da segurança de sistemas, porque é um dos elementos principais em qualquer sistema de computação.
 
-Este trabalho usa diversas tarefas da mineração de dados para \textit{modelar uma hipótese que possibilite detectar conflitos em políticas} de controle de acesso. Para isso, diversos algoritmos de classificação serão explorados, descritos e utilizados com ênfase nos que tem relação com o aprendizado de máquina e outras técnicas de classificação.
+%Segundo \citeonline{li_security_2006}, um aspecto \textit{muito relevante} e muitas vezes \textit{tratado com pouca ênfase} na construção de sistemas é a formulação, gerenciamento e manutenção de políticas de segurança da informação, principalmente as de controle de acesso. De acordo com \citeonline[p.1]{ueda_tese_2012}, a construção dessas políticas é direcionada por modelos que geram diversas regras e ferramentas para o funcionamento seguro de sistemas. Todavia, o gerenciamento destas políticas normalmente \textit{se torna um processo complicado}, porque se deve assegurar que sejam eficazes e que não afetem o \textit{desempenho} dos sistemas. \emph{[Grifo do autor.]}
 
-As \textit{políticas} de proteção, confidencialidade e confiabilidade da informação, como as de \textit{controle de acesso}, sendo parte da área de \textit{segurança computacional}, são uma das formas de garantir, mediante o estabelecimento de regras, padrões e normas a salvaguarda e a disponibilidade das informações dos sistemas.\cite{sarkis2017}\cite{bui_efficient_2019}. 
+Portanto, formular, gerenciar e dar manutenção a políticas de segurança da informação, principalmente as de controle de acesso é um aspecto muito relevante \cite{li_security_2006}. A construção dessas políticas é direcionada por modelos que geram diversas regras e ferramentas para o funcionamento seguro de sistemas. Todavia, o gerenciamento destas políticas pode se tornar um processo complicado, tendo em vista que deve ser assegurada a eficácia e que o desempenho dos sistemas não seja afetado \cite{ueda_tese_2012}.
 
-Este tema, cf. \citeonline[p.1]{ueda_tese_2012} ``é um tema de pesquisa importante dentro do contexto de segurança de sistemas, pois é um dos componentes fundamentais em qualquer sistema de computação''.
-
-Segundo \citeonline{li_security_2006}, um aspecto \textit{muito relevante} e muitas vezes \textit{tratado com pouca ênfase} na construção de sistemas é a formulação, gerenciamento e manutenção de políticas de segurança da informação, principalmente as de controle de acesso. 
-
-Nas palavras de \citeonline[p.1]{ueda_tese_2012},
-\begin{citacao}
-	A definição dessas políticas é normalmente orientada por modelos que fornecem um conjunto de regras e mecanismos para o funcionamento seguro de uma representação abstrata de sistemas. Porém, a administração de tais políticas frequentemente \textit{se torna um processo complexo}, pois deve garantir que elas sejam eficientes e que não comprometam o \textit{desempenho} dos sistemas. \emph{[Grifo do autor.]}
-\end{citacao}
-
-A administração de políticas é, portanto, \textit{um processo complexo}, cf. \citeonline[p.1]{ueda_tese_2012}, pois garantir que elas sejam eficientes e não comprometam a consistência tanto do sistema quando da própria segurança são fatores que atestam a confiabilidade de um sistema dinâmico. \citeonline{ueda_tese_2012}.
-
-De acordo com \citeonline[p. 21]{bellettini_role_2001}, 
-\begin{citacao}
-	Um problema desafiador no gerenciamento de grandes sistemas é a complexidade da administração de segurança. [... pois ela] envolve, entre outras tarefas, atribuir e revogar permissões de acesso a usuários nos objetos a serem protegidos.
-\end{citacao}
-
-Assim, essas permissões de acesso, também chamadas de \textit{autorizações}, indicam de que maneira (ou modo) qual sujeito pode acessar um dado objeto em um determinado contexto. Essas \textit{maneiras} ou modos, especificam as operações que podem ser realizadas nos objetos que estão protegidos, como, por exemplo, a leitura e gravação de arquivos. \cite[p. 21]{bellettini_role_2001}.
+%A administração de políticas é, portanto, \textit{um processo complexo}, cf. \citeonline[p.1]{ueda_tese_2012}, pois garantir que elas sejam eficientes e não comprometam a consistência tanto do sistema quando da própria segurança são fatores que atestam a confiabilidade de um sistema dinâmico \cite{ueda_tese_2012}.
+%De acordo com \citeonline[p. 21]{bellettini_role_2001}, um assunto complexo na administração de sistemas grandes é a intrincada administração da segurança, pois ela abrange, entre outras situações, conceder e cancelar permissões de acesso a usuários nos múltiplos objetos a serem protegidos.
+De acordo com \citeonline[p. 21]{bellettini_role_2001}, a administração da segurança abrange, entre outras situações, conceder e cancelar permissões de acesso a usuários nos múltiplos objetos a serem protegidos. Assim, essas permissões de acesso, originalmente chamadas de \textit{autorizações}, indicam de que maneira (ou modo) qual sujeito pode acessar um dado objeto em um determinado contexto. Essas \textit{maneiras} ou modos, especificam as operações que podem ser realizadas nos objetos que estão protegidos, como, por exemplo, a leitura e gravação de arquivos \cite[p. 21]{bellettini_role_2001}.
 	
-Sempre que o número de sujeitos, objetos e ações é alto a quantidade de tais ``autorizações'' pode se tornar extremamente grande. Deste modo, se a população de usuários deste sistema for altamente dinâmica, a quantidade de operações de concessão e revogação dessas ``autorizações'' a serem realizadas poderá se tornar muito difícil de gerenciar. \cite[p. 21]{bellettini_role_2001}.
+Sempre que o número de sujeitos, objetos e ações é alto a quantidade de tais ``autorizações'' pode se tornar extremamente grande. Deste modo, se a população de usuários deste sistema for altamente dinâmica, a quantidade de operações de concessão e revogação dessas ``autorizações'' a serem realizadas poderá se tornar muito difícil de gerenciar \cite[p. 21]{bellettini_role_2001}.
 
-Neste contexto é que se insere a \textbf{motivação} e a \textbf{justificativa} de se utilizar as técnicas e algoritmos de mineração de dados e aprendizagem de máquina com o objetivo precípuo de atingir este problema específico que é a quantidade crescente dessas citadas ``autorizações'' tornar o gerenciamento complexo e demorado. Importante salientar que neste trabalho, comumente, as ``autorizações'' são referenciadas como \textit{políticas}, termo mais genérico e com mais suporte acadêmico. 
+Neste contexto é que se insere a \textbf{motivação} e a \textbf{justificativa} da utilização das técnicas e algoritmos de mineração de dados e aprendizagem de máquina com o objetivo precípuo de atingir este problema específico que é a quantidade crescente dessas citadas ``autorizações'' tornar o gerenciamento complexo e demorado. Importante salientar que neste trabalho, comumente, as ``autorizações'' são referenciadas como \textit{políticas}, termo mais genérico e com mais suporte acadêmico. 
 
 Uma \textbf{política}, como as de controle de acesso, descrevem qual ação um sujeito (em um sistema) pode fazer (\textit{permissão}), não pode fazer (\textit{proibição}) ou é obrigado a fazer (\textit{obrigação}) sobre um objeto em um dado contexto \cite{sarkis2017}. E são, de acordo com \citeonline[p. 1]{ueda_tese_2012}, ``Um tema de pesquisa importante dentro do contexto de segurança de sistemas, pois é um dos componentes fundamentais em qualquer sistema de computação''.
 
-De maneira análoga são conceituadas as \textit{normas} e os conjuntos de normas usados para lidar com a autonomia e a diversidade de interesses entre os diferentes agentes em um sistema multiagentes como o descrito e estudado em \citeonline{eduardo2017}. 
+%De maneira análoga são conceituadas as \textit{normas} e os conjuntos de normas usados para lidar com a autonomia e a diversidade de interesses entre os diferentes agentes em um sistema multiagentes como o descrito e estudado em \citeonline{eduardo2017}. 
 
-Essas normas que regulam as ações dos agentes são análogas às definições das políticas citadas anteriormente nesta \autoref{contextualizacao} e são, cf. \citeonline{eduardo2017} e \citeonline{sarkis:artigo:2016} fatores importantes para garantir a eficácia da segurança dos sistemas.
+%Essas normas que regulam as ações dos agentes são análogas às definições das políticas citadas anteriormente nesta \autoref{contextualizacao} e são, cf. \citeonline{eduardo2017} e \citeonline{sarkis:artigo:2016} fatores importantes para garantir a eficácia da segurança dos sistemas.
 
-Para \citeonline[p. 264]{wang_conflicts_2010},
-\begin{citacao}
-Embora o controle de acesso possa parecer conceitualmente simples, ele é complexo e sujeito a erros na prática. Para cumprir os requisitos de segurança, temos de garantir a consistência das políticas de controle de acesso, no sentido de que não deve haver conflito através da aplicação destas políticas.
-\end{citacao}
+Cf. \citeonline{silva_uma_2018}, políticas de controle de acesso são criadas fundamentadas nas políticas de segurança do qual o sistema fará parte, e estas devem ser representadas e exprimidas em políticas de controle de acesso bem definidas e não-ambíguas. Para \citeonline{wang_conflicts_2010}, apesar do controle de acesso parecer, de formal conceitual, algo simples, ele é complicado e suscetível, na prática, a erros. Para a garantia da consistência das políticas de controle de acesso e para cumprir os requisitos corretos de segurança não deve haver conflito através da aplicação destas políticas.
 
-Em contextos reais, porém, muitas vezes as políticas de segurança (e \textit{normas}) apresentam conflitos entre si. Estes surgem quando, por exemplo, duas políticas regulando o mesmo comportamento de determinado objeto em um sistema estão ativas, mas uma delas obriga (ou permite) a realização de determinado comportamento ou ação enquanto a outra proíbe o mesmo. \cite{sarkis2017}\cite{eduardo2017}. Ou seja, quando o cumprimento de uma regra/política/norma viola a outra e vice-versa. À característica de um sistema que tem a capacidade de reconhecer um estado como este, inconsistente, que esteja em andamento ou prestes a ocorrer denomina-se detecção de conflitos.
+Embora exista a necessidade das políticas serem bem definidas e não-ambíguas, muitas vezes as políticas são complexas e ambíguas dependendo de decisões de acesso ligadas à aplicação de diferentes regras e fatores, como leis, normas e condições ambientais como data, hora e local. As políticas de controle de acesso devem, assim, ser determinadas com o objetivo de satisfazer todos os requisitos de segurança estabelecidos contemplando todas as políticas de segurança da organização além de possíveis falhas de segurança decorrentes do uso contínuo do sistema. \cite{silva_uma_2018} \cite{sandhu_access_1994}
+
+Em contextos reais, contudo, muitas vezes as políticas de segurança apresentam conflitos entre si. Estes surgem quando, por exemplo, duas políticas regulando o mesmo comportamento de determinado objeto em um sistema estão ativas, mas uma delas obriga (ou permite) a realização de determinado comportamento ou ação enquanto a outra proíbe o mesmo. \cite{lupu_conflicts_1999} \cite{eduardo2017}. Ou seja, quando o cumprimento de uma regra/política/norma viola a outra e vice-versa. A característica de um sistema que tem a capacidade de reconhecer um estado inconsistente como este que esteja em andamento ou prestes a ocorrer intitula-se detecção de conflitos.
+
+Com o exposto, este trabalho usa diversas tarefas da mineração de dados para \textit{modelar uma hipótese que possibilite detectar conflitos diretos em políticas} de controle de acesso. Para isso, diversos algoritmos de classificação serão explorados, descritos e utilizados com ênfase nos que tem relação com o aprendizado de máquina e outras técnicas de classificação.
 
 \subsection{Detecção de conflitos} \label{deteccao_conflitos}
 
@@ -694,67 +702,55 @@ Segundo \citeonline{kalam_organization_2003}, quando um modelo de controle de ac
 
 Os conflitos podem acontecer quando diferentes conjuntos de condições resultam em \textit{permitir} e \textit{negar} simultaneamente, ao mesmo papel, à mesma solicitação, ou \textit{proibir} e \textit{obrigar} o mesmo papel, à mesma solicitação, isto é, quando os \textit{objetivos} de duas ou mais políticas \textit{não podem ser atendidos simultaneamente} \cite{cuppens_high_2007}.
 
-A detecção de conflitos se insere dentro do contexto de verificação de consistência de estado dos sistemas. Esta checagem corresponde a analisar a aderência das regras de uma determinada política dentro do cenário em que ela é aplicada e levando em consideração as demais políticas incorporadas. Um conflito é, portanto, uma inconsistência, ou estado inconsistente representado por uma violação de uma regra já que impede que uma ou mais políticas sejam atendidas/aplicadas. \cite[p. 2]{ueda_tese_2012}. 
+A detecção de conflitos se insere dentro do contexto de verificação de consistência de estado dos sistemas. Esta checagem corresponde a analisar a aderência das regras de uma determinada política dentro do cenário em que ela é aplicada e levando em consideração as demais políticas incorporadas. Um conflito é, portanto, uma inconsistência, ou estado inconsistente representado por uma violação de uma regra já que impede que uma ou mais políticas sejam atendidas/aplicadas \cite{ueda_tese_2012}. 
 
-\subsubsection{Classificação dos conflitos}
+%\subsubsection{Classificação dos conflitos}
+%
+%De acordo com \citeonline{cuppens_high_2007}, \citeonline{sloman_security_2002} e \citeonline{lupu_conflicts_1999}, os conflitos classificam-se, principalmente em: \begin{itemize}
+%	\item \textit{conflito de modalidade} que origina-se de políticas de propriedades contrárias; 
+%	\item \textit{conflito em potencial} que surge da tripla justaposição de sujeitos, ações e objetos de políticas de predicados opostos além das precedências não estarem definidas;
+%	\item \textit{conflito de redundância} que surge da precedência de execução dadas a certas políticas e
+%	\item \textit{conflito específico de aplicação} que ocorre quando ações antagônicas são atribuídas para a mesma entidade (sujeito ou papel) mediante controles externos específicos, expressos como metapolíticas que agem como contenções para políticas permitidas.
+%\end{itemize}
 
-De acordo com \citeonline{cuppens_high_2007}, \citeonline{sloman_security_2002} e \citeonline{lupu_conflicts_1999}, os conflitos classificam-se, principalmente em: \begin{itemize}
-	\item \textit{conflito de modalidade} que origina-se de políticas de propriedades contrárias; 
-	\item \textit{conflito em potencial} surge da tripla justaposição de sujeitos, ações e objetos de políticas de predicados opostos além das precedências não estarem definidas;
-	\item \textit{conflito de redundância} que surge da precedência de execução dadas a certas políticas e
-	\item \textit{conflito específico de aplicação} que ocorre quando ações antagônicas são atribuídas para a mesma entidade (sujeito ou papel) mediante controles externos específicos, expressos como metapolíticas que agem como contenções para políticas permitidas.
-\end{itemize}
+%Neste trabalho, para o modelo de política proposto, não abordam-se os conflitos de redundância já que ordens de precedência não são tratadas. Assim como em \citeonline[p. 24]{sarkis2017}, neste trabalho, os conflitos em potencial são denominados \textbf{conflitos diretos} e os conflitos de aplicação são abarcados pelos chamados \textbf{conflitos indiretos}.
 
-Neste trabalho, para o modelo de política proposto, não abordam-se os conflitos de redundância já que ordens de precedência não são tratadas. Todas as outras modalidades de conflitos são examinadas e utilizadas.
-
-Assim como em \citeonline[p. 24]{sarkis2017}, neste trabalho, os conflitos em potencial são denominados \textbf{conflitos diretos} e os conflitos de aplicação são abarcados pelos chamados \textbf{conflitos indiretos}.
-
-\subsubsection{Conflitos Diretos e Indiretos}
+\subsubsection{Classificação dos conflitos}\label{subsec-classificacao-conflito}
 \citeonline{dunlop_dynamic_2002} usam uma abordagem para os conflitos diretos e simples que será replicada neste trabalho. Diz-se que duas regras estão em conflito \textit{quando o cumprimento de uma das regras viola a outra e vice-versa}. Ou seja, a verificação se há o conflito é feita entre duas políticas que possuem modalidades contraditórias ou antagônicas, definidas na mesma organização, executadas pelos mesmos sujeitos, efetuando a mesma ação em relação a um objeto específico.
 
-Exemplo de um \textit{\textbf{conflito direto}}:
+Exemplo de um \textit{\textbf{conflito de modalidade ou direto}}:
 
 {\scriptsize \texttt{ \{P1= {\underline{Permitido}, na Universidade X, Ana Ester, acessar processos administrativos\} }}}
 
 {\scriptsize \texttt{ \{P2= {\underline{Proibido}, na Universidade X, Ana Ester, acessar processos administrativos\} }}}
 
-Os exemplos acima mostram que quando uma política proíbe e a outra permite um sujeito de realizar uma ação estabelecida sobre um objeto específico em uma organização particular ocorre um \underline{conflito direto}. O conflito, segundo \citeonline{autrel_motorbac_nodate}, pode ser identificado diretamente utilizando a sobreposição dos atributos das políticas.
+Os exemplos acima mostram que quando uma política proíbe e a outra permite um sujeito de realizar uma ação estabelecida sobre um objeto específico em uma organização particular ocorre um \underline{conflito direto}. O conflito, segundo \citeonline{autrel_motorbac_nodate}, pode ser identificado fundamentalmente utilizando a sobreposição dos atributos das políticas. 
 
-Já em um \underline{conflito indireto,} as políticas conflitantes regulam ações diferentes (mas relacionadas) executadas por distintos sujeitos (porém, relacionados) sobre objetos desiguais (mas, relacionados) em organizações diferentes (mas, relacionadas) \cite[p.24]{sarkis2017}.
-
-Além disso, um conflito indireto pode ainda ocorrer, mesmo quando as políticas em conflito não têm modalidades contraditórias ou contrárias.
+Já em um \textit{conflito indireto ou de aplicação} as políticas conflitantes regulam ações diferentes mas, relacionadas, executadas por distintos sujeitos porém, correlacionados sobre objetos desiguais mas, de alguma forma, semanticamente associados, em organizações diferentes porém, em algum sentido, relacionadas  \cite{cuppens_high_2007}. %\cite[p.24]{sarkis2017}.
+Além disso, um conflito indireto pode ainda ocorrer, mesmo quando as políticas em conflito não têm modalidades contraditórias ou contrárias \cite{sloman_security_2002} \cite{lupu_conflicts_1999}.
 
 Ex:
 
-{\scriptsize \texttt{P3 = {Obrigado, Empresa E, \underline{Funcionário, receber}, avaliação, mensal}}}
+{\scriptsize \texttt{P3 = {Proibido, Empresa E, \underline{Funcionário, receber}, avaliação, mensal}}}
 
 {\scriptsize \texttt{P4= {Permitido, Empresa E, \underline{Analista, conceder}, avaliação, mensal}}}
 
-Este conflito não seria detectado diretamente, porém há um conflito se considerarmos os relacionamentos já que o tipo de política é contraditória $(Obrigado \times Permitido)$ e um `Analista' também é um um `Funcionário' e vice-versa.
+Este conflito não seria detectado diretamente, porém há um conflito se considerarmos os relacionamentos já que o tipo de política é contraditória $(Proibido \times Permitido)$ e um `Analista' também é um um `Funcionário' e vice-versa. A capacidade de um sistema reconhecer um estado inconsistente acontecendo ou em potencial de ocorrer é denominada \textbf{detecção de conflitos.}
 
-A capacidade de um sistema reconhecer um estado inconsistente em andamento ou em potencial é denominada \textbf{detecção de conflitos.}
-
-Para \citeonline[p. 14]{sarkis2017},
-\begin{citacao}
-	detectar conflitos entre políticas de controle de acesso é o primeiro passo para buscar inibir o surgimento de erros no sistema relativo às políticas aplicadas, tendo em vista que as políticas sem conflitos refletem corretamente o plano de segurança do sistema.
-\end{citacao}
-
-Ainda segundo \citeonline[p.25]{sarkis2017}, ``Para um sistema baseado em políticas trabalhar de forma eficaz é importante ter um meio de detectar e resolver os conflitos que possam surgir''. 
-
-Torna-se, assim, relevante a utilização de abordagens que analisem previamente a existência de conflitos como o proposto nesta dissertação.
-
+Para \citeonline[p. 14]{sarkis2017}, identificar conflitos entre políticas de controle de acesso é passo importante para impedir a ocorrência de imprecisões e falhas no sistema em relação à aplicação de políticas, considerando que a ausência de políticas em conflito refletem o projeto de segurança do sistema de modo correto. Assim, é importante para um sistema que utiliza políticas de controle de acesso detectar os conflitos que, porventura, possam existir entre políticas existentes e novas. Torna-se, assim, relevante a utilização de abordagens que analisem previamente a existência de conflitos como o proposto nesta dissertação.
+%Ainda segundo \citeonline[p.25]{sarkis2017}, ``Para um sistema baseado em políticas trabalhar de forma eficaz é importante ter um meio de detectar e resolver os conflitos que possam surgir''. 
 \subsection{Problema de pesquisa}\label{problema}
 
 Para \citeonline{wang_conflicts_2010}, ``a garantia dos requisitos de segurança, descritos pelas políticas de controle de acesso (ACPs), não pode ser obtida quando existem conflitos nos ACPs''. 
 
-E, conforme \citeonline{sun_privacy_2011}, podem, de fato, surgir problemas de conflito de políticas quando novas políticas de acesso são geradas podendo, assim, entrar em confronto com as políticas existentes. Como resultado dos conflitos de política, as informações privadas não podem ser bem protegidas.
+E, conforme \citeonline{sun_privacy_2011}, podem, de fato, surgir problemas de conflito de políticas quando novas políticas de acesso são geradas podendo, assim, entrar em confronto com as políticas existentes. Como resultado dos conflitos de política, as informações privadas podem não ser bem protegidas.
 
 A detecção automatizada destes conflitos, citados na \autoref{contextualizacao} e na \autoref{deteccao_conflitos}, com acurácia apropriada para utilização desta detecção em tempo de execução, é, assim, o cerne do problema de pesquisa deste trabalho. 
 
 Objetivamente, o problema investigado nesta dissertação consiste na \textit{detecção de conflitos de forma automatizada usando técnicas de mineração de dados e aprendizagem de máquina} que apresentem acurácias suficientemente convenientes para que estes conflitos sejam detectados em tempo de execução e que, ao se inserir novas instâncias e várias políticas sejam analisadas simultaneamente isto não acarrete um custo computacional elevado.
 
-\subsection{Justificativa}\label{justificativa}
-Na detecção de conflitos em políticas, geralmente, conforme a revisão da literatura (explicitada no \autoref{referencial_teorico}), usam-se abordagens como as de \citeonline{sarkis2017} e \citeonline{mohan_detection_2012} --- estritamente analíticos e formais, baseadas em análise de ontologias entre os atributos que compõem uma política e os relacionamentos e regras de propagação destas políticas ou mesmo estratégias como as de \citeonline{wang_conflicts_2010} e \citeonline{ferraiolo_policy_2011} que usam uma arquitetura que pode ser empregada como uma máquina de proteção de propósito geral usando métodos matemáticos formais para atingir seus objetivos. 
+\subsection{Motivação}\label{justificativa}
+Na detecção de conflitos em políticas, geralmente, conforme a revisão da literatura (explicitada no \autoref{referencial_teorico}), usam-se abordagens como as de \citeonline{sarkis2017} e \citeonline{mohan_detection_2012} --- estritamente analíticas e formais, baseadas em análise de ontologias entre os atributos que compõem uma política e os relacionamentos e regras de propagação destas políticas ou mesmo estratégias como as de \citeonline{wang_conflicts_2010} e \citeonline{ferraiolo_policy_2011} que usam uma arquitetura que pode ser empregada como uma máquina de proteção de propósito geral usando métodos matemáticos formais para atingir seus objetivos. 
 
 Dentro do conjunto de modelos formais, envolvendo relacionamentos, na detecção de conflitos, há também o trabalho de \citeonline{sun_privacy_2011}, que usa o ``propósito envolvido nos modelos de controle de acesso'' para atingir seu fim. \textit{Estes, fatalmente, analisam as políticas em pares ou em grupos sem filtros de agrupamentos}.
 
@@ -762,17 +758,19 @@ Há também os métodos baseados em requisitos como os propostos por \citeonline
 
 Adicionalmente, na literatura especializada são encontrados procedimentos como os descritos em \citeonline{eduardo2017} que utilizam lógica deôntica\footnote{A lógica \textit{deôntica} é um tipo de lógica usada para analisar de modo formal as normas e as proposições que tratam dessas normas \cite{eduardo2017}} para encontrar os conflitos. Estas abordagens citadas definem tipos de conflitos que podem ocorrer entre políticas computacionais e os tentam detectá-los, cada uma usando uma perspectiva específica. 
 
-Para detectar os conflitos entre políticas, nestes trabalhos citados anteriormente, estas foram analisadas, geralmente, em pares (e sem filtros para agrupamentos --- quando os há) e mesmo quando foram verificadas múltiplas normas ou políticas, como em \citeonline{eduardo2017}, \textit{toda a base precisou ser} \textit{``consultada''} ou \textit{``varrida''} novamente a cada conjunto de novas instâncias de políticas inseridas ou analisadas no sistema (para que o conflito seja ou não detectado).
+%Para detectar os conflitos entre políticas, nestes trabalhos citados anteriormente, estas foram analisadas, geralmente, em pares (e sem filtros para agrupamentos --- quando os há) e mesmo quando foram verificadas múltiplas normas ou políticas, como em \citeonline{eduardo2017}, \textit{toda a base precisou ser} \textit{``consultada''} ou \textit{``varrida''} novamente a cada conjunto de novas instâncias de políticas inseridas ou analisadas no sistema (para que o conflito seja ou não detectado).
+
+Para detectar os conflitos entre políticas, nestes trabalhos citados anteriormente, estas foram analisadas, geralmente, em pares (e sem filtros para agrupamentos — quando os há) e mesmo quando foram verificadas múltiplas normas ou políticas, toda a base precisou ser “consultada” ou “varrida” novamente a cada conjunto de novas instâncias de políticas inseridas ou analisadas no sistema (para que o conflito seja ou não detectado).
 
 De acordo com \citeonline{shoham_tennenholtz_1995} \textit{esta forma de analisar políticas em pares é um problema NP-completo}, ou seja, ainda não foi provado que esta classe de problemas pode ser resolvida \textit{em tempo polinomial}, sendo assim, \textit{são tratados como computacionalmente custosos} a cada vez que uma instância nova de política é analisada (em tempo de execução, sendo, normalmente, exponencial). 
 
-Consequentemente, com o crescimento orgânico, natural e temporal das políticas em um sistema computacional, a manutenção e o gerenciamento dessas políticas será, por si só, além de já um problema naturalmente complexo (e preterido) bem como de difícil administração, de acordo com \citeonline{ueda_tese_2012} e \citeonline{bellettini_role_2001}, também será, eventualmente, um problema computacionalmente oneroso.
+Consequentemente, com o crescimento orgânico, natural e temporal das políticas em um sistema computacional, a manutenção e o gerenciamento dessas políticas será, por si só, além de já um problema naturalmente complexo (e preterido) bem como de difícil administração, de acordo com \citeonline{ueda_tese_2012} e \citeonline{bellettini_role_2001}, também será, eventualmente, um problema computacionalmente oneroso, de acordo com \citeonline{shoham_tennenholtz_1995}.
 
 \citeonline{hwang_acpt_2010}, assim como \citeonline{sarkis2017}, também desenvolve uma ferramenta, chamada ACPT (Access Control Test Policy), que ajuda a modelar e implementar políticas corretamente durante a modelagem, implementação e verificação de políticas, mas tem a desvantagem (ao menos em termos de custo computacional) de, também, verificar as políticas em pares (ou, ainda, até em grupos maiores) ou não contemplar essa análise em tempo de execução.
 
 Alternativamente, técnicas e algoritmos de aprendizagem de máquina juntamente com as de mineração de dados foram utilizadas com resultados promissores na detecção de conflitos, principalmente em \citeonline{obaidat_multilayer_1994}, \citeonline{chen_flight_2011}, bem como em \citeonline{christodoulou_collision_2008} e \citeonline{jin_development_2002}. 
 
-Estes estudos abordam problemas variados como detecção de colisões em voos, segurança de acesso computacional, incidentes em rodovias e intrusão de sistemas — todos de alguma forma relacionados à conflitos entre normas, regras, políticas ou direção e que podem, claro, serem extrapolados para o problema descrito e estudado neste trabalho.
+Estes estudos abordam problemas variados como detecção de colisões em voos, segurança de acesso computacional, incidentes em rodovias e intrusão de sistemas — todos de alguma forma relacionados à conflitos entre normas, regras, políticas ou direção e que podem, claro, serem extrapolados para o problema descrito e estudado neste trabalho, pois, de acordo com \citeonline[p. 98]{stallings_seguranccomputadores_2017}, um administrador de segurança alimenta um banco de dados de autorização que classifica qual tipo de acesso a quais recursos é permitido para um usuário específico, ou seja, mantém um banco de dados com políticas de controle de acesso que pode, portanto, ser manejado com as técnicas de mineração de dados e aprendizagem de máquina como já o são dados em outros contextos.
 
 Há também os trabalhos de \citeonline{bui_greedy_2019}, \citeonline{hachana_mining_2015}, \citeonline{kalaskar_fp-growth_2018}, \citeonline{martin_inferring_2006}, \citeonline{chakraborty_feasibility_2019} e os de \citeonline{xu_mining_2013} e \citeonline{xu_mining_2014} que analisam, de formas diferentes, aspectos relacionados com a mineração de dados em políticas de controle de acesso. Entretanto, a maioria dos trabalhos citados tem a desvantagem de abordarem o conflito de políticas, em si, de forma mais periférica e secundária (até acidental), sendo que em nenhum destes trabalhos, o foco principal é a detecção de conflitos entre políticas propriamente ditas (sejam eles quais forem), concentrando-se primordialmente seja em migração/conversão de políticas de um modelo para outro; ou no problema de políticas refletirem fielmente o desejo do autor e até mesmo em outros contextos (muito específicos), como o gerenciamento de firewalls ou mesmo usando abordagens particulares demais, com o foco em regras de associação (que não se aplicam ou resolvem diretamente o problema investigado nesta dissertação).
 
@@ -781,10 +779,11 @@ Neste contexto e tendo em vista que:
 	\item (i) em grandes organizações as políticas de segurança, como as de controle de acesso, pela quantidade de objetos, modalidades, sujeitos e ações inerentes a essas instituições tendem a ter grande quantidade de informações que aumentam diariamente e constantemente nos sistemas computacionais \cite{fugini_information_2004} \cite{bellettini_role_2001} \cite{ueda_tese_2012};
 	\item (ii) que pode ocorrer, com a análise de políticas em pares (ou sem filtros de agrupamentos), conforme descrito no trabalho de \citeonline{shoham_tennenholtz_1995}, um problema NP-completo que onera o custo computacional;
 	\item (iii) que pode-se otimizar conhecimento adquirido e já existente nas organizações (os \textit{datasets} de políticas) mediante o uso de modelos de mineração de dados e aprendizagem de máquina, aproveitando-se da ``história'' temporal das políticas da organização;
-	\item (iv) que os métodos abordados na literatura, em sua maioria, não analisam e detectam o conflito entre políticas de controle de acesso em tempo de execução, geralmente, o realizando durante a fase de análise, desenvolvimento ou outra do sistema;
+	%\item (iv) que os métodos abordados na literatura, em sua maioria, não analisam e detectam o conflito entre políticas de controle de acesso no momento da inserção da política, geralmente, o realizando durante a fase de análise, desenvolvimento ou outra do sistema;
 \end{itemize}  
 
-Propõe-se, portanto, neste trabalho, aplicar a mineração de dados com técnicas de aprendizagem de máquina, como possibilidade de solução na detecção de conflitos entre o crescente número de políticas computacionais de uma organização, tanto em tempo de design, quanto em tempo de execução (com prioridade para este último), buscando evitar o custo computacional elevado, se aproveitando, pois, da ``história'' temporal das políticas da organização, mediante o conhecimento adquirido, ``treinado'' e otimizado pelos algoritmos de aprendizagem de máquina. \textit{Estes, pois, pretendem ser os diferenciais deste trabalho e no que ele pode contribuir dentro do escopo deste problema.}
+Propõe-se, portanto, neste trabalho, aplicar a mineração de dados com técnicas de aprendizagem de máquina, como possibilidade de solução na detecção de conflitos entre o crescente número de políticas computacionais de uma organização %tanto em tempo de design, quanto em tempo de execução (com prioridade para este último), 
+buscando evitar o custo computacional elevado, aproveitando-se, pois, da ``história'' temporal das políticas da organização, mediante o conhecimento adquirido, ``treinado'' e otimizado pelos algoritmos de aprendizagem de máquina. \textit{Estes, pois, pretendem ser os diferenciais deste trabalho e no que ele pode contribuir dentro do escopo deste problema.}
 
 %Alterado pela professora
 %Na detecção de conflitos em políticas, geralmente, cf. revisão da literatura ( no capítulo \ref{referencial_teorico}),  usam-se abordagens semelhantes as de \citeonline{sarkis2017} baseadas em análise de ontologias entre os atributos que compõem uma política e em regras de propagação das mesmas ou procedimentos como os descritos em \citeonline{eduardo2017} que utilizam lógica deôntica para encontrar os conflitos. 
@@ -795,35 +794,37 @@ Propõe-se, portanto, neste trabalho, aplicar a mineração de dados com técnic
 %Neste ambiente e considerando que as políticas analisadas em pares, como em \citeonline{sarkis2017}, tem alto custo computacional por este, como visto em \citeonline{shoham_tennenholtz_1995}, \underline{ser um problema NP-completo} e com a estratégia de minimizar a complexidade deste problema otimizando-o baseando suas soluções no conhecimento adquirido e já existente nas organizações (os \textit{datasets} de políticas), a mineração de dados com técnicas de aprendizagem de máquina surgem como possibilidades de solução na detecção de conflitos tanto em tempo de design quanto em tempo de execução, pois, minimiza este custo computacional ao se aproveitar da ``história'' temporal das políticas da organização, mediante o conhecimento adquirido e ``treinado'' e otimizado pelos algoritmos de aprendizagem de máquina.
 
 \subsection{Hipótese}\label{hipótese}
-Diante do contexto apresentado na seção anterior e também por \citeonline{fugini_information_2004}, \citeonline{bellettini_role_2001} e \citeonline{ueda_tese_2012} tem-se \textit{como hipótese deste trabalho}, que o problema de detectar conflitos entre políticas\textit{ pode ser convertido e transformado} em uma tarefa de classificação da mineração de dados e que o uso de algoritmos de aprendizagem de máquina associados a técnicas de \textit{data mining} para detectar estes conflitos configure um método que apresente precisão e acurácias pertinentes com a possibilidade de se verificar os conflitos em tempo de execução sem onerar o custo computacional.
+Diante do contexto apresentado na seção anterior e também por \citeonline{fugini_information_2004}, \citeonline{bellettini_role_2001} e \citeonline{ueda_tese_2012} tem-se \textit{como hipótese deste trabalho}, que o problema de detectar conflitos entre políticas\textit{ pode ser convertido e transformado} em uma tarefa de classificação da mineração de dados e que o uso de algoritmos de aprendizagem de máquina associados a técnicas de \textit{data mining} para detectar estes conflitos configure um método que apresente precisão e acurácias pertinentes com a possibilidade de se verificar os conflitos sem onerar demasiadamente o custo computacional.
 
 \section{Objetivos}\label{objetivos}
 Nesta seção serão descritos o objetivo geral e os específicos deste trabalho.
 \subsection{Objetivo geral}\label{objetivo_geral}
-O objetivo deste trabalho é propor que o problema da detecção de conflitos em políticas pode ser resolvido como um problema de \textit{data mining} (mineração de dados) solucionado pela tarefa da \textit{classificação} além de especificar modelos de mineração de dados e aprendizagem de máquina, suficientemente genéricos, que possibilitem formas de detectar estes conflitos mediante diferentes algoritmos e técnicas da aprendizagem de máquina.
+O objetivo deste trabalho é propor que o problema da detecção de conflitos diretos entre políticas de controle de acesso pode ser resolvido como um problema de \textit{data mining} (mineração de dados) solucionado pela tarefa da \textit{classificação} além de especificar modelos de mineração de dados e aprendizagem de máquina com seus hiperparâmetros suficientemente genéricos de modo que possibilitem formas de detectar estes conflitos.%, mediante diferentes algoritmos %e técnicas da aprendizagem de máquina, 
+%sem analisar as políticas em pares para não onerar o custo computacional que esta análise pode acarretar em sistemas grandes e com múltiplas políticas.
 \subsection{Objetivos específicos}
 Os objetivos específicos deste trabalho são:
 \begin{itemize}	
-		\item Estabelecer a relação entre machine learning, técnicas de mineração de dados e o problema do conflito entre políticas;
-		\item Determinar e comparar quais algoritmos e técnicas são mais adequados para cada tipo de conflito nas políticas (ou normas) usando as suas acurácias como comparativo;
+		\item Estabelecer a relação entre machine learning, técnicas de mineração de dados e o problema do conflito direto entre políticas;
+		\item Determinar e comparar quais algoritmos e técnicas são mais adequados para a detecção de conflitos diretos entre políticas de controle de acesso usando as suas acurácias, precisão e recall como comparativo;
 		\item Usar e comparar a precisão e a taxa de acertos dos principais algoritmos de classificação na resolução do problema da detecção de conflitos;
-		\item Usar e comparar o desempenho, a precisão e taxa de acertos das principais técnicas usadas no aprendizado de máquina: redes neurais artificiais (RNA) e Support Vector Machines (SVM).		
-		\item Usar \textit{frameworks} de aprendizado de máquina como TensorFlow \cite{kadimisetty_tensorflow_2018}, Keras \cite{chollet2015keras} ou Torch \cite{NEURIPS2019_9015}, na construção, treinamento e teste de arquiteturas de redes neurais, comparando-os, quando adequado, para o problema específico deste trabalho;
-		\item Estabelecer a detecção de conflitos em políticas (ou normas) como uma  classe de problemas a serem resolvidos de forma eficiente por técnicas de aprendizagem de máquina;
-		\item Demonstrar, na prática, que a detecção de conflitos pode ser realizada, usando a abordagem da mineração de dados e do aprendizado de máquina, em \textit{tempo de execução}. 
+		\item Usar e comparar o desempenho, a precisão e taxa de acertos das principais técnicas usadas no aprendizado de máquina %: redes neurais artificiais (RNA), Support Vector Machines (SVM) e Random Forest (Florestas Aleatórias) 
+		em simulações em lote realizando testes estatísticos para determinar o melhor algoritmo de detecção de conflitos diretos;		
+		\item Empregar \textit{frameworks} de aprendizado de máquina como TensorFlow \cite{kadimisetty_tensorflow_2018}, %Keras \cite{chollet2015keras}
+		 ou Torch \cite{NEURIPS2019_9015} na construção, treinamento e teste de arquiteturas de redes neurais para a resolução do problema específico deste trabalho;
+		\item Estabelecer a detecção de conflitos entre políticas de controle de acesso como uma  classe de problemas a serem resolvidos de forma eficiente por técnicas de aprendizagem de máquina. 
 \end{itemize}
 
 
 \section{Solução Proposta}\label{solucao_proposta}
-Diante da hipótese apresentada na \autoref{hipótese}, a solução para o problema apresentado neste trabalho na \autoref{problema} concentra-se, prioritariamente, em mostrar que \textit{converter} (ou \textit{transformar}) a detecção de conflitos a um \textit{problema de classificação} da mineração de dados associado a técnicas de aprendizagem de máquina, reestruturando os atributos do \textit{dataset}, se necessário, se configura um método com acurácia satisfatória para que os conflitos entre as políticas de controle de acesso possam ser detectados automaticamente em tempo de execução.
+Diante da hipótese apresentada na \autoref{hipótese}, a solução para o problema exposto neste trabalho na \autoref{problema} concentra-se, prioritariamente, em mostrar que \textit{converter} (ou \textit{transformar}) a detecção de conflitos a um \textit{problema de classificação} da mineração de dados associado a técnicas de aprendizagem de máquina, reestruturando os atributos do \textit{dataset}, se necessário, se configura um método com acurácia satisfatória para que os conflitos entre as políticas de controle de acesso possam ser detectados automaticamente em tempo de execução.
 
 \textit{A primeira solução} proposta para conflitos diretos entre políticas é usar as técnicas e algoritmos de classificação (aprendizado supervisionado) para  realizar a detecção automatizada de conflitos. Para isso, propõem-se:
 \begin{itemize}
 	\item Usar e comparar as acurácias, precisões e outras métricas entre os principais algoritmos de classificação;
 	\item Usar, inicialmente, uma rede neural (um perceptron de uma camada ou com somente uma camada oculta e apenas com \textit{forward}) como técnica algorítmica para a detecção de conflitos e
-	\item Construir a arquitetura de uma rede neural multicamadas (com camadas ocultas), e retropropagação (\textit{backpropagation}), comparando-a com outro classificadores no contexto do aprendizado de máquina, como, por exemplo, o SVM, para estabelecer qual técnica de mineração de dados na detecção de conflitos em políticas é mais precisa.	
+	\item Construir a arquitetura de uma rede neural multicamadas (com camadas ocultas), e retropropagação (\textit{backpropagation}), comparando-a com outro classificadores no contexto do aprendizado de máquina, como, por exemplo, o SVM ou o Random Forest, para estabelecer qual técnica de mineração de dados na detecção de conflitos em políticas é mais precisa.	
 \end{itemize}
-Realizado os múltiplos experimentos, atestar a hipótese mediante os resultados apresentados.
+Realizado os múltiplos experimentos, atestar a hipótese realizando testes estatísticos mediante os resultados apresentados que suportem a hipótese.
 
 \section{Método de Pesquisa}\label{metodo-pesquisa} %Estou aqui 
 O método de pesquisa deste trabalho é descrito como:
@@ -834,7 +835,7 @@ O método de pesquisa deste trabalho é descrito como:
  \end{itemize}
 O cerne do método usado nesta dissertação é a experimentação, pois, cf. \citeonline[p. 3]{travassos_introducao_2002}, este método ``oferece o modo sistemático, disciplinado, computável e controlado para avaliação''. 
 
-O experimento é uma investigação formal, rigorosa e controlada. Em um experimento, os fatores chave são identificados e manipulados, enquanto outros fatores do contexto são mantidos sem mudança. \cite[p. 11]{wohlin_experimentation_2000}. Isto é realizado para investigar e encontrar dependências entre estes fatores. \cite[p. 63]{wazlawick2009} .
+O experimento é uma investigação formal, rigorosa e controlada. Em um experimento, os fatores chave são identificados e manipulados, enquanto outros fatores do contexto são mantidos sem mudança \cite[p. 11]{wohlin_experimentation_2000}. Isto é realizado para investigar e encontrar dependências entre estes fatores \cite[p. 63]{wazlawick2009} .
 
 No caso específico deste trabalho, o método experimental, genericamente, segue a seguinte organização. \cite[p. 3]{travassos_introducao_2002}:
 \begin{enumerate}
@@ -846,22 +847,24 @@ No caso específico deste trabalho, o método experimental, genericamente, segue
 	\item repete-se o processo orientando-o à melhoria do modelo que suporte a hipótese.
 \end{enumerate}
 
-Seguindo, assim, as fases de (i) definição do experimento; (ii) planejamento; (iii) execução; (iv) análise; e posterior (v) apresentação e empacotamento (organização dos dados para apresentação). \cite[p. 21 e 22]{travassos_introducao_2002}.
+Seguindo, assim, as fases de (i) definição do experimento; (ii) planejamento; (iii) execução; (iv) análise; e posterior (v) apresentação e empacotamento (organização dos dados para apresentação) mostradas em \citeonline[p. 21 e 22]{travassos_introducao_2002}.
 
-Este processo se inicia, de fato, com a sugestão de um modelo, baseado em um modelo já existente na literatura e nos \textit{frameworks} de ciência de dados, e, então, estuda os efeitos do processo experimental descrito acima nos dados sugeridos pelo modelo proposto. Os experimentos, portanto, são o suporte que ajudam a assentar e verificar a previsão teórica (a hipótese) deste trabalho, construindo, deste modo, uma base de conhecimento confiável sobre o tema. \cite[p. 3 e 4]{travassos_introducao_2002}.
+Este processo se inicia, de fato, com a sugestão de um modelo, baseado em um modelo já existente na literatura e nos \textit{frameworks} de ciência de dados, e, então, estuda-se os efeitos do processo experimental descrito acima nos dados sugeridos pelo modelo proposto. Os experimentos, portanto, são o suporte que ajudam a assentar e verificar a previsão teórica (a hipótese) deste trabalho, construindo, deste modo, uma base de conhecimento confiável sobre o tema \cite[p. 3 e 4]{travassos_introducao_2002}.
 
-Para dar alicerce às avaliações quantitativas e estatísticas da análise do modelo, diversas métricas de verificação são abordadas no decorrer do trabalho, como as da \autoref{taxa_erro}, da \autoref{estrategias_validacao} e da \autoref{medidas_avaliacao}. Isto porque, ``a medição é a parte central de um estudo experimental''. \cite[p. 10]{travassos_introducao_2002}.
+Para dar alicerce a essas avaliações quantitativas e estatísticas da análise dos modelos diversas métricas de verificação foram usadas no decorrer do trabalho, sendo as principais a taxa de erro, a acurácia e o \textit{cross-validation} com 5 \textit{folds} explicitadas na \autoref{taxa_erro}, na \autoref{estrategias_validacao} e na \autoref{medidas_avaliacao}. Isto porque, ``a medição é a parte central de um estudo experimental'' \cite[p. 10]{travassos_introducao_2002}. 
+. 
 
 \section{Resultados Esperados}\label{resultados_esperados}
 Ao fim deste trabalho os seguintes resultados são esperados:
 \begin{itemize}
 	\item Mostrar que o problema da detecção de conflitos em políticas pode ser convertido em um problema de \textit{data mining} (mineração de dados) resolvido pela tarefa da classificação;
-	\item Demonstrar que o problema da detecção de conflitos diretos é um prolema linearmente separável, logo, que pode ser resolvido, com eficiência por classificadores lineares;
-	\item Mostrar que a política nova (\textit{instância inédita})  é ou não conflitante imediatamente após a criação da mesma usando como base o treinamento da rede neural no \textit{dataset} de políticas existente;
-	\item Modelar e resumir uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina que consigam acurácias que suportem a verificação de conflitos em tempo de execução;
+%	\item Demonstrar que o problema da detecção de conflitos diretos é um prolema linearmente separável, logo, que pode ser resolvido, com eficiência por classificadores lineares (que tem como característica a resolução deste tipo de problemas);
+	\item Demonstrar que o problema da detecção de conflitos diretos é linearmente separável, logo, que pode ser resolvido, com eficiência por classificadores lineares (que tem como característica a resolução deste tipo de problemas);
+	\item Mostrar que a política nova (\textit{instância inédita})  é ou não conflitante imediatamente após a criação da mesma usando como base o treinamento dos modelos de mineração e aprendizagem de máquina no \textit{dataset} de políticas existente;
+	\item Modelar e resumir uma forma de detectar estes conflitos mediante o uso de diferentes algoritmos e técnicas da aprendizagem de máquina que consigam acurácias que suportem a verificação de conflitos diretos;
 	\item Estabelecer uma relação entre machine learning, técnicas de mineração de dados e a resolução do problema do conflito entre políticas;
-	\item Determinar e comparar quais algoritmos e técnicas são mais adequados para cada tipo de conflito nas políticas (ou normas) usando as suas acurácias;
-	\item Usar e comparar o desempenho, a precisão e taxa de acertos das principais técnicas usadas no aprendizado de máquina: redes neurais artificiais (RNA), Support Vector Machines (SVM).
+	\item Determinar e comparar quais algoritmos e técnicas são mais adequados para cada tipo de conflito nas políticas usando as suas acurácias;
+	\item Usar e comparar estatisticamente o desempenho, a precisão e taxa de acertos das principais técnicas usadas no aprendizado de máquina: redes neurais artificiais (RNA), Support Vector Machines (SVM) e Random Forest.
 
 \end{itemize} 
 
@@ -877,20 +880,20 @@ Espera-se como contribuições diferenciais deste trabalho:
 \section{Limitações do Trabalho}\label{limitacoes}
 Não faz parte do escopo deste trabalho:
 \begin{itemize}
-	\item Delinear um modelo de política com objetivos semânticos diferenciados. Para os experimentos deste trabalho será usado o modelo de políticas descrito em \citeonline{sarkis2017} e em \citeonline{sarkis:artigo:2016}
+	\item Delinear um modelo de política com objetivos semânticos diferenciados. Para os experimentos deste trabalho será usado um modelo de políticas semelhante ao descrito em \citeonline{sarkis2017} e em \citeonline{sarkis:artigo:2016}
 	\item Analisar comparativamente os modelos de extensão de políticas em um determinado contexto;
 	\item Usar redes neurais convolucionais profundas na detecção dos conflitos. Prioritariamente pela limitação temporal e tamanho da base;
 	\item Abordar a semântica em políticas;
-	\item Por conta da base de dados (\textit{dataset}) ser gerada de forma aleatória (já que organizações, por motivos de segurança, não disponibilizarem suas bases de políticas), ela pode não representar fielmente os modelos de políticas aplicados no mundo real, embora seja baseada em um modelo suficientemente genérico cf. mostrado em \citeonline{sarkis2017}.
+	\item Por conta da base de dados (\textit{dataset}) ser gerada de forma aleatória (já que organizações, por motivos de segurança, não disponibilizarem suas bases de políticas), ela pode não representar fielmente os modelos de políticas aplicados no mundo real, embora seja baseada em um modelo suficientemente genérico.% cf. mostrado em \citeonline{sarkis2017}.
 \end{itemize} 
 
 \section{Organização do trabalho}
-Este trabalho está organizado da seguinte forma:
+Além deste capítulo, este trabalho está organizado da seguinte forma:
 \begin{itemize}	
 	\item No \autoref{referencial_teorico} apresenta-se todo o referencial teórico compreendendo uma revisão bibliográfica sobre os principais temas desta proposta de dissertação, como políticas, detecção de conflitos, mineração de dados e aprendizagem de máquina (e seus algoritmos principais)
-	\item No \autoref{resultados} são mostrados o método e os experimentos e resultados obtidos.
-	\item No \autoref{propostas} mostra-se o cronograma para a finalização da dissertação.
-	\item No \autoref{conclusoes} apresenta-se as conclusões atingidas e esperadas desta pesquisa.
+	\item No \autoref{resultados} são mostrados o método e os múltiplos experimentos além dos resultados obtidos.
+	%\item No \autoref{propostas} mostra-se o cronograma para a finalização da dissertação.
+	\item No \autoref{conclusoes} apresenta-se as conclusões atingidas desta pesquisa e as considerações finais do trabalho.
 \end{itemize}
 \clearpage
 % ----------------------------------------------------------

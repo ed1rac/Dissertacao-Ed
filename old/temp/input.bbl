@@ -1,0 +1,1031 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Academy 2020]{deep_learning_book_2019}
+\abntrefinfo{Academy}{ACADEMY}{2020}
+{ACADEMY, D.~S. \emph{Deep Learning Book, 2019}. Acesso em: 06 de março de
+  2020., 2020. Dispon{\'\i}vel em: \url{http://deeplearningbook.com.br/}.}
+
+\bibitem[Aho, Hopcroft e UIIman 1974]{aho_design_1974}
+\abntrefinfo{Aho, Hopcroft e UIIman}{AHO; HOPCROFT; UIIMAN}{1974}
+{AHO, A.~V.; HOPCROFT, J.~E.; UIIMAN, J.~D. \emph{The {Design} and {Analysis}
+  of computer algorithms}. 1st. ed. Boston, MA, United States: Addison-Wesley
+  Longman Publishing Co., Inc., 1974.
+ISBN 0-201-00029-6.}
+
+\bibitem[Al-Radaideh e Nagi 2012]{using_data_mining2012}
+\abntrefinfo{Al-Radaideh e Nagi}{AL-RADAIDEH; NAGI}{2012}
+{AL-RADAIDEH, Q.~A.; NAGI, E.~A. Using {Data} {Mining} {Techniques} to {Build}
+  a {Classification} {Model} for {Predicting} {Employees} {Performance}.
+2012.}
+
+\bibitem[Alecrim 2019]{alecrim2019}
+\abntrefinfo{Alecrim}{ALECRIM}{2019}
+{ALECRIM, E. \emph{O que {\'e} {Big} {Data}?} Série Infowester: INFOWESTER.
+  Disponível em: https://www.infowester.com/big-data.php. Acesso em
+  12/12/2019, 2019.}
+
+\bibitem[Alpaydin 2014]{alpaydin_introduction_2014}
+\abntrefinfo{Alpaydin}{ALPAYDIN}{2014}
+{ALPAYDIN, E. \emph{Introduction to Machine Learning, Third Edition}. 3ª. ed.
+  The {MIT} Press, 2014.  (Adaptive Computation and Machine Learning).
+ISBN 978-0-262-02818-9. Dispon{\'\i}vel em:
+  \url{https://mitpress.ublish.com/ereader/26/?preview\#page/Cover}.}
+
+\bibitem[Amaral 2016]{aprenda_mineracao_fernando_amaral16}
+\abntrefinfo{Amaral}{AMARAL}{2016}
+{AMARAL, F. \emph{Aprenda Minera{\c{c}}{\~a}o de Dados: Teoria e pr{\'a}tica}.
+  Rio de Janeiro, Brasil: Alta Books Editora, 2016. 220~p.  (Volume 1 da
+  Série: Autoria Nacional).
+ISBN 9788576089889.}
+
+\bibitem[Amaral 2018]{amaral_introducao_2018}
+\abntrefinfo{Amaral}{AMARAL}{2018}
+{AMARAL, F. \emph{Introdução à Ciência de Dados: Mineração de dados e big
+  data}. Rio de Janeiro, Brasil: Alta Books, 2018.
+ISBN 9788550804163.}
+
+\bibitem[Autrel, Coma e al 2008]{autrel_motorbac_nodate}
+\abntrefinfo{Autrel, Coma e al}{AUTREL; COMA; AL}{2008}
+{AUTREL, F.; COMA, C.; AL, e. {MotOrBAC} 2: a security policy tool.
+2008.}
+
+\bibitem[Baeza-Yates e Ribeiro-Neto 2013]{baeza-yates_recuperacao_2013}
+\abntrefinfo{Baeza-Yates e Ribeiro-Neto}{BAEZA-YATES; RIBEIRO-NETO}{2013}
+{BAEZA-YATES, R.; RIBEIRO-NETO, B. \emph{Recuperação de Informação:
+  Conceitos e Tecnologia das Máquinas de Busca}. 2a. edição. ed. Porto
+  Alegre, RS, Brasil: Bookman, 2013.}
+
+\bibitem[Bellettini, Bertino e Ferrari 2001]{bellettini_role_2001}
+\abntrefinfo{Bellettini, Bertino e Ferrari}{BELLETTINI; BERTINO; FERRARI}{2001}
+{BELLETTINI, C.; BERTINO, E.; FERRARI, E. Role based access control models.
+v.~6, n.~2, p. 21--29, 2001.
+ISSN 13634127.
+Dispon{\'\i}vel em:
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S1363412701002047}.}
+
+\bibitem[Brown e Stallings 2017]{stallings_seguranccomputadores_2017}
+\abntrefinfo{Brown e Stallings}{BROWN; STALLINGS}{2017}
+{BROWN, L.; STALLINGS, W. \emph{Segurança de {Computadores}: {Princípios} e
+  {Práticas}}. Rio de Janeiro, RJ, Brasil: Elsevier Brasil, 2017.
+ISBN 978-85-352-6450-0. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=y2DcAwAAQBAJ}.}
+
+\bibitem[Bruce e Bruce 2019]{bruce_estatistica_2019}
+\abntrefinfo{Bruce e Bruce}{BRUCE; BRUCE}{2019}
+{BRUCE, A.; BRUCE, P. \emph{Estatística Prática para Cientistas de Dados}.
+  Rio de Janeiro, Brasil: Alta Books, 2019.
+ISBN 978-85-508-1080-5.}
+
+\bibitem[Bui, Stoller e Le 2019]{bui_efficient_2019}
+\abntrefinfo{Bui, Stoller e Le}{BUI; STOLLER; LE}{2019}
+{BUI, T.; STOLLER, S.~D.; LE, H. Efficient and {Extensible} {Policy} {Mining}
+  for {Relationship}-{Based} {Access} {Control}. In:  \emph{Proceedings of the
+  24th {ACM} {Symposium} on {Access} {Control} {Models} and {Technologies}}.
+  New York, NY, USA: ACM, 2019.  ({SACMAT} '19), p. 161--172.
+ISBN 978-1-4503-6753-0. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/3322431.3325106}.}
+
+\bibitem[Bui, Stoller e Li 2019]{bui_greedy_2019}
+\abntrefinfo{Bui, Stoller e Li}{BUI; STOLLER; LI}{2019}
+{BUI, T.; STOLLER, S.~D.; LI, J. Greedy and evolutionary algorithms for mining
+  relationship-based access control policies.
+v.~80, p. 317--333, 2019.
+ISSN 0167-4048.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0167404818304565}.}
+
+\bibitem[Casaca e Correia 2013]{casaca_porque_2013}
+\abntrefinfo{Casaca e Correia}{CASACA; CORREIA}{2013}
+{CASACA, J.~A.; CORREIA, M.~F. Porque é necessária a segurança da
+  informação? da estratégia às políticas de segurança.
+v.~0, n.~3, p. 89--116, 2013.
+ISSN 1647-1342.
+Number: 3.
+Dispon{\'\i}vel em:
+  \url{http://revistas.lis.ulusiada.pt/index.php/lpis/article/view/157}.}
+
+\bibitem[Castro e Braga 2011]{castro_supervised_2011}
+\abntrefinfo{Castro e Braga}{CASTRO; BRAGA}{2011}
+{CASTRO, C. L.~d.; BRAGA, A.~P. Supervised learning with imbalanced data sets:
+  an overview.
+v.~22, n.~5, p. 441--466, 2011.
+ISSN 0103-1759.
+Publisher: Sociedade Brasileira de Automática.
+Dispon{\'\i}vel em:
+  \url{http://www.scielo.br/scielo.php?script=sci\_abstract&pid=S0103-17592011000500002&lng=en&nrm=iso&tlng=pt}.}
+
+\bibitem[Chakraborty, Sandhu e Krishnan 2019]{chakraborty_feasibility_2019}
+\abntrefinfo{Chakraborty, Sandhu e Krishnan}{CHAKRABORTY; SANDHU;
+  KRISHNAN}{2019}
+{CHAKRABORTY, S.; SANDHU, R.; KRISHNAN, R. On the feasibility of
+  attribute-based access control policy mining. In:  \emph{2019 {IEEE} 20th
+  International Conference on Information Reuse and Integration for Data
+  Science ({IRI})}. Los Angeles, CA, USA: [s.n.], 2019. p. 245--252.}
+
+\bibitem[Chen 2011]{chen_flight_2011}
+\abntrefinfo{Chen}{CHEN}{2011}
+{CHEN, M.~Q. Flight {Conflict} {Detection} and {Resolution} {Based} on {Neural}
+  {Network}. In:  \emph{2011 {International} {Conference} on {Computational}
+  and {Information} {Sciences}}. Chengdu, Sichuan. China: [s.n.], 2011. p.
+  860--862. ISSN: null.}
+
+\bibitem[Christodoulou e Kontogeorgou 2008]{christodoulou_collision_2008}
+\abntrefinfo{Christodoulou e Kontogeorgou}{CHRISTODOULOU; KONTOGEORGOU}{2008}
+{CHRISTODOULOU, M.~A.; KONTOGEORGOU, C. Collision avoidance in commercial
+  aircraft {Free} {Flight} via neural networks and non-linear programming.
+\emph{International Journal of Neural Systems}, v.~18, n.~5, p. 371--387, out.
+  2008.
+ISSN 0129-0657.}
+
+\bibitem[Chwif, Medina e Simulate 2014]{chwif_modelagem_2014}
+\abntrefinfo{Chwif, Medina e Simulate}{CHWIF; MEDINA; SIMULATE}{2014}
+{CHWIF, L.; MEDINA, A.; SIMULATE, T. \emph{Modelagem e simulação de eventos
+  discretos, 4a edição: {Teoria} e aplicações}. Elsevier Brasil, 2014.
+ISBN 978-85-352-7933-7. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=wZmoBQAAQBAJ}.}
+
+\bibitem[Clark 2020]{clark_kbsontology_nodate}
+\abntrefinfo{Clark}{CLARK}{2020}
+{CLARK, P. \emph{{KBS}/{Ontology} {Projects} {Worldwide}}. 2020.
+Dispon{\'\i}vel em: \url{https://www.cs.utexas.edu/users/mfkb/related.html}.}
+
+\bibitem[Cortes e Vapnik 1995]{cortes_svm_1995}
+\abntrefinfo{Cortes e Vapnik}{CORTES; VAPNIK}{1995}
+{CORTES, C.; VAPNIK, V. Support-vector networks.
+v.~20, n.~3, p. 273--297, 1995.
+ISSN 1573-0565.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/BF00994018}.}
+
+\bibitem[Crabbé et al. 2020]{crabbe_neural_2020}
+\abntrefinfo{Crabbé et al.}{CRABBé et al.}{2020}
+{CRABBé, A. et al. Neural {Network} {MLP} {Classifier}.
+jan. 2020.
+Publisher: https://mlp-image-classifier.readthedocs.io/en/latest/.
+Dispon{\'\i}vel em: \url{https://lirias.kuleuven.be/3345825}.}
+
+\bibitem[Cuppens, Cuppens-Boulahia e Ghorbel 2007]{cuppens_high_2007}
+\abntrefinfo{Cuppens, Cuppens-Boulahia e Ghorbel}{CUPPENS; CUPPENS-BOULAHIA;
+  GHORBEL}{2007}
+{CUPPENS, F.; CUPPENS-BOULAHIA, N.; GHORBEL, M.~B. High level conflict
+  management strategies in advanced access control models.
+v.~186, p. 3--26, 2007.
+ISSN 15710661.
+Dispon{\'\i}vel em:
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S1571066107004562}.}
+
+\bibitem[Davy, Jennings e Strassner 2008]{davy_application_2008}
+\abntrefinfo{Davy, Jennings e Strassner}{DAVY; JENNINGS; STRASSNER}{2008}
+{DAVY, S.; JENNINGS, B.; STRASSNER, J. Application domain independent policy
+  conflict analysis using information models. In:  \emph{{NOMS} 2008 - 2008
+  {IEEE} Network Operations and Management Symposium}. Salvador, Bahia, Brazil:
+  [s.n.], 2008. p. 17--24. {ISSN}: 2374-9709.}
+
+\bibitem[Debar, Becker e Siboni 1992]{debar_neural_1992}
+\abntrefinfo{Debar, Becker e Siboni}{DEBAR; BECKER; SIBONI}{1992}
+{DEBAR, H.; BECKER, M.; SIBONI, D. A neural network component for an intrusion
+  detection system. In:  \emph{Proceedings 1992 {IEEE} {Computer} {Society}
+  {Symposium} on {Research} in {Security} and {Privacy}}. Oakland, CA: [s.n.],
+  1992. p. 240--250. ISSN: null.}
+
+\bibitem[Deng et al. 2016]{deng_improved_2016}
+\abntrefinfo{Deng et al.}{DENG et al.}{2016}
+{DENG, X. et al. An improved method to construct basic probability assignment
+  based on the confusion matrix for classification problem.
+v. 340-341, p. 250--261, 2016.
+ISSN 0020-0255.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S002002551600044X}.}
+
+\bibitem[Doherty e Fulford 2005]{doherty_information_2005}
+\abntrefinfo{Doherty e Fulford}{DOHERTY; FULFORD}{2005}
+{DOHERTY, N.~F.; FULFORD, H. Do information security policies reduce the
+  incidence of security breaches: An exploratory analysis.
+v.~18, n.~4, p. 21--39, 2005.
+ISSN 1040-1628.
+Dispon{\'\i}vel em: \url{https://doi.org/10.4018/irmj.2005100102}.}
+
+\bibitem[Driscoll 1996]{driscoll_robustness_1996}
+\abntrefinfo{Driscoll}{DRISCOLL}{1996}
+{DRISCOLL, W.~C. Robustness of the {ANOVA} and tukey-kramer statistical tests.
+v.~31, n.~1, p. 265--268, 1996.
+ISSN 0360-8352.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/0360835296001271}.}
+
+\bibitem[Dunlop, Indulska e Raymond 2002]{dunlop_dynamic_2002}
+\abntrefinfo{Dunlop, Indulska e Raymond}{DUNLOP; INDULSKA; RAYMOND}{2002}
+{DUNLOP, N.; INDULSKA, J.; RAYMOND, K. Dynamic conflict detection in
+  policy-based management systems. In:  \emph{Proceedings. Sixth International
+  Enterprise Distributed Object Computing}. Lausanne, Switzerland: [s.n.],
+  2002. p. 15--26. {ISSN}: null.}
+
+\bibitem[Elrakaiby, Cuppens e Cuppens-Boulahia 2012]{elrakaiby_formal_2012}
+\abntrefinfo{Elrakaiby, Cuppens e Cuppens-Boulahia}{ELRAKAIBY; CUPPENS;
+  CUPPENS-BOULAHIA}{2012}
+{ELRAKAIBY, Y.; CUPPENS, F.; CUPPENS-BOULAHIA, N. Formal enforcement and
+  management of obligation policies.
+v.~71, n.~1, p. 127--147, 2012.
+ISSN 0169-023X.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0169023X11001248}.}
+
+\bibitem[Fayyad, Piatetsky-Shapiro e Smyth 1996]{fayyad1996}
+\abntrefinfo{Fayyad, Piatetsky-Shapiro e Smyth}{FAYYAD; PIATETSKY-SHAPIRO;
+  SMYTH}{1996}
+{FAYYAD, U.; PIATETSKY-SHAPIRO, G.; SMYTH, P. From data mining to knowledge
+  discovery in databases.
+v.~17, n.~3, p. 37--37, 1996.
+ISSN 2371-9621.
+Dispon{\'\i}vel em:
+  \url{https://www.aaai.org/ojs/index.php/aimagazine/article/view/1230}.}
+
+\bibitem[Ferneda 2006]{ferneda_redes_2006}
+\abntrefinfo{Ferneda}{FERNEDA}{2006}
+{FERNEDA, E. Redes neurais e sua aplicação em sistemas de recuperação de
+  informação.
+v.~35, n.~1, 2006.
+ISSN 1518-8353.
+Dispon{\'\i}vel em: \url{http://revista.ibict.br/ciinf/article/view/1149}.}
+
+\bibitem[Ferraiolo, Atluri e Gavrila 2011]{ferraiolo_policy_2011}
+\abntrefinfo{Ferraiolo, Atluri e Gavrila}{FERRAIOLO; ATLURI; GAVRILA}{2011}
+{FERRAIOLO, D.; ATLURI, V.; GAVRILA, S. The policy machine: A novel
+  architecture and framework for access control policy specification and
+  enforcement.
+Erode, India, v.~57, n.~4, p. 412--424, 2011.
+ISSN 1383-7621.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1016/j.sysarc.2010.04.005}.}
+
+\bibitem[Ferraiolo et al. 2001]{ferraiolo_proposed_2001}
+\abntrefinfo{Ferraiolo et al.}{FERRAIOLO et al.}{2001}
+{FERRAIOLO, D.~F. et al. Proposed {NIST} standard for role-based access
+  control.
+v.~4, n.~3, p. 224--274, 2001.
+ISSN 1094-9224.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1145/501978.501980}.}
+
+\bibitem[Ferrari e Silva 2017]{ferrari2017}
+\abntrefinfo{Ferrari e Silva}{FERRARI; SILVA}{2017}
+{FERRARI, D.~G.; SILVA, L. N.~d. C. \emph{Introdu{\c{c}}{\~a}o a
+  minera{\c{c}}{\~a}o de dados}. Editora Saraiva, 2017.
+ISBN 9788547200992. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=SSlrDwAAQBAJ}.}
+
+\bibitem[Fong 2011]{fong_relationship-based_2011}
+\abntrefinfo{Fong}{FONG}{2011}
+{FONG, P.~W. Relationship-based access control: protection model and policy
+  language. In:  \emph{Proceedings of the first {ACM} conference on Data and
+  application security and privacy}. Association for Computing Machinery, 2011.
+   ({CODASPY} '11), p. 191--202.
+ISBN 978-1-4503-0466-5. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1145/1943513.1943539}.}
+
+\bibitem[Fontes 2012]{fontes_politicas}
+\abntrefinfo{Fontes}{FONTES}{2012}
+{FONTES, E. \emph{Políticas e Normas para a Segurança da Informação}. Rio
+  de Janeiro, RJ, Brasil: Brasport, 2012. 289~p.
+ISBN 978-85-7452-515-0.}
+
+\bibitem[Fugini e Bellettini 2004]{fugini_information_2004}
+\abntrefinfo{Fugini e Bellettini}{FUGINI; BELLETTINI}{2004}
+{FUGINI, M.; BELLETTINI, C. \emph{Information {Security} {Policies} and
+  {Actions} in {Modern} {Integrated} {Systems}}. Idea Group Pub., 2004.
+ISBN 978-1-59140-186-5. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=uTgd\_lruELcC}.}
+
+\bibitem[{G}\'eron 2019]{geron_maos_2020}
+\abntrefinfo{{G}\'eron}{{G}\'ERON}{2019}
+{{G}\'ERON, A. \emph{Mãos à Obra: Aprendizado de Máquina com Scikit-Learn \&
+  {TensorFlow}}. Rio de Janeiro, Brasil: Alta Books, 2019.}
+
+\bibitem[{Goldschmidt} e {Passos} 2005]{goldschmidt2005}
+\abntrefinfo{{Goldschmidt} e {Passos}}{{Goldschmidt}; {Passos}}{2005}
+{{Goldschmidt}, R.; {Passos}, E. \emph{Data mining: um guia Prático}. Rio de
+  Janeiro, RJ, Brasil: Editora Campus, 2005. Elsevier.
+ISBN 978-85-352-1877-0.}
+
+\bibitem[Grus e Nascimento 2016]{data_science_do_zero2016}
+\abntrefinfo{Grus e Nascimento}{GRUS; NASCIMENTO}{2016}
+{GRUS, J.; NASCIMENTO, W. \emph{Data Science Do Zero}. Rio de Janeiro, Brasil:
+  ALTA BOOKS, 2016.
+ISBN 9788576089988. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=EWJCvgAACAAJ}.}
+
+\bibitem[Guerrero-Higueras, {DeCastro}-Garcia e Matellan
+  2018]{guerrero-higueras_detection_2018}
+\abntrefinfo{Guerrero-Higueras, {DeCastro}-Garcia e
+  Matellan}{GUERRERO-HIGUERAS; {DeCastro}-GARCIA; MATELLAN}{2018}
+{GUERRERO-HIGUERAS, A.~M.; {DeCastro}-GARCIA, N.; MATELLAN, V. Detection of
+  cyber-attacks to indoor real time localization systems for autonomous robots.
+v.~99, p. 75--83, 2018.
+ISSN 0921-8890.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S092188901730283X}.}
+
+\bibitem[Hachana, Cuppens-Boulahia e Cuppens 2015]{hachana_mining_2015}
+\abntrefinfo{Hachana, Cuppens-Boulahia e Cuppens}{HACHANA; CUPPENS-BOULAHIA;
+  CUPPENS}{2015}
+{HACHANA, S.; CUPPENS-BOULAHIA, N.; CUPPENS, F. Mining a high level access
+  control policy in a network with multiple firewalls.
+v.~20, p. 61--73, 2015.
+ISSN 2214-2126.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S221421261400146X}.}
+
+\bibitem[Hagan, Demuth e Beale 1996]{hagan_neural_1996}
+\abntrefinfo{Hagan, Demuth e Beale}{HAGAN; DEMUTH; BEALE}{1996}
+{HAGAN, M.~T.; DEMUTH, H.~B.; BEALE, M.~H. \emph{Neural Network Design}. 1st.
+  ed. Boston, MA. USA: PWS Publishing Co., 1996. 1012~p.
+ISBN 978-0-534-94332-5.}
+
+\bibitem[Haykin 2001]{haykin_redes_2001}
+\abntrefinfo{Haykin}{HAYKIN}{2001}
+{HAYKIN, S. \emph{Redes Neurais - 2ed.} Porto Alegre, RS, Brasil: Bookman,
+  2001.
+ISBN 978-85-7307-718-6.}
+
+\bibitem[He e Antón 2009]{he_Qingfeng_2009}
+\abntrefinfo{He e Antón}{HE; ANTóN}{2009}
+{HE, Q.; ANTóN, A.~I. Requirements-based access control analysis and policy
+  specification ({ReCAPS}).
+v.~51, n.~6, p. 993--1009, 2009.
+ISSN 0950-5849.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0950584908001699}.}
+
+\bibitem[Horridge e Bechhofer 2011]{horridge_owl_2011}
+\abntrefinfo{Horridge e Bechhofer}{HORRIDGE; BECHHOFER}{2011}
+{HORRIDGE, M.; BECHHOFER, S. The {OWL} {API}: {A} {Java} {API} for {OWL}
+  ontologies.
+\emph{Semantic Web}, v.~2, n.~1, p. 11--21, jan. 2011.
+ISSN 1570-0844.}
+
+\bibitem[Hossin e M.N 2015]{hossin_review_2015}
+\abntrefinfo{Hossin e M.N}{HOSSIN; M.N}{2015}
+{HOSSIN, M.; M.N, S. A {Review} on {Evaluation} {Metrics} for {Data}
+  {Classification} {Evaluations}.
+\emph{International Journal of Data Mining \& Knowledge Management Process},
+  v.~5, p. 01--11, mar. 2015.}
+
+\bibitem[Hwang et al. 2010]{hwang_acpt_2010}
+\abntrefinfo{Hwang et al.}{HWANG et al.}{2010}
+{HWANG, J. et al. {ACPT}: A tool for modeling and verifying access control
+  policies. In:  \emph{2010 {IEEE} International Symposium on Policies for
+  Distributed Systems and Networks}. George Mason University, Fairfax,
+  Virginia, USA: [s.n.], 2010. p. 40--43.}
+
+\bibitem[Jin, Cheu e Srinivasan 2002]{jin_development_2002}
+\abntrefinfo{Jin, Cheu e Srinivasan}{JIN; CHEU; SRINIVASAN}{2002}
+{JIN, X.; CHEU, R.~L.; SRINIVASAN, D. Development and adaptation of
+  constructive probabilistic neural network in freeway incident detection.
+\emph{Transportation Research Part C: Emerging Technologies}, v.~10, n.~2, p.
+  121--147, abr. 2002.
+ISSN 0968-090X.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0968090X01000079}.}
+
+\bibitem[Kadimisetty 2018]{kadimisetty_tensorflow_2018}
+\abntrefinfo{Kadimisetty}{KADIMISETTY}{2018}
+{KADIMISETTY, A. \emph{{TensorFlow} — A hands-on approach}. Towards Data
+  Science: Disponível em:
+  https://towardsdatascience.com/tensorflow-a-hands-on-approach-8614372f021f,
+  2018.  (Acesso em 07 de julho de 2020). Library Catalog:
+  towardsdatascience.com.}
+
+\bibitem[Kalam et al. 2003]{kalam_organization_2003}
+\abntrefinfo{Kalam et al.}{KALAM et al.}{2003}
+{KALAM, A. et al. Organization based access control. In:  \emph{Proceedings
+  {POLICY} 2003. {IEEE} 4th International Workshop on Policies for Distributed
+  Systems and Networks}. Lake Como, Italy: [s.n.], 2003. p. 120--131.}
+
+\bibitem[Kalaskar e Barkade 2018]{kalaskar_fp-growth_2018}
+\abntrefinfo{Kalaskar e Barkade}{KALASKAR; BARKADE}{2018}
+{KALASKAR, A.; BARKADE, V. {FP}-growth policy mining for access control
+  policies. In:  \emph{2018 Fourth International Conference on Computing
+  Communication Control and Automation ({ICCUBEA})}. Pune, India: [s.n.], 2018.
+  p.~1--4.}
+
+\bibitem[Kamoda, Yamaoka e Matsuda 2005]{kamoda_policy_2005}
+\abntrefinfo{Kamoda, Yamaoka e Matsuda}{KAMODA; YAMAOKA; MATSUDA}{2005}
+{KAMODA, H.; YAMAOKA, M.; MATSUDA, S. Policy {Conﬂict} {Analysis} {Using}
+  {Free} {Variable} {Tableaux} for {Access} {Control} in {Web} {Services}
+  {Environments}.
+p.~8, 2005.}
+
+\bibitem[Kasturi 2019]{over_and_underfitting_2019}
+\abntrefinfo{Kasturi}{KASTURI}{2019}
+{KASTURI, S.~N. \emph{Underfitting and Overfitting in machine learning and how
+  to deal with it !!!} [S.l.]: Disponível em:
+  https://towardsdatascience.com/underfitting-and-overfitting-in-machine-learning-and-how-to-deal-with-it-6fe4a8a49dbf,
+  2019.  (Acesso em: 04 de Abril de 2020). Library Catalog:
+  towardsdatascience.com.}
+
+\bibitem[Kesavaraj e Sukumaran 2013]{classification2013}
+\abntrefinfo{Kesavaraj e Sukumaran}{KESAVARAJ; SUKUMARAN}{2013}
+{KESAVARAJ, G.; SUKUMARAN, S. A study on classification techniques in data
+  mining. In:  \emph{2013 {Fourth} {International} {Conference} on {Computing},
+  {Communications} and {Networking} {Technologies} ({ICCCNT})}. Tiruchengode,
+  India: [s.n.], 2013. p.~1--7.}
+
+\bibitem[Kingma e Ba 2017]{adam_2017}
+\abntrefinfo{Kingma e Ba}{KINGMA; BA}{2017}
+{KINGMA, D.~P.; BA, J. Adam: A method for stochastic optimization.
+2017.
+Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1412.6980}.}
+
+\bibitem[Klosterman 2020]{klosterman_projetos_2020}
+\abntrefinfo{Klosterman}{KLOSTERMAN}{2020}
+{KLOSTERMAN, S. \emph{Projetos de {Ciência} de {Dados} com {Python}:
+  {Abordagem} de estudo de caso para a criação de projetos de ciência de
+  dados bem-sucedidos usando {Python}, pandas e scikit-learn}. NOVATEC, 2020.
+ISBN 9786586057102. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=GLTfDwAAQBAJ}.}
+
+\bibitem[Kluyver et al. 2016]{jupyter-Kluyver:2016aa}
+\abntrefinfo{Kluyver et al.}{KLUYVER et al.}{2016}
+{KLUYVER, T. et al. Jupyter notebooks -- a publishing format for reproducible
+  computational workflows. In:  LOIZIDES, F.; SCHMIDT, B. (Ed.).
+  \emph{Positioning and Power in Academic Publishing: Players, Agents and
+  Agendas}. Göttingen, Germany, 2016. p. 87 -- 90.}
+
+\bibitem[Knapp et al. 2009]{knapp_information_2009}
+\abntrefinfo{Knapp et al.}{KNAPP et al.}{2009}
+{KNAPP, K.~J. et al. Information security policy: An organizational-level
+  process model.
+v.~28, n.~7, p. 493--508, 2009.
+ISSN 0167-4048.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0167404809000765}.}
+
+\bibitem[Koch, Mancini e Parisi-Presicce 2002]{koch_conflict_2002}
+\abntrefinfo{Koch, Mancini e Parisi-Presicce}{KOCH; MANCINI;
+  PARISI-PRESICCE}{2002}
+{KOCH, M.; MANCINI, L.~V.; PARISI-PRESICCE, F. Conflict {Detection} and
+  {Resolution} in {Access} {Control} {Policy} {Specifications}. In:  NIELSEN,
+  M.; ENGBERG, U. (Ed.). \emph{Foundations of {Software} {Science} and
+  {Computation} {Structures}}. Berlin, Heidelberg: Springer, 2002.  (Lecture
+  {Notes} in {Computer} {Science}), p. 223--238.
+ISBN 978-3-540-45931-6.}
+
+\bibitem[Kropiwiec 2005]{kropiwiec_policy_nodate}
+\abntrefinfo{Kropiwiec}{KROPIWIEC}{2005}
+{KROPIWIEC, D.~D. Policy viewer: Ferramenta para visualizac¸˜ao de
+  pol´ıticas de seguranc¸a em grafos.
+p.~100, 2005.}
+
+\bibitem[Kuang et al. 2020]{kuang_modality_2020}
+\abntrefinfo{Kuang et al.}{KUANG et al.}{2020}
+{KUANG, T.~P. et al. {MODALITY} {CONFLICT} {DETECTION} {MODEL} {WITH}
+  {AUTHORIZATION} {PROPAGATION} {IN} {POLICY} {EVALUATION}.
+\emph{. Vol.}, n.~17, p.~14, 2020.}
+
+\bibitem[Kumar e Jain 2020]{kumar_ensemble_2020}
+\abntrefinfo{Kumar e Jain}{KUMAR; JAIN}{2020}
+{KUMAR, A.; JAIN, M. \emph{Ensemble {Learning} for {AI} {Developers}: {Learn}
+  {Bagging}, {Stacking}, and {Boosting} {Methods} with {Use} {Cases}}. Apress,
+  2020.
+ISBN 978-1-4842-5939-9. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=1FVuzQEACAAJ}.}
+
+\bibitem[Kumar 2012]{classification_survey2012}
+\abntrefinfo{Kumar}{KUMAR}{2012}
+{KUMAR, R. Classification {Algorithms} for {Data} {Mining}: {A} {Survey}.
+\emph{International Journal of Innovations in Engineering and Technology},
+  v.~1, n.~2, p.~8, 2012.}
+
+\bibitem[Li e Tripunitara 2006]{li_security_2006}
+\abntrefinfo{Li e Tripunitara}{LI; TRIPUNITARA}{2006}
+{LI, N.; TRIPUNITARA, M.~V. Security analysis in role-based access control.
+ACM Trans. Inf. Syst. Secur. ACM, New York. v.9. p.391-420, p.~28, 2006.}
+
+\bibitem[Lima, Pinheiro e Santos 2016]{lima_ia_2016}
+\abntrefinfo{Lima, Pinheiro e Santos}{LIMA; PINHEIRO; SANTOS}{2016}
+{LIMA, I.; PINHEIRO, C.; SANTOS, F. \emph{Inteligência Artificial}. Elsevier
+  Brasil, 2016.
+ISBN 978-85-352-7809-5. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=qjJeBgAAQBAJ}.}
+
+\bibitem[Lima e Pereira 2012]{lima_fraud_2012}
+\abntrefinfo{Lima e Pereira}{LIMA; PEREIRA}{2012}
+{LIMA, R. A.~F.; PEREIRA, A. C.~M. Fraud detection in web transactions.
+{ACM} Press, p.~273, 2012.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?doid=2382636.2382695}.}
+
+\bibitem[Lopes 2012]{lopes_adopcao_2012}
+\abntrefinfo{Lopes}{LOPES}{2012}
+{LOPES, I.~M. Adopção de políticas de segurança de sistemas de informação
+  na administração pública local em portugal.
+2012.
+Accepted: 2012-09-03T09:19:35Z Publisher: Universidade do Minho.
+Dispon{\'\i}vel em: \url{https://bibliotecadigital.ipb.pt/handle/10198/7422}.}
+
+\bibitem[Luger 2015]{luger_inteligencia_2015}
+\abntrefinfo{Luger}{LUGER}{2015}
+{LUGER, G.~F. \emph{Inteligência Artificial}. Edição: 4. São Paulo. SP.
+  Brasil: ARTMED Editora S.A., 2015.}
+
+\bibitem[Lupu e Sloman 1999]{lupu_conflicts_1999}
+\abntrefinfo{Lupu e Sloman}{LUPU; SLOMAN}{1999}
+{LUPU, E.; SLOMAN, M. Conflicts in policy-based distributed systems management.
+\emph{IEEE Transactions on Software Engineering}, v.~25, n.~6, p. 852--869,
+  nov. 1999.
+ISSN 2326-3881.}
+
+\bibitem[Machado 2014]{machado2014}
+\abntrefinfo{Machado}{MACHADO}{2014}
+{MACHADO, A. \emph{Estudo da {EMC} prevê que volume de dados virtuais
+  armazenados será seis vezes maior em 2020}. 2014.
+O Globo.
+Dispon{\'\i}vel em: \url{https://glo.bo/2Eo8AGK}.}
+
+\bibitem[Marciano 2006]{marciano_segurancda_nodate}
+\abntrefinfo{Marciano}{MARCIANO}{2006}
+{MARCIANO, J. L.~P. Segurança da informação - uma abordagem social.
+p.~212, 2006.}
+
+\bibitem[Martin e {Tao Xie} 2006]{martin_inferring_2006}
+\abntrefinfo{Martin e {Tao Xie}}{MARTIN; {Tao Xie}}{2006}
+{MARTIN, E.; {Tao Xie}. Inferring access-control policy properties via machine
+  learning. In:  \emph{Seventh {IEEE} International Workshop on Policies for
+  Distributed Systems and Networks ({POLICY}'06)}. London, Ontário, Canada:
+  [s.n.], 2006. p. 4 pp.--238.}
+
+\bibitem[Mcculloch e Pitts 1943]{mcculloch_logical_1943}
+\abntrefinfo{Mcculloch e Pitts}{MCCULLOCH; PITTS}{1943}
+{MCCULLOCH, W.~S.; PITTS, W. A {LOGICAL} {CALCULUS} {OF} {THE} {IDEAS}
+  {IMMANENT} {IN} {NERVOUS} {ACTIVITY}.
+v.~52, n.~1, p.~17, 1943.}
+
+\bibitem[{M}c{K}inney 2010]{pandas-mckinney2010}
+\abntrefinfo{{M}c{K}inney}{{M}C{K}INNEY}{2010}
+{{M}C{K}INNEY {W}es. {D}ata {S}tructures for {S}tatistical {C}omputing in
+  {P}ython. In:  {W}ALT {S}t\'efan van~der; {M}ILLMAN {J}arrod (Ed.).
+  \emph{{P}roceedings of the 9th {P}ython in {S}cience {C}onference}. Austin,
+  Texas: [s.n.], 2010. p. 56 -- 61.}
+
+\bibitem[Minewiskan 2020]{minewiskan_modelos_nodate}
+\abntrefinfo{Minewiskan}{MINEWISKAN}{2020}
+{MINEWISKAN, O.~D. \emph{Modelos de mineração (Analysis Services-Mineração
+  de dados)}. Acesso em: 06 de março de 2020., 2020.  (Microsoft Academy).
+  Library Catalog: docs.microsoft.com. Dispon{\'\i}vel em:
+  \url{https://docs.microsoft.com/pt-br/analysis-services/data-mining/mining-models-analysis-services-data-mining}.}
+
+\bibitem[Minsky e Papert 1969]{minsky_perceptrons:_1969}
+\abntrefinfo{Minsky e Papert}{MINSKY; PAPERT}{1969}
+{MINSKY, M.; PAPERT, S. \emph{Perceptrons: An Introduction to Computational
+  Geometry}. {MIT} Press, 1969. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=KhI-uwEACAAJ}.}
+
+\bibitem[Moffett e Sloman 1994]{moffett_policy_1994}
+\abntrefinfo{Moffett e Sloman}{MOFFETT; SLOMAN}{1994}
+{MOFFETT, J.~D.; SLOMAN, M.~S. Policy conflict analysis in distributed system
+  management.
+v.~4, n.~1, p. 1--22, 1994.
+ISSN 1054-1721.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1080/10919399409540214}.}
+
+\bibitem[Mohan et al. 2012]{mohan_detection_2012}
+\abntrefinfo{Mohan et al.}{MOHAN et al.}{2012}
+{MOHAN, A. et al. Detection of conflicts and inconsistencies in taxonomy-based
+  authorization policies.
+v.~2011, p. 590--594, 2012.
+ISSN 2156-1125.}
+
+\bibitem[Mohri, Rostamizadeh e Talwalkar 2018]{mohri_foundations_2018}
+\abntrefinfo{Mohri, Rostamizadeh e Talwalkar}{MOHRI; ROSTAMIZADEH;
+  TALWALKAR}{2018}
+{MOHRI, M.; ROSTAMIZADEH, A.; TALWALKAR, A. \emph{Foundations of Machine
+  Learning, Second Edition}. 2ª. ed. The {MIT} Press, 2018.  (Adaptive
+  Computation and Machine Learning).
+ISBN 978-0-262-03940-6. Dispon{\'\i}vel em:
+  \url{https://mitpress.mit.edu/books/foundations-machine-learning-second-edition}.}
+
+\bibitem[Monteiro 2017]{monteiro_adocao_2017}
+\abntrefinfo{Monteiro}{MONTEIRO}{2017}
+{MONTEIRO, J.~R. Adoção de políticas de segurança de sistemas de
+  informação nas universidades moçambicanas.
+p.~66, 2017.}
+
+\bibitem[Mukkamala, Janoski e Sung 2002]{mukkamala_intrusion_2002}
+\abntrefinfo{Mukkamala, Janoski e Sung}{MUKKAMALA; JANOSKI; SUNG}{2002}
+{MUKKAMALA, S.; JANOSKI, G.; SUNG, A. Intrusion detection using neural networks
+  and support vector machines. In:  \emph{Proceedings of the 2002
+  {International} {Joint} {Conference} on {Neural} {Networks}. {IJCNN}'02
+  ({Cat}. {No}.02CH37290)}. Honolulu, HI, USA: [s.n.], 2002. v.~2, p.
+  1702--1707 vol.2. ISSN: 1098-7576.}
+
+\bibitem[Obaidat e Macchairolo 1994]{obaidat_multilayer_1994}
+\abntrefinfo{Obaidat e Macchairolo}{OBAIDAT; MACCHAIROLO}{1994}
+{OBAIDAT, M.; MACCHAIROLO, D. A multilayer neural network system for computer
+  access security.
+\emph{IEEE Transactions on Systems, Man, and Cybernetics}, v.~24, n.~5, p.
+  806--813, maio 1994.
+ISSN 2168-2909.}
+
+\bibitem[Oliphant 2006]{numpy-oliphant2006guide}
+\abntrefinfo{Oliphant}{OLIPHANT}{2006}
+{OLIPHANT, T.~E. \emph{A guide to NumPy}. North Charleston, SC, United States:
+  Trelgol Publishing USA, 2006. v.~1.}
+
+\bibitem[Paszke et al. 2019]{NEURIPS2019_9015}
+\abntrefinfo{Paszke et al.}{PASZKE et al.}{2019}
+{PASZKE, A. et al. \emph{PyTorch: An Imperative Style, High-Performance Deep
+  Learning Library}. Curran Associates, Inc., 2019. 8024--8035~p.
+  Dispon{\'\i}vel em:
+  \url{http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}.}
+
+\bibitem[Pedregosa et al. 2011]{scikit-learn}
+\abntrefinfo{Pedregosa et al.}{PEDREGOSA et al.}{2011}
+{PEDREGOSA, F. et al. Scikit-learn: Machine learning in {P}ython.
+\emph{Journal of Machine Learning Research}, v.~12, p. 2825--2830, 2011.}
+
+\bibitem[Qi, Di e Li 2018]{qi_di_li_formal_2018}
+\abntrefinfo{Qi, Di e Li}{QI; DI; LI}{2018}
+{QI, H.; DI, X.; LI, J. Formal definition and analysis of access control model
+  based on role and attribute.
+v.~43, p. 53--60, 2018.
+ISSN 2214-2126.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S221421261730368X}.}
+
+\bibitem[Razali e Yap 2011]{mohd_razali_power_2011}
+\abntrefinfo{Razali e Yap}{RAZALI; YAP}{2011}
+{RAZALI, N. M.; YAP, B. Power comparisons of shapiro-wilk, kolmogorov-smirnov,
+  lilliefors and anderson-darling tests.
+v.~2, 2011.}
+
+\bibitem[Reed e MarksII 1999]{nn_smithing_1999}
+\abntrefinfo{Reed e MarksII}{REED; MARKSII}{1999}
+{REED, R.; MARKSII, R.~J. \emph{Neural Smithing: Supervised Learning in
+  Feedforward Artificial Neural Networks}. MIT Press, 1999. Library Catalog:
+  mitpress.mit.edu Publisher: The {MIT} Press. Dispon{\'\i}vel em:
+  \url{https://mitpress.mit.edu/books/neural-smithing}.}
+
+\bibitem[Rocha et al. 2012]{Rocha2012}
+\abntrefinfo{Rocha et al.}{ROCHA et al.}{2012}
+{ROCHA, T. et al. \emph{Tutorial sobre Fuzzy-c-Means e Fuzzy Learning Vector
+  Quantization: abordagens híbridas para tarefas de agrupamento e
+  classificação}. Institute of Informatics at Federal University of Rio
+  Grande do Sul - UFRGS, Brazil: Revista de Informática Teórica e Aplicada,
+  2012.}
+
+\bibitem[Rosenblatt 1958]{rosenblatt_perceptron:_1958}
+\abntrefinfo{Rosenblatt}{ROSENBLATT}{1958}
+{ROSENBLATT, F. The perceptron: A probabilistic model for information storage
+  and organization in the brain.
+v.~65, n.~6, p. 386--408, 1958.
+ISSN 1939-1471(Electronic),0033-295X(Print).}
+
+\bibitem[Rossum e Drake 2009]{python}
+\abntrefinfo{Rossum e Drake}{ROSSUM; DRAKE}{2009}
+{ROSSUM, G. V.; DRAKE, F.~L. \emph{Python 3 Reference Manual}. Scotts Valley,
+  CA: CreateSpace, 2009.
+ISBN 1441412697.}
+
+\bibitem[Russell e Norvig 2013]{Norvig2013}
+\abntrefinfo{Russell e Norvig}{RUSSELL; NORVIG}{2013}
+{RUSSELL, S.; NORVIG, P. \emph{Inteligêngia Artificial - Tradu{\c{c}}{\~a}o
+  da3{\textordfeminine} Edi{\c{c}}{\~a}o}. Rio de Janeiro, Brasil: Elsevier,
+  2013.
+ISBN 9788535237016.}
+
+\bibitem[Ruuska et al. 2018]{ruuska_evaluation_2018}
+\abntrefinfo{Ruuska et al.}{RUUSKA et al.}{2018}
+{RUUSKA, S. et al. Evaluation of the confusion matrix method in the validation
+  of an automated system for measuring feeding behaviour of cattle.
+v.~148, p. 56--62, 2018.
+ISSN 0376-6357.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0376635717301146}.}
+
+\bibitem[Samarati e Vimercati 2001]{samarati_access_2001}
+\abntrefinfo{Samarati e Vimercati}{SAMARATI; VIMERCATI}{2001}
+{SAMARATI, P.; VIMERCATI, S.~C. de. Access {Control}: {Policies}, {Models}, and
+  {Mechanisms}. In:  FOCARDI, R.; GORRIERI, R. (Ed.). \emph{Foundations of
+  {Security} {Analysis} and {Design}}. Berlin, Heidelberg: Springer, 2001.
+  (Lecture {Notes} in {Computer} {Science}), p. 137--196.
+ISBN 978-3-540-45608-7.}
+
+\bibitem[Sandhu e Samarati 1994]{sandhu_access_1994}
+\abntrefinfo{Sandhu e Samarati}{SANDHU; SAMARATI}{1994}
+{SANDHU, R.; SAMARATI, P. Access control: principle and practice.
+\emph{IEEE Communications Magazine}, v.~32, n.~9, p. 40--48, set. 1994.
+ISSN 1558-1896.
+Conference Name: IEEE Communications Magazine.}
+
+\bibitem[Sandhu e Samarati 1996]{sandhu:1996}
+\abntrefinfo{Sandhu e Samarati}{SANDHU; SAMARATI}{1996}
+{SANDHU, R.; SAMARATI, P. Authentication, access control, and audit.
+\emph{ACM Comput. Surv.}, ACM, New York, NY, USA, v.~28, n.~1, p. 241--243, mar
+  1996.
+ISSN 0360-0300.}
+
+\bibitem[Santos 2007]{santos_segurancnos_2007}
+\abntrefinfo{Santos}{SANTOS}{2007}
+{SANTOS, A. M. R. C.~d. Segurança nos sistemas de informação hospitalares :
+  políticas, práticas e avaliação.
+2007.
+Accepted: 2007-12-18T21:06:45Z.
+Dispon{\'\i}vel em: \url{http://repositorium.sdum.uminho.pt/}.}
+
+\bibitem[Santos 2013]{santos_um_2013}
+\abntrefinfo{Santos}{SANTOS}{2013}
+{SANTOS, F. J.~d.
+\emph{Um Modelo Preditivo de Classificação de Operações de Crédito}.
+phdthesis --- Instituto Federal de Educação do Ceará - {IFCE}, 2013.}
+
+\bibitem[Santos 2020]{collab_2020}
+\abntrefinfo{Santos}{SANTOS}{2020}
+{SANTOS, T. G.~S. \emph{Google Colab: o que é e como usar? {\textbar} Alura
+  Cursos Online}. Artigos Alura: Acesso em 07 de junho de 2020, 2020.
+  (Disponível em:
+  https://www.alura.com.br/artigos/google-colab-o-que-e-e-como-usar). Library
+  Catalog: www.alura.com.br.}
+
+\bibitem[Sarkar, Bali e Sharma 2017]{sarkar_2017}
+\abntrefinfo{Sarkar, Bali e Sharma}{SARKAR; BALI; SHARMA}{2017}
+{SARKAR, D.; BALI, R.; SHARMA, T. \emph{Practical Machine Learning with Python:
+  A Problem-Solver's Guide to Building Real-World Intelligent Systems}. New
+  York. NY, USA: Apress, 2017.
+ISBN 978-1-4842-3207-1.}
+
+\bibitem[Sarkis 2017]{sarkis2017}
+\abntrefinfo{Sarkis}{SARKIS}{2017}
+{SARKIS, L.~C.
+\emph{Uma abordagem para detecção de conflitos indiretos entre políticas de
+  controle de acesso}.
+Tese de Doutorado --- Universidade Federal Fluminense, 2017.}
+
+\bibitem[Sarkis, Silva e Braga 2016]{sarkis:artigo:2016}
+\abntrefinfo{Sarkis, Silva e Braga}{SARKIS; SILVA; BRAGA}{2016}
+{SARKIS, L.~C.; SILVA, V.~T. da; BRAGA, C. Detecting indirect conflicts between
+  access control policies. In:  \emph{Proceedings of the 31st Annual ACM
+  Symposium on Applied Computing}. New York, NY, USA: ACM, 2016.  (SAC '16), p.
+  1570--1572.
+ISBN 978-1-4503-3739-7. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/2851613.2851979}.}
+
+\bibitem[Shazmeen, Mustafa e Baig 2013]{performance_classification2013}
+\abntrefinfo{Shazmeen, Mustafa e Baig}{SHAZMEEN; MUSTAFA; BAIG}{2013}
+{SHAZMEEN, S.~F.; MUSTAFA, M.~A.; BAIG, A. Performance {Evaluation} of
+  {Different} {Data} {Mining} {Classification} {Algorithm} and {Predictive}
+  {Analysis}.
+2013.}
+
+\bibitem[Shen e Shafiq 2019]{shen_learning_2019}
+\abntrefinfo{Shen e Shafiq}{SHEN; SHAFIQ}{2019}
+{SHEN, J.; SHAFIQ, M.~O. Learning {Mobile} {Application} {Usage} - {A} {Deep}
+  {Learning} {Approach}. In:  \emph{2019 18th {IEEE} {International}
+  {Conference} {On} {Machine} {Learning} {And} {Applications} ({ICMLA})}. Boca
+  Raton, FL, USA: [s.n.], 2019. p. 287--292.}
+
+\bibitem[Shoham e Tennenholtz 1995]{shoham_tennenholtz_1995}
+\abntrefinfo{Shoham e Tennenholtz}{SHOHAM; TENNENHOLTZ}{1995}
+{SHOHAM, Y.; TENNENHOLTZ, M. On social laws for artificial agent societies:
+  off-line design.
+v.~73, n.~1, p. 231--252, 1995.
+ISSN 00043702.
+Dispon{\'\i}vel em:
+  \url{https://linkinghub.elsevier.com/retrieve/pii/000437029400007N}.}
+
+\bibitem[Shu, Yang e Arenas 2009]{shu_detecting_2009}
+\abntrefinfo{Shu, Yang e Arenas}{SHU; YANG; ARENAS}{2009}
+{SHU, C.; YANG, E.~Y.; ARENAS, A.~E. Detecting conflicts in {ABAC} policies
+  with rule-reduction and binary-search techniques. In:  \emph{2009 {IEEE}
+  International Symposium on Policies for Distributed Systems and Networks}.
+  [S.l.: s.n.], 2009. p. 182--185.}
+
+\bibitem[Silva 2018]{silva_uma_2018}
+\abntrefinfo{Silva}{SILVA}{2018}
+{SILVA, B. M.~d.
+\emph{Uma Proposta de Controle de Acesso como Serviço para Federação de
+  Identidades}.
+Monografia (Bacharelado em Engenharia de Software) --- {Bacharelado em
+  Engenharia de Software}, 2018.}
+
+\bibitem[Silva 2016]{silva_redes_2016}
+\abntrefinfo{Silva}{SILVA}{2016}
+{SILVA, I. N.~d. \emph{Redes Neurais Artificiais Para Engenharia e Ciências
+  Aplicadas. Fundamentos Teóricos e Aspectos Práticos}. Edição: 2ª. São
+  Paulo, SP - Brasil: Artliber Editora, 2016.
+ISBN 978-85-88098-87-9.}
+
+\bibitem[Silva, Peres e Boscarioli 2017]{Boscarioli2017}
+\abntrefinfo{Silva, Peres e Boscarioli}{SILVA; PERES; BOSCARIOLI}{2017}
+{SILVA, L. A.~d.; PERES, S.~M.; BOSCARIOLI, C. \emph{Introdu{\c{c}}{\~a}o {\`a}
+  Minera{\c{c}}{\~a}o de Dados: Com Aplica{\c{c}}{\~o}es em R}. Elsevier
+  Brasil, 2017.
+ISBN 9788535284478. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=5LA4DwAAQBAJ}.}
+
+\bibitem[Silva 2019]{silva_restaurante_2019}
+\abntrefinfo{Silva}{SILVA}{2019}
+{SILVA, L. C.~e.
+\emph{Aprendizado de máquina com treinamento continuado aplicado à previsão
+  de demanda de curto prazo: o caso do restaurante universitário da
+  Universidade Federal de Uberlandia}.
+Mestrado em Engenharia Elétrica --- Universidade Federal de Uberlandia, 2019.}
+
+\bibitem[Silvestre 2017]{eduardo2017}
+\abntrefinfo{Silvestre}{SILVESTRE}{2017}
+{SILVESTRE, E.~A.
+\emph{Verificação de conflitos entre múltiplas normas em sistemas
+  multiagentes}.
+Tese de Doutorado --- UFF - Universidade Federal Fluminense, 2017.}
+
+\bibitem[Simon 2013]{simon_too_2013}
+\abntrefinfo{Simon}{SIMON}{2013}
+{SIMON, P. \emph{Too Big to Ignore: The Business Case for Big Data}. Hoboken,
+  New Jersey, USA: Wiley, 2013. 1256~p.  (Wiley and {SAS} Business Series).
+ISBN 978-1-118-64186-6.}
+
+\bibitem[Sloman e Lupu 2002]{sloman_security_2002}
+\abntrefinfo{Sloman e Lupu}{SLOMAN; LUPU}{2002}
+{SLOMAN, M.; LUPU, E. Security and management policy specification.
+v.~16, n.~2, p. 10--19, 2002.
+ISSN 08908044.
+Dispon{\'\i}vel em: \url{http://ieeexplore.ieee.org/document/993218/}.}
+
+\bibitem[Soman, LOGANATHAN e AJAY 2009]{soman_machine_2009}
+\abntrefinfo{Soman, LOGANATHAN e AJAY}{SOMAN; LOGANATHAN; AJAY}{2009}
+{SOMAN, K.; LOGANATHAN, R.; AJAY, V. \emph{Machine {Learning} with {SVM} and
+  {Other} {Kernel} {Methods}}. India: Prentice-Hall of India Pvt.Ltd, 2009.
+ISBN 978-81-203-3435-9.}
+
+\bibitem[Sun et al. 2011]{sun_privacy_2011}
+\abntrefinfo{Sun et al.}{SUN et al.}{2011}
+{SUN, L. et al. \emph{Privacy Preserving Access Control Policy and Algorithms
+  for Conflicting Problems}. {IEEE} Computer Society, 2011. {ISSN}: 2324-898X
+  Pages: 250-257.
+ISBN 978-1-4577-2135-9. Dispon{\'\i}vel em:
+  \url{https://www.computer.org/csdl/proceedings-article/trustcom/2011/06120826/12OmNscOUhm}.}
+
+\bibitem[Swamynathan 2019]{swamynathan_mastering_2019}
+\abntrefinfo{Swamynathan}{SWAMYNATHAN}{2019}
+{SWAMYNATHAN, M. \emph{Mastering Machine Learning with Python in Six Steps: A
+  Practical Implementation Guide to Predictive Data Analytics Using Python}.
+  2ª. ed. Apress, 2019.
+ISBN 978-1-4842-4947-5. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=dEqzDwAAQBAJ}.}
+
+\bibitem[Thenmozhi, Kalaivani e Aravindan 2018]{thenmozhi_multi-lingual_2018}
+\abntrefinfo{Thenmozhi, Kalaivani e Aravindan}{THENMOZHI; KALAIVANI;
+  ARAVINDAN}{2018}
+{THENMOZHI, D.; KALAIVANI, A.; ARAVINDAN, C. Multi-lingual author proﬁling on
+  {SMS} messages using machine learning approach with statistical feature
+  selection.
+p.~9, 2018.
+Dispon{\'\i}vel em:
+  \url{https://pdfs.semanticscholar.org/5d3e/7741c33bc7613fd4d5a7711d7f33830dc28f.pdf}.}
+
+\bibitem[Travassos e Gurov 2002]{travassos_introducao_2002}
+\abntrefinfo{Travassos e Gurov}{TRAVASSOS; GUROV}{2002}
+{TRAVASSOS, G.~H.; GUROV, D. Introdução à engenharia de software
+  experimental.
+Programa de Engenharia de Sistemas de Computação - COPPE/RJ, Rio de
+  Janeiro/Brasil, p.~52, 2002.}
+
+\bibitem[Tukey 1970]{tukey_exploratory_1970}
+\abntrefinfo{Tukey}{TUKEY}{1970}
+{TUKEY, J. \emph{Exploratory {Data} {Analysis}}. Addison Wesley Publishing
+  Company, 1970.  (Exploratory {Data} {Analysis}).
+ISBN 978-0-608-08225-7. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=AzOYwgEACAAJ}.}
+
+\bibitem[Ueda 2012]{ueda_tese_2012}
+\abntrefinfo{Ueda}{UEDA}{2012}
+{UEDA, E.~T.
+\emph{Análise de políticas de controle de acesso baseado em papéis com rede
+  de Petri colorida}.
+Doutorado em Sistemas Digitais --- USP - Universidade de São Paulo, 2012.
+Dispon{\'\i}vel em:
+  \url{http://www.teses.usp.br/teses/disponiveis/3/3141/tde-08032013-120904/}.}
+
+\bibitem[Vasconcelos e Carvalho 2018]{vasconcelos_aplicacao_2018}
+\abntrefinfo{Vasconcelos e Carvalho}{VASCONCELOS; CARVALHO}{2018}
+{VASCONCELOS, L. M. R.~d.; CARVALHO, C. L.~d. Aplicação de regras de
+  associação para mineração de dados na web.
+v.~1, n.~1, 2018.
+Number: 1.
+Dispon{\'\i}vel em:
+  \url{https://telematicafractal.com.br/revista/index.php/telfract/article/view/8}.}
+
+\bibitem[Vijayalakshmi e Jayalakshmi 2020]{vijayalakshmi_priority-based_2020}
+\abntrefinfo{Vijayalakshmi e Jayalakshmi}{VIJAYALAKSHMI; JAYALAKSHMI}{2020}
+{VIJAYALAKSHMI, K.; JAYALAKSHMI, V. A priority-based approach for detection of
+  anomalies in {ABAC} policies using clustering technique. In:  \emph{2020
+  Fourth International Conference on Computing Methodologies and Communication
+  ({ICCMC})}. [S.l.: s.n.], 2020. p. 897--903.}
+
+\bibitem[Vimercati, Samarati e Jajodia 2005]{di_vimercati_policies_2005}
+\abntrefinfo{Vimercati, Samarati e Jajodia}{VIMERCATI; SAMARATI; JAJODIA}{2005}
+{VIMERCATI, S. De~Capitani~di; SAMARATI, P.; JAJODIA, S. Policies, models, and
+  languages for access control. In:  BHALLA, S. (Ed.). \emph{Databases in
+  Networked Information Systems}. Aizu-Wakamatsu, Japan: Springer, 2005.
+  (Lecture Notes in Computer Science), p. 225--237.
+ISBN 978-3-540-31970-2.}
+
+\bibitem[Wang et al. 2010]{wang_conflicts_2010}
+\abntrefinfo{Wang et al.}{WANG et al.}{2010}
+{WANG, Y. et al. Conflicts analysis and resolution for access control policies.
+  In:  \emph{2010 {IEEE} International Conference on Information Theory and
+  Information Security}. Beijing, China: [s.n.], 2010. p. 264--267. {ISSN}:
+  null.}
+
+\bibitem[Wazlawick 2009]{wazlawick2009}
+\abntrefinfo{Wazlawick}{WAZLAWICK}{2009}
+{WAZLAWICK, R.~S. \emph{Metodologia de Pesquisa em Ciência da Computação}.
+  1a edição. ed. Rio de Janeiro, RJ, Brasil: Elsevier, 2009. ISBN
+  978-85-35235-22-7.}
+
+\bibitem[Wiederhold e {McCarthy} 1992]{wiederhold_arthur_1992}
+\abntrefinfo{Wiederhold e {McCarthy}}{WIEDERHOLD; {McCarthy}}{1992}
+{WIEDERHOLD, G.; {McCarthy}, J. Arthur samuel: Pioneer in machine learning.
+v.~36, n.~3, p. 329--331, 1992.
+ISSN 0018-8646.}
+
+\bibitem[Witten et al. 2016]{eibe2016}
+\abntrefinfo{Witten et al.}{WITTEN et al.}{2016}
+{WITTEN, I. et al. \emph{Data Mining: Practical Machine Learning Tools and
+  Techniques}. Elsevier Science, 2016.  (The Morgan Kaufmann Series in Data
+  Management Systems).
+ISBN 978-0-12-804357-8. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=1SylCgAAQBAJ}.}
+
+\bibitem[Wohlin et al. 2000]{wohlin_experimentation_2000}
+\abntrefinfo{Wohlin et al.}{WOHLIN et al.}{2000}
+{WOHLIN, C. et al. \emph{Experimentation in Software Engineering: An
+  Introduction}. Springer {US}, 2000.  (International Series in Software
+  Engineering).
+ISBN 978-1-4613-7091-8. Dispon{\'\i}vel em:
+  \url{https://www.springer.com/gp/book/9781461370918}.}
+
+\bibitem[Wolpert 1996]{Wolpert:1996}
+\abntrefinfo{Wolpert}{WOLPERT}{1996}
+{WOLPERT, D.~H. The lack of a priori distinctions between learning algorithms.
+\emph{Neural Comput.}, MIT Press, Cambridge, MA, USA, v.~8, n.~7, p.
+  1341--1390, oct 1996.
+ISSN 0899-7667.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1162/neco.1996.8.7.1341}.}
+
+\bibitem[Wolpert e Macready 1995]{WolpertMacready}
+\abntrefinfo{Wolpert e Macready}{WOLPERT; MACREADY}{1995}
+{WOLPERT, D.~H.; MACREADY, W.~G.
+Working Papers. \emph{No Free Lunch Theorems for Search}. Santa Fe Institute,
+  1995. Dispon{\'\i}vel em:
+  \url{https://EconPapers.repec.org/RePEc:wop:safiwp:95-02-010}.}
+
+\bibitem[Wu et al. 2007]{wu2007}
+\abntrefinfo{Wu et al.}{WU et al.}{2007}
+{WU, X. et al. Top 10 algorithms in data mining.
+\emph{Knowl. Inf. Syst.}, Springer-Verlag New York, Inc., New York, NY, USA,
+  v.~14, n.~1, p. 1--37, dec 2007.
+ISSN 0219-1377.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10115-007-0114-2}.}
+
+\bibitem[Xu e Stoller 2013]{xu_mining_2013}
+\abntrefinfo{Xu e Stoller}{XU; STOLLER}{2013}
+{XU, Z.; STOLLER, S.~D. Mining attribute-based access control policies from
+  {RBAC} policies. In:  \emph{2013 10th International Conference and Expo on
+  Emerging Technologies for a Smarter World ({CEWIT})}. Melville, NY, EUA:
+  [s.n.], 2013. p.~1--6.}
+
+\bibitem[Xu e Stoller 2014]{xu_mining_2014}
+\abntrefinfo{Xu e Stoller}{XU; STOLLER}{2014}
+{XU, Z.; STOLLER, S.~D. Mining attribute-based access control policies.
+Melville, NY, EUA, 2014.
+Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1306.2401}.}
+
+\bibitem[Yahiaoui, Zinedine e Harti 2018]{yahiaoui_deconflicting_2018}
+\abntrefinfo{Yahiaoui, Zinedine e Harti}{YAHIAOUI; ZINEDINE; HARTI}{2018}
+{YAHIAOUI, M.; ZINEDINE, A.; HARTI, M. Deconflicting policies in
+  attribute-based access control systems. In:  \emph{2018 {IEEE} 5th
+  International Congress on Information Science and Technology ({CiSt})}.
+  Marrakech, Morocco: [s.n.], 2018. p. 130--136. {ISSN}: 2327-1884.}
+
+\bibitem[Yandell 1997]{yandell_practical_1997}
+\abntrefinfo{Yandell}{YANDELL}{1997}
+{YANDELL, B. \emph{Practical {Data} {Analysis} for {Designed} {Experiments}}.
+  London. GB: Taylor \& Francis, 1997.  (Chapman \& {Hall}/{CRC} {Texts} in
+  {Statistical} {Science}).
+ISBN 978-0-412-06341-1.}
+
+\bibitem[Yeung, Botvinick e Cohen 2004]{yeung_neural_2004}
+\abntrefinfo{Yeung, Botvinick e Cohen}{YEUNG; BOTVINICK; COHEN}{2004}
+{YEUNG, N.; BOTVINICK, M.~M.; COHEN, J.~D. The neural basis of error detection:
+  conflict monitoring and the error-related negativity.
+\emph{Psychological Review}, v.~111, n.~4, p. 931--959, out. 2004.
+ISSN 0033-295X.}
+
+\bibitem[Zheng e Xiao 2019]{zheng_research_2019}
+\abntrefinfo{Zheng e Xiao}{ZHENG; XIAO}{2019}
+{ZHENG, G.; XIAO, Y. A research on conflicts detection in {ABAC} policy. In:
+  \emph{2019 {IEEE} 7th International Conference on Computer Science and
+  Network Technology ({ICCSNT})}. Dalian, China: [s.n.], 2019. p. 408--412.}
+
+\end{thebibliography}

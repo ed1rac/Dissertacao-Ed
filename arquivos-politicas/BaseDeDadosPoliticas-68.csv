@@ -1,0 +1,67 @@
+Acesso,Organizacao,Sujeito,Acao,Objeto,Conflito
+ Permitted,Hospital_Florence_Nightingale,Médico,Abertura, Documentos,0
+ Forbidden,Hospital_Florence_Nightingale, Dra. Daenerys_Targaryen,Abertura, Documentos,0
+ Permitted,Hospital_Florence_Nightingale, Arwen_Undomiel, Solicitar, Produtos,0
+ Forbidden,Hospital_Florence_Nightingale, Funcionário, Solicitar, Produtos,0
+ Permitted,Hospital_Florence_Nightingale, Arwen_Undomiel,Acessar,Almoxarifado,0
+ Forbidden,Hospital_Florence_Nightingale, Jaime_Lannister,Acessar,Almoxarifado,0
+ Permitted,Hospital_Florence_Nightingale, Enfermeiros, Solicitar, Materiais,0
+ Forbidden,Hospital_Florence_Nightingale, Funcionário, Solicitar, Materiais,0
+ Permitted,Hospital_Florence_Nightingale, Secretário, Gerar, Planilhas_de_Calculo,0
+ Permitted,Hospital_Florence_Nightingale, Secretário, Calcular, Imposto,1
+ Forbidden,Hospital_Florence_Nightingale, Secretário, Calcular, Imposto,1
+ Permitted,Hospital_Florence_Nightingale, Ada_Lovelace,Acessar, Sistema_Hospitalar,0
+ Permitted,Hospital_Florence_Nightingale, Ada_Lovelace, Registrar,Paciente,0
+ Permitted,Hospital_Florence_Nightingale, Carl_Sagan, Solicitacao, Central_de_Copias,0
+ Permitted,Hospital_Florence_Nightingale, Carl_Sagan, Analise, Central_de_Copias_Analise,0
+ Permitted,Ortopedia, Carl_Sagan, Solicitacao, Central_de_Copias,0
+ Permitted,Enfermaria, Carl_Sagan, Analise, Central_de_Copias,0
+ Permitted,Hospital_Florence_Nightingale, Grupo_Almoxarifado, Requisitar, Material,0
+ Forbidden,Hospital_Florence_Nightingale, Grupo_Almoxarifado, Criar, Guia_de_Requisicao_Medicamento,0
+ Forbidden,Hospital_Florence_Nightingale, Grupo_Almoxarifado, Inserir, Guia_de_Requisicao_Medicamento,0
+ Permitted,Hospital_Florence_Nightingale, Usuario_Qualquer, Cadastrar, PedidoMedicamento,1
+ Forbidden,Hospital_Florence_Nightingale, Usuario_Qualquer, Incluir, PedidoMedicamento,1
+ Forbidden,Hospital_Florence_Nightingale, Usuario_Qualquer, Alterar, PedidoMedicamento,1
+ Forbidden,Hospital_Florence_Nightingale, Usuario_Qualquer, Cadastrar, PedidoMedicamento,1
+ Permitted,Hospital_Florence_Nightingale, Usuario_Qualquer, Incluir, PedidoMedicamento,1
+ Permitted,Hospital_Florence_Nightingale, Usuario_Qualquer, Alterar, PedidoMedicamento,1
+ Permitted,Hospital_Florence_Nightingale, Ada_Lovelace, Solicitar, RegistraPaciente,0
+ Permitted,Hospital_Florence_Nightingale, Ada_Lovelace, Efetivar, RegistraPaciente,0
+ Permitted,Hospital_Florence_Nightingale, Italo_Calvino, LancarRegistroPaciente, HistoricoPaciente,1
+ Permitted,Hospital_Florence_Nightingale, Italo_Calvino, VoltarLancamento, HistoricoPaciente,0
+ Forbidden,Hospital_Florence_Nightingale, Italo_Calvino, LancarRegistroPaciente, HistoricoPaciente,1
+ Permitted,Hospital_Florence_Nightingale, Italo_Calvino, VoltarLancamento, HistoricoPaciente,0
+ Permitted,Hospital_Florence_Nightingale, Secretario_de_Unidade_Administrativa, SolicitacaoAbertura, Documentos,0
+ Forbidden,Hospital_Florence_Nightingale, Secretario_de_Unidade_Administrativa, Cancelamento, Documentos,0
+ Forbidden, Hospital_Florence_Nightingale, Arwen_Undomiel, Acessar, Processo,1
+ Obliged, Hospital_Florence_Nightingale, Arwen_Undomiel, Acessar, Processo,1
+ Forbidden, Hospital_Florence_Nightingale, PROTOCOLIZADOR3, Acessar, Processo,1
+ Obliged, Hospital_Florence_Nightingale, PROTOCOLIZADOR3, Acessar, Processo,1
+ Obliged, Hospital_Florence_Nightingale, PROTOCOLIZADOR1, Acessar, Processo,1
+ Forbidden, Hospital_Florence_Nightingale, PROTOCOLIZADOR1, Acessar, Processo,1
+ Permitted, Unidade_Administrativa, Arwen_Undomiel, Record, ProcessoCompra,1
+ Forbidden, Unidade_Administrativa, Arwen_Undomiel, Record, ProcessoCompra,1
+ Forbidden, Unidade_Administrativa, Arwen_Undomiel, Create, ProcessoCompra,1
+ Permitted, Unidade_Administrativa, Arwen_Undomiel, Create, ProcessoCompra,1
+ Forbidden, Unidade_Administrativa, Arwen_Undomiel, Gerar, Processo,0
+ Obliged, Unidade_Administrativa, Arwen_Undomiel, Open, Processo,0
+ Permitted, Unidade_Administrativa, Enfermeiros, Close, DespacharDocumentos,0
+ Permitted, Unidade_Administrativa, Enfermeiros, Create, DespacharDocumentos,0
+ Permitted, Unidade_Administrativa, Enfermeiros, Record, DespacharDocumentos,0
+ Permitted, Unidade_Administrativa, Enfermeiros, Close, Despachar,0
+ Permitted, Unidade_Administrativa, Enfermeiros, Create, Despachar,0
+ Permitted, Unidade_Administrativa, Enfermeiros, Record, Despachar,0
+ Permitted,Enfermaria, Elrond, Analise, Central_de_Copias,0
+ Permitted,Radiologia, Tyrion_Lannister, Requisitar, Material,0
+ Forbidden,Radiologia, Tyrion_Lannister, Criar, Guia_de_Requisicao_Medicamento,0
+ Forbidden,Radiologia, Tyrion_Lannister, Inserir, Guia_de_Requisicao_Medicamento,0
+ Forbidden, Hospital_Florence_Nightingale, Eddard_Stark, Gerar, Processo,0
+ Obliged, Hospital_Florence_Nightingale, Eddard_Stark, Open, Processo,0
+ Permitted,Unidade_Administrativa, Neurologista, Solicitacao, Central_de_Copias,0
+ Permitted,Unidade_Administrativa, Neurologista, Analise, Central_de_Copias_Analise,0
+ Permitted,Ortopedia, Neurologista, Solicitacao, Central_de_Copias,0
+ Permitted,Enfermaria, Neurologista, Analise, Central_de_Copias,0
+ Permitted,Hospital_Florence_Nightingale, Neurologista, Requisitar, Material,0
+ Permitted,Hospital_Florence_Nightingale, Coordenador, Requisitar, Material,0
+ Permitted,Hospital_Florence_Nightingale, Coordenador, Solicitacao, Central_de_Copias,0
+ Permitted,Ortopedia, Coordenador, Solicitacao, Central_de_Copias,0

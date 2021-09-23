@@ -2,18 +2,20 @@
 
 ---
 
+## Descrição do projeto:
+
 Arquivos-fonte da dissertação de mestrado do prof. Edkallenn Lima.
 
-O título da dissertação é: "Aplicação de Mineração de dados e Aprendizagem de Máquina na detecção de conflitos entre políticas".
+O título da dissertação é: ***"Aplicação de Mineração de dados e Aprendizagem de Máquina na detecção de conflitos entre políticas de controle de acesso"***.
 
 A orientação é da Dra. Laura Costa Sarkis. Ela faz parte (e é ex-coordenadora) do Programa de Pós-Graduação em Ciência da Computação -- PPgCC da UFAC (Universidade Federal do Acre).
 
 ---
 ## Organização dos arquivos
 
-Os arquivos estao organizados da seguinte forma:
+Os arquivos estão organizados da seguinte forma:
 
-* [Dissertação](https://github.com/ed1rac/Dissertacao-Ed/blob/master/old/dissertacao-ed.pdf) ---> Texto final da dissertação. Versão em PDF.
+* [Dissertação](https://github.com/ed1rac/Dissertacao-Ed/blob/master/old/dissertacao-ed-revisada.pdf) ---> Texto final da dissertação. Versão em PDF.
 * [old](https://github.com/ed1rac/Dissertacao-Ed/tree/master/old) --> Versão atual. Apesar do nome é a versão atual. Compila normalmente.
 * [arquivos-politicas](https://github.com/ed1rac/Dissertacao-Ed/tree/master/arquivos-politicas) --> Arquivos com as políticas (os datasets) utilizados no trabalho.
 * [Programas](https://github.com/ed1rac/Dissertacao-Ed/tree/master/Programas) --> Os programas, notebooks e outros scripts desenvolvidos e utilizados na dissertação.
@@ -21,10 +23,10 @@ Os arquivos estao organizados da seguinte forma:
 * [bibliografias-temp](https://github.com/ed1rac/Dissertacao-Ed/tree/master/bibliografias-temp) --> Arquivos .bib temporários
 
 ---
-### Softwares utilizados
+## Softwares utilizados
 Para produzir o texto e conduzir os experimentos os seguintes softwares/serviços foram utilizados:
-* TexStudio
-* Python com as bibliotecas:
+* **TexStudio** (Para mim, de longe, o melhor editor/IDE em $\LaTeX$ )
+* **Python** com as bibliotecas:
   * Pandas
   * scikit-learn
   * numPy
@@ -36,13 +38,12 @@ Para produzir o texto e conduzir os experimentos os seguintes softwares/serviço
   * sklearn
   * graphviz
   * Pytorch
-  * 
-* Google Collab
-* Spyder
-* Anaconda
-* Jupyter
-* VSCode
-* GIMP
+* **Google Collab**
+* **Spyder** (Juro que antes de executar um comando no Collab ou no Jupyter eu testo antes no Spyder!)
+* **Anaconda**
+* **Jupyter**
+* **VSCode**
+* **GIMP** (para edição das centenas de imagens)
 
 ## Versionamento
 Eu uso o Git para fazer o vesionamento. Para outras versões, [clique aqui](https://github.com/ed1rac/Dissertacao-Ed/commits/master)
@@ -65,10 +66,12 @@ Eu uso o Git para fazer o vesionamento. Para outras versões, [clique aqui](http
 Este projeto está licenciado sob a Licença MIT
 
 ## Pré-requisitos
-> Não há pré-requisitos
+> - No geral, Não há pré-requisitos
+> - Caso queira compilar, conhecimentos de $\LaTeX$ são bem-vindos.
+> - Os demais códigos são ou documentados no próprio arquivo-fonte ou na dissertação
 
 ## Agradecimentos
-* A minha orientadora, querida, professora Laura
+* A minha orientadora querida, professora Laura, pela paciência principalmente, mas por ter sido compreensiva no pior momento de toda minha vida (a perda de uma pessoa importante)
 * Aos amigos do mestrado
 * à minha esposa e filha, as duas mulheres da minha vida
 * à Deus

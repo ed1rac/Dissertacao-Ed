@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: dissertacao-ed-revisada.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+A level-1 auxiliary file: cap3.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-alf.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'field_info' (item size: 4) to 14729 items.
+Database file #1: abntex2-options.bib
+Database file #2: bibliografia.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 141 entries,
+            6714 wiz_defined-function locations,
+            2081 strings with 40260 characters,
+and the built_in function-call counts, 186919 in all, are:
+= -- 19945
+> -- 4662
+< -- 3664
++ -- 5231
+- -- 1405
+* -- 12374
+:= -- 23105
+add.period$ -- 663
+call.type$ -- 141
+change.case$ -- 1546
+chr.to.int$ -- 300
+cite$ -- 140
+duplicate$ -- 16315
+empty$ -- 8968
+format.name$ -- 6673
+if$ -- 39409
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 2651
+newline$ -- 758
+num.names$ -- 705
+pop$ -- 3518
+preamble$ -- 1
+purify$ -- 573
+quote$ -- 0
+skip$ -- 16284
+stack$ -- 1
+substring$ -- 7808
+swap$ -- 6411
+text.length$ -- 212
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 50
+warning$ -- 0
+while$ -- 1095
+width$ -- 0
+write$ -- 2311

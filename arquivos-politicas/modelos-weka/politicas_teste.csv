@@ -1,0 +1,11 @@
+Acesso,Organizacao,Sujeito,Acao,Objeto
+Obliged,UFAC,Secretario_de_Curso_Academico,Acessar,Produtos
+Permitted,UFAC,Secretario_de_Curso_Academico,Acessar,Documentos
+Obliged,CCSJA,Outro_Usuario,Abertura,Almoxarifado
+Permitted,Uninorte,Coordenador,Solicitacao,Central_de_Copias
+Forbidden,IFAC,Grupo_Almoxarifado,Inserir,Guia_de_Requisicao
+Forbidden,UFAC,Grupo_Almoxarifado,Inserir,Guia_de_Requisicao
+Forbidden,IFAC,Estagiario3,Acess,Process
+Permitted,Administrative_Unit,Secretarios,Create,ProcessDispatch
+Permitted,Unidade_Administrativa,Professor,Solicitacao,Central_de_Copias
+Permitted,Unidade_Administrativa,Professor,Acess,Central_de_Copias
