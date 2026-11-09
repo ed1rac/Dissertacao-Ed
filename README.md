@@ -1,19 +1,19 @@
 # 🎓 Dissertação de Mestrado — PPgCC / UFAC
 
 <div align="center">
-
-### *"Aplicação de Mineração de Dados e Aprendizagem de Máquina na Detecção de Conflitos entre Políticas de Controle de Acesso"*
-
-**Autor**: [Edkallenn Lima](https://github.com/ed1rac)  
-**Orientadora**: Dra. Laura Costa Sarkis  
-**Instituição**: Programa de Pós-Graduação em Ciência da Computação (PPgCC) — Universidade Federal do Acre (UFAC)
-
-[![PDF da Dissertação](https://img.shields.io/badge/Texto_Completo-PDF_Revisado-red.svg?logo=adobeacrobatreader)](./old/dissertacao-ed-revisada.pdf)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg?logo=python)](https://www.python.org/)
-[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-MLP_Classifier-orange.svg?logo=scikit-learn)](https://scikit-learn.org/)
-[![LaTeX](https://img.shields.io/badge/Documento-%C2%AALaTeX-green.svg?logo=latex)](https://www.latex-project.org/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ed1rac/Dissertacao-Ed/blob/master/Classifica%C3%A7%C3%A3o_Mestrado_Redes_Neurais_MLP_e_outros_Vers%C3%A3o_NOVA.ipynb)
-
+  <h3><em>"Aplicação de Mineração de Dados e Aprendizagem de Máquina na Detecção de Conflitos entre Políticas de Controle de Acesso"</em></h3>
+  <p>
+    <strong>Autor:</strong> <a href="https://github.com/ed1rac">Edkallenn Lima</a> &bull;
+    <strong>Orientadora:</strong> Dra. Laura Costa Sarkis<br>
+    <strong>Instituição:</strong> Programa de Pós-Graduação em Ciência da Computação (PPgCC) — Universidade Federal do Acre (UFAC)
+  </p>
+  <p>
+    <a href="./old/dissertacao-ed-revisada.pdf"><img src="https://img.shields.io/badge/Texto_Completo-PDF_Revisado-red.svg?logo=adobeacrobatreader" alt="PDF da Dissertação"></a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.x-blue.svg?logo=python" alt="Python"></a>
+    <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/scikit--learn-MLP_Classifier-orange.svg?logo=scikit-learn" alt="Scikit-Learn"></a>
+    <a href="https://www.latex-project.org/"><img src="https://img.shields.io/badge/Documento-%C2%AALaTeX-green.svg?logo=latex" alt="LaTeX"></a>
+    <a href="https://colab.research.google.com/github/ed1rac/Dissertacao-Ed/blob/master/Classifica%C3%A7%C3%A3o_Mestrado_Redes_Neurais_MLP_e_outros_Vers%C3%A3o_NOVA.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+  </p>
 </div>
 
 ---
