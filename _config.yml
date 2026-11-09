@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: "Dissertação de Mestrado — PPgCC / UFAC"
+description: "Aplicação de Mineração de Dados e Aprendizagem de Máquina na Detecção de Conflitos entre Políticas de Controle de Acesso — Prof. Edkallenn Lima"
+kramdown:
+  parse_block_html: true
